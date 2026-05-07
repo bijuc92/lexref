@@ -1,23 +1,21 @@
-class CaseResult {
-  final String docId;
-  final String title;
-  final String? citation;
-  final String court;
-  final int? year;
-  final String? summary;
-  final String? url;
-  final List<String> sectionsCited;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  const CaseResult({
-    required this.docId,
-    required this.title,
-    this.citation,
-    required this.court,
-    this.year,
-    this.summary,
-    this.url,
-    this.sectionsCited = const [],
-  });
+part 'case_models.freezed.dart';
+
+@freezed
+class CaseResult with _$CaseResult {
+  const CaseResult._();
+
+  const factory CaseResult({
+    required String docId,
+    required String title,
+    String? citation,
+    required String court,
+    int? year,
+    String? summary,
+    String? url,
+    @Default([]) List<String> sectionsCited,
+  }) = _CaseResult;
 
   factory CaseResult.fromIndianKanoon(Map<String, dynamic> doc) {
     final title = doc['title'] as String? ??
@@ -42,7 +40,6 @@ class CaseResult {
       url: doc['docid'] != null
           ? 'https://indiankanoon.org/doc/${doc['docid']}/'
           : null,
-      sectionsCited: [],
     );
   }
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/widgets/empty_state.dart';
@@ -123,7 +123,7 @@ class _ChapterHeader extends SliverPersistentHeaderDelegate {
   _ChapterHeader(this.title);
 
   @override
-  double get minExtent => 40;
+  double get minExtent => 0;
   @override
   double get maxExtent => 40;
 
@@ -166,7 +166,7 @@ class _SectionTile extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 8),
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
-        onTap: () => context.push('/acts/$actId/section/${section.id}'),
+        onTap: () => context.pushSectionDetail(actId: actId, sectionId: section.id),
         child: Padding(
           padding: const EdgeInsets.all(14),
           child: Row(

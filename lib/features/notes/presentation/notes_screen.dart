@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/utils/date_utils.dart' as app_dates;
@@ -53,7 +53,7 @@ class _NoteTile extends ConsumerWidget {
       margin: const EdgeInsets.only(bottom: 10),
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
-        onTap: () => context.push('/notes/${note.id}'),
+        onTap: () => context.pushNoteDetail(note.id),
         child: Padding(
           padding: const EdgeInsets.all(14),
           child: Column(

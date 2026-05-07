@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_colors.dart';
 
@@ -84,7 +84,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       } else {
                         const FlutterSecureStorage()
                             .write(key: 'onboarding_complete', value: 'true');
-                        if (mounted) context.go('/login');
+                        if (mounted) context.goLogin();
                       }
                     },
                     child: Text(
@@ -97,7 +97,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       onPressed: () async {
                         const FlutterSecureStorage()
                             .write(key: 'onboarding_complete', value: 'true');
-                        if (mounted) context.go('/login');
+                        if (mounted) context.goLogin();
                       },
                       child: Text(
                         'Skip',

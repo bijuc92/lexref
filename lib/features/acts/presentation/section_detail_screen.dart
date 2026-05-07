@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_tts/flutter_tts.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../../core/theme/app_colors.dart';
@@ -14,26 +14,8 @@ import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_shimmer.dart';
 import '../../bookmarks/data/bookmarks_repository.dart';
 import '../../notes/data/notes_repository.dart';
-import '../data/acts_repository.dart';
 import '../domain/act_models.dart';
-
-final _sectionProvider =
-    FutureProvider.family<SectionModel?, String>((ref, sectionId) async {
-  final parts = sectionId.split('__');
-  final actId = parts[0];
-  final id = parts[1];
-
-  await ActsRepository().seedIfNeeded(actId);
-  final local = await ActsRepository().getSection(id);
-  if (local == null) return null;
-  return SectionModel(
-    id: local.id,
-    sectionNo: local.sectionNo,
-    title: local.title,
-    content: local.content,
-    relatedSections: local.relatedSections,
-  );
-});
+import '../domain/acts_providers.dart';
 
 class SectionDetailScreen extends ConsumerStatefulWidget {
   final String actId;
@@ -170,7 +152,7 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final sectionAsync = ref.watch(_sectionProvider(_compositeId));
+    final sectionAsync = ref.watch(sectionDetailProvider(_compositeId));
     return Scaffold(
       appBar: AppBar(
         actions: sectionAsync.whenData((s) {
@@ -281,10 +263,10 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
                       final label = parts.length >= 2 ? 'S.${parts.last}' : relId;
                       return ActionChip(
                         label: Text(label),
-                        onPressed: () {
-                          final actId = parts.first;
-                          context.push('/acts/$actId/section/$relId');
-                        },
+                        onPressed: () => context.pushSectionDetail(
+                          actId: parts.first,
+                          sectionId: relId,
+                        ),
                       );
                     }).toList(),
                   ),
@@ -307,9 +289,8 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
                       child: ElevatedButton.icon(
                         icon: const Icon(Icons.smart_toy_outlined),
                         label: const Text('Ask AI'),
-                        onPressed: () => context.go(
-                          '/home/ai',
-                          extra: 'Explain Section ${section.sectionNo} ${widget.actId.toUpperCase()} in detail: ${section.title}',
+                        onPressed: () => context.goAiChat(
+                          initialMessage: 'Explain Section ${section.sectionNo} ${widget.actId.toUpperCase()} in detail: ${section.title}',
                         ),
                         style: ElevatedButton.styleFrom(
                           minimumSize: const Size(0, 48),

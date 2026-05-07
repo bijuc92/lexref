@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/widgets/court_badge.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_shimmer.dart';
+import '../../../core/error/result.dart';
 import '../data/cases_repository.dart';
 import '../domain/case_models.dart';
 
 final _caseDetailProvider =
-    FutureProvider.family<CaseResult?, String>((ref, docId) {
-  return CasesRepository().getCase(docId);
+    FutureProvider.family<CaseResult, String>((ref, docId) async {
+  final result = await CasesRepository().getCase(docId);
+  return switch (result) {
+    Ok(:final data) => data,
+    Err(:final failure) => throw failure.message,
+  };
 });
 
 class CaseDetailScreen extends ConsumerWidget {
@@ -55,9 +60,6 @@ class CaseDetailScreen extends ConsumerWidget {
         error: (e, _) =>
             ErrorState(message: e.toString(), onRetry: () {}),
         data: (c) {
-          if (c == null) {
-            return const Center(child: Text('Case not found'));
-          }
           return SingleChildScrollView(
             padding: const EdgeInsets.all(20),
             child: Column(
@@ -122,9 +124,8 @@ class CaseDetailScreen extends ConsumerWidget {
                   child: OutlinedButton.icon(
                     icon: const Icon(Icons.smart_toy_outlined),
                     label: const Text('Ask AI about this case'),
-                    onPressed: () => context.go(
-                      '/home/ai',
-                      extra: 'Summarize and explain the case: ${c.title}',
+                    onPressed: () => context.goAiChat(
+                      initialMessage: 'Summarize and explain the case: ${c.title}',
                     ),
                     style: OutlinedButton.styleFrom(
                       minimumSize: const Size(double.infinity, 52),

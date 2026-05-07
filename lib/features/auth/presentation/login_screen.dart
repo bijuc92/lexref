@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../../core/router/typed_routes.dart';
+import '../../../core/error/result.dart';
 import '../../../core/theme/app_colors.dart';
 import '../domain/auth_providers.dart';
 
@@ -29,23 +30,23 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   Future<void> _login() async {
     if (!_formKey.currentState!.validate()) return;
     setState(() => _loading = true);
-    try {
-      await ref.read(authRepositoryProvider).signIn(
-            _emailCtrl.text.trim(),
-            _passCtrl.text,
-          );
-      if (mounted) context.go('/home/search');
-    } catch (e) {
-      if (mounted) {
+    final result = await ref.read(authRepositoryProvider).signIn(
+          _emailCtrl.text.trim(),
+          _passCtrl.text,
+        );
+    if (!mounted) return;
+    setState(() => _loading = false);
+
+    switch (result) {
+      case Ok():
+        context.goSearch();
+      case Err(:final failure):
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Login failed: ${e.toString()}'),
+            content: Text(failure.message),
             backgroundColor: AppColors.error,
           ),
         );
-      }
-    } finally {
-      if (mounted) setState(() => _loading = false);
     }
   }
 
@@ -153,7 +154,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       style: GoogleFonts.dmSans(color: AppColors.textSecondary),
                     ),
                     TextButton(
-                      onPressed: () => context.go('/register'),
+                      onPressed: () => context.goRegister(),
                       style: TextButton.styleFrom(padding: EdgeInsets.zero),
                       child: Text(
                         'Register',

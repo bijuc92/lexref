@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/models/local/local_section.dart';
@@ -257,7 +257,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                 child: SectionCard(
                   section: s,
                   onTap: () =>
-                      context.push('/acts/${s.actId}/section/${s.id}'),
+                      context.pushSectionDetail(actId: s.actId, sectionId: s.id),
                 ),
               )),
         ],
@@ -276,7 +276,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                 padding: const EdgeInsets.only(bottom: 8),
                 child: CaseCard(
                   caseResult: c,
-                  onTap: () => context.push('/cases/${c.docId}'),
+                  onTap: () => context.pushCaseDetail(c.docId),
                 ),
               )),
         ],

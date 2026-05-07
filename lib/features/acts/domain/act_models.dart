@@ -1,80 +1,53 @@
-class ActModel {
-  final String id;
-  final String shortName;
-  final String fullName;
-  final int year;
-  final String jurisdiction;
-  final String category;
-  final List<ChapterModel> chapters;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  const ActModel({
-    required this.id,
-    required this.shortName,
-    required this.fullName,
-    required this.year,
-    required this.jurisdiction,
-    required this.category,
-    required this.chapters,
-  });
+part 'act_models.freezed.dart';
+part 'act_models.g.dart';
+
+@freezed
+class ActModel with _$ActModel {
+  const ActModel._();
+
+  const factory ActModel({
+    required String id,
+    required String shortName,
+    required String fullName,
+    required int year,
+    required String jurisdiction,
+    required String category,
+    required List<ChapterModel> chapters,
+  }) = _ActModel;
+
+  factory ActModel.fromJson(Map<String, dynamic> json) =>
+      _$ActModelFromJson(json);
 
   int get totalSections =>
       chapters.fold(0, (sum, ch) => sum + ch.sections.length);
-
-  factory ActModel.fromJson(Map<String, dynamic> j) => ActModel(
-        id: j['id'] as String,
-        shortName: j['shortName'] as String,
-        fullName: j['fullName'] as String,
-        year: j['year'] as int,
-        jurisdiction: j['jurisdiction'] as String,
-        category: j['category'] as String,
-        chapters: (j['chapters'] as List)
-            .map((c) => ChapterModel.fromJson(c as Map<String, dynamic>))
-            .toList(),
-      );
 }
 
-class ChapterModel {
-  final String id;
-  final String title;
-  final List<SectionModel> sections;
+@freezed
+class ChapterModel with _$ChapterModel {
+  const factory ChapterModel({
+    required String id,
+    required String title,
+    required List<SectionModel> sections,
+  }) = _ChapterModel;
 
-  const ChapterModel({
-    required this.id,
-    required this.title,
-    required this.sections,
-  });
-
-  factory ChapterModel.fromJson(Map<String, dynamic> j) => ChapterModel(
-        id: j['id'] as String,
-        title: j['title'] as String,
-        sections: (j['sections'] as List)
-            .map((s) => SectionModel.fromJson(s as Map<String, dynamic>))
-            .toList(),
-      );
+  factory ChapterModel.fromJson(Map<String, dynamic> json) =>
+      _$ChapterModelFromJson(json);
 }
 
-class SectionModel {
-  final String id;
-  final String sectionNo;
-  final String title;
-  final String content;
-  final List<String> relatedSections;
+@freezed
+class SectionModel with _$SectionModel {
+  const SectionModel._();
 
-  const SectionModel({
-    required this.id,
-    required this.sectionNo,
-    required this.title,
-    required this.content,
-    this.relatedSections = const [],
-  });
+  const factory SectionModel({
+    required String id,
+    required String sectionNo,
+    required String title,
+    required String content,
+    @Default([]) List<String> relatedSections,
+  }) = _SectionModel;
 
-  factory SectionModel.fromJson(Map<String, dynamic> j) => SectionModel(
-        id: j['id'] as String,
-        sectionNo: j['sectionNo'] as String,
-        title: j['title'] as String,
-        content: j['content'] as String,
-        relatedSections: j['relatedSections'] != null
-            ? List<String>.from(j['relatedSections'] as List)
-            : [],
-      );
+  factory SectionModel.fromJson(Map<String, dynamic> json) =>
+      _$SectionModelFromJson(json);
 }

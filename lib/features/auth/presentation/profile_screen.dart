@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_colors.dart';
 import '../domain/auth_providers.dart';
@@ -105,7 +105,8 @@ class ProfileScreen extends ConsumerWidget {
               );
               if (confirmed == true) {
                 await authRepo.signOut();
-                if (context.mounted) context.go('/login');
+                // Navigate to login regardless of sign-out result (optimistic UX)
+                if (context.mounted) context.goLogin();
               }
             },
           ),

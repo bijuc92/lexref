@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../../core/router/typed_routes.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../features/auth/domain/auth_providers.dart';
 import '../../../features/bookmarks/data/bookmarks_repository.dart';
@@ -63,7 +63,7 @@ class HomeScreen extends ConsumerWidget {
               backgroundColor: AppColors.primary,
               child: Icon(Icons.person, size: 16, color: Colors.white),
             ),
-            onPressed: () => context.push('/profile'),
+            onPressed: () => context.goProfile(),
           ),
           const SizedBox(width: 8),
         ],
@@ -115,7 +115,7 @@ class HomeScreen extends ConsumerWidget {
               ),
             ),
             const SizedBox(height: 24),
-            _SearchTapTarget(onTap: () => context.go('/home/search')),
+            _SearchTapTarget(onTap: () => context.goSearch()),
             const SizedBox(height: 24),
             Text(
               'Quick Access',
@@ -140,28 +140,28 @@ class HomeScreen extends ConsumerWidget {
                   label: 'Law Sections',
                   subtitle: 'IPC · CrPC · CPC · Evidence',
                   color: AppColors.primary,
-                  onTap: () => context.go('/home/acts'),
+                  onTap: () => context.goActsList(),
                 ),
                 _QuickCard(
                   icon: Icons.gavel,
                   label: 'Case Law',
                   subtitle: 'Search judgments',
                   color: const Color(0xFF1565C0),
-                  onTap: () => context.push('/home/search'),
+                  onTap: () => context.goSearch(),
                 ),
                 _QuickCard(
                   icon: Icons.smart_toy_outlined,
                   label: 'AI Assistant',
                   subtitle: 'Ask legal questions',
                   color: const Color(0xFF6A1B9A),
-                  onTap: () => context.go('/home/ai'),
+                  onTap: () => context.goAiChat(),
                 ),
                 _QuickCard(
                   icon: Icons.bookmark,
                   label: 'Bookmarks',
                   subtitle: 'Saved sections',
                   color: const Color(0xFF2E7D32),
-                  onTap: () => context.go('/home/bookmarks'),
+                  onTap: () => context.goBookmarks(),
                 ),
               ],
             ),
@@ -197,8 +197,7 @@ class HomeScreen extends ConsumerWidget {
                           q,
                           style: GoogleFonts.dmSans(fontSize: 14),
                         ),
-                        onTap: () =>
-                            context.push('/home/search?q=${Uri.encodeComponent(q)}'),
+                        onTap: () => context.goSearch(initialQuery: q),
                       ),
                     ),
                   ],

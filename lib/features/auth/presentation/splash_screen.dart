@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_colors.dart';
 import '../domain/auth_providers.dart';
@@ -33,11 +33,11 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
     if (!mounted) return;
 
     if (onboarded != 'true') {
-      context.go('/onboarding');
+      context.goOnboarding();
     } else if (isLoggedIn) {
-      context.go('/home/search');
+      context.goSearch();
     } else {
-      context.go('/login');
+      context.goLogin();
     }
   }
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/models/local/local_bookmark.dart';
@@ -165,9 +165,9 @@ class _BookmarkTile extends ConsumerWidget {
           if (bookmark.refType == 'section') {
             final parts = bookmark.refId.split('_');
             final actId = parts.first;
-            context.push('/acts/$actId/section/${bookmark.refId}');
+            context.pushSectionDetail(actId: actId, sectionId: bookmark.refId);
           } else if (bookmark.refType == 'case') {
-            context.push('/cases/${bookmark.refId}');
+            context.pushCaseDetail(bookmark.refId);
           }
         },
         onLongPress: () => _showOptions(context, ref),

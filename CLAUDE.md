@@ -39,13 +39,63 @@ flutter analyze
 ## Architecture
 
 ### State management
-`flutter_riverpod` ^2.5.1. Providers are plain `Provider`, `FutureProvider`, `StreamProvider`, and `StateProvider` — **no `@riverpod` codegen is used anywhere in the app currently**. If you add a `@riverpod` annotation, run:
+`flutter_riverpod` ^2.5.1. **Some providers use `@riverpod` codegen** (see `auth_providers.dart`, `connectivity_provider.dart`, `acts_providers.dart`); others use plain `FutureProvider`/`StateProvider` where codegen adds no value (e.g., feature-local providers like `_notesProvider`).
+
+After adding or changing a `@riverpod` annotation, regenerate:
 ```bash
 dart run build_runner build --delete-conflicting-outputs
 ```
+Commit the generated `.g.dart` files — they are not gitignored.
+
+`themeModeProvider` is kept as a manual `StateProvider<ThemeMode>` because the generated name would conflict with Flutter's own `ThemeMode` class.
+
+### Error handling
+All repository methods and service calls return `Result<T>` from `lib/core/error/result.dart`:
+```dart
+sealed class Result<T> { ... }
+final class Ok<T>  extends Result<T> { final T data; }
+final class Err<T> extends Result<T> { final Failure failure; }
+```
+Failure types live in `lib/core/error/failures.dart` — use the most specific subclass:
+- `NetworkFailure` — Dio/HTTP errors
+- `AuthFailure` — Supabase auth errors (subtype: `RateLimitFailure` for HTTP 429)
+- `DatabaseFailure` — sqflite errors
+- `NotFoundFailure` — resource not found
+- `UnknownFailure` — catch-all
+
+Consume results in screens with `switch`:
+```dart
+switch (result) {
+  case Ok(:final data): // happy path
+  case Err(:final failure): // show failure.message
+}
+```
+Or via the `.fold()` extension inside FutureProvider bodies:
+```dart
+final result = await repo.doSomething();
+return switch (result) { Ok(:final data) => data, Err(:final failure) => throw failure.message };
+```
+
+### Models
+All domain and local models use **Freezed** for immutability (`copyWith`, `==`, `hashCode`):
+
+- **Sqflite models** (`lib/shared/models/local/`): use `fromMap`/`toMap` with snake_case keys and int booleans (`is_synced`). These do **not** use `json_serializable` — do not add `fromJson`.
+- **Domain models** (`act_models.dart`): use `fromJson`/`toJson` via `json_serializable` (camelCase keys from JSON assets).
+- **CaseResult**: has a custom `fromIndianKanoon` factory — no `json_serializable`.
+
+Freezed classes that need custom methods must include `const ClassName._();` private constructor.
 
 ### Navigation
 `go_router` ^14.2.7 with a `StatefulShellRoute.indexedStack` for the 4-tab bottom nav. Router is in `lib/core/router/app_router.dart` and exposed as `routerProvider`.
+
+**Never use raw string paths in screens.** Use the `TypedRoutes` extension on `BuildContext` from `lib/core/router/typed_routes.dart`:
+```dart
+context.goSearch();
+context.goAiChat(initialMessage: '...');
+context.pushSectionDetail(actId: 'ipc', sectionId: 'ipc_302');
+context.pushCaseDetail(docId);
+```
+Add new route helpers to `typed_routes.dart` whenever a new route is added to `app_router.dart`.
 
 **Tab → route mapping:**
 | Tab | Index | Root path |
@@ -90,10 +140,15 @@ Auth redirect in the router: any route not in the public list (`/`, `/login`, `/
 lib/
 ├── core/
 │   ├── config/env.dart              # String.fromEnvironment wrappers
+│   ├── error/
+│   │   ├── failures.dart            # Sealed Failure hierarchy (Network/Auth/DB/NotFound/Unknown)
+│   │   └── result.dart              # Sealed Result<T> (Ok/Err) + .fold() extension
 │   ├── network/
 │   │   ├── api_client.dart          # Two Dio singletons: groq + indianKanoon
 │   │   └── api_constants.dart       # Base URLs, model names, token limits
-│   ├── router/app_router.dart       # GoRouter + routerProvider
+│   ├── router/
+│   │   ├── app_router.dart          # GoRouter + routerProvider
+│   │   └── typed_routes.dart        # BuildContext extension for type-safe navigation
 │   ├── theme/
 │   │   ├── app_colors.dart          # All color constants (light + dark + badge)
 │   │   └── app_theme.dart           # lightTheme + darkTheme (Material 3)
@@ -104,7 +159,8 @@ lib/
 ├── features/
 │   ├── acts/
 │   │   ├── data/acts_repository.dart       # seedIfNeeded(), getSectionsByAct(), getSection()
-│   │   ├── domain/act_models.dart          # ActModel, ChapterModel, SectionModel
+│   │   ├── domain/act_models.dart          # ActModel, ChapterModel, SectionModel (Freezed + json_serializable)
+│   │   ├── domain/acts_providers.dart      # @riverpod sectionDetailProvider(compositeId)
 │   │   └── presentation/
 │   │       ├── acts_list_screen.dart        # 4 act cards grid
 │   │       ├── sections_list_screen.dart    # SliverPersistentHeader for sticky chapters
@@ -117,8 +173,8 @@ lib/
 │   │   └── presentation/ai_chat_screen.dart # Bubbles, typing indicator, offline guard
 │   │
 │   ├── auth/
-│   │   ├── data/auth_repository.dart        # Supabase signIn/signUp/signOut/getProfile
-│   │   ├── domain/auth_providers.dart       # authStateProvider, profileProvider, themeModeProvider
+│   │   ├── data/auth_repository.dart        # Supabase signIn/signUp → Result<void>; signOut/getProfile
+│   │   ├── domain/auth_providers.dart       # @riverpod authRepository/authState/profile; manual themeModeProvider
 │   │   └── presentation/
 │   │       ├── splash_screen.dart           # 2s delay → onboarding/login/home
 │   │       ├── onboarding_screen.dart       # 3-page PageView, writes secure_storage key
@@ -133,8 +189,8 @@ lib/
 │   │   └── presentation/bookmarks_screen.dart  # TabController per folder, long-press options
 │   │
 │   ├── cases/
-│   │   ├── data/cases_repository.dart       # IndianKanoon search + getCase()
-│   │   ├── domain/case_models.dart          # CaseResult + stripHtml() + fromIndianKanoon()
+│   │   ├── data/cases_repository.dart       # searchCases/getCase → Result<T>
+│   │   ├── domain/case_models.dart          # CaseResult (Freezed) + stripHtml() + fromIndianKanoon()
 │   │   └── presentation/
 │   │       ├── cases_list_screen.dart
 │   │       └── case_detail_screen.dart      # url_launcher to IndianKanoon
@@ -157,13 +213,13 @@ lib/
 ├── shared/
 │   ├── models/local/
 │   │   ├── database_helper.dart             # Singleton, creates all 6 tables + indexes
-│   │   ├── local_act.dart
-│   │   ├── local_bookmark.dart              # has copyWith(), isSynced
-│   │   ├── local_chat_message.dart
-│   │   ├── local_note.dart                  # has copyWith(), isSynced
-│   │   └── local_section.dart               # relatedSections stored as JSON string
+│   │   ├── local_act.dart                   # Freezed; fromMap/toMap
+│   │   ├── local_bookmark.dart              # Freezed; fromMap/toMap; isSynced
+│   │   ├── local_chat_message.dart          # Freezed; fromMap/toMap
+│   │   ├── local_note.dart                  # Freezed; fromMap/toMap; isSynced
+│   │   └── local_section.dart               # Freezed; fromMap/toMap; relatedSections as JSON string
 │   ├── providers/
-│   │   └── connectivity_provider.dart       # isOnlineProvider (StreamProvider<bool>)
+│   │   └── connectivity_provider.dart       # @riverpod isOnlineProvider (Stream<bool>)
 │   └── widgets/
 │       ├── act_badge.dart                   # Color-coded chip: IPC/CrPC/CPC/Evidence
 │       ├── case_card.dart                   # CaseResult display card
@@ -206,7 +262,7 @@ Always use `AppColors.*` constants — never hardcode hex values. Key colors:
 Acts data is seeded lazily: `ActsRepository().seedIfNeeded(actId)` checks if the `sections` table has rows for that act. If empty, it reads the JSON asset and inserts all sections. Call this before any section query, not at app startup.
 
 ### Section provider key
-`_sectionProvider` uses a composite `actId__sectionId` string as the family key — the `__` separator is intentional to avoid clashes.
+`sectionDetailProvider` (in `acts_providers.dart`) takes a composite `actId__sectionId` string — the `__` separator is intentional to avoid clashes with IDs that already contain `_`.
 
 ### Sharing
 Use `Share.share(text)` from `package:share_plus/share_plus.dart`. Do **not** use `SharePlus.instance.share(ShareParams(...))` — that API is from share_plus v10+ and this project pins v9.
@@ -246,7 +302,7 @@ Always import `isOnlineProvider` from `lib/shared/providers/connectivity_provide
 
 - **`withOpacity()` deprecation.** Flutter 3.41 deprecates `withOpacity()` in favour of `withValues(alpha: ...)`. The 25 `info` hints in `flutter analyze` are all this deprecation. They are non-breaking — fix them when touching those files, don't fix them in bulk.
 
-- **`@riverpod` codegen is not currently wired.** `riverpod_generator` is in `dev_dependencies` but no file uses `@riverpod` yet. All providers are written manually. If you add codegen providers, run `build_runner` and commit the generated `.g.dart` files.
+- **build_runner artefacts are committed.** All `*.freezed.dart` and `*.g.dart` files are tracked in git. After any model or `@riverpod` change, run `dart run build_runner build --delete-conflicting-outputs` and commit the regenerated files.
 
 - **No `google_fonts` cache warming.** First launch over slow connection may show fallback fonts briefly. This is acceptable for the current version.
 

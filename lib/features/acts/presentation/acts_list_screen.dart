@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/widgets/offline_banner.dart';
@@ -94,7 +94,7 @@ class _ActCard extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 12),
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
-        onTap: () => context.push('/acts/${act.id}'),
+        onTap: () => context.pushSectionsForAct(act.id),
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Row(

@@ -1,4 +1,5 @@
 import 'package:supabase_flutter/supabase_flutter.dart';
+import '../../../core/error/result.dart';
 import '../../../shared/models/local/database_helper.dart';
 import '../../../shared/models/local/local_bookmark.dart';
 
@@ -72,15 +73,15 @@ class BookmarksRepository {
     );
   }
 
-  Future<void> syncToSupabase() async {
-    final unsynced = await getUnsynced();
-    if (unsynced.isEmpty) return;
-    final client = Supabase.instance.client;
-    final userId = client.auth.currentUser?.id;
-    if (userId == null) return;
+  Future<Result<void>> syncToSupabase() async {
+    try {
+      final unsynced = await getUnsynced();
+      if (unsynced.isEmpty) return const Ok(null);
+      final client = Supabase.instance.client;
+      final userId = client.auth.currentUser?.id;
+      if (userId == null) return const Ok(null);
 
-    for (final bm in unsynced) {
-      try {
+      for (final bm in unsynced) {
         await client.from('bookmarks').upsert({
           'id': bm.id,
           'user_id': userId,
@@ -92,7 +93,10 @@ class BookmarksRepository {
           'created_at': bm.savedAt.toIso8601String(),
         });
         await markSynced(bm.id);
-      } catch (_) {}
+      }
+      return const Ok(null);
+    } catch (e) {
+      return Err(NetworkFailure('Bookmark sync failed: ${e.toString()}'));
     }
   }
 }

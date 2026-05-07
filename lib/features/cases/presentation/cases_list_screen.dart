@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import '../../../core/router/typed_routes.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/widgets/case_card.dart';
 import '../../../shared/widgets/empty_state.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_shimmer.dart';
 import '../../../shared/widgets/offline_banner.dart';
+import '../../../core/error/result.dart';
 import '../data/cases_repository.dart';
 import '../domain/case_models.dart';
 
 final _casesProvider =
-    FutureProvider.family<List<CaseResult>, String>((ref, query) {
-  if (query.isEmpty) return Future.value([]);
-  return CasesRepository().searchCases(query);
+    FutureProvider.family<List<CaseResult>, String>((ref, query) async {
+  if (query.isEmpty) return [];
+  final result = await CasesRepository().searchCases(query);
+  return switch (result) {
+    Ok(:final data) => data,
+    Err(:final failure) => throw failure.message,
+  };
 });
 
 class CasesListScreen extends ConsumerStatefulWidget {
@@ -112,7 +117,7 @@ class _CasesListScreenState extends ConsumerState<CasesListScreen> {
                             child: CaseCard(
                               caseResult: cases[i],
                               onTap: () =>
-                                  context.push('/cases/${cases[i].docId}'),
+                                  context.pushCaseDetail(cases[i].docId),
                             ),
                           ),
                         ),

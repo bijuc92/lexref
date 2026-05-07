@@ -1,25 +1,18 @@
-class LocalChatMessage {
-  final String id;
-  final String sessionId;
-  final String role;
-  final String content;
-  final DateTime createdAt;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  const LocalChatMessage({
-    required this.id,
-    required this.sessionId,
-    required this.role,
-    required this.content,
-    required this.createdAt,
-  });
+part 'local_chat_message.freezed.dart';
 
-  Map<String, dynamic> toMap() => {
-        'id': id,
-        'session_id': sessionId,
-        'role': role,
-        'content': content,
-        'created_at': createdAt.toIso8601String(),
-      };
+@freezed
+class LocalChatMessage with _$LocalChatMessage {
+  const LocalChatMessage._();
+
+  const factory LocalChatMessage({
+    required String id,
+    required String sessionId,
+    required String role,
+    required String content,
+    required DateTime createdAt,
+  }) = _LocalChatMessage;
 
   factory LocalChatMessage.fromMap(Map<String, dynamic> m) => LocalChatMessage(
         id: m['id'] as String,
@@ -28,4 +21,12 @@ class LocalChatMessage {
         content: m['content'] as String,
         createdAt: DateTime.parse(m['created_at'] as String),
       );
+
+  Map<String, dynamic> toMap() => {
+        'id': id,
+        'session_id': sessionId,
+        'role': role,
+        'content': content,
+        'created_at': createdAt.toIso8601String(),
+      };
 }

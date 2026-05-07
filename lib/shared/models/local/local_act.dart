@@ -1,28 +1,19 @@
-class LocalAct {
-  final String id;
-  final String shortName;
-  final String fullName;
-  final int year;
-  final String jurisdiction;
-  final String category;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  const LocalAct({
-    required this.id,
-    required this.shortName,
-    required this.fullName,
-    required this.year,
-    required this.jurisdiction,
-    required this.category,
-  });
+part 'local_act.freezed.dart';
 
-  Map<String, dynamic> toMap() => {
-        'id': id,
-        'short_name': shortName,
-        'full_name': fullName,
-        'year': year,
-        'jurisdiction': jurisdiction,
-        'category': category,
-      };
+@freezed
+class LocalAct with _$LocalAct {
+  const LocalAct._();
+
+  const factory LocalAct({
+    required String id,
+    required String shortName,
+    required String fullName,
+    required int year,
+    required String jurisdiction,
+    required String category,
+  }) = _LocalAct;
 
   factory LocalAct.fromMap(Map<String, dynamic> m) => LocalAct(
         id: m['id'] as String,
@@ -32,4 +23,13 @@ class LocalAct {
         jurisdiction: m['jurisdiction'] as String,
         category: m['category'] as String,
       );
+
+  Map<String, dynamic> toMap() => {
+        'id': id,
+        'short_name': shortName,
+        'full_name': fullName,
+        'year': year,
+        'jurisdiction': jurisdiction,
+        'category': category,
+      };
 }

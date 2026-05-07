@@ -1,5 +1,6 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import '../../../core/error/result.dart';
 import '../../../shared/models/local/database_helper.dart';
 import '../../../shared/models/local/local_note.dart';
 
@@ -66,15 +67,16 @@ class NotesRepository {
     return rows.map(LocalNote.fromMap).toList();
   }
 
-  Future<void> syncToSupabase() async {
-    final unsynced = await getUnsynced();
-    if (unsynced.isEmpty) return;
-    final client = Supabase.instance.client;
-    final userId = client.auth.currentUser?.id;
-    if (userId == null) return;
+  Future<Result<void>> syncToSupabase() async {
+    try {
+      final unsynced = await getUnsynced();
+      if (unsynced.isEmpty) return const Ok(null);
+      final client = Supabase.instance.client;
+      final userId = client.auth.currentUser?.id;
+      if (userId == null) return const Ok(null);
 
-    for (final note in unsynced) {
-      try {
+      final db = await DatabaseHelper.instance.database;
+      for (final note in unsynced) {
         await client.from('notes').upsert({
           'id': note.id,
           'user_id': userId,
@@ -83,14 +85,16 @@ class NotesRepository {
           'content': note.content,
           'updated_at': note.updatedAt.toIso8601String(),
         });
-        final db = await DatabaseHelper.instance.database;
         await db.update(
           'notes',
           {'is_synced': 1},
           where: 'id = ?',
           whereArgs: [note.id],
         );
-      } catch (_) {}
+      }
+      return const Ok(null);
+    } catch (e) {
+      return Err(NetworkFailure('Note sync failed: ${e.toString()}'));
     }
   }
 }

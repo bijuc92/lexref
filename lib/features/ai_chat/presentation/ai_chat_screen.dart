@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../../core/error/result.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/models/local/local_chat_message.dart';
 import '../../../shared/providers/connectivity_provider.dart';
@@ -86,33 +87,34 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
     _ctrl.clear();
     _scrollToBottom();
 
-    try {
-      final response = await _groq.chat(_messages, text.trim());
-      final aiMsg = LocalChatMessage(
-        id: '${DateTime.now().millisecondsSinceEpoch}_ai',
-        sessionId: _sessionId,
-        role: 'assistant',
-        content: response,
-        createdAt: DateTime.now(),
-      );
-      await _chatRepo.saveMessage(aiMsg);
-      if (mounted) {
-        setState(() {
-          _messages = [..._messages, aiMsg];
-          _loading = false;
-        });
-        _scrollToBottom();
-      }
-    } catch (e) {
-      if (mounted) {
+    final result = await _groq.chat(_messages, text.trim());
+    if (!mounted) return;
+
+    switch (result) {
+      case Ok(:final data):
+        final aiMsg = LocalChatMessage(
+          id: '${DateTime.now().millisecondsSinceEpoch}_ai',
+          sessionId: _sessionId,
+          role: 'assistant',
+          content: data,
+          createdAt: DateTime.now(),
+        );
+        await _chatRepo.saveMessage(aiMsg);
+        if (mounted) {
+          setState(() {
+            _messages = [..._messages, aiMsg];
+            _loading = false;
+          });
+          _scrollToBottom();
+        }
+      case Err(:final failure):
         setState(() => _loading = false);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Error: ${e.toString()}'),
+            content: Text(failure.message),
             backgroundColor: AppColors.error,
           ),
         );
-      }
     }
   }
 

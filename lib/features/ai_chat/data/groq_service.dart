@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import '../../../core/error/result.dart';
 import '../../../core/network/api_client.dart';
 import '../../../core/network/api_constants.dart';
 import '../../../shared/models/local/local_chat_message.dart';
@@ -19,7 +20,7 @@ Always:
 - Format your responses using markdown for readability''';
 
 class GroqService {
-  Future<String> chat(
+  Future<Result<String>> chat(
     List<LocalChatMessage> history,
     String userMessage,
   ) async {
@@ -29,20 +30,32 @@ class GroqService {
       {'role': 'user', 'content': userMessage},
     ];
 
-    final response = await ApiClient.groq.post(
-      '/chat/completions',
-      data: {
-        'model': ApiConstants.groqModel,
-        'messages': messages,
-        'max_tokens': ApiConstants.groqMaxTokens,
-        'temperature': ApiConstants.groqTemperature,
-        'stream': false,
-      },
-      options: Options(
-        headers: {'Content-Type': 'application/json'},
-      ),
-    );
+    try {
+      final response = await ApiClient.groq.post(
+        '/chat/completions',
+        data: {
+          'model': ApiConstants.groqModel,
+          'messages': messages,
+          'max_tokens': ApiConstants.groqMaxTokens,
+          'temperature': ApiConstants.groqTemperature,
+          'stream': false,
+        },
+        options: Options(
+          headers: {'Content-Type': 'application/json'},
+        ),
+      );
 
-    return response.data['choices'][0]['message']['content'] as String;
+      final content =
+          response.data['choices'][0]['message']['content'] as String;
+      return Ok(content);
+    } on DioException catch (e) {
+      if (e.type == DioExceptionType.connectionError ||
+          e.type == DioExceptionType.receiveTimeout) {
+        return const Err(NetworkFailure('No connection. Check your network and try again.'));
+      }
+      return Err(UnknownFailure(e.message ?? 'AI request failed.'));
+    } catch (e) {
+      return Err(UnknownFailure(e.toString()));
+    }
   }
 }
