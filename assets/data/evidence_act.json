@@ -1,0 +1,367 @@
+{
+  "id": "evidence",
+  "shortName": "Evidence",
+  "fullName": "Indian Evidence Act, 1872",
+  "year": 1872,
+  "jurisdiction": "central",
+  "category": "evidence",
+  "chapters": [
+    {
+      "id": "ev_ch1",
+      "title": "Part I — Relevancy of Facts",
+      "sections": [
+        {
+          "id": "ev_1",
+          "sectionNo": "1",
+          "title": "Short title, extent and commencement",
+          "content": "This Act may be called the Indian Evidence Act, 1872.\n\nIt extends to the whole of India and applies to all judicial proceedings in or before any Court, including Courts-martial, other than Courts-martial convened under the Army Act, the Naval Discipline Act or the Indian Navy (Discipline) Act, 1934 or the Air Force Act, but not to affidavits presented to any Court or officer, nor to proceedings before an arbitrator.",
+          "relatedSections": ["ev_3", "ev_5"]
+        },
+        {
+          "id": "ev_3",
+          "sectionNo": "3",
+          "title": "Interpretation clause — Definitions",
+          "content": "In this Act the following words and expressions are used in the following senses, unless a contrary intention appears from the context:—\n\n**'Court'** includes all Judges and Magistrates, and all persons, except arbitrators, legally authorised to take evidence.\n\n**'Fact'** means and includes—\n(1) any thing, state of things, or relation of things, capable of being perceived by the senses;\n(2) any mental condition of which any person is conscious.\n\n**'Relevant':** One fact is said to be relevant to another when the one is connected with the other in any of the ways referred to in the provisions of this Act relating to the relevancy of facts.\n\n**'Facts in issue'** means and includes—any fact from which, either by itself or in connection with other facts, the existence, non-existence, nature, or extent of any right, liability, or disability, asserted or denied in any suit or proceeding, necessarily follows.\n\n**'Document'** means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, intended to be used, or which may be used, for the purpose of recording that matter.\n\n**'Evidence'** means and includes—\n(1) all statements which the Court permits or requires to be made before it by witnesses, in relation to matters of fact under inquiry; such statements are called oral evidence;\n(2) all documents including electronic records produced for the inspection of the Court; such documents are called documentary evidence.\n\n**'Proved':** A fact is said to be proved when, after considering the matters before it, the Court either believes it to exist, or considers its existence so probable that a prudent man ought, under the circumstances of the particular case, to act upon the supposition that it exists.\n\n**'Disproved':** A fact is said to be disproved when, after considering the matters before it, the Court either believes that it does not exist, or considers its non-existence so probable that a prudent man ought, under the circumstances of the particular case, to act upon the supposition that it does not exist.\n\n**'Not proved':** A fact is said not to be proved when it is neither proved nor disproved.",
+          "relatedSections": ["ev_5", "ev_6", "ev_101"]
+        },
+        {
+          "id": "ev_5",
+          "sectionNo": "5",
+          "title": "Evidence may be given of facts in issue and relevant facts",
+          "content": "Evidence may be given in any suit or proceeding of the existence or non-existence of every fact in issue and of such other facts as are hereinafter declared to be relevant, and of no others.\n\n**Explanation:** This section shall not enable any person to give evidence of a fact which he is disentitled to prove by any provision of the law for the time being in force relating to Civil Procedure.",
+          "relatedSections": ["ev_3", "ev_6", "ev_7"]
+        },
+        {
+          "id": "ev_6",
+          "sectionNo": "6",
+          "title": "Relevancy of facts forming part of same transaction (Res Gestae)",
+          "content": "Facts which, though not in issue, are so connected with a fact in issue as to form part of the same transaction, are relevant, whether they occurred at the same time and place or at different times and places.\n\n**Illustrations:**\n(a) A is accused of the murder of B by beating him. Whatever was said or done by A or B or the bystanders at the beating, or so shortly before or after it as to form part of the transaction, is a relevant fact.\n(b) A is accused of waging war against the Government of India by taking part in an armed insurrection in which property is destroyed, troops are attacked, and gaols are broken open. The occurrence of these facts is relevant, as forming part of the general transaction, though A may not have been present at all of them.\n\n**Res Gestae principle:** The fact and the statements or conduct sought to be admitted must be so intimately connected that the statement formed part of the transaction itself — it was a verbal act.",
+          "relatedSections": ["ev_5", "ev_7", "ev_8"]
+        },
+        {
+          "id": "ev_7",
+          "sectionNo": "7",
+          "title": "Facts which are the occasion, cause or effect of facts in issue",
+          "content": "Facts which are the occasion, cause, or effect, immediate or otherwise, of relevant facts, or facts in issue, or which constitute the state of things under which they happened, or which afforded an opportunity for their occurrence or transaction, are relevant.",
+          "relatedSections": ["ev_6", "ev_8"]
+        },
+        {
+          "id": "ev_8",
+          "sectionNo": "8",
+          "title": "Motive, preparation and previous or subsequent conduct",
+          "content": "Any fact is relevant which shows or constitutes a motive or preparation for any fact in issue or relevant fact.\n\nThe conduct of any party, or of any agent to any party, to any suit or proceeding, in reference to such suit or proceeding, or in reference to any fact in issue therein or relevant thereto, and the conduct of any person an offence against whom is the subject of any proceeding, is relevant, if such conduct influences or is influenced by any fact in issue or relevant fact, and whether it was previous or subsequent thereto.\n\n**Explanation 1:** The word 'conduct' in this section does not include statements, unless those statements accompany and explain acts other than statements; but this explanation is not to affect the relevancy of statements under any other section of this Act.\n\n**Explanation 2:** When the conduct of any person is relevant, any statement made to him or in his presence and hearing, which affects such conduct, is relevant.",
+          "relatedSections": ["ev_7", "ev_9"]
+        },
+        {
+          "id": "ev_9",
+          "sectionNo": "9",
+          "title": "Facts necessary to explain or introduce relevant facts",
+          "content": "Facts necessary to explain or introduce a fact in issue or relevant fact, or which support or rebut an inference suggested by a fact in issue or relevant fact, or which establish the identity of any thing or person whose identity is relevant, or fix the time or place at which any fact in issue or relevant fact happened, or which show the relation of parties by whom any such fact was transacted, are relevant in so far as they are necessary for that purpose.",
+          "relatedSections": ["ev_8", "ev_10"]
+        },
+        {
+          "id": "ev_10",
+          "sectionNo": "10",
+          "title": "Things said or done by conspirator in reference to common design",
+          "content": "Where there is reasonable ground to believe that two or more persons have conspired together to commit an offence or an actionable wrong, anything said, done or written by any one of such persons in reference to their common intention, after the time when such intention was first entertained by any one of them, is a relevant fact as against each of the persons believed to be so conspiring, as well for the purpose of proving the existence of the conspiracy as for the purpose of showing that any such person was a party to it.",
+          "relatedSections": ["ev_9"]
+        },
+        {
+          "id": "ev_17",
+          "sectionNo": "17",
+          "title": "Admission defined",
+          "content": "An admission is a statement, oral or documentary or contained in electronic form, which suggests any inference as to any fact in issue or relevant fact, and which is made by any of the persons, and under the circumstances, hereinafter mentioned.",
+          "relatedSections": ["ev_18", "ev_24", "ev_25"]
+        },
+        {
+          "id": "ev_18",
+          "sectionNo": "18",
+          "title": "Admission — by party to proceeding or his agent",
+          "content": "Statements made by a party to the proceeding, or by an agent to any party whom the Court regards, under the circumstances of the case, as expressly or impliedly authorised by him to make them, are admissions.\n\nStatements made by parties to suits suing or sued in a representative character, are not admissions, unless the party making the statement was a party to the suit in his individual character.\n\nStatements made by—\n(1) persons who have any proprietary or pecuniary interest in the subject-matter of the proceeding, and who make the statement in their character of persons so interested;\n(2) persons from whom the parties to the suit have derived their interest in the subject-matter of the suit,\nare admissions, if they were made during the continuance of the interest of the persons making the statements.",
+          "relatedSections": ["ev_17", "ev_24"]
+        }
+      ]
+    },
+    {
+      "id": "ev_ch2",
+      "title": "Part I — Admissions and Confessions",
+      "sections": [
+        {
+          "id": "ev_24",
+          "sectionNo": "24",
+          "title": "Confession caused by inducement, threat or promise, when irrelevant in criminal proceeding",
+          "content": "A confession made by an accused person is irrelevant in a criminal proceeding, if the making of the confession appears to the Court to have been caused by any inducement, threat or promise having reference to the charge against the accused person, proceeding from a person in authority and sufficient, in the opinion of the Court, to give the accused person grounds which would appear to him reasonable for supposing that by making it he would gain any advantage or avoid any evil of a temporal nature in reference to the proceedings against him.",
+          "relatedSections": ["ev_25", "ev_26", "ev_27"]
+        },
+        {
+          "id": "ev_25",
+          "sectionNo": "25",
+          "title": "Confession to police officer not to be proved",
+          "content": "No confession made to a police officer shall be proved as against a person accused of any offence.\n\n**Key principle:** Confessions made to police officers are absolutely inadmissible. The rationale is to prevent custodial torture and false confessions. This is one of the most important protections for accused persons. The bar is absolute — there are no exceptions.\n\n**Distinguished from S. 26 and 27:**\n- S. 25 bars all confessions to police.\n- S. 26 bars confessions made while in police custody.\n- S. 27 provides an exception for information leading to discovery of a fact.",
+          "relatedSections": ["ev_24", "ev_26", "ev_27"]
+        },
+        {
+          "id": "ev_26",
+          "sectionNo": "26",
+          "title": "Confession by accused while in custody of police not to be proved against him",
+          "content": "No confession made by any person whilst he is in the custody of a police officer, unless it be made in the immediate presence of a Magistrate, shall be proved as against such person.\n\n**Explanation:** In this section 'Magistrate' does not include the head of a village discharging magisterial functions in the Presidency of Fort St. George or elsewhere, unless such headman is a Magistrate exercising the powers of a Magistrate under the Code of Criminal Procedure, 1882.",
+          "relatedSections": ["ev_24", "ev_25", "ev_27"]
+        },
+        {
+          "id": "ev_27",
+          "sectionNo": "27",
+          "title": "How much of information received from accused may be proved",
+          "content": "Provided that, when any fact is deposed to as discovered in consequence of information received from a person accused of any offence, in the custody of a police officer, so much of such information, whether it amounts to a confession or not, as relates distinctly to the fact thereby discovered, may be proved.\n\n**Key principles (Discovery statement):**\n1. The person must be accused of an offence.\n2. He must be in the custody of a police officer.\n3. The information must lead to discovery of a fact.\n4. Only so much of the information as relates distinctly to the fact discovered is admissible.\n\n**Example:** If an accused says 'I stabbed him with a knife which I have hidden at X place', and the knife is found at X, the statement 'I have hidden the knife at X' is admissible under S.27. The statement 'I stabbed him' is inadmissible (being a confession).",
+          "relatedSections": ["ev_24", "ev_25", "ev_26"]
+        },
+        {
+          "id": "ev_32",
+          "sectionNo": "32",
+          "title": "Cases in which statement of relevant fact by person who is dead or cannot be found, etc., is relevant (Dying Declaration)",
+          "content": "Statements, written or verbal, of relevant facts made by a person who is dead, or who cannot be found, or who has become incapable of giving evidence, or whose attendance cannot be procured without an amount of delay or expense which under the circumstances of the case appears to the Court unreasonable, are themselves relevant facts in the following cases:—\n\n**(1) When it relates to cause of death:**\nWhen the statement is made by a person as to the cause of his death, or as to any of the circumstances of the transaction which resulted in his death, in cases in which the cause of that person's death comes into question.\n\nSuch statements are relevant whether the person who made them was or was not, at the time when they were made, under expectation of death, and whatever may be the nature of the proceeding in which the cause of his death comes into question.\n\n**Key principles (Dying Declaration):**\n- Can form the sole basis of conviction if it is truthful and inspires confidence.\n- Does not need corroboration as a rule of law (though corroboration is desirable).\n- Must be voluntary and not made under any influence.\n- Should be complete — a half-recorded dying declaration is weaker evidence.\n- Recording by a Magistrate is desirable but not mandatory.\n- If the declarant survives, the statement is not a dying declaration but can be used under S.157 for corroboration.",
+          "relatedSections": ["ev_33"]
+        }
+      ]
+    },
+    {
+      "id": "ev_ch3",
+      "title": "Part I — Opinions of Third Persons (Expert Evidence)",
+      "sections": [
+        {
+          "id": "ev_45",
+          "sectionNo": "45",
+          "title": "Opinions of experts",
+          "content": "When the Court has to form an opinion upon a point of foreign law or of science or art, or as to identity of handwriting or finger impressions, the opinions upon that point of persons specially skilled in such foreign law, science or art, or in questions as to identity of handwriting or finger impressions are relevant facts.\n\nSuch persons are called experts.\n\n**Key principles:**\n1. Expert evidence is relevant only on points of foreign law, science or art, handwriting, or fingerprints.\n2. Expert opinion is not conclusive; it is advisory and the court is the ultimate judge.\n3. The court can disagree with expert opinion if there are good reasons.\n4. The basis of the expert's opinion should be stated clearly.\n\n**Common experts:** Medical experts, ballistic experts, forensic experts, handwriting experts, DNA experts.",
+          "relatedSections": ["ev_46"]
+        }
+      ]
+    },
+    {
+      "id": "ev_ch4",
+      "title": "Part II — Proof",
+      "sections": [
+        {
+          "id": "ev_60",
+          "sectionNo": "60",
+          "title": "Oral evidence must be direct",
+          "content": "Oral evidence must, in all cases whatever, be direct; that is to say—\n\nif it refers to a fact which could be seen, it must be the evidence of a witness who says he saw it;\n\nif it refers to a fact which could be heard, it must be the evidence of a witness who says he heard it;\n\nif it refers to a fact which could be perceived by any other sense or in any other manner, it must be the evidence of a witness who says he perceived it by that sense or in that manner;\n\nif it refers to an opinion or to the grounds on which that opinion is held, it must be the evidence of the person who holds that opinion on those grounds:\n\n**Provided** that the opinions of experts expressed in any treatise commonly offered for sale, and the grounds on which such opinions are held, may be proved by the production of such treatises if the author is dead or cannot be found, or has become incapable of giving evidence, or cannot be called as a witness without an amount of delay or expense which the Court regards as unreasonable.",
+          "relatedSections": ["ev_62", "ev_63"]
+        },
+        {
+          "id": "ev_62",
+          "sectionNo": "62",
+          "title": "Primary evidence",
+          "content": "Primary evidence means the document itself produced for the inspection of the Court.\n\n**Explanation 1:** Where a document is executed in several parts, each part is primary evidence of the document.\n\n**Explanation 2:** Where a document is executed in counterpart, each counterpart being executed by one or some of the parties only, each counterpart is primary evidence as against the parties executing it.",
+          "relatedSections": ["ev_63", "ev_65"]
+        },
+        {
+          "id": "ev_63",
+          "sectionNo": "63",
+          "title": "Secondary evidence",
+          "content": "Secondary evidence means and includes—\n(1) Certified copies given under the provisions hereinafter contained;\n(2) Copies made from the original by mechanical processes which in themselves insure the accuracy of the copy, and copies compared with such copies;\n(3) Copies made from or compared with the original;\n(4) Counterparts of documents as against the parties who did not execute them;\n(5) Oral accounts of the contents of a document given by some person who has himself seen it.",
+          "relatedSections": ["ev_62", "ev_65"]
+        },
+        {
+          "id": "ev_65",
+          "sectionNo": "65",
+          "title": "Cases in which secondary evidence relating to documents may be given",
+          "content": "Secondary evidence may be given of the existence, condition, or contents of a document in the following cases:—\n\n(a) When the original is shown or appears to be in the possession or power of the person against whom the document is sought to be proved, or of any person out of reach of, or not subject to, the process of the Court, or of any person legally bound to produce it, and when, after the notice mentioned in section 66, such person does not produce it;\n\n(b) When the existence, condition or contents of the original have been proved to be admitted in writing by the person against whom it is proved or by his representative in interest;\n\n(c) When the original has been destroyed or lost, and in the latter case all possible search has been made for it;\n\n(d) When the original is of such a nature as not to be easily movable;\n\n(e) When the original is a public document within the meaning of section 74;\n\n(f) When the original is a document of which a certified copy is permitted by this Act, or by any other law in force in India, to be given in evidence;\n\n(g) When the originals consist of numerous accounts or other documents which cannot conveniently be examined in Court, and the fact to be proved is the general result of the whole collection.",
+          "relatedSections": ["ev_62", "ev_63", "ev_65A", "ev_65B"]
+        },
+        {
+          "id": "ev_65A",
+          "sectionNo": "65A",
+          "title": "Special provisions as to evidence relating to electronic record",
+          "content": "The contents of electronic records may be proved in accordance with the provisions of section 65B.\n\n**Inserted by:** Information Technology Act, 2000.",
+          "relatedSections": ["ev_65B", "ev_63"]
+        },
+        {
+          "id": "ev_65B",
+          "sectionNo": "65B",
+          "title": "Admissibility of electronic records",
+          "content": "(1) Notwithstanding anything contained in this Act, any information contained in an electronic record which is printed on a paper, stored, recorded or copied in optical or magnetic media produced by a computer (hereinafter referred to as the computer output) shall be deemed to be also a document, if the conditions mentioned in this section are satisfied in relation to the information and computer in question and shall be admissible in any proceedings, without further proof or production of the original, as evidence of any contents of the original or of any fact stated therein of which direct evidence would be admissible.\n\n**(2) Conditions for admission:**\n(a) The computer output was produced by the computer during a period over which the computer was used regularly to store or process information for the purposes of any activities regularly carried on over that period by the person having lawful control over the use of the computer;\n(b) During the said period, information of the kind contained in the electronic record or of the kind from which the information so contained is derived was regularly fed into the computer in the ordinary course of the said activities;\n(c) Throughout the material part of the said period, the computer was operating properly or, if not, then in respect of any period in which it was not operating properly or was out of operation during that part of the period, was not such as to affect the electronic record or the accuracy of its contents;\n(d) The information contained in the electronic record reproduces or is derived from such information fed into the computer in the ordinary course of the said activities.\n\n**(4) Certificate requirement:**\nIn any proceedings where it is desired to give a statement in evidence by virtue of this section, a certificate doing any of the following things, that is to say—\n(a) identifying the electronic record containing the statement and describing the manner in which it was produced;\n(b) giving such particulars of any device involved in the production of that electronic record as may be appropriate for the purpose of showing that the electronic record was produced by a computer;\n(c) dealing with any of the matters to which the conditions mentioned in sub-section (2) relate,\nand purporting to be signed by a person occupying a responsible official position in relation to the operation of the relevant device or the management of the relevant activities (whichever is appropriate) shall be evidence of any matter stated in the certificate.\n\n**Key judgment:** Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal (2020 SC): Certificate under S.65B(4) is mandatory for electronic records not in original form. However, if original electronic records are produced, no certificate is needed.",
+          "relatedSections": ["ev_65A", "ev_63"]
+        },
+        {
+          "id": "ev_67",
+          "sectionNo": "67",
+          "title": "Proof of signature and handwriting of person alleged to have signed or written document produced",
+          "content": "If a document is alleged to be signed or to have been written wholly or in part by any person, the signature or the handwriting of so much of the document as is alleged to be in that person's handwriting must be proved to be in his handwriting.",
+          "relatedSections": ["ev_45", "ev_73"]
+        },
+        {
+          "id": "ev_73",
+          "sectionNo": "73",
+          "title": "Comparison of signature, writing or seal with others admitted or proved",
+          "content": "In order to ascertain whether a signature, writing, or seal is that of the person by whom it purports to have been written or made, any signature, writing, or seal admitted or proved to the satisfaction of the Court to have been written or made by that person may be compared with the one which is to be proved, although that signature, writing, or seal has not been produced or proved for any other purpose.\n\nThe Court may direct any person present in Court to write any words or figures for the purpose of enabling the Court to compare the words or figures so written with any words or figures alleged to have been written by such person.",
+          "relatedSections": ["ev_45", "ev_67"]
+        },
+        {
+          "id": "ev_74",
+          "sectionNo": "74",
+          "title": "Public documents",
+          "content": "The following documents are public documents:—\n(1) Documents forming the acts or records of the acts—\n(i) of the sovereign authority,\n(ii) of official bodies and tribunals, and\n(iii) of public officers, legislative, judicial and executive, of any part of India or of the Commonwealth, or of a foreign country;\n(2) Public records kept in any State of private documents.",
+          "relatedSections": ["ev_63", "ev_65"]
+        }
+      ]
+    },
+    {
+      "id": "ev_ch5",
+      "title": "Part III — Production and Effect of Evidence",
+      "sections": [
+        {
+          "id": "ev_101",
+          "sectionNo": "101",
+          "title": "Burden of proof",
+          "content": "Whoever desires any Court to give judgment as to any legal right or liability dependent on the existence of facts which he asserts, must prove that those facts exist.\n\nWhen a person is bound to prove the existence of any fact, it is said that the burden of proof lies on that person.\n\n**Illustration:**\n(a) A desires a Court to give judgment that B shall be punished for a crime which A says B has committed. A must prove that B has committed the crime.\n(b) A desires a Court to give judgment that he is entitled to certain land in the possession of B, by reason of facts which he asserts, and which B denies, to be true. A must prove the existence of those facts.",
+          "relatedSections": ["ev_102", "ev_103", "ev_104"]
+        },
+        {
+          "id": "ev_102",
+          "sectionNo": "102",
+          "title": "On whom burden of proof lies",
+          "content": "The burden of proof in a suit or proceeding lies on that person who would fail if no evidence at all were given on either side.\n\n**Illustration:**\n(a) A sues B for land of which B is in possession, and which, as A asserts, was left to A by the will of C, B's father. If no evidence were given on either side, B would succeed, as the land is in his possession and no reversion would be proved. Therefore the burden of proof is on A.\n(b) A sues B for money due on a bond. The execution of the bond is admitted, but B says that it was obtained by fraud, which A denies. If no evidence were given on either side, A would succeed, as the bond is not disputed and the fraud is not proved. Therefore the burden of proof is on B.",
+          "relatedSections": ["ev_101", "ev_103"]
+        },
+        {
+          "id": "ev_103",
+          "sectionNo": "103",
+          "title": "Burden of proof as to particular fact",
+          "content": "The burden of proof as to any particular fact lies on that person who wishes the Court to believe in its existence, unless it is provided by any law that the proof of that fact shall lie on any particular person.\n\n**Illustration:** A prosecutes B for theft, and wishes the Court to believe that B admitted the theft to C. A must prove the admission. B wishes the Court to believe that, at the time in question, he was elsewhere. He must prove it.",
+          "relatedSections": ["ev_101", "ev_102", "ev_104"]
+        },
+        {
+          "id": "ev_104",
+          "sectionNo": "104",
+          "title": "Burden of proving fact to be proved to make evidence admissible",
+          "content": "The burden of proving any fact necessary to be proved in order to enable any person to give evidence of any other fact is on the person who wishes to give such evidence.\n\n**Illustrations:**\n(a) A wishes to prove a dying declaration by B. A must prove B's death.\n(b) A wishes to prove, by secondary evidence, the contents of a lost document. A must prove that the document has been lost.",
+          "relatedSections": ["ev_101", "ev_105"]
+        },
+        {
+          "id": "ev_105",
+          "sectionNo": "105",
+          "title": "Burden of proving that case of accused comes within exceptions",
+          "content": "When a person is accused of any offence, the burden of proving the existence of circumstances bringing the case within any of the General Exceptions in the Indian Penal Code, or within any special exception or proviso contained in any other part of the same Code, or in any law defining the offence, is upon him, and the Court shall presume the absence of such circumstances.\n\n**Illustrations:**\n(a) A, accused of murder, alleges that, by reason of unsoundness of mind, he did not know the nature of the act. The burden of proof is on A.\n(b) A, accused of murder, alleges that by grave and sudden provocation he was deprived of the power of self-control. The burden of proof is on A.\n\n**Standard of proof:** The accused need only establish the exception on a preponderance of probability, not beyond reasonable doubt.",
+          "relatedSections": ["ev_101", "ev_106", "ipc_84"]
+        },
+        {
+          "id": "ev_106",
+          "sectionNo": "106",
+          "title": "Burden of proving fact especially within knowledge",
+          "content": "When any fact is especially within the knowledge of any person, the burden of proving that fact is upon him.\n\n**Illustrations:**\n(a) When a person does an act with some intention other than that which the character and circumstances of the act suggest, the burden of proving that intention is upon him.\n(b) A is charged with travelling on a railway without a ticket. The burden of proving that he had a ticket is on A.",
+          "relatedSections": ["ev_101", "ev_105"]
+        },
+        {
+          "id": "ev_112",
+          "sectionNo": "112",
+          "title": "Birth during marriage, conclusive proof of legitimacy",
+          "content": "The fact that any person was born during the continuance of a valid marriage between his mother and any man, or within two hundred and eighty days after its dissolution, the mother remaining unmarried, shall be conclusive proof that he is the legitimate son of that man, unless it can be shown that the parties to the marriage had no access to each other at any time when he could have been begotten.\n\n**Key principle:** This section creates a conclusive presumption of legitimacy. DNA evidence cannot rebut this presumption (Goutam Kundu v. State of W.B., 1993 SC). Courts have recently reconsidered this in light of modern science.",
+          "relatedSections": ["ev_113A", "ev_113B"]
+        },
+        {
+          "id": "ev_113A",
+          "sectionNo": "113A",
+          "title": "Presumption as to abetment of suicide by a married woman",
+          "content": "When the question is whether the commission of suicide by a woman had been abetted by her husband or any relative of her husband and it is shown that she had committed suicide within a period of seven years from the date of her marriage and that her husband or such relative of her husband had subjected her to cruelty, the court may presume, having regard to all the other circumstances of the case, that such suicide had been abetted by her husband or by such relative of her husband.\n\n**Explanation:** For the purposes of this section, 'cruelty' shall have the same meaning as in section 498A of the Indian Penal Code.\n\n**Inserted by:** Dowry Prohibition (Amendment) Act, 1986.",
+          "relatedSections": ["ev_113B", "ipc_306"]
+        },
+        {
+          "id": "ev_113B",
+          "sectionNo": "113B",
+          "title": "Presumption as to dowry death",
+          "content": "When the question is whether a person has committed the dowry death of a woman and it is shown that soon before her death such woman had been subjected by such person to cruelty or harassment for, or in connection with, any demand for dowry, the Court shall presume that such person had caused the dowry death.\n\n**Explanation:** For the purposes of this section, 'dowry death' shall have the same meaning as in section 304B of the Indian Penal Code.\n\n**Note:** Unlike S. 113A (may presume), S. 113B uses 'shall presume' — it is a mandatory presumption, not discretionary.",
+          "relatedSections": ["ev_113A", "ipc_304B"]
+        },
+        {
+          "id": "ev_114",
+          "sectionNo": "114",
+          "title": "Court may presume existence of certain facts",
+          "content": "The Court may presume the existence of any fact which it thinks likely to have happened, regard being had to the common course of natural events, human conduct and public and private business, in their relation to the facts of the particular case.\n\n**Illustrations:**\nThe Court may presume—\n(a) That a man who is in possession of stolen goods soon after the theft is either the thief or has received the goods knowing them to be stolen, unless he can account for his possession;\n(b) That an accomplice is unworthy of credit, unless he is corroborated in material particulars;\n(e) That judicial and official acts have been regularly performed;\n(f) That the common course of business has been followed in particular cases;\n(g) That evidence which could be and is not produced would, if produced, be unfavourable to the person who withholds it.\n\n**Important presumption (a):** The doctrine of 'recent possession' — possession of recently stolen goods raises a presumption against the possessor.",
+          "relatedSections": ["ev_114A"]
+        },
+        {
+          "id": "ev_114A",
+          "sectionNo": "114A",
+          "title": "Presumption as to absence of consent in certain prosecution for rape",
+          "content": "In a prosecution for rape under clause (a), clause (b), clause (c), clause (d), clause (e), clause (f), clause (g), clause (h), clause (i), clause (j), clause (k), clause (l), or clause (m) of sub-section (2) of section 376 of the Indian Penal Code, where sexual intercourse by the accused is proved and the question is whether it was without the consent of the woman alleged to have been raped and such woman states in her evidence before the Court that she did not consent, the Court shall presume that she did not consent.\n\n**Inserted by:** Criminal Law (Amendment) Act, 2013.",
+          "relatedSections": ["ev_114", "ev_113A"]
+        }
+      ]
+    },
+    {
+      "id": "ev_ch6",
+      "title": "Part III — Witnesses",
+      "sections": [
+        {
+          "id": "ev_118",
+          "sectionNo": "118",
+          "title": "Who may testify",
+          "content": "All persons shall be competent to testify unless the Court considers that they are prevented from understanding the questions put to them, or from giving rational answers to those questions, by tender years, extreme old age, disease, whether of body or mind, or any other cause of the same kind.\n\n**Explanation:** A lunatic is not incompetent to testify, unless he is prevented by his lunacy from understanding the questions put to him and giving rational answers to them.",
+          "relatedSections": ["ev_119"]
+        },
+        {
+          "id": "ev_119",
+          "sectionNo": "119",
+          "title": "Dumb witnesses",
+          "content": "A witness who is unable to speak may give his evidence in any other manner in which he can make it intelligible, as by writing or by signs; but such writing must be written and the signs made in open Court. Evidence so given shall be deemed to be oral evidence.\n\n**Provided** that if the witness is unable to communicate verbally, the Court shall take the assistance of an interpreter or a special educator in recording the statement, and such statement shall be videographed.\n\n**Amendment by:** Protection of Children from Sexual Offences Act, 2012.",
+          "relatedSections": ["ev_118"]
+        },
+        {
+          "id": "ev_133",
+          "sectionNo": "133",
+          "title": "Accomplice",
+          "content": "An accomplice shall be a competent witness against an accused person; and a conviction is not illegal merely because it proceeds upon the uncorroborated testimony of an accomplice.\n\n**Key principle:** An accomplice is competent to testify. However, as a matter of practice (not law), courts look for corroboration of accomplice testimony in material particulars as a matter of prudence.",
+          "relatedSections": ["ev_114"]
+        },
+        {
+          "id": "ev_136",
+          "sectionNo": "136",
+          "title": "Judge to decide as to admissibility of evidence",
+          "content": "When either party proposes to give evidence of any fact, the Judge may ask the party proposing to give the evidence in what manner the alleged fact, if proved, would be relevant; and the Judge shall admit the evidence if he thinks that the fact, if proved, would be relevant, and not otherwise.\n\nIf the fact proposed to be proved is one of which evidence is admissible only upon proof of some other fact, such last-mentioned fact must be proved before evidence is given of the fact first mentioned, unless the party undertakes to give proof of such fact, and the Court is satisfied with such undertaking.",
+          "relatedSections": ["ev_5"]
+        }
+      ]
+    },
+    {
+      "id": "ev_ch7",
+      "title": "Part III — Cross Examination and Impeachment of Witnesses",
+      "sections": [
+        {
+          "id": "ev_145",
+          "sectionNo": "145",
+          "title": "Cross-examination as to previous statements in writing",
+          "content": "A witness may be cross-examined as to previous statements made by him in writing or reduced into writing, and relevant to matters in question, without such writing being shown to him, or being proved; but if it is intended to contradict him by the writing, his attention must, before the writing can be contradicted, be called to those parts of it which are to be used for the purpose of contradicting him.\n\n**Key use:** S. 161 CrPC statements can be used to contradict a prosecution witness under S. 145 Evidence Act.",
+          "relatedSections": ["ev_154", "ev_155", "ev_157"]
+        },
+        {
+          "id": "ev_154",
+          "sectionNo": "154",
+          "title": "Question by party to his own witness",
+          "content": "The Court may, in its discretion, permit the person who calls a witness to put any questions to him which might be put in cross-examination by the adverse party.\n\n**Key principle:** This section allows calling a witness as a hostile witness. The court has discretion. Once declared hostile, the party calling the witness can cross-examine him and contradict him with his previous statements.",
+          "relatedSections": ["ev_145", "ev_155"]
+        },
+        {
+          "id": "ev_155",
+          "sectionNo": "155",
+          "title": "Impeaching credit of witness",
+          "content": "The credit of a witness may be impeached in the following ways by the adverse party, or, with the consent of the Court, by the party who calls him:—\n\n(1) By the evidence of persons who testify that they, from their knowledge of the witness, believe him to be unworthy of credit;\n(2) By proof that the witness has been bribed, or has accepted the offer of a bribe, or has received any other corrupt inducement to give his evidence;\n(3) By proof of former statements inconsistent with any part of his evidence which is liable to be contradicted;\n\n**Explanation:** A witness declaring another witness to be unworthy of credit may not, upon his examination-in-chief, give reasons for his belief, but he may be asked his reasons in cross-examination, and the answers which he gives cannot be contradicted, though, if they are false, he may afterwards be charged with giving false evidence.",
+          "relatedSections": ["ev_154", "ev_157"]
+        },
+        {
+          "id": "ev_157",
+          "sectionNo": "157",
+          "title": "Former statements of witness may be proved to corroborate later testimony as to same fact",
+          "content": "In order to corroborate the testimony of a witness, any former statement made by such witness relating to the same fact, at or about the time when the fact took place, or before any authority legally competent to investigate the fact, may be proved.\n\n**Key principle:** FIR can be used to corroborate the complainant's testimony in court under S. 157.",
+          "relatedSections": ["ev_145", "ev_155"]
+        },
+        {
+          "id": "ev_165",
+          "sectionNo": "165",
+          "title": "Judge's power to put questions or order production",
+          "content": "The Judge may, in order to discover or to obtain proper proof of relevant facts, ask any question he pleases, in any form, at any time, of any witness, or of the parties about any fact relevant or irrelevant; and may order the production of any document or thing; and neither the parties nor their agents shall be entitled to make any objection to any such question or order, nor, without the leave of the Court, to cross-examine any witness upon any answer given in reply to any such question:\n\n**Provided** that the judgment must be based upon facts declared by this Act to be relevant, and duly proved:\n\n**Provided also** that this section shall not authorise any Judge to compel any witness to answer any question, or to produce any document which such witness would be entitled to refuse to answer or produce under sections 121 to 131, both inclusive, if the question were asked or the document were called for by the adverse party; nor shall the Judge ask any question which it would be improper for any other person to ask under section 148 or 149; nor shall he dispense with primary evidence of any document, except in the cases hereinbefore excepted.\n\n**Key principle:** The Judge is not a mere umpire but can actively seek truth by asking questions. This reflects the inquisitorial aspect of Indian courts.",
+          "relatedSections": ["ev_136"]
+        }
+      ]
+    }
+  ]
+}

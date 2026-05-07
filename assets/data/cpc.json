@@ -1,0 +1,266 @@
+{
+  "id": "cpc",
+  "shortName": "CPC",
+  "fullName": "Code of Civil Procedure, 1908",
+  "year": 1908,
+  "jurisdiction": "central",
+  "category": "civil",
+  "chapters": [
+    {
+      "id": "cpc_ch1",
+      "title": "Part I — Suits in General",
+      "sections": [
+        {
+          "id": "cpc_1",
+          "sectionNo": "1",
+          "title": "Short title, commencement and extent",
+          "content": "(1) This Act may be cited as the Code of Civil Procedure, 1908.\n(2) It shall come into force on the first day of January, 1909.\n(3) It extends to the whole of India except—\n(a) the State of Jammu and Kashmir;\n(b) the State of Nagaland and the tribal areas in the State of Assam.\n\n**Note:** The restriction on J&K has been removed after the Jammu and Kashmir Reorganisation Act, 2019.",
+          "relatedSections": ["cpc_2", "cpc_9"]
+        },
+        {
+          "id": "cpc_2",
+          "sectionNo": "2",
+          "title": "Definitions",
+          "content": "In this Code, unless there is anything repugnant in the subject or context,—\n\n**(1) 'Code'** includes rules;\n\n**(2) 'decree'** means the formal expression of an adjudication which, so far as regards the Court expressing it, conclusively determines the rights of the parties with regard to all or any of the matters in controversy in the suit and may be either preliminary or final.\n\n**Explanation:** A decree is preliminary when further proceedings have to be taken before the suit can be completely disposed of. It is final when such adjudication completely disposes of the suit. It may be partly preliminary and partly final.\n\n**(3) 'decree-holder'** means any person in whose favour a decree has been passed or an order capable of execution has been made;\n\n**(4) 'district'** means the local limits of the jurisdiction of a principal Civil Court of original jurisdiction (hereinafter called 'District Court'), and includes the local limits of the ordinary original civil jurisdiction of a High Court;\n\n**(9) 'judge'** means the presiding officer of a Civil Court;\n\n**(14) 'order'** means the formal expression of any decision of a Civil Court which is not a decree;\n\n**(19) 'pleading'** means plaint or written statement;\n\n**(25) 'suit'** does not include an appeal or application.",
+          "relatedSections": ["cpc_9", "cpc_96"]
+        },
+        {
+          "id": "cpc_9",
+          "sectionNo": "9",
+          "title": "Courts to try all civil suits unless barred",
+          "content": "The Courts shall (subject to the provisions herein contained) have jurisdiction to try all suits of a civil nature excepting suits of which their cognizance is either expressly or impliedly barred.\n\n**Explanation I:** A suit in which the right to property or to an office is contested is a suit of a civil nature, notwithstanding that such right may depend entirely on the decision of questions as to religious rites or ceremonies.\n\n**Explanation II:** For the purposes of this section, it is immaterial whether or not any fees are attached to the office referred to in Explanation I or whether or not such office is attached to a particular place.\n\n**Key principle:** Civil courts have jurisdiction to try all civil suits unless barred by (a) express bar by statute or (b) implied bar. Wherever a right is claimed, a civil court can try the suit unless specifically excluded.",
+          "relatedSections": ["cpc_10", "cpc_11", "cpc_20"]
+        },
+        {
+          "id": "cpc_10",
+          "sectionNo": "10",
+          "title": "Stay of suit",
+          "content": "No Court shall proceed with the trial of any suit in which the matter in issue is also directly and substantially in issue in a previously instituted suit between the same parties, or between parties under whom they or any of them claim litigating under the same title where such suit is pending in the same or any other Court in India having jurisdiction to grant the relief claimed, or in any Court beyond the limits of India established or continued by the Central Government and having like jurisdiction, or before the Supreme Court.\n\n**Explanation:** The pendency of a suit in a foreign Court does not preclude the Courts in India from trying a suit founded on the same cause of action.\n\n**Object:** To avoid multiplicity of proceedings and conflicting decisions on the same issue between the same parties.",
+          "relatedSections": ["cpc_11", "cpc_9"]
+        },
+        {
+          "id": "cpc_11",
+          "sectionNo": "11",
+          "title": "Res judicata",
+          "content": "No Court shall try any suit or issue in which the matter directly and substantially in issue has been directly and substantially in issue in a former suit between the same parties, or between parties under whom they or any of them claim, litigating under the same title, in a Court competent to try such subsequent suit or the suit in which such issue has been subsequently raised, and has been heard and finally decided by such Court.\n\n**Explanation I:** The expression 'former suit' shall denote a suit which has been decided prior to the suit in question whether or not it was instituted prior thereto.\n\n**Explanation III:** A matter is directly and substantially in issue in any suit if it was alleged by one party and denied or admitted, expressly or impliedly, by the other.\n\n**Explanation IV:** Any matter which might and ought to have been made ground of defence or attack in such former suit shall be deemed to have been a matter directly and substantially in issue in such suit.\n\n**Conditions for res judicata:**\n1. The matter must have been directly and substantially in issue.\n2. It must have been between same parties (or persons claiming through them).\n3. Parties must have litigated under the same title.\n4. The court deciding the former suit must have been competent to try the subsequent suit.\n5. The matter must have been heard and finally decided.",
+          "relatedSections": ["cpc_10", "cpc_9"]
+        }
+      ]
+    },
+    {
+      "id": "cpc_ch2",
+      "title": "Part I — Jurisdiction of Courts and Res Judicata",
+      "sections": [
+        {
+          "id": "cpc_20",
+          "sectionNo": "20",
+          "title": "Other suits to be instituted where defendants reside or cause of action arises",
+          "content": "Subject to the limitations aforesaid, every suit shall be instituted in a Court within the local limits of whose jurisdiction—\n(a) the defendant, or each of the defendants where there are more than one, at the time of the commencement of the suit, actually and voluntarily resides, or carries on business, or personally works for gain; or\n(b) any of the defendants, where there are more than one, at the time of the commencement of the suit actually and voluntarily resides, or carries on business, or personally works for gain, provided that in such case either the leave of the Court is given, or the defendants who do not reside, or carry on business, or personally work for gain, as aforesaid, acquiesce in such institution; or\n(c) the cause of action, wholly or in part, arises.\n\n**Explanation:** A corporation shall be deemed to carry on business at its sole or principal office in India or, in respect of any cause of action arising at any place where it has also a subordinate office, at such place.",
+          "relatedSections": ["cpc_21", "cpc_22"]
+        },
+        {
+          "id": "cpc_21",
+          "sectionNo": "21",
+          "title": "Objections to jurisdiction",
+          "content": "(1) No objection as to the place of suing shall be allowed by any appellate or revisional Court unless such objection was taken in the Court of first instance at the earliest possible opportunity and in all cases where issues are settled at or before such settlement, and unless there has been a consequent failure of justice.\n\n(2) No objection as to the competence of a Court with reference to the pecuniary limits of its jurisdiction shall be allowed by any appellate or revisional Court unless such objection was taken in the Court of first instance at the earliest possible opportunity, and unless there has been a consequent failure of justice.",
+          "relatedSections": ["cpc_20", "cpc_22"]
+        },
+        {
+          "id": "cpc_22",
+          "sectionNo": "22",
+          "title": "Power to transfer suits which may be instituted in more than one Court",
+          "content": "Where a suit may be instituted in any one of two or more Courts and is instituted in one of such Courts, any defendant, after notice to the other parties, may, at the earliest possible opportunity and in all cases where issues are settled at or before the settlement of issues, apply to have the suit transferred to another Court, and the Court to which such application is made, after considering the objections of the other parties (if any), shall determine in which of the several Courts having jurisdiction the suit shall proceed.",
+          "relatedSections": ["cpc_20", "cpc_21"]
+        },
+        {
+          "id": "cpc_26",
+          "sectionNo": "26",
+          "title": "Institution of suits",
+          "content": "(1) Every suit shall be instituted by the presentation of a plaint or in such other manner as may be prescribed.\n\n(2) In every plaint, facts shall be proved by affidavit.",
+          "relatedSections": ["cpc_27", "cpc_96"]
+        },
+        {
+          "id": "cpc_27",
+          "sectionNo": "27",
+          "title": "Summons to defendants",
+          "content": "Where a suit has been duly instituted, a summons may be issued to the defendant to appear and answer the claim and may be served in the manner prescribed.\n\n**Provided** that no such summons shall be issued when a defendant has appeared at the presentation of the plaint and admitted the plaintiff's claim.",
+          "relatedSections": ["cpc_26"]
+        },
+        {
+          "id": "cpc_35",
+          "sectionNo": "35",
+          "title": "Costs",
+          "content": "(1) Subject to such conditions and limitations as may be prescribed, and to the provisions of any law for the time being in force, the costs of and incident to all suits shall be in the discretion of the Court, and the Court shall have full power to determine by whom or out of what property and to what extent such costs are to be paid, and to give all necessary directions for the purposes aforesaid.\n\n(2) Where the Court directs that any costs shall not follow the event, the Court shall state its reasons in writing.",
+          "relatedSections": ["cpc_35B"]
+        },
+        {
+          "id": "cpc_35B",
+          "sectionNo": "35B",
+          "title": "Costs for causing delay",
+          "content": "(1) If, on any date fixed for the hearing of a suit or for taking any step therein, a party to the suit—\n(a) fails to take the step which he was required by or under this Code to take on that date, or\n(b) obtains an adjournment for taking such step or for producing evidence or on any other ground,\nthe Court may, for reasons to be recorded, make an order requiring such party to pay to the other party such costs as would, in the opinion of the Court, be reasonably sufficient to reimburse the other party in respect of the expenses incurred by such other party in attending the Court on that date, and payment of such costs, on the date next following the date of such order, shall be a condition precedent to the further prosecution of—\n(a) the suit by the plaintiff, where the plaintiff was ordered to pay such costs,\n(b) the defence by the defendant, where the defendant was ordered to pay such costs.",
+          "relatedSections": ["cpc_35"]
+        },
+        {
+          "id": "cpc_47",
+          "sectionNo": "47",
+          "title": "Questions to be determined by the Court executing decree",
+          "content": "(1) All questions arising between the parties to the suit in which the decree was passed, or their representatives, and relating to the execution, discharge or satisfaction of the decree, shall be determined by the Court executing the decree and not by a separate suit.\n\n**Key principle:** Questions relating to execution must be decided by the executing court, not by filing a fresh suit. The executing court cannot go behind the decree.",
+          "relatedSections": ["cpc_60", "cpc_96"]
+        },
+        {
+          "id": "cpc_60",
+          "sectionNo": "60",
+          "title": "Property liable to attachment and sale in execution of decree",
+          "content": "(1) The following property is liable to attachment and sale in execution of a decree, namely, lands, houses or other buildings, goods, money, bank-notes, cheques, bills of exchange, hundis, promissory notes, Government securities, bonds or other securities for money, debts, shares in a corporation and, save as hereinafter mentioned, all other saleable property, movable or immovable, belonging to the judgment-debtor, or over which, or the profits of which, he has a disposing power which he may exercise for his own benefit, whether the same be held in the name of the judgment-debtor or by another person in trust for him or on his behalf.\n\n**Proviso (property exempt from attachment):** The following property is exempt from attachment:\n(a) the necessary wearing-apparel, cooking vessels, beds and bedding of the judgment-debtor, his wife and children, and such personal ornaments as, in accordance with religious usage, cannot be parted with by any woman;\n(b) tools of artisans, implements of husbandry;\n(c) a mere right to sue for damages;\n(d) one pair of bullocks and plough used by the agriculturist;\n(e) salary or allowance of certain government servants.",
+          "relatedSections": ["cpc_47"]
+        },
+        {
+          "id": "cpc_79",
+          "sectionNo": "79",
+          "title": "Suits by or against Government",
+          "content": "In a suit by or against the Government, the authority to be named as plaintiff or defendant, as the case may be, shall be—\n(a) in the case of a suit by or against the Central Government, the Union of India;\n(b) in the case of a suit by or against a State Government, the State.",
+          "relatedSections": ["cpc_80"]
+        },
+        {
+          "id": "cpc_80",
+          "sectionNo": "80",
+          "title": "Notice",
+          "content": "(1) Save as otherwise provided in sub-section (2), no suit shall be instituted against the Government (including the Government of the State of Jammu and Kashmir) or against a public officer in respect of any act purporting to be done by such public officer in his official capacity, until the expiration of two months next after notice in writing has been delivered to, or left at the office of—\n(a) in the case of a suit against the Central Government, a Secretary to that Government;\n(b) in the case of a suit against the Government of the State of Jammu and Kashmir, the Chief Secretary to that Government or any other officer authorised by that Government in this behalf;\n(c) in the case of a suit against any other State Government, a Secretary to that Government or the Collector of the district;\n\n**Note:** The object of this section is to give the government an opportunity to settle the dispute before commencement of litigation.",
+          "relatedSections": ["cpc_79"]
+        },
+        {
+          "id": "cpc_96",
+          "sectionNo": "96",
+          "title": "Appeal from original decree",
+          "content": "(1) Save where otherwise expressly provided in the body of this Code or by any other law for the time being in force, an appeal shall lie from every decree passed by any Court exercising original jurisdiction to the Court authorised to hear appeals from the decisions of such Court.\n\n(2) An appeal may lie from an original decree passed ex parte.\n\n(3) No appeal shall lie from a decree passed by the Court with the consent of parties.\n\n(4) No appeal shall lie, except on a question of law, from a decree in any suit of the nature cognisable by Courts of Small Causes, when the amount or value of the subject-matter of the original suit does not exceed ten thousand rupees.",
+          "relatedSections": ["cpc_100", "cpc_104", "cpc_109"]
+        },
+        {
+          "id": "cpc_100",
+          "sectionNo": "100",
+          "title": "Second appeal",
+          "content": "(1) Save as otherwise expressly provided in the body of this Code, an appeal shall lie to the High Court from every decree passed in appeal by any Court subordinate to the High Court, if the High Court is satisfied that the case involves a substantial question of law.\n\n(2) An appeal may lie under this section from an appellate decree passed ex parte.\n\n(3) In an appeal under this section, the memorandum of appeal shall precisely state the substantial question of law involved in the appeal.\n\n(4) Where the High Court is satisfied that a substantial question of law is involved in any case, it shall formulate that question.\n\n(5) The appeal shall be heard on the question so formulated and the respondent shall, at the hearing of the appeal, be allowed to argue that the case does not involve such question.\n\n**Key principle:** Second appeal lies only on a substantial question of law, not on facts. The High Court cannot re-appreciate evidence in a second appeal (Kondiba Dagadu Kadam v. Savitribai Sopan Gujar, 1999).",
+          "relatedSections": ["cpc_96", "cpc_104"]
+        },
+        {
+          "id": "cpc_104",
+          "sectionNo": "104",
+          "title": "Orders from which appeal lies",
+          "content": "(1) An appeal shall lie from the following orders, and save as otherwise expressly provided in the body of this Code or by any law for the time being in force, from no other orders:—\n(ff) an order under section 35A;\n(ffa) an order under section 91 or section 92 refusing leave to institute a suit of the nature referred to in section 91 or section 92, as the case may be;\n(i) an order refusing to set aside the dismissal of a suit under rule 1 of Order IX;\n(ia) an order under rule 10 of Order XI;\n(j) an order under rule 19 of Order XXI;\n(k) an order under rule 1 of Order XXVII;\n(n) an order under rule 23A of Order XXXIV;\n(q) an order under sub-section (4) of section 145;\n(r) an order under section 148 or section 149;\n(u) any order made under rules from which an appeal is expressly allowed by rules.\n\n(2) No appeal shall lie from any order passed in appeal under this section.",
+          "relatedSections": ["cpc_96", "cpc_109"]
+        },
+        {
+          "id": "cpc_109",
+          "sectionNo": "109",
+          "title": "When appeals lie to the Supreme Court",
+          "content": "An appeal shall lie to the Supreme Court from any judgment, decree or final order in a civil proceeding of a High Court, if the High Court certifies—\n(a) that the case involves a substantial question of law of general importance; and\n(b) that in the opinion of the High Court the said question needs to be decided by the Supreme Court.",
+          "relatedSections": ["cpc_100", "cpc_104"]
+        },
+        {
+          "id": "cpc_114",
+          "sectionNo": "114",
+          "title": "Review",
+          "content": "Subject as aforesaid, any person considering himself aggrieved—\n(a) by a decree or order from which an appeal is allowed, but from which no appeal has been preferred,\n(b) by a decree or order from which no appeal is allowed, or\n(c) by a decision on a reference from a Court of Small Causes,\nmay apply for a review of judgment to the Court which passed the decree or made the order, and the Court may make such order thereon as it thinks fit.\n\n**Grounds for review:** New and important matter or evidence not available at time of decree; mistake or error apparent on face of record; any other sufficient reason.",
+          "relatedSections": ["cpc_115", "cpc_96"]
+        },
+        {
+          "id": "cpc_115",
+          "sectionNo": "115",
+          "title": "Revision",
+          "content": "(1) The High Court may call for the record of any case which has been decided by any Court subordinate to such High Court and in which no appeal lies thereto, and if such subordinate Court appears—\n(a) to have exercised a jurisdiction not vested in it by law, or\n(b) to have failed to exercise a jurisdiction so vested, or\n(c) to have acted in the exercise of its jurisdiction illegally or with material irregularity,\nthe High Court may make such order in the case as it thinks fit:\n\n**Provided** that the High Court shall not, under this section, vary or reverse any order made, or any order deciding an issue, in the course of a suit or other proceeding, except where the order, if it had been made in favour of the party applying for revision, would have finally disposed of the suit or other proceedings.",
+          "relatedSections": ["cpc_114", "cpc_100"]
+        }
+      ]
+    },
+    {
+      "id": "cpc_orders",
+      "title": "First Schedule — Orders",
+      "sections": [
+        {
+          "id": "cpc_o1",
+          "sectionNo": "Order 1",
+          "title": "Order I — Parties to Suits",
+          "content": "**Rule 1 — Who may be joined as plaintiffs:**\nAll persons may be joined in one suit as plaintiffs in whom any right to relief in respect of or arising out of the same act or transaction or series of acts or transactions is alleged to exist, whether jointly, severally or in the alternative, where if such persons brought separate suits any common question of law or fact would arise.\n\n**Rule 3 — Who may be joined as defendants:**\nAll persons may be joined in one suit as defendants against whom any right to relief in respect of or arising out of the same act or transaction or series of acts or transactions is alleged to exist, whether jointly, severally or in the alternative.\n\n**Rule 10 — Suit in name of wrong plaintiff:**\nNo suit shall be defeated by reason of the misjoinder or non-joinder of parties, and the Court may in every suit deal with the matter in controversy so far as regards the rights and interests of the parties actually before it.\n\n**Key principle:** Misjoinder and non-joinder of parties do not defeat a suit. The court can proceed with the parties before it.",
+          "relatedSections": ["cpc_o6", "cpc_o7"]
+        },
+        {
+          "id": "cpc_o6",
+          "sectionNo": "Order 6",
+          "title": "Order VI — Pleadings Generally",
+          "content": "**Rule 1 — Pleading:**\n'Pleading' shall mean plaint or written statement.\n\n**Rule 2 — Pleading to state material facts and not evidence:**\nEvery pleading shall contain, and contain only, a statement in a concise form of the material facts on which the party pleading relies for his claim or defence, as the case may be, but not the evidence by which they are to be proved.\n\n**Rule 17 — Amendment of pleadings:**\nThe Court may at any stage of the proceedings allow either party to alter or amend his pleadings in such manner and on such terms as may be just, and all such amendments shall be made as may be necessary for the purpose of determining the real questions in controversy between the parties:\n\n**Provided** that no application for amendment shall be allowed after the trial has commenced, unless the Court comes to the conclusion that in spite of due diligence, the party could not have raised the matter before the commencement of trial.\n\n**Key principle (Amendment):** Amendment should be allowed if it does not cause prejudice to the opposite party and is necessary for deciding the real controversy. Courts should lean in favour of granting amendments.",
+          "relatedSections": ["cpc_o7", "cpc_o8"]
+        },
+        {
+          "id": "cpc_o7",
+          "sectionNo": "Order 7",
+          "title": "Order VII — Plaint",
+          "content": "**Rule 1 — Particulars to be contained in plaint:**\nEvery plaint shall contain the following particulars:—\n(a) the name of the Court in which the suit is brought;\n(b) the name, description and place of residence of the plaintiff;\n(c) the name, description and place of residence of the defendant, so far as they can be ascertained;\n(d) where the plaintiff or the defendant is a minor or a person of unsound mind, a statement to that effect;\n(e) the facts constituting the cause of action and when it arose;\n(f) the facts showing that the Court has jurisdiction;\n(g) the relief which the plaintiff claims;\n(h) where the plaintiff has allowed a set-off or relinquished a portion of his claim, the amount so allowed or relinquished; and\n(i) a statement of the value of the subject-matter of the suit for the purposes of jurisdiction and of court-fees.\n\n**Rule 11 — Rejection of plaint:**\nThe plaint shall be rejected in the following cases:—\n(a) where it does not disclose a cause of action;\n(b) where the relief claimed is undervalued, and the plaintiff, on being required by the Court to correct the valuation within a time to be fixed by the Court, fails to do so;\n(c) where the relief claimed is properly valued, but the plaint is returned upon paper insufficiently stamped, and the plaintiff, on being required by the Court to supply the requisite stamp-paper within a time to be fixed by the Court, fails to do so;\n(d) where the suit appears from the statement in the plaint to be barred by any law;\n(e) where it is not filed in duplicate;\n(f) where the plaintiff fails to comply with the provisions of rule 9.",
+          "relatedSections": ["cpc_o6", "cpc_o8"]
+        },
+        {
+          "id": "cpc_o8",
+          "sectionNo": "Order 8",
+          "title": "Order VIII — Written Statement, Set-off and Counter-claim",
+          "content": "**Rule 1 — Written statement:**\nThe defendant shall, within thirty days from the date of service of summons on him, present a written statement of his defence:\n\n**Provided** that where the defendant fails to file the written statement within the said period of thirty days, he shall be allowed to file the same on such other day, as may be specified by the Court, for reasons to be recorded in writing, but which shall not be later than ninety days from the date of service of summons.\n\n**Rule 6 — Particulars of set-off to be given in written statement:**\nWhere in a suit for the recovery of money the defendant claims to set-off against the plaintiff's demand any ascertained sum of money legally recoverable by him from the plaintiff, not exceeding the pecuniary limits of the jurisdiction of the Court, and both parties fill the same character as they fill in the plaintiff's suit, he may, at the first hearing of the suit, but not afterwards unless permitted by the Court, present a written statement containing the particulars of the debt sought to be set-off.\n\n**Rule 9 — Subsequent pleadings:**\nNo pleading subsequent to the written statement of a defendant other than by way of defence to a set-off or counter-claim shall be presented except by the leave of the Court and upon such terms as the Court thinks fit.",
+          "relatedSections": ["cpc_o6", "cpc_o7"]
+        },
+        {
+          "id": "cpc_o9",
+          "sectionNo": "Order 9",
+          "title": "Order IX — Appearance of Parties and Consequence of Non-Appearance",
+          "content": "**Rule 1 — Parties to appear on day fixed in summons for defendant to appear and answer:**\nOn the day fixed in the summons for the defendant to appear and answer, the parties shall be in attendance at the Court-house in person or by their respective pleaders, and the suit shall then be heard unless the hearing is adjourned to a future day fixed by the Court.\n\n**Rule 6 — Procedure when only plaintiff appears:**\nWhere the plaintiff appears and the defendant does not appear when the suit is called on for hearing, then—\n(a) when the summons was returned unserved: if the summons was not served, the Court shall direct a second summons to be issued and served on the defendant;\n(b) when summons was duly served: if it is proved that the summons was duly served, the Court may proceed ex parte.\n\n**Rule 13 — Setting aside decree ex parte against defendant:**\nIn any case in which a decree is passed ex parte against a defendant, he may apply to the Court by which the decree was passed for an order to set it aside; and if he satisfies the Court that the summons was not duly served, or that he was prevented by any sufficient cause from appearing when the suit was called on for hearing, the Court shall make an order setting aside the decree as against him upon such terms as to costs, payment into Court or otherwise as it thinks fit.",
+          "relatedSections": ["cpc_o1", "cpc_o17"]
+        },
+        {
+          "id": "cpc_o17",
+          "sectionNo": "Order 17",
+          "title": "Order XVII — Adjournments",
+          "content": "**Rule 1 — Court may grant time and adjourn hearing:**\n(1) The Court may, if sufficient cause is shown, at any stage of the suit, grant time to the parties or to any of them, and may from time to time adjourn the hearing of the suit for reasons to be recorded in writing.\n\n**Provided** that no such adjournment shall be granted more than three times to a party during hearing of the suit.\n\n**Rule 2 — Procedure if parties fail to appear on day fixed:**\nWhere, on any day to which the hearing of the suit is adjourned, the parties or any of them fail to appear, the Court may proceed to dispose of the suit in one of the modes directed in that behalf by Order IX or make such other order as it thinks fit.",
+          "relatedSections": ["cpc_o9", "cpc_o18"]
+        },
+        {
+          "id": "cpc_o18",
+          "sectionNo": "Order 18",
+          "title": "Order XVIII — Hearing of the Suit and Examination of Witnesses",
+          "content": "**Rule 1 — Right to begin:**\nThe plaintiff has the right to begin unless the defendant admits the facts alleged by the plaintiff and contends that either in point of law or on some additional facts alleged by the defendant, the plaintiff is not entitled to any part of the relief which he seeks, in which case the defendant has the right to begin.\n\n**Rule 4 — Recording of evidence:**\nIn suits before the High Court, witnesses shall not be examined by the Court but examination-in-chief of a witness shall be on affidavit and he may be cross-examined and re-examined by the parties or their pleaders.\n\n**Rule 17 — Court to appoint interpreter:**\nWhere the Court deems an interpreter to be necessary for the examination of any party or witness, and the party or witness cannot speak the language of the Court, the Court shall appoint a competent interpreter.",
+          "relatedSections": ["cpc_o17", "cpc_o21"]
+        },
+        {
+          "id": "cpc_o21",
+          "sectionNo": "Order 21",
+          "title": "Order XXI — Execution of Decrees and Orders",
+          "content": "**Rule 1 — Modes of executing decree:**\nEvery decree may be executed either—\n(a) by attachment and sale or by sale without attachment of property;\n(b) by arrest and detention in prison;\n(c) by appointing a receiver; or\n(d) in such other manner as the nature of the relief granted may require.\n\n**Rule 11 — Oral application:**\nWhere a decree is for the payment of money, the holder of the decree may apply for execution either orally or in writing.\n\n**Rule 22 — Notice to show cause against execution in certain cases:**\nWhere an application for execution is made more than two years after the date of the decree, the Court executing the decree shall issue notice to the judgment-debtor asking him to show cause why the decree should not be executed.",
+          "relatedSections": ["cpc_47", "cpc_60"]
+        },
+        {
+          "id": "cpc_o22",
+          "sectionNo": "Order 22",
+          "title": "Order XXII — Death, Marriage and Insolvency of Parties",
+          "content": "**Rule 1 — Death of plaintiff:**\nThe death of a plaintiff or defendant shall not cause the suit to abate if the right to sue survives.\n\n**Rule 3 — Procedure in case of death of one of several plaintiffs or of sole plaintiff:**\n(1) Where one of two or more plaintiffs dies and the right to sue does not survive to the surviving plaintiff or plaintiffs alone, or a sole plaintiff or sole surviving plaintiff dies and the right to sue survives, the Court, on an application made in that behalf, shall cause the legal representative of the deceased plaintiff to be made a party and shall proceed with the suit.\n\n**Rule 4 — Procedure in case of death of one of several defendants or of sole defendant:**\n(1) Where one of two or more defendants dies and the right to sue does not survive against the surviving defendant or defendants alone, or a sole defendant or sole surviving defendant dies and the right to sue survives, the Court, on an application made in that behalf, shall cause the legal representative of the deceased defendant to be made a party and shall proceed with the suit.",
+          "relatedSections": ["cpc_o1"]
+        },
+        {
+          "id": "cpc_o39",
+          "sectionNo": "Order 39",
+          "title": "Order XXXIX — Temporary Injunctions and Interlocutory Orders",
+          "content": "**Rule 1 — Cases in which temporary injunction may be granted:**\nWhere in any suit it is proved by affidavit or otherwise—\n(a) that any property in dispute in a suit is in danger of being wasted, damaged or alienated by any party to the suit, or wrongfully sold in execution of a decree, or\n(b) that the defendant threatens, or intends, to remove or dispose of his property with a view to defrauding his creditors, or\n(c) that the defendant threatens to dispossess the plaintiff or otherwise cause injury to the plaintiff in relation to any property in dispute in the suit,\nthe Court may by order grant a temporary injunction to restrain such act, or make such other order for the purpose of staying and preventing the wasting, damaging, alienation, sale, removal or disposition of the property or dispossession of the plaintiff, or otherwise causing injury to the plaintiff in relation to any property in dispute in the suit as the Court thinks fit, until the disposal of the suit or until further orders.\n\n**Rule 2 — Injunction to restrain repetition or continuance of breach:**\nIn any suit for restraining the defendant from committing a breach of contract or other injury of any kind, whether compensation is claimed in the suit or not, the plaintiff may, at any time after the commencement of the suit, and either before or after judgment, apply to the Court for a temporary injunction to restrain the defendant from committing the breach of contract or injury complained of, or any breach of contract or injury of a like kind arising out of the same contract or relating to the same property or right.\n\n**3 conditions (Triple test) for grant of injunction (American Cyanamid / Dalpat Kumar principles):**\n1. Prima facie case;\n2. Balance of convenience;\n3. Irreparable injury if injunction not granted.",
+          "relatedSections": ["cpc_o40", "cpc_o41"]
+        },
+        {
+          "id": "cpc_o40",
+          "sectionNo": "Order 40",
+          "title": "Order XL — Appointment of Receivers",
+          "content": "**Rule 1 — Appointment of receivers:**\n(1) Where it appears to the Court to be just and convenient so to do, the Court may by order—\n(a) appoint a receiver of any property, whether before or after decree;\n(b) remove any person from the possession or custody of the property;\n(c) commit the same to the possession, custody or management of such receiver;\n(d) confer upon the receiver all such powers, as to bringing and defending suits and for the realisation, management, protection, preservation and improvement of the property, the collection of the rents and profits thereof, the application and disposal of such rents and profits, and the execution of documents as the owner himself has, or such of those powers as the Court thinks fit.\n\n(2) Nothing in this rule shall authorise the Court to remove from the possession or custody of property any person whom any party to the suit has not a present right so to remove.",
+          "relatedSections": ["cpc_o39", "cpc_o41"]
+        },
+        {
+          "id": "cpc_o41",
+          "sectionNo": "Order 41",
+          "title": "Order XLI — Appeals from Original Decrees",
+          "content": "**Rule 1 — Form of appeal; what to accompany memorandum:**\n(1) Every appeal shall be preferred in the form of a memorandum signed by the appellant or his pleader and presented to the Court or to such officer as it appoints in this behalf. The memorandum shall be accompanied by a copy of the decree appealed from and (unless the Appellate Court dispenses therewith) of the judgment on which it is founded.\n\n**Rule 11 — Power to require Court to transmit records:**\nThe Appellate Court may require the Court from whose decree the appeal is preferred to transmit any part of the record of the suit to the Appellate Court.\n\n**Rule 31 — Contents, date and signature of judgment:**\nThe judgment of the Appellate Court shall be in writing and shall state—\n(a) the points for determination;\n(b) the decision thereon;\n(c) the reasons for the decision; and\n(d) where the decree appealed from is reversed or varied, the relief to which the appellant is entitled.",
+          "relatedSections": ["cpc_96", "cpc_100"]
+        }
+      ]
+    }
+  ]
+}

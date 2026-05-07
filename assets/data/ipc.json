@@ -1,0 +1,507 @@
+{
+  "id": "ipc",
+  "shortName": "IPC",
+  "fullName": "Indian Penal Code, 1860",
+  "year": 1860,
+  "jurisdiction": "central",
+  "category": "criminal",
+  "chapters": [
+    {
+      "id": "ch1",
+      "title": "Chapter I — Introduction",
+      "sections": [
+        {
+          "id": "ipc_1",
+          "sectionNo": "1",
+          "title": "Title and extent of operation of the Code",
+          "content": "This Act shall be called the Indian Penal Code, and shall extend to the whole of India except the State of Jammu and Kashmir.\n\n**Note:** The exception relating to Jammu & Kashmir has been removed by the Jammu and Kashmir Reorganisation Act, 2019. The IPC now extends to the entire territory of India.",
+          "relatedSections": ["ipc_2", "ipc_3"]
+        },
+        {
+          "id": "ipc_2",
+          "sectionNo": "2",
+          "title": "Punishment of offences committed within India",
+          "content": "Every person shall be liable to punishment under this Code and not otherwise for every act or omission contrary to the provisions thereof, of which he shall be guilty within India.",
+          "relatedSections": ["ipc_1", "ipc_3"]
+        },
+        {
+          "id": "ipc_3",
+          "sectionNo": "3",
+          "title": "Punishment of offences committed beyond, but which by law may be tried within, India",
+          "content": "Any person liable, by any law for the time being in force, to be tried for an offence committed beyond India shall be dealt with according to the provisions of this Code for any act committed beyond India in the same manner as if such act had been committed within India.",
+          "relatedSections": ["ipc_2"]
+        }
+      ]
+    },
+    {
+      "id": "ch3",
+      "title": "Chapter III — Punishments",
+      "sections": [
+        {
+          "id": "ipc_34",
+          "sectionNo": "34",
+          "title": "Acts done by several persons in furtherance of common intention",
+          "content": "When a criminal act is done by several persons in furtherance of the common intention of all, each of such persons is liable for that act in the same manner as if it were done by him alone.\n\n**Explanation:** Section 34 does not create a separate offence; it is a rule of evidence. The section requires:\n1. A criminal act was done by several persons.\n2. It was done in furtherance of the common intention of all.\n3. There was participation by all persons.\n\nThe common intention must be proved to have existed prior to the commission of the crime. Pre-arranged plan is essential, though it may develop on the spot.",
+          "relatedSections": ["ipc_120A", "ipc_149"]
+        }
+      ]
+    },
+    {
+      "id": "ch4",
+      "title": "Chapter IV — General Exceptions",
+      "sections": [
+        {
+          "id": "ipc_84",
+          "sectionNo": "84",
+          "title": "Act of a person of unsound mind",
+          "content": "Nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law.\n\n**Essential ingredients:**\n1. The accused was of unsound mind at the time of commission of the act.\n2. By reason of such unsoundness, he was incapable of knowing:\n   a) the nature of the act; or\n   b) that what he was doing was wrong; or\n   c) that what he was doing was contrary to law.\n\nThe burden of proof lies on the accused to establish the plea of insanity (Section 105, Indian Evidence Act). The standard of proof is preponderance of probability.",
+          "relatedSections": ["ipc_85"]
+        },
+        {
+          "id": "ipc_85",
+          "sectionNo": "85",
+          "title": "Act of a person incapable of judgment by reason of intoxication caused against his will",
+          "content": "Nothing is an offence which is done by a person who, at the time of doing it, is, by reason of intoxication, incapable of knowing the nature of the act, or that he is doing what is either wrong, or contrary to law; provided that the thing which intoxicated him was administered to him without his knowledge or against his will.",
+          "relatedSections": ["ipc_84", "ipc_86"]
+        },
+        {
+          "id": "ipc_96",
+          "sectionNo": "96",
+          "title": "Things done in private defence",
+          "content": "Nothing is an offence which is done in the exercise of the right of private defence.",
+          "relatedSections": ["ipc_97", "ipc_99", "ipc_100"]
+        },
+        {
+          "id": "ipc_97",
+          "sectionNo": "97",
+          "title": "Right of private defence of the body and of property",
+          "content": "Every person has a right, subject to the restrictions contained in section 99, to defend—\n\nFirst — His own body, and the body of any other person, against any offence affecting the human body;\n\nSecondly — The property, whether movable or immovable, of himself or of any other person, against any act which is an offence falling under the definition of theft, robbery, mischief or criminal trespass, or which is an attempt to commit theft, robbery, mischief or criminal trespass.",
+          "relatedSections": ["ipc_96", "ipc_99", "ipc_100"]
+        },
+        {
+          "id": "ipc_99",
+          "sectionNo": "99",
+          "title": "Acts against which there is no right of private defence",
+          "content": "There is no right of private defence against an act which does not reasonably cause the apprehension of death or of grievous hurt, if done, or attempted to be done, by a public servant acting in good faith under colour of his office, though that act may not be strictly justifiable by law.\n\nThere is no right of private defence against an act which does not reasonably cause the apprehension of death or of grievous hurt, if done, or attempted to be done, by the direction of a public servant acting in good faith under colour of his office, though that direction may not be strictly justifiable by law.\n\nThere is no right of private defence in cases in which there is time to have recourse to the protection of the public authorities.\n\n**Extent to which the right may be exercised:** The right of private defence in no case extends to the inflicting of more harm than it is necessary to inflict for the purpose of defence.",
+          "relatedSections": ["ipc_96", "ipc_97", "ipc_100"]
+        },
+        {
+          "id": "ipc_100",
+          "sectionNo": "100",
+          "title": "When the right of private defence of the body extends to causing death",
+          "content": "The right of private defence of the body extends, under the restrictions mentioned in the last preceding section, to the voluntarily causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely:—\n\nFirst — Such an assault as may reasonably cause the apprehension that death will otherwise be the consequence of such assault;\n\nSecondly — Such an assault as may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such assault;\n\nThirdly — An assault with the intention of committing rape;\n\nFourthly — An assault with the intention of gratifying unnatural lust;\n\nFifthly — An assault with the intention of kidnapping or abducting;\n\nSixthly — An assault with the intention of wrongfully confining a person, under circumstances which may reasonably cause him to apprehend that he will be unable to have recourse to the public authorities for his release.",
+          "relatedSections": ["ipc_96", "ipc_97", "ipc_99", "ipc_101"]
+        }
+      ]
+    },
+    {
+      "id": "ch16",
+      "title": "Chapter XVI — Of Offences Affecting the Human Body",
+      "sections": [
+        {
+          "id": "ipc_299",
+          "sectionNo": "299",
+          "title": "Culpable homicide",
+          "content": "Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide.\n\n**Illustrations:**\n(a) A lays sticks and turf over a pit, with the intention of thereby causing death, or with the knowledge that death is likely to be thereby caused. Z believing the ground to be firm, treads on it, falls in and is killed. A has committed the offence of culpable homicide.\n(b) A knows Z to be behind a bush. B does not know it. A, intending to cause, or knowing it to be likely to cause Z's death, induces B to fire at the bush. B fires and kills Z. A has committed the offence of culpable homicide; B is guilty of no offence.\n\n**Explanation 1:** A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death.\n\n**Explanation 2:** Where death is caused by bodily injury, the person who causes such bodily injury shall be deemed to have caused the death, although by resorting to proper remedies and skilful treatment the death might have been prevented.\n\n**Explanation 3:** The causing of the death of child in the mother's womb is not homicide. But it may amount to culpable homicide to cause the death of a living child, if any part of that child has been brought forth, though the child may not have breathed or been completely born.",
+          "relatedSections": ["ipc_300", "ipc_302", "ipc_304"]
+        },
+        {
+          "id": "ipc_300",
+          "sectionNo": "300",
+          "title": "Murder",
+          "content": "Except in the cases hereinafter excepted, culpable homicide is murder, if the act by which the death is caused is done with the intention of causing death, or—\n\nSecondly — If it is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused, or—\n\nThirdly — If it is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death, or—\n\nFourthly — If the person committing the act knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid.\n\n**EXCEPTIONS:**\n\n**Exception 1 — Grave and sudden provocation:** Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident.\n\nThe above exception is subject to the following provisos:—\n(a) That the provocation is not sought or voluntarily provoked by the offender as an excuse for killing or doing harm to any person;\n(b) That the provocation is not given by anything done in obedience to the law, or by a public servant in the lawful exercise of the powers of such public servant;\n(c) That the provocation is not given by anything done in the lawful exercise of the right of private defence.\n\n**Exception 2 — Exceeding right of private defence:** Culpable homicide is not murder if the offender, in the exercise in good faith of the right of private defence of person or property, exceeds the power given to him by law and causes the death of the person against whom he is exercising such right of defence without premeditation, and without any intention of doing more harm than is necessary for the purpose of such defence.\n\n**Exception 3 — Public servant exceeding powers:** Culpable homicide is not murder if the offender, being a public servant or aiding a public servant acting for the advancement of public justice, exceeds the powers given to him by law, and causes death by doing an act which he, in good faith, believes to be lawful and necessary for the due discharge of his duty as such public servant and without ill-will towards the person whose death is caused.\n\n**Exception 4 — Sudden fight:** Culpable homicide is not murder if it is committed without premeditation in a sudden fight in the heat of passion upon a sudden quarrel and without the offender having taken undue advantage or acted in a cruel or unusual manner.\n\n**Exception 5 — Consent:** Culpable homicide is not murder when the person whose death is caused, being above the age of eighteen years, suffers death or takes the risk of death with his own consent.",
+          "relatedSections": ["ipc_299", "ipc_302", "ipc_304"]
+        },
+        {
+          "id": "ipc_302",
+          "sectionNo": "302",
+          "title": "Punishment for murder",
+          "content": "Whoever commits murder shall be punished with death, or imprisonment for life, and shall also be liable to fine.\n\n**Punishment:** Death or imprisonment for life + fine.\n\n**Key judicial principles:**\n- The 'rarest of rare' doctrine (Bachan Singh v. State of Punjab, AIR 1980 SC 898): Death penalty should be imposed only in the rarest of rare cases where the alternative of life imprisonment is unquestionably foreclosed.\n- The court must balance aggravating and mitigating circumstances.\n- Life imprisonment means imprisonment for the remainder of natural life unless remitted by appropriate authority.\n- Section 433A CrPC: A person sentenced to life imprisonment for an offence for which death is one of the punishments cannot be released without serving a minimum of 14 years.",
+          "relatedSections": ["ipc_300", "ipc_303", "ipc_304"]
+        },
+        {
+          "id": "ipc_303",
+          "sectionNo": "303",
+          "title": "Punishment for murder by life-convict",
+          "content": "Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death.\n\n**Note:** The Supreme Court in Mithu v. State of Punjab (AIR 1983 SC 473) declared Section 303 IPC unconstitutional as it violated Articles 14 and 21 of the Constitution, as it made the death sentence mandatory without allowing any judicial discretion.",
+          "relatedSections": ["ipc_302"]
+        },
+        {
+          "id": "ipc_304",
+          "sectionNo": "304",
+          "title": "Punishment for culpable homicide not amounting to murder",
+          "content": "Whoever commits culpable homicide not amounting to murder shall be punished with imprisonment for life, or imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death;\n\nor with imprisonment of either description for a term which may extend to ten years, or with fine, or with both, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death.\n\n**Part I:** Imprisonment for life, or up to 10 years + fine — when death is caused with intention.\n**Part II:** Up to 10 years or fine or both — when death is caused with knowledge but without intention.",
+          "relatedSections": ["ipc_299", "ipc_300", "ipc_304A"]
+        },
+        {
+          "id": "ipc_304A",
+          "sectionNo": "304A",
+          "title": "Causing death by negligence",
+          "content": "Whoever causes the death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.\n\n**Key ingredients:**\n1. Death of a person was caused.\n2. The death was caused by the accused.\n3. The act causing death was rash or negligent.\n4. It did not amount to culpable homicide.\n\n**Rashness vs Negligence:** Rashness is doing an act with the consciousness of a risk that harm may result. Negligence is the omission to take the precaution which a reasonable man would take in given circumstances.\n\n**Common applications:** Medical negligence, road accidents, industrial accidents.",
+          "relatedSections": ["ipc_304", "ipc_304B"]
+        },
+        {
+          "id": "ipc_304B",
+          "sectionNo": "304B",
+          "title": "Dowry death",
+          "content": "1. Where the death of a woman is caused by any burns or bodily injury or occurs under abnormal circumstances within seven years of marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called 'dowry death', and such husband or relative shall be deemed to have caused her death.\n\n**Explanation:** For the purposes of this sub-section, 'dowry' shall have the same meaning as in section 2 of the Dowry Prohibition Act, 1961 (28 of 1961).\n\n2. Whoever commits dowry death shall be punished with imprisonment for a term which shall not be less than seven years but which may extend to imprisonment for life.\n\n**Essential ingredients:**\n1. Death of a woman caused by burns, bodily injury or abnormal circumstances.\n2. Death occurred within 7 years of marriage.\n3. The woman was subjected to cruelty or harassment.\n4. The cruelty/harassment was by husband or his relatives.\n5. It was in connection with demand for dowry.\n\n**Presumption under Section 113B, Evidence Act:** If these ingredients are established, the court shall presume that the husband or relatives caused the dowry death.",
+          "relatedSections": ["ipc_498A", "ipc_304"]
+        },
+        {
+          "id": "ipc_306",
+          "sectionNo": "306",
+          "title": "Abetment of suicide",
+          "content": "If any person commits suicide, whoever abets the commission of such suicide, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.\n\n**Essential ingredients:**\n1. A person has committed suicide.\n2. The accused abetted the commission of such suicide.\n\n**Abetment** under Section 107 includes: instigation, conspiracy, or intentional aid.\n\n**Instigation:** A person must have 'urged forward' or instigated another to commit suicide. Mere harassment or cruelty may not constitute instigation unless there is positive act of incitement.\n\n**Distinguished from S. 304B:** Section 306 requires actual commission of suicide, while 304B creates a presumption of dowry death regardless of suicide.",
+          "relatedSections": ["ipc_107", "ipc_305"]
+        },
+        {
+          "id": "ipc_307",
+          "sectionNo": "307",
+          "title": "Attempt to murder",
+          "content": "Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned.\n\n**Attempts by life convicts:** When any person offending under this section is under sentence of imprisonment for life, he may, if hurt is caused, be punished with death.\n\n**Essential ingredients:**\n1. The accused did an act.\n2. The act was done with the intention or knowledge that if death is caused, it would amount to murder.\n3. The act was done under such circumstances that if death had been caused, the accused would have been guilty of murder.\n\n**Attempt vs Preparation:** The act must have crossed the stage of preparation and must be a direct movement towards the commission of the offence.",
+          "relatedSections": ["ipc_300", "ipc_302", "ipc_308"]
+        },
+        {
+          "id": "ipc_308",
+          "sectionNo": "308",
+          "title": "Attempt to commit culpable homicide",
+          "content": "Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if hurt is caused to any person by such act, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "relatedSections": ["ipc_299", "ipc_307"]
+        },
+        {
+          "id": "ipc_319",
+          "sectionNo": "319",
+          "title": "Hurt",
+          "content": "Whoever causes bodily pain, disease or infirmity to any person is said to cause hurt.",
+          "relatedSections": ["ipc_320", "ipc_323", "ipc_324"]
+        },
+        {
+          "id": "ipc_320",
+          "sectionNo": "320",
+          "title": "Grievous hurt",
+          "content": "The following kinds of hurt only are designated as 'grievous':—\n\nFirst — Emasculation;\n\nSecondly — Permanent privation of the sight of either eye;\n\nThirdly — Permanent privation of the hearing of either ear;\n\nFourthly — Privation of any member or joint;\n\nFifthly — Destruction or permanent impairing of the powers of any member or joint;\n\nSixthly — Permanent disfiguration of the head or face;\n\nSeventhly — Fracture or dislocation of a bone or tooth;\n\nEighthly — Any hurt which endangers life or which causes the sufferer to be during the space of twenty days in severe bodily pain, or unable to follow his ordinary pursuits.",
+          "relatedSections": ["ipc_319", "ipc_325", "ipc_326"]
+        },
+        {
+          "id": "ipc_323",
+          "sectionNo": "323",
+          "title": "Punishment for voluntarily causing hurt",
+          "content": "Whoever, except in the case provided for by section 334, voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to one thousand rupees, or with both.\n\n**Note:** This is a non-cognizable offence (except in certain circumstances). Bailable. Compoundable by the person to whom hurt is caused.",
+          "relatedSections": ["ipc_319", "ipc_324", "ipc_334"]
+        },
+        {
+          "id": "ipc_324",
+          "sectionNo": "324",
+          "title": "Voluntarily causing hurt by dangerous weapons or means",
+          "content": "Whoever, except in the case provided for by section 334, voluntarily causes hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+          "relatedSections": ["ipc_319", "ipc_323", "ipc_326"]
+        },
+        {
+          "id": "ipc_325",
+          "sectionNo": "325",
+          "title": "Punishment for voluntarily causing grievous hurt",
+          "content": "Whoever, except in the case provided for by section 335, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "relatedSections": ["ipc_320", "ipc_326"]
+        },
+        {
+          "id": "ipc_326",
+          "sectionNo": "326",
+          "title": "Voluntarily causing grievous hurt by dangerous weapons or means",
+          "content": "Whoever, except in the case provided for by section 335, voluntarily causes grievous hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+          "relatedSections": ["ipc_320", "ipc_325"]
+        },
+        {
+          "id": "ipc_354",
+          "sectionNo": "354",
+          "title": "Assault or criminal force to woman with intent to outrage her modesty",
+          "content": "Whoever assaults or uses criminal force to any woman, intending to outrage or knowing it to be likely that he will thereby outrage her modesty, shall be punished with imprisonment of either description for a term which shall not be less than one year but which may extend to five years, and shall also be liable to fine.\n\n**Essential ingredients:**\n1. The accused assaulted or used criminal force on the woman.\n2. The act was done with the intention of outraging her modesty OR with the knowledge that it was likely to outrage her modesty.\n\n**Modesty:** The test of 'outraging modesty' is whether a reasonable man would think that the act is capable of shocking the sense of decency of a woman (State of Punjab v. Major Singh, AIR 1967 SC 63).",
+          "relatedSections": ["ipc_354A", "ipc_509"]
+        },
+        {
+          "id": "ipc_354A",
+          "sectionNo": "354A",
+          "title": "Sexual harassment and punishment for sexual harassment",
+          "content": "1. A man committing any of the following acts—\n(i) physical contact and advances involving unwelcome and explicit sexual overtures; or\n(ii) a demand or request for sexual favours; or\n(iii) showing pornography against the will of a woman; or\n(iv) making sexually coloured remarks,\nshall be guilty of the offence of sexual harassment.\n\n2. Any man who commits the offence specified in clause (i) or clause (ii) or clause (iii) of sub-section (1) shall be punished with rigorous imprisonment for a term which may extend to three years, or with fine, or with both.\n\n3. Any man who commits the offence specified in clause (iv) of sub-section (1) shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.\n\n**Inserted by:** Criminal Law (Amendment) Act, 2013.",
+          "relatedSections": ["ipc_354", "ipc_509"]
+        },
+        {
+          "id": "ipc_363",
+          "sectionNo": "363",
+          "title": "Punishment for kidnapping",
+          "content": "Whoever kidnaps any person from India or from lawful guardianship, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\n**Kidnapping defined (S. 359-361):**\n- Kidnapping from India (S. 360): Conveying any person beyond the limits of India without the consent of that person, or of some person legally authorized to consent on behalf of that person.\n- Kidnapping from lawful guardianship (S. 361): Taking or enticing any minor under 16 years (if male) or under 18 years (if female), or any person of unsound mind, out of the keeping of the lawful guardian of such minor or person, without the consent of such guardian.",
+          "relatedSections": ["ipc_359", "ipc_360", "ipc_361", "ipc_364"]
+        },
+        {
+          "id": "ipc_375",
+          "sectionNo": "375",
+          "title": "Rape — definition",
+          "content": "A man is said to commit 'rape' if he—\n(a) penetrates his penis, to any extent, into the vagina, mouth, urethra or anus of a woman or makes her to do so with him or any other person; or\n(b) inserts, to any extent, any object or a part of the body, not being the penis, into the vagina, the urethra or anus of a woman or makes her to do so with him or any other person; or\n(c) manipulates any part of the body of a woman so as to cause penetration into the vagina, urethra, anus or any part of body of such woman or makes her to do so with him or any other person; or\n(d) applies his mouth to the vagina, anus, urethra of a woman or makes her to do so with him or any other person,\nunder the circumstances falling under any of the following seven descriptions:—\n\nFirst — Against her will.\nSecondly — Without her consent.\nThirdly — With her consent, when her consent has been obtained by putting her or any person in whom she is interested, in fear of death or of hurt.\nFourthly — With her consent, when the man knows that he is not her husband and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married.\nFifthly — With her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent.\nSixthly — With or without her consent, when she is under eighteen years of age.\nSeventhly — When she is unable to communicate consent.\n\n**Substituted by:** Criminal Law (Amendment) Act, 2013.",
+          "relatedSections": ["ipc_376"]
+        },
+        {
+          "id": "ipc_376",
+          "sectionNo": "376",
+          "title": "Punishment for rape",
+          "content": "1. Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine.\n\n2. Whoever—\n(a) being a police officer, commits rape within the limits of the police station to which such police officer is appointed; or within the premises of any station house; or on a woman in such police officer's custody or in the custody of a police officer subordinate to such police officer; or\n(b) being a public servant, commits rape on a woman in such public servant's custody or in the custody of a public servant subordinate to such public servant; or\n(c) being a member of the armed forces deployed in an area by the Central or a State Government, commits rape in such area; or\n(d) being on the management or on the staff of a jail, remand home or other place of custody established by or under any law for the time being in force or of a women's or children's institution, commits rape on any inmate of such jail, remand home, place or institution; or\n(e) being on the management or on the staff of a hospital, commits rape on a woman in that hospital; or\n(f) being a relative, guardian or teacher of, or a person in a position of trust or authority towards the woman, commits rape on such woman; or\n(g) commits rape during communal or sectarian violence; or\n(h) commits rape on a woman knowing her to be pregnant; or\n(i) commits rape on a woman incapable of giving consent; or\n(j) being in a position of control or dominance over a woman, commits rape on such woman; or\n(k) commits rape on a woman suffering from mental or physical disability; or\n(l) while committing rape causes grievous bodily harm or maims or disfigures or endangers the life of a woman; or\n(m) commits rape repeatedly on the same woman,\nshall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life, which shall mean imprisonment for the remainder of that person's natural life, and shall also be liable to fine.\n\n**Substituted by:** Criminal Law (Amendment) Act, 2013.",
+          "relatedSections": ["ipc_375", "ipc_376A"]
+        },
+        {
+          "id": "ipc_377",
+          "sectionNo": "377",
+          "title": "Unnatural offences",
+          "content": "Whoever voluntarily has carnal intercourse against the order of nature with any man, woman or animal, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.\n\n**Explanation:** Penetration is sufficient to constitute the carnal intercourse necessary to the offence described in this section.\n\n**Important judgment:** In Navtej Singh Johar v. Union of India (AIR 2018 SC 4321), a five-judge Constitution Bench of the Supreme Court partially struck down Section 377, holding that consensual sexual conduct between adults of the same sex is not an offence. Section 377 continues to apply to non-consensual acts and acts with minors.",
+          "relatedSections": ["ipc_375", "ipc_376"]
+        }
+      ]
+    },
+    {
+      "id": "ch17",
+      "title": "Chapter XVII — Of Offences Against Property",
+      "sections": [
+        {
+          "id": "ipc_378",
+          "sectionNo": "378",
+          "title": "Theft",
+          "content": "Whoever, intending to take dishonestly any moveable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.\n\n**Explanation 1:** A thing so long as it is attached to the earth, not being movable property, cannot be the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth.\n\n**Explanation 2:** A moving effected by the same act which effects the severance may be a theft.\n\n**Explanation 3:** A person is said to cause a thing to move by removing an obstacle which prevented it from moving or by separating it from any other thing, as well as by actually moving it.\n\n**Explanation 4:** A person, who by any means causes an animal to move, is said to move that animal, and to move everything which, in consequence of the motion so caused, is moved by that animal.\n\n**Explanation 5:** The consent mentioned in the definition may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.\n\n**Essential ingredients:**\n1. Dishonest intention to take property.\n2. Property must be moveable.\n3. Property must be in possession of some person.\n4. Taking must be without consent.\n5. There must be some moving of the property.",
+          "relatedSections": ["ipc_379", "ipc_380", "ipc_390"]
+        },
+        {
+          "id": "ipc_379",
+          "sectionNo": "379",
+          "title": "Punishment for theft",
+          "content": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+          "relatedSections": ["ipc_378", "ipc_380"]
+        },
+        {
+          "id": "ipc_380",
+          "sectionNo": "380",
+          "title": "Theft in dwelling house, etc.",
+          "content": "Whoever commits theft in any building, tent or vessel, which building, tent or vessel is used as a human dwelling, or used for the custody of property, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "relatedSections": ["ipc_378", "ipc_379"]
+        },
+        {
+          "id": "ipc_382",
+          "sectionNo": "382",
+          "title": "Theft after preparation made for causing death, hurt or restraint in order to the committing of the theft",
+          "content": "Whoever commits theft, having made preparation for causing death, or hurt, or restraint, or fear of death, or of hurt, or of restraint, to any person, in order to the committing of such theft, or in order to the effecting of his escape after the committing of such theft, or in order to the retaining of property taken by such theft, shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "relatedSections": ["ipc_378", "ipc_390"]
+        },
+        {
+          "id": "ipc_383",
+          "sectionNo": "383",
+          "title": "Extortion",
+          "content": "Whoever intentionally puts any person in fear of any injury to that person, or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property or valuable security, or anything signed or sealed which may be converted into a valuable security, commits 'extortion'.\n\n**Essential ingredients:**\n1. Intentionally putting a person in fear of injury.\n2. The injury may be to that person or to any other person.\n3. Thereby dishonestly inducing the person to deliver property or valuable security.\n\n**Distinguished from robbery:** In robbery, there is presence of the offender at the time of committing theft or extortion, and there is use of force or reasonable apprehension of force.",
+          "relatedSections": ["ipc_384", "ipc_390"]
+        },
+        {
+          "id": "ipc_384",
+          "sectionNo": "384",
+          "title": "Punishment for extortion",
+          "content": "Whoever commits extortion shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+          "relatedSections": ["ipc_383", "ipc_385", "ipc_386"]
+        },
+        {
+          "id": "ipc_390",
+          "sectionNo": "390",
+          "title": "Robbery",
+          "content": "In all robbery there is either theft or extortion.\n\nWhen theft is robbery: Theft is 'robbery' if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end, voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint.\n\nWhen extortion is robbery: Extortion is 'robbery' if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint to that person or to some other person, and, by so putting in fear, induces the person so put in fear then and there to deliver up the thing extorted.",
+          "relatedSections": ["ipc_378", "ipc_383", "ipc_391", "ipc_392"]
+        },
+        {
+          "id": "ipc_391",
+          "sectionNo": "391",
+          "title": "Dacoity",
+          "content": "When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit 'dacoity'.",
+          "relatedSections": ["ipc_390", "ipc_395", "ipc_396"]
+        },
+        {
+          "id": "ipc_392",
+          "sectionNo": "392",
+          "title": "Punishment for robbery",
+          "content": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
+          "relatedSections": ["ipc_390", "ipc_395"]
+        },
+        {
+          "id": "ipc_395",
+          "sectionNo": "395",
+          "title": "Punishment for dacoity",
+          "content": "Whoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "relatedSections": ["ipc_391", "ipc_396"]
+        },
+        {
+          "id": "ipc_396",
+          "sectionNo": "396",
+          "title": "Dacoity with murder",
+          "content": "If any one of five or more persons, who are conjointly committing dacoity, commits murder in so committing dacoity, every one of those persons shall be punished with death, or imprisonment for life, or rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
+          "relatedSections": ["ipc_391", "ipc_302", "ipc_395"]
+        },
+        {
+          "id": "ipc_406",
+          "sectionNo": "406",
+          "title": "Punishment for criminal breach of trust",
+          "content": "Whoever commits criminal breach of trust shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.\n\n**Criminal breach of trust (S. 405):** Whoever, being in any manner entrusted with property, or with any dominion over property, dishonestly misappropriates or converts to his own use that property, or dishonestly uses or disposes of that property in violation of any direction of law prescribing the mode in which such trust is to be discharged, or of any legal contract, express or implied, which he has made touching the discharge of such trust, or wilfully suffers any other person so to do, commits 'criminal breach of trust'.",
+          "relatedSections": ["ipc_407", "ipc_408", "ipc_409"]
+        },
+        {
+          "id": "ipc_407",
+          "sectionNo": "407",
+          "title": "Criminal breach of trust by carrier, etc.",
+          "content": "Whoever, being entrusted with property as a carrier, wharfinger or warehouse-keeper, commits criminal breach of trust in respect of such property, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "relatedSections": ["ipc_406", "ipc_408"]
+        },
+        {
+          "id": "ipc_408",
+          "sectionNo": "408",
+          "title": "Criminal breach of trust by clerk or servant",
+          "content": "Whoever, being a clerk or servant or employed as a clerk or servant, and being in any manner entrusted in such capacity with property, or with any dominion over property, commits criminal breach of trust in respect of that property, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+          "relatedSections": ["ipc_406", "ipc_409"]
+        },
+        {
+          "id": "ipc_409",
+          "sectionNo": "409",
+          "title": "Criminal breach of trust by public servant, or by banker, merchant or agent",
+          "content": "Whoever, being in any manner entrusted with property, or with any dominion over property in his capacity of a public servant or in the way of his business as a banker, merchant, factor, broker, attorney or agent, commits criminal breach of trust in respect of that property, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+          "relatedSections": ["ipc_406", "ipc_407", "ipc_408"]
+        },
+        {
+          "id": "ipc_415",
+          "sectionNo": "415",
+          "title": "Cheating",
+          "content": "Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to 'cheat'.\n\n**Explanation:** A dishonest concealment of facts is a deception within the meaning of this section.\n\n**Essential ingredients:**\n1. Deception of any person.\n2. Fraudulently or dishonestly inducing that person (a) to deliver property or (b) to consent to retain property; OR intentionally inducing the person to do or omit something.\n3. Such act or omission causes or is likely to cause damage or harm.",
+          "relatedSections": ["ipc_416", "ipc_417", "ipc_420"]
+        },
+        {
+          "id": "ipc_416",
+          "sectionNo": "416",
+          "title": "Cheating by personation",
+          "content": "A person is said to 'cheat by personation' if he cheats by pretending to be some other person, or by knowingly substituting one person for another, or representing that he or any other person is a person other than he or such other person really is.",
+          "relatedSections": ["ipc_415", "ipc_419"]
+        },
+        {
+          "id": "ipc_417",
+          "sectionNo": "417",
+          "title": "Punishment for cheating",
+          "content": "Whoever cheats shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
+          "relatedSections": ["ipc_415", "ipc_420"]
+        },
+        {
+          "id": "ipc_418",
+          "sectionNo": "418",
+          "title": "Cheating with knowledge that wrongful loss may ensue to person whose interest offender is bound to protect",
+          "content": "Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+          "relatedSections": ["ipc_415", "ipc_417"]
+        },
+        {
+          "id": "ipc_419",
+          "sectionNo": "419",
+          "title": "Punishment for cheating by personation",
+          "content": "Whoever cheats by personation shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+          "relatedSections": ["ipc_416", "ipc_417"]
+        },
+        {
+          "id": "ipc_420",
+          "sectionNo": "420",
+          "title": "Cheating and dishonestly inducing delivery of property",
+          "content": "Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\n**Distinction from S. 417:** S. 417 is the general provision (max 1 year). S. 420 is aggravated cheating involving delivery of property or valuable security (max 7 years).",
+          "relatedSections": ["ipc_415", "ipc_417"]
+        },
+        {
+          "id": "ipc_425",
+          "sectionNo": "425",
+          "title": "Mischief",
+          "content": "Whoever with intent to cause, or knowing that he is likely to cause, wrongful loss or damage to the public or to any person, causes the destruction of any property, or any such change in any property or in the situation thereof as destroys or diminishes its value or utility, or affects it injuriously, commits 'mischief'.\n\n**Explanation 1:** It is not essential to the offence of mischief that the offender should intend to cause loss or damage to the owner of the property injured or destroyed. It is sufficient if he intends to cause, or knows that he is likely to cause, wrongful loss or damage to any person by injuring any property, whether it belongs to that person or not.\n\n**Explanation 2:** Mischief may be committed by an act affecting property belonging to the person who commits the act.",
+          "relatedSections": ["ipc_426"]
+        },
+        {
+          "id": "ipc_426",
+          "sectionNo": "426",
+          "title": "Punishment for mischief",
+          "content": "Whoever commits mischief shall be punished with imprisonment of either description for a term which may extend to three months, or with fine, or with both.",
+          "relatedSections": ["ipc_425", "ipc_427"]
+        },
+        {
+          "id": "ipc_441",
+          "sectionNo": "441",
+          "title": "Criminal trespass",
+          "content": "Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property, or, having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person, or with intent to commit an offence, is said to commit 'criminal trespass'.",
+          "relatedSections": ["ipc_442", "ipc_447", "ipc_448"]
+        },
+        {
+          "id": "ipc_442",
+          "sectionNo": "442",
+          "title": "House-trespass",
+          "content": "Whoever commits criminal trespass by entering into or remaining in any building, tent or vessel used as a human dwelling, or any building used as a place for worship, or as a place for the custody of property, is said to commit 'house-trespass'.\n\n**Explanation:** The introduction of any part of the criminal trespasser's body is entering sufficient to constitute house-trespass.",
+          "relatedSections": ["ipc_441", "ipc_448"]
+        },
+        {
+          "id": "ipc_447",
+          "sectionNo": "447",
+          "title": "Punishment for criminal trespass",
+          "content": "Whoever commits criminal trespass shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to five hundred rupees, or with both.",
+          "relatedSections": ["ipc_441", "ipc_448"]
+        },
+        {
+          "id": "ipc_448",
+          "sectionNo": "448",
+          "title": "Punishment for house-trespass",
+          "content": "Whoever commits house-trespass shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to one thousand rupees, or with both.",
+          "relatedSections": ["ipc_442", "ipc_449", "ipc_447"]
+        }
+      ]
+    },
+    {
+      "id": "ch21",
+      "title": "Chapter XXI — Of Defamation",
+      "sections": [
+        {
+          "id": "ipc_499",
+          "sectionNo": "499",
+          "title": "Defamation",
+          "content": "Whoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\n\n**Explanation 1:** It may amount to defamation to impute anything to a deceased person, if the imputation would harm the reputation of that person if living, and is intended to be hurtful to the feelings of his family or other near relatives.\n\n**Explanation 2:** It may amount to defamation to make an imputation concerning a company or an association or collection of persons as such.\n\n**Explanation 3:** An imputation in the form of an alternative or expressed ironically, may amount to defamation.\n\n**Explanation 4:** No imputation is said to harm a person's reputation, unless that imputation directly or indirectly, in the estimation of others, lowers the moral or intellectual character of that person, or lowers the character of that person in respect of his caste or of his calling, or lowers the credit of that person, or causes it to be believed that the body of that person is in a loathsome state, or in a state generally considered as disgraceful.\n\n**EXCEPTIONS:**\n\n**First (Truth for public good):** It is not defamation to impute anything which is true concerning any person, if it be for the public good that the imputation should be made or published.\n\n**Second (Opinion of public conduct):** It is not defamation to express in good faith any opinion respecting the conduct of a public servant in the discharge of his public functions.\n\n**Third (Conduct of any person):** It is not defamation to express in good faith any opinion respecting the conduct of any person touching any public question.\n\n**Fourth (Report of court proceedings):** It is not defamation to publish substantially true report of the proceedings of a Court of Justice.\n\n**Fifth (Merits of decided cases):** It is not defamation to express in good faith any opinion respecting the merits of any case, civil or criminal, which has been decided by a Court of Justice.\n\n**Sixth (Merits of public performance):** It is not defamation to express in good faith any opinion respecting the merits of any performance which its author has submitted to the judgment of the public.\n\n**Seventh (Censure by person having lawful authority):** It is not defamation if a person having authority over another, either conferred by law or arising out of a lawful contract, makes a censure in good faith of the conduct of that other in matters to which such lawful authority relates.\n\n**Eighth (Accusation to authorized person):** It is not defamation to prefer in good faith an accusation against any person to any of those who have lawful authority over that person with respect to the subject-matter of accusation.\n\n**Ninth (Caution in good faith):** It is not defamation to make an imputation on the character of another provided that the imputation be made in good faith for the protection of the interests of the person making it, or of any other person, or for the public good.",
+          "relatedSections": ["ipc_500", "ipc_501", "ipc_502"]
+        },
+        {
+          "id": "ipc_500",
+          "sectionNo": "500",
+          "title": "Punishment for defamation",
+          "content": "Whoever defames another shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both.\n\n**Note:** Defamation under IPC is a criminal offence (S. 500) as well as a civil wrong under tort law. The Supreme Court in Subramanian Swamy v. Union of India (2016) upheld the validity of criminal defamation under IPC.",
+          "relatedSections": ["ipc_499"]
+        }
+      ]
+    },
+    {
+      "id": "ch22",
+      "title": "Chapter XXII — Of Criminal Intimidation, Insult and Annoyance",
+      "sections": [
+        {
+          "id": "ipc_503",
+          "sectionNo": "503",
+          "title": "Criminal intimidation",
+          "content": "Whoever threatens another with any injury to his person, reputation or property, or to the person or reputation or property of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.\n\n**Explanation:** A threat to injure the reputation of any deceased person in whom the person threatened is interested, is within this section.",
+          "relatedSections": ["ipc_506"]
+        },
+        {
+          "id": "ipc_504",
+          "sectionNo": "504",
+          "title": "Intentional insult with intent to provoke breach of the peace",
+          "content": "Whoever intentionally insults, and thereby gives provocation to any person, intending or knowing it to be likely that such provocation will cause him to break the public peace, or to commit any other offence, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+          "relatedSections": ["ipc_503", "ipc_506"]
+        },
+        {
+          "id": "ipc_506",
+          "sectionNo": "506",
+          "title": "Punishment for criminal intimidation",
+          "content": "Whoever commits, the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both;\n\nAnd if the threat be to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute, unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+          "relatedSections": ["ipc_503", "ipc_504"]
+        },
+        {
+          "id": "ipc_509",
+          "sectionNo": "509",
+          "title": "Word, gesture or act intended to insult the modesty of a woman",
+          "content": "Whoever, intending to insult the modesty of any woman, utters any word, makes any sound or gesture, or exhibits any object, intending that such word or sound shall be heard, or that such gesture or object shall be seen, by such woman, or intrudes upon the privacy of such woman, shall be punished with simple imprisonment for a term which may extend to three years, and also with fine.\n\n**Amended by:** Criminal Law (Amendment) Act, 2013 (punishment enhanced from 1 year to 3 years).",
+          "relatedSections": ["ipc_354", "ipc_354A"]
+        }
+      ]
+    }
+  ]
+}

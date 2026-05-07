@@ -1,0 +1,96 @@
+import 'package:sqflite/sqflite.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+import '../../../shared/models/local/database_helper.dart';
+import '../../../shared/models/local/local_note.dart';
+
+class NotesRepository {
+  Future<void> saveNote(LocalNote note) async {
+    final db = await DatabaseHelper.instance.database;
+    await db.insert(
+      'notes',
+      note.copyWith(isSynced: false).toMap(),
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  Future<LocalNote?> getNote(String id) async {
+    final db = await DatabaseHelper.instance.database;
+    final rows = await db.query('notes', where: 'id = ?', whereArgs: [id]);
+    if (rows.isEmpty) return null;
+    return LocalNote.fromMap(rows.first);
+  }
+
+  Future<LocalNote?> getNoteForRef(String refId) async {
+    final db = await DatabaseHelper.instance.database;
+    final rows = await db.query(
+      'notes',
+      where: 'ref_id = ?',
+      whereArgs: [refId],
+    );
+    if (rows.isEmpty) return null;
+    return LocalNote.fromMap(rows.first);
+  }
+
+  Future<List<LocalNote>> getAllNotes() async {
+    final db = await DatabaseHelper.instance.database;
+    final rows = await db.query('notes', orderBy: 'updated_at DESC');
+    return rows.map(LocalNote.fromMap).toList();
+  }
+
+  Future<void> updateNote(String id, String content) async {
+    final db = await DatabaseHelper.instance.database;
+    await db.update(
+      'notes',
+      {
+        'content': content,
+        'updated_at': DateTime.now().toIso8601String(),
+        'is_synced': 0,
+      },
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+  }
+
+  Future<void> deleteNote(String id) async {
+    final db = await DatabaseHelper.instance.database;
+    await db.delete('notes', where: 'id = ?', whereArgs: [id]);
+  }
+
+  Future<List<LocalNote>> getUnsynced() async {
+    final db = await DatabaseHelper.instance.database;
+    final rows = await db.query(
+      'notes',
+      where: 'is_synced = ?',
+      whereArgs: [0],
+    );
+    return rows.map(LocalNote.fromMap).toList();
+  }
+
+  Future<void> syncToSupabase() async {
+    final unsynced = await getUnsynced();
+    if (unsynced.isEmpty) return;
+    final client = Supabase.instance.client;
+    final userId = client.auth.currentUser?.id;
+    if (userId == null) return;
+
+    for (final note in unsynced) {
+      try {
+        await client.from('notes').upsert({
+          'id': note.id,
+          'user_id': userId,
+          'ref_type': note.refType,
+          'ref_id': note.refId,
+          'content': note.content,
+          'updated_at': note.updatedAt.toIso8601String(),
+        });
+        final db = await DatabaseHelper.instance.database;
+        await db.update(
+          'notes',
+          {'is_synced': 1},
+          where: 'id = ?',
+          whereArgs: [note.id],
+        );
+      } catch (_) {}
+    }
+  }
+}
