@@ -24,24 +24,45 @@ class SectionsListScreen extends ConsumerStatefulWidget {
 }
 
 class _SectionsListScreenState extends ConsumerState<SectionsListScreen> {
+  final _searchCtrl = TextEditingController();
   String _query = '';
+
+  @override
+  void dispose() {
+    _searchCtrl.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     final actAsync = ref.watch(_actProvider(widget.actId));
     return Scaffold(
       appBar: AppBar(
-        title: actAsync.whenData((a) => Text(a.shortName)).value ??
-            Text(widget.actId.toUpperCase()),
+        title: actAsync.when(
+          data: (a) => Text('${a.shortName}  ·  ${a.totalSections} sections'),
+          loading: () => Text(widget.actId.toUpperCase()),
+          error: (_, __) => Text(widget.actId.toUpperCase()),
+        ),
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(56),
           child: Padding(
             padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
             child: TextField(
-              decoration: const InputDecoration(
+              controller: _searchCtrl,
+              decoration: InputDecoration(
                 hintText: 'Search sections...',
-                prefixIcon: Icon(Icons.search, size: 20),
-                contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                prefixIcon: const Icon(Icons.search, size: 20),
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                suffixIcon: _query.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear, size: 18),
+                        onPressed: () {
+                          _searchCtrl.clear();
+                          setState(() => _query = '');
+                        },
+                      )
+                    : null,
               ),
               onChanged: (v) => setState(() => _query = v),
             ),
@@ -70,47 +91,70 @@ class _SectionsListScreenState extends ConsumerState<SectionsListScreen> {
                         title: ch.title,
                         sections: ch.sections
                             .where((s) =>
-                                s.title.toLowerCase().contains(_query.toLowerCase()) ||
-                                s.sectionNo.toLowerCase().contains(_query.toLowerCase()) ||
-                                s.content.toLowerCase().contains(_query.toLowerCase()))
+                                s.title
+                                    .toLowerCase()
+                                    .contains(_query.toLowerCase()) ||
+                                s.sectionNo
+                                    .toLowerCase()
+                                    .contains(_query.toLowerCase()) ||
+                                s.content
+                                    .toLowerCase()
+                                    .contains(_query.toLowerCase()))
                             .toList(),
                       ))
                   .where((ch) => ch.sections.isNotEmpty)
                   .toList();
 
+          final matchCount =
+              filtered.fold<int>(0, (sum, ch) => sum + ch.sections.length);
+
           if (filtered.isEmpty) {
             return EmptyState(
               icon: Icons.search_off,
-              title: 'No results',
-              subtitle: 'No sections match "$_query"',
+              title: _query.isEmpty ? 'No sections found' : 'No results',
+              subtitle: _query.isEmpty
+                  ? 'Could not load sections for this act'
+                  : 'No sections match "$_query"',
             );
           }
 
           return CustomScrollView(
-            slivers: filtered
-                .expand<Widget>((chapter) => [
-                      SliverPersistentHeader(
-                        pinned: true,
-                        delegate: _ChapterHeader(chapter.title),
+            slivers: [
+              if (_query.isNotEmpty)
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+                    child: Text(
+                      '$matchCount section${matchCount == 1 ? '' : 's'} match "$_query"',
+                      style: GoogleFonts.dmSans(
+                        fontSize: 12,
+                        color: AppColors.textSecondary,
                       ),
-                      SliverPadding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        sliver: SliverList(
-                          delegate: SliverChildBuilderDelegate(
-                            (ctx, i) {
-                              final section = chapter.sections[i];
-                              return _SectionTile(
-                                actId: widget.actId,
-                                section: section,
-                                actShortName: act.shortName,
-                              );
-                            },
-                            childCount: chapter.sections.length,
-                          ),
+                    ),
+                  ),
+                ),
+              ...filtered.expand<Widget>((chapter) => [
+                    SliverToBoxAdapter(
+                      child: _ChapterHeader(chapter.title),
+                    ),
+                    SliverPadding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      sliver: SliverList(
+                        delegate: SliverChildBuilderDelegate(
+                          (ctx, i) {
+                            final section = chapter.sections[i];
+                            return _SectionTile(
+                              actId: widget.actId,
+                              section: section,
+                              actShortName: act.shortName,
+                            );
+                          },
+                          childCount: chapter.sections.length,
                         ),
                       ),
-                    ])
-                .toList(),
+                    ),
+                  ]),
+            ],
           );
         },
       ),
@@ -118,21 +162,16 @@ class _SectionsListScreenState extends ConsumerState<SectionsListScreen> {
   }
 }
 
-class _ChapterHeader extends SliverPersistentHeaderDelegate {
+class _ChapterHeader extends StatelessWidget {
   final String title;
-  _ChapterHeader(this.title);
+  const _ChapterHeader(this.title);
 
   @override
-  double get minExtent => 0;
-  @override
-  double get maxExtent => 40;
-
-  @override
-  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
+  Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return Container(
       color: isDark ? AppColors.darkBackground : AppColors.background,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 6),
       child: Text(
         title,
         style: GoogleFonts.dmSans(
@@ -144,9 +183,6 @@ class _ChapterHeader extends SliverPersistentHeaderDelegate {
       ),
     );
   }
-
-  @override
-  bool shouldRebuild(_ChapterHeader old) => old.title != title;
 }
 
 class _SectionTile extends StatelessWidget {
@@ -166,14 +202,16 @@ class _SectionTile extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 8),
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
-        onTap: () => context.pushSectionDetail(actId: actId, sectionId: section.id),
+        onTap: () =>
+            context.pushSectionDetail(actId: actId, sectionId: section.id),
         child: Padding(
           padding: const EdgeInsets.all(14),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
                   color: AppColors.primary.withOpacity(0.08),
                   borderRadius: BorderRadius.circular(8),
