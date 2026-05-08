@@ -24,6 +24,7 @@ mixin _$LocalSection {
   String get content => throw _privateConstructorUsedError;
   String? get explanation => throw _privateConstructorUsedError;
   List<String> get relatedSections => throw _privateConstructorUsedError;
+  Map<String, String> get crossReferences => throw _privateConstructorUsedError;
   String get searchKey => throw _privateConstructorUsedError;
 
   /// Create a copy of LocalSection
@@ -48,6 +49,7 @@ abstract class $LocalSectionCopyWith<$Res> {
       String content,
       String? explanation,
       List<String> relatedSections,
+      Map<String, String> crossReferences,
       String searchKey});
 }
 
@@ -74,6 +76,7 @@ class _$LocalSectionCopyWithImpl<$Res, $Val extends LocalSection>
     Object? content = null,
     Object? explanation = freezed,
     Object? relatedSections = null,
+    Object? crossReferences = null,
     Object? searchKey = null,
   }) {
     return _then(_value.copyWith(
@@ -109,6 +112,10 @@ class _$LocalSectionCopyWithImpl<$Res, $Val extends LocalSection>
           ? _value.relatedSections
           : relatedSections // ignore: cast_nullable_to_non_nullable
               as List<String>,
+      crossReferences: null == crossReferences
+          ? _value.crossReferences
+          : crossReferences // ignore: cast_nullable_to_non_nullable
+              as Map<String, String>,
       searchKey: null == searchKey
           ? _value.searchKey
           : searchKey // ignore: cast_nullable_to_non_nullable
@@ -134,6 +141,7 @@ abstract class _$$LocalSectionImplCopyWith<$Res>
       String content,
       String? explanation,
       List<String> relatedSections,
+      Map<String, String> crossReferences,
       String searchKey});
 }
 
@@ -158,6 +166,7 @@ class __$$LocalSectionImplCopyWithImpl<$Res>
     Object? content = null,
     Object? explanation = freezed,
     Object? relatedSections = null,
+    Object? crossReferences = null,
     Object? searchKey = null,
   }) {
     return _then(_$LocalSectionImpl(
@@ -193,6 +202,10 @@ class __$$LocalSectionImplCopyWithImpl<$Res>
           ? _value._relatedSections
           : relatedSections // ignore: cast_nullable_to_non_nullable
               as List<String>,
+      crossReferences: null == crossReferences
+          ? _value._crossReferences
+          : crossReferences // ignore: cast_nullable_to_non_nullable
+              as Map<String, String>,
       searchKey: null == searchKey
           ? _value.searchKey
           : searchKey // ignore: cast_nullable_to_non_nullable
@@ -213,8 +226,10 @@ class _$LocalSectionImpl extends _LocalSection {
       required this.content,
       this.explanation,
       final List<String> relatedSections = const [],
+      final Map<String, String> crossReferences = const {},
       required this.searchKey})
       : _relatedSections = relatedSections,
+        _crossReferences = crossReferences,
         super._();
 
   @override
@@ -240,12 +255,21 @@ class _$LocalSectionImpl extends _LocalSection {
     return EqualUnmodifiableListView(_relatedSections);
   }
 
+  final Map<String, String> _crossReferences;
+  @override
+  @JsonKey()
+  Map<String, String> get crossReferences {
+    if (_crossReferences is EqualUnmodifiableMapView) return _crossReferences;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_crossReferences);
+  }
+
   @override
   final String searchKey;
 
   @override
   String toString() {
-    return 'LocalSection(id: $id, actId: $actId, actShortName: $actShortName, sectionNo: $sectionNo, title: $title, content: $content, explanation: $explanation, relatedSections: $relatedSections, searchKey: $searchKey)';
+    return 'LocalSection(id: $id, actId: $actId, actShortName: $actShortName, sectionNo: $sectionNo, title: $title, content: $content, explanation: $explanation, relatedSections: $relatedSections, crossReferences: $crossReferences, searchKey: $searchKey)';
   }
 
   @override
@@ -265,6 +289,8 @@ class _$LocalSectionImpl extends _LocalSection {
                 other.explanation == explanation) &&
             const DeepCollectionEquality()
                 .equals(other._relatedSections, _relatedSections) &&
+            const DeepCollectionEquality()
+                .equals(other._crossReferences, _crossReferences) &&
             (identical(other.searchKey, searchKey) ||
                 other.searchKey == searchKey));
   }
@@ -280,6 +306,7 @@ class _$LocalSectionImpl extends _LocalSection {
       content,
       explanation,
       const DeepCollectionEquality().hash(_relatedSections),
+      const DeepCollectionEquality().hash(_crossReferences),
       searchKey);
 
   /// Create a copy of LocalSection
@@ -301,6 +328,7 @@ abstract class _LocalSection extends LocalSection {
       required final String content,
       final String? explanation,
       final List<String> relatedSections,
+      final Map<String, String> crossReferences,
       required final String searchKey}) = _$LocalSectionImpl;
   const _LocalSection._() : super._();
 
@@ -320,6 +348,8 @@ abstract class _LocalSection extends LocalSection {
   String? get explanation;
   @override
   List<String> get relatedSections;
+  @override
+  Map<String, String> get crossReferences;
   @override
   String get searchKey;
 

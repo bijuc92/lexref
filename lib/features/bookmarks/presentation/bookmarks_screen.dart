@@ -10,7 +10,7 @@ import '../../../shared/widgets/offline_banner.dart';
 import '../../../core/utils/date_utils.dart' as app_dates;
 import '../data/bookmarks_repository.dart';
 
-final _bookmarksProvider =
+final bookmarksProvider =
     FutureProvider<Map<String, List<LocalBookmark>>>((ref) {
   return BookmarksRepository().getBookmarksByFolder();
 });
@@ -80,7 +80,7 @@ class _BookmarksScreenState extends ConsumerState<BookmarksScreen>
 
   @override
   Widget build(BuildContext context) {
-    final bookmarksAsync = ref.watch(_bookmarksProvider);
+    final bookmarksAsync = ref.watch(bookmarksProvider);
     return bookmarksAsync.when(
       loading: () => const Scaffold(
         body: Center(child: CircularProgressIndicator()),
@@ -132,7 +132,7 @@ class _BookmarksScreenState extends ConsumerState<BookmarksScreen>
                           }
                           return RefreshIndicator(
                             onRefresh: () async =>
-                                ref.invalidate(_bookmarksProvider),
+                                ref.invalidate(bookmarksProvider),
                             child: ListView.builder(
                               padding: const EdgeInsets.all(16),
                               itemCount: items.length,
@@ -232,7 +232,7 @@ class _BookmarkTile extends ConsumerWidget {
               onTap: () async {
                 Navigator.pop(context);
                 await BookmarksRepository().removeBookmark(bookmark.refId);
-                ref.invalidate(_bookmarksProvider);
+                ref.invalidate(bookmarksProvider);
               },
             ),
           ],

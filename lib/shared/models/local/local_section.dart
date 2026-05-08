@@ -16,6 +16,7 @@ class LocalSection with _$LocalSection {
     required String content,
     String? explanation,
     @Default([]) List<String> relatedSections,
+    @Default({}) Map<String, String> crossReferences,
     required String searchKey,
   }) = _LocalSection;
 
@@ -31,6 +32,10 @@ class LocalSection with _$LocalSection {
             ? List<String>.from(
                 jsonDecode(m['related_sections'] as String) as List)
             : [],
+        crossReferences: m['cross_references'] != null
+            ? Map<String, String>.from(
+                jsonDecode(m['cross_references'] as String) as Map)
+            : {},
         searchKey: m['search_key'] as String,
       );
 
@@ -43,6 +48,8 @@ class LocalSection with _$LocalSection {
         'content': content,
         'explanation': explanation,
         'related_sections': jsonEncode(relatedSections),
+        'cross_references':
+            crossReferences.isEmpty ? null : jsonEncode(crossReferences),
         'search_key': searchKey,
       };
 }

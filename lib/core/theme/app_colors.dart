@@ -35,6 +35,10 @@ class AppColors {
   static const cpcBadgeBg = Color(0xFFE8F5E9);
   static const evidenceBadge = Color(0xFF6A1B9A);
   static const evidenceBadgeBg = Color(0xFFF3E5F5);
+  static const bnsBadge = Color(0xFFB71C1C);
+  static const bnsBadgeBg = Color(0xFFFFCDD2);
+  static const bnssBadge = Color(0xFF0D47A1);
+  static const bnssBadgeBg = Color(0xFFBBDEFB);
 
   // Court badge colors
   static const scBadge = Color(0xFF4A148C);

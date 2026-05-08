@@ -13,6 +13,8 @@ class ActsRepository {
     'crpc': 'assets/data/crpc.json',
     'cpc': 'assets/data/cpc.json',
     'evidence': 'assets/data/evidence_act.json',
+    'bns': 'assets/data/bns.json',
+    'bnss': 'assets/data/bnss.json',
   };
 
   Future<ActModel> loadActFromAsset(String actId) async {
@@ -59,6 +61,7 @@ class ActsRepository {
             title: section.title,
             content: section.content,
             relatedSections: section.relatedSections,
+            crossReferences: section.crossReferences,
             searchKey: '${act.id}_${section.sectionNo}',
           ).toMap(),
           conflictAlgorithm: ConflictAlgorithm.ignore,

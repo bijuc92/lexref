@@ -13,6 +13,8 @@ import '../../../shared/widgets/act_badge.dart';
 import '../../../shared/widgets/error_state.dart';
 import '../../../shared/widgets/loading_shimmer.dart';
 import '../../bookmarks/data/bookmarks_repository.dart';
+import '../../bookmarks/presentation/bookmarks_screen.dart';
+import '../../home/presentation/home_screen.dart';
 import '../../notes/data/notes_repository.dart';
 import '../domain/act_models.dart';
 import '../domain/acts_providers.dart';
@@ -47,11 +49,17 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
     super.initState();
     _tts.setCompletionHandler(() => setState(() => _speaking = false));
     _checkBookmark();
+    _loadNote();
   }
 
   Future<void> _checkBookmark() async {
     final bm = await _bookmarksRepo.getBookmark(widget.sectionId);
     if (mounted) setState(() => _bookmarked = bm != null);
+  }
+
+  Future<void> _loadNote() async {
+    final note = await _notesRepo.getNoteForRef(widget.sectionId);
+    if (mounted && note != null) setState(() => _noteContent = note.content);
   }
 
   @override
@@ -87,6 +95,23 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
       );
     }
     setState(() => _bookmarked = !_bookmarked);
+    ref.invalidate(bookmarksProvider);
+    ref.invalidate(homeStatsProvider);
+  }
+
+  Color _xrefColor(String actId) {
+    switch (actId) {
+      case 'bns':
+        return AppColors.bnsBadge;
+      case 'bnss':
+        return AppColors.bnssBadge;
+      case 'ipc':
+        return AppColors.ipcBadge;
+      case 'crpc':
+        return AppColors.crpcBadge;
+      default:
+        return AppColors.primary;
+    }
   }
 
   void _addNote(SectionModel section) {
@@ -137,6 +162,7 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
                       ),
                     );
                     setState(() => _noteContent = ctrl.text);
+                    ref.invalidate(homeStatsProvider);
                   }
                   if (ctx.mounted) Navigator.pop(ctx);
                 },
@@ -271,13 +297,83 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
                     }).toList(),
                   ),
                 ],
+                if (section.crossReferences.isNotEmpty) ...[
+                  const SizedBox(height: 24),
+                  Text(
+                    'See Also',
+                    style: GoogleFonts.dmSans(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.textSecondary,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 6,
+                    children: section.crossReferences.entries.map((entry) {
+                      final xrefActId = entry.key;
+                      final xrefSectionNo = entry.value;
+                      final xrefSectionId = '${xrefActId}_$xrefSectionNo';
+                      final actLabel = xrefActId.toUpperCase();
+                      return ActionChip(
+                        avatar: CircleAvatar(
+                          backgroundColor: _xrefColor(xrefActId),
+                          radius: 8,
+                          child: const SizedBox.shrink(),
+                        ),
+                        label: Text('$actLabel S.$xrefSectionNo'),
+                        onPressed: () => context.pushSectionDetail(
+                          actId: xrefActId,
+                          sectionId: xrefSectionId,
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                ],
+                if (_noteContent != null) ...[
+                  const SizedBox(height: 16),
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: AppColors.primary.withValues(alpha: 0.06),
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(
+                          color: AppColors.primary.withValues(alpha: 0.15)),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'My Note',
+                          style: GoogleFonts.dmSans(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.primary,
+                            letterSpacing: 0.4,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          _noteContent!,
+                          style: GoogleFonts.dmSans(
+                            fontSize: 13,
+                            color: AppColors.textSecondary,
+                            height: 1.5,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
                 const SizedBox(height: 32),
                 Row(
                   children: [
                     Expanded(
                       child: OutlinedButton.icon(
                         icon: const Icon(Icons.edit_note),
-                        label: const Text('Add Note'),
+                        label: Text(_noteContent == null ? 'Add Note' : 'Edit Note'),
                         onPressed: () => _addNote(section),
                         style: OutlinedButton.styleFrom(
                           minimumSize: const Size(0, 48),

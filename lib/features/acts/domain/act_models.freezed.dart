@@ -504,6 +504,7 @@ mixin _$SectionModel {
   String get title => throw _privateConstructorUsedError;
   String get content => throw _privateConstructorUsedError;
   List<String> get relatedSections => throw _privateConstructorUsedError;
+  Map<String, String> get crossReferences => throw _privateConstructorUsedError;
 
   /// Serializes this SectionModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -526,7 +527,8 @@ abstract class $SectionModelCopyWith<$Res> {
       String sectionNo,
       String title,
       String content,
-      List<String> relatedSections});
+      List<String> relatedSections,
+      Map<String, String> crossReferences});
 }
 
 /// @nodoc
@@ -549,6 +551,7 @@ class _$SectionModelCopyWithImpl<$Res, $Val extends SectionModel>
     Object? title = null,
     Object? content = null,
     Object? relatedSections = null,
+    Object? crossReferences = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -571,6 +574,10 @@ class _$SectionModelCopyWithImpl<$Res, $Val extends SectionModel>
           ? _value.relatedSections
           : relatedSections // ignore: cast_nullable_to_non_nullable
               as List<String>,
+      crossReferences: null == crossReferences
+          ? _value.crossReferences
+          : crossReferences // ignore: cast_nullable_to_non_nullable
+              as Map<String, String>,
     ) as $Val);
   }
 }
@@ -588,7 +595,8 @@ abstract class _$$SectionModelImplCopyWith<$Res>
       String sectionNo,
       String title,
       String content,
-      List<String> relatedSections});
+      List<String> relatedSections,
+      Map<String, String> crossReferences});
 }
 
 /// @nodoc
@@ -609,6 +617,7 @@ class __$$SectionModelImplCopyWithImpl<$Res>
     Object? title = null,
     Object? content = null,
     Object? relatedSections = null,
+    Object? crossReferences = null,
   }) {
     return _then(_$SectionModelImpl(
       id: null == id
@@ -631,6 +640,10 @@ class __$$SectionModelImplCopyWithImpl<$Res>
           ? _value._relatedSections
           : relatedSections // ignore: cast_nullable_to_non_nullable
               as List<String>,
+      crossReferences: null == crossReferences
+          ? _value._crossReferences
+          : crossReferences // ignore: cast_nullable_to_non_nullable
+              as Map<String, String>,
     ));
   }
 }
@@ -643,8 +656,10 @@ class _$SectionModelImpl extends _SectionModel {
       required this.sectionNo,
       required this.title,
       required this.content,
-      final List<String> relatedSections = const []})
+      final List<String> relatedSections = const [],
+      final Map<String, String> crossReferences = const {}})
       : _relatedSections = relatedSections,
+        _crossReferences = crossReferences,
         super._();
 
   factory _$SectionModelImpl.fromJson(Map<String, dynamic> json) =>
@@ -667,9 +682,18 @@ class _$SectionModelImpl extends _SectionModel {
     return EqualUnmodifiableListView(_relatedSections);
   }
 
+  final Map<String, String> _crossReferences;
+  @override
+  @JsonKey()
+  Map<String, String> get crossReferences {
+    if (_crossReferences is EqualUnmodifiableMapView) return _crossReferences;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_crossReferences);
+  }
+
   @override
   String toString() {
-    return 'SectionModel(id: $id, sectionNo: $sectionNo, title: $title, content: $content, relatedSections: $relatedSections)';
+    return 'SectionModel(id: $id, sectionNo: $sectionNo, title: $title, content: $content, relatedSections: $relatedSections, crossReferences: $crossReferences)';
   }
 
   @override
@@ -683,13 +707,21 @@ class _$SectionModelImpl extends _SectionModel {
             (identical(other.title, title) || other.title == title) &&
             (identical(other.content, content) || other.content == content) &&
             const DeepCollectionEquality()
-                .equals(other._relatedSections, _relatedSections));
+                .equals(other._relatedSections, _relatedSections) &&
+            const DeepCollectionEquality()
+                .equals(other._crossReferences, _crossReferences));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, sectionNo, title, content,
-      const DeepCollectionEquality().hash(_relatedSections));
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      sectionNo,
+      title,
+      content,
+      const DeepCollectionEquality().hash(_relatedSections),
+      const DeepCollectionEquality().hash(_crossReferences));
 
   /// Create a copy of SectionModel
   /// with the given fields replaced by the non-null parameter values.
@@ -713,7 +745,8 @@ abstract class _SectionModel extends SectionModel {
       required final String sectionNo,
       required final String title,
       required final String content,
-      final List<String> relatedSections}) = _$SectionModelImpl;
+      final List<String> relatedSections,
+      final Map<String, String> crossReferences}) = _$SectionModelImpl;
   const _SectionModel._() : super._();
 
   factory _SectionModel.fromJson(Map<String, dynamic> json) =
@@ -729,6 +762,8 @@ abstract class _SectionModel extends SectionModel {
   String get content;
   @override
   List<String> get relatedSections;
+  @override
+  Map<String, String> get crossReferences;
 
   /// Create a copy of SectionModel
   /// with the given fields replaced by the non-null parameter values.

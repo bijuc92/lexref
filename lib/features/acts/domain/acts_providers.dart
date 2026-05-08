@@ -24,5 +24,6 @@ Future<SectionModel?> sectionDetail(
     title: local.title,
     content: local.content,
     relatedSections: local.relatedSections,
+    crossReferences: local.crossReferences,
   );
 }

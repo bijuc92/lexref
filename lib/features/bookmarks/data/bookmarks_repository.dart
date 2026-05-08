@@ -1,3 +1,4 @@
+import 'package:sqflite/sqflite.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import '../../../core/error/result.dart';
 import '../../../shared/models/local/database_helper.dart';
@@ -9,6 +10,7 @@ class BookmarksRepository {
     await db.insert(
       'bookmarks',
       bookmark.copyWith(isSynced: false).toMap(),
+      conflictAlgorithm: ConflictAlgorithm.replace,
     );
   }
 

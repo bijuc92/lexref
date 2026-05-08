@@ -46,6 +46,7 @@ class SectionModel with _$SectionModel {
     required String title,
     required String content,
     @Default([]) List<String> relatedSections,
+    @Default({}) Map<String, String> crossReferences,
   }) = _SectionModel;
 
   factory SectionModel.fromJson(Map<String, dynamic> json) =>

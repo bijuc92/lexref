@@ -1,0 +1,263 @@
+{
+  "id": "bns",
+  "shortName": "BNS",
+  "fullName": "Bharatiya Nyaya Sanhita, 2023",
+  "year": 2023,
+  "jurisdiction": "central",
+  "category": "criminal",
+  "chapters": [
+    {
+      "id": "bns_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "bns_1",
+          "sectionNo": "1",
+          "title": "Short title, commencement and application",
+          "content": "(1) This Act may be called the Bharatiya Nyaya Sanhita, 2023.\n\n(2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint.\n\n**Note:** The BNS, along with the Bharatiya Nagrik Suraksha Sanhita (BNSS) and the Bharatiya Sakshya Adhiniyam (BSA), came into force on 1 July 2024, replacing the Indian Penal Code 1860, the Code of Criminal Procedure 1973, and the Indian Evidence Act 1872 respectively.",
+          "relatedSections": ["bns_2"]
+        },
+        {
+          "id": "bns_2",
+          "sectionNo": "2",
+          "title": "Definitions",
+          "content": "In this Sanhita, unless the context otherwise requires—\n\n(1) 'act' denotes as well a series of acts as a single act;\n\n(2) 'animal' denotes any living creature, other than a human being;\n\n(3) 'child' means a person who has not completed eighteen years of age;\n\n(4) 'counterfeit' — A person is said to 'counterfeit' who causes one thing to resemble another thing, intending by means of that resemblance to practise deception, or knowing it to be likely that deception will thereby be practised;\n\n(16) 'Government' denotes the Central Government or a State Government;\n\n(18) 'injury' denotes any harm whatever illegally caused to any person, in body, mind, reputation or property;\n\n(22) 'public servant' — The words 'public servant' denote a person falling under any of the descriptions hereinafter following.",
+          "relatedSections": ["bns_1", "bns_3"]
+        }
+      ]
+    },
+    {
+      "id": "bns_ch2",
+      "title": "Chapter II — General Explanations",
+      "sections": [
+        {
+          "id": "bns_3",
+          "sectionNo": "3",
+          "title": "General explanations",
+          "content": "(1) Throughout this Sanhita every definition of an offence, every penal provision, and every illustration of every such definition or penal provision, shall be understood subject to the exceptions contained in the Chapter entitled 'General Exceptions', though those exceptions are not repeated in such definition, penal provision, or illustration.\n\n(5) When a criminal act is done by several persons in furtherance of the common intention of all, each of such persons is liable for that act in the same manner as if it were done by him alone.\n\n**Note:** Section 3(5) of BNS corresponds to Section 34 of the IPC (common intention). It is not a standalone offence but a rule of joint liability.",
+          "relatedSections": ["bns_2", "bns_61"],
+          "crossReferences": {"ipc": "34"}
+        }
+      ]
+    },
+    {
+      "id": "bns_ch4",
+      "title": "Chapter IV — Criminal Conspiracy",
+      "sections": [
+        {
+          "id": "bns_61",
+          "sectionNo": "61",
+          "title": "Punishment of criminal conspiracy",
+          "content": "(1) Whoever is a party to a criminal conspiracy to commit an offence punishable with death, imprisonment for life or rigorous imprisonment for a term of two years or upwards, shall, where no express provision is made in this Sanhita for the punishment of such a conspiracy, be punished in the same manner as if he had abetted such offence.\n\n(2) Whoever is a party to a criminal conspiracy other than a criminal conspiracy to commit an offence punishable as aforesaid shall be punished with imprisonment of either description for a term not exceeding six months, or with fine or with both.\n\n**Criminal conspiracy defined:** When two or more persons agree to do, or cause to be done,—(a) an illegal act, or (b) an act which is not illegal by illegal means, such an agreement is designated a criminal conspiracy.\n\n**Note:** Corresponds to IPC Section 120B.",
+          "relatedSections": ["bns_3"],
+          "crossReferences": {"ipc": "120B"}
+        }
+      ]
+    },
+    {
+      "id": "bns_ch5",
+      "title": "Chapter V — Offences Against Women and Children",
+      "sections": [
+        {
+          "id": "bns_63",
+          "sectionNo": "63",
+          "title": "Rape",
+          "content": "A man is said to commit 'rape' if he—\n(a) penetrates his penis, to any extent, into the vagina, mouth, urethra or anus of a woman or makes her to do so with him or any other person; or\n(b) inserts, to any extent, any object or a part of the body, not being the penis, into the vagina, the urethra or anus of a woman or makes her to do so with him or any other person; or\n(c) manipulates any part of the body of a woman so as to cause penetration into the vagina, urethra, anus or any part of body of such woman or makes her to do so with him or any other person; or\n(d) applies his mouth to the vagina, anus, urethra of a woman or makes her to do so with him or any other person,\nunder the circumstances falling under any of the following seven descriptions:—\n\nFirst — Against her will.\nSecondly — Without her consent.\nThirdly — With her consent, when her consent has been obtained by putting her or any person in whom she is interested, in fear of death or of hurt.\nFourthly — With her consent, when the man knows that he is not her husband and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married.\nFifthly — With her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent.\nSixthly — With or without her consent, when she is under eighteen years of age.\nSeventhly — When she is unable to communicate consent.\n\n**Note:** Corresponds to IPC Section 375.",
+          "relatedSections": ["bns_64", "bns_65"],
+          "crossReferences": {"ipc": "375"}
+        },
+        {
+          "id": "bns_64",
+          "sectionNo": "64",
+          "title": "Punishment for rape",
+          "content": "(1) Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine.\n\n(2) Whoever—\n(a) being a police officer, commits rape;\n(b) being a public servant, commits rape;\n(c) being a member of the armed forces;\n(d) being on the management or on the staff of a jail, remand home or other place of custody;\n(e) being a relative, guardian or teacher of, or a person in a position of trust;\n(f) commits rape during communal or sectarian violence;\n(g) commits rape on a woman knowing her to be pregnant;\nshall be punished with rigorous imprisonment for a term which shall not be less than ten years, but which may extend to imprisonment for life.\n\n**Note:** Corresponds to IPC Section 376. BNS consolidates S.376, 376A, 376B, 376C, 376D provisions.",
+          "relatedSections": ["bns_63", "bns_65", "bns_66"],
+          "crossReferences": {"ipc": "376"}
+        },
+        {
+          "id": "bns_74",
+          "sectionNo": "74",
+          "title": "Assault or use of criminal force to woman with intent to outrage her modesty",
+          "content": "Whoever assaults or uses criminal force to any woman, intending to outrage or knowing it to be likely that he will thereby outrage her modesty, shall be punished with imprisonment of either description for a term which shall not be less than one year but which may extend to five years, and shall also be liable to fine.\n\n**Note:** Corresponds to IPC Section 354.",
+          "relatedSections": ["bns_75", "bns_78"],
+          "crossReferences": {"ipc": "354"}
+        },
+        {
+          "id": "bns_80",
+          "sectionNo": "80",
+          "title": "Dowry death",
+          "content": "(1) Where the death of a woman is caused by any burns or bodily injury or occurs under abnormal circumstances within seven years of marriage and it is shown that soon before her death she was subjected to cruelty or harassment by her husband or any relative of her husband for, or in connection with, any demand for dowry, such death shall be called 'dowry death', and such husband or relative shall be deemed to have caused her death.\n\n(2) Whoever commits dowry death shall be punished with imprisonment for a term which shall not be less than seven years but which may extend to imprisonment for life.\n\n**Note:** Corresponds to IPC Section 304B.",
+          "relatedSections": ["bns_85"],
+          "crossReferences": {"ipc": "304B"}
+        }
+      ]
+    },
+    {
+      "id": "bns_ch6",
+      "title": "Chapter VI — Offences Against the Human Body",
+      "sections": [
+        {
+          "id": "bns_100",
+          "sectionNo": "100",
+          "title": "Culpable homicide",
+          "content": "Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide.\n\n**Illustrations:**\n(a) A lays sticks and turf over a pit, with the intention of thereby causing death, or with the knowledge that death is likely to be thereby caused. Z believing the ground to be firm, treads on it, falls in and is killed. A has committed the offence of culpable homicide.\n\n**Explanation 1:** A person who causes bodily injury to another who is labouring under a disorder, disease or bodily infirmity, and thereby accelerates the death of that other, shall be deemed to have caused his death.\n\n**Explanation 3:** The causing of the death of child in the mother's womb is not homicide. But it may amount to culpable homicide to cause the death of a living child, if any part of that child has been brought forth, though the child may not have breathed or been completely born.\n\n**Note:** Corresponds to IPC Section 299.",
+          "relatedSections": ["bns_101", "bns_103", "bns_105"],
+          "crossReferences": {"ipc": "299"}
+        },
+        {
+          "id": "bns_101",
+          "sectionNo": "101",
+          "title": "Murder",
+          "content": "Except in the cases hereinafter excepted, culpable homicide is murder, if the act by which the death is caused is done with the intention of causing death, or—\n\nSecondly — If it is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused, or—\n\nThirdly — If it is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death, or—\n\nFourthly — If the person committing the act knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid.\n\n**EXCEPTIONS:**\n\n**Exception 1 — Grave and sudden provocation:** Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation.\n\n**Exception 4 — Sudden fight:** Culpable homicide is not murder if it is committed without premeditation in a sudden fight in the heat of passion upon a sudden quarrel.\n\n**Note:** Corresponds to IPC Section 300.",
+          "relatedSections": ["bns_100", "bns_103"],
+          "crossReferences": {"ipc": "300"}
+        },
+        {
+          "id": "bns_103",
+          "sectionNo": "103",
+          "title": "Punishment for murder",
+          "content": "(1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine.\n\n(2) When a group of five or more persons acting in concert commits murder on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground, each member of such group shall be punished with death or with imprisonment for life or imprisonment for a term which shall not be less than seven years, and shall also be liable to fine.\n\n**Note:** Corresponds to IPC Section 302. Sub-section (2) is a new provision addressing mob lynching and hate-crime murders, which was absent in the IPC.\n\n**Key judicial principles:** The 'rarest of rare' doctrine (Bachan Singh v. State of Punjab, AIR 1980 SC 898) continues to apply: death penalty should be imposed only in the rarest of rare cases.",
+          "relatedSections": ["bns_101", "bns_104", "bns_105"],
+          "crossReferences": {"ipc": "302"}
+        },
+        {
+          "id": "bns_104",
+          "sectionNo": "104",
+          "title": "Punishment for murder by life-convict",
+          "content": "Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or imprisonment for life, which shall mean the remainder of that person's natural life.\n\n**Note:** Unlike IPC Section 303, this provision no longer mandates death and has been upheld constitutionally. It addresses the gap created by the Supreme Court striking down IPC S.303 in Mithu v. State of Punjab (1983).",
+          "relatedSections": ["bns_103"],
+          "crossReferences": {"ipc": "303"}
+        },
+        {
+          "id": "bns_105",
+          "sectionNo": "105",
+          "title": "Culpable homicide not amounting to murder",
+          "content": "Whoever commits culpable homicide not amounting to murder shall be punished with imprisonment for life, or imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death;\n\nor with imprisonment of either description for a term which may extend to ten years, or with fine, or with both, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death.\n\n**Note:** Corresponds to IPC Section 304.",
+          "relatedSections": ["bns_100", "bns_103", "bns_106"],
+          "crossReferences": {"ipc": "304"}
+        },
+        {
+          "id": "bns_106",
+          "sectionNo": "106",
+          "title": "Causing death by negligence",
+          "content": "(1) Whoever causes the death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine.\n\n(2) Whoever causes the death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine.\n\n**Note:** Corresponds to IPC Section 304A. Sub-section (2) is a new provision specifically addressing hit-and-run cases, addressing the need to punish those who flee accident scenes.",
+          "relatedSections": ["bns_105"],
+          "crossReferences": {"ipc": "304A"}
+        },
+        {
+          "id": "bns_109",
+          "sectionNo": "109",
+          "title": "Attempt to murder",
+          "content": "(1) Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine; and if hurt is caused to any person by such act, the offender shall be liable either to imprisonment for life, or to such punishment as is hereinbefore mentioned.\n\n(2) When any person offending under this section is under sentence of imprisonment for life, he may, if hurt is caused, be punished with death.\n\n**Note:** Corresponds to IPC Section 307.",
+          "relatedSections": ["bns_101", "bns_103", "bns_110"],
+          "crossReferences": {"ipc": "307"}
+        },
+        {
+          "id": "bns_111",
+          "sectionNo": "111",
+          "title": "Organised crime",
+          "content": "(1) Whoever commits organised crime shall,—\n(a) if such act has resulted in the death of any person, be punished with death or imprisonment for life, and shall also be liable to fine which shall not be less than ten lakh rupees;\n(b) in any other case, be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine which shall not be less than five lakh rupees.\n\n**Explanation:** For the purposes of this section,—\n(i) 'organised crime' means any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber crimes, trafficking in persons, drugs, weapons or illicit goods or services, human trafficking for the purpose of prostitution or ransom, by any person or a group of persons acting in concert, either singly or jointly, as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threats, intimidation, coercion, or by any other unlawful means;\n\n**Note:** Section 111 is an entirely new provision in BNS with no direct IPC equivalent. It specifically addresses organised crime syndicates, filling a gap that previously required special legislation like MCOCA.",
+          "relatedSections": ["bns_3", "bns_61"]
+        },
+        {
+          "id": "bns_115",
+          "sectionNo": "115",
+          "title": "Voluntarily causing hurt",
+          "content": "(1) Whoever does any act with the intention thereby of causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said 'voluntarily to cause hurt'.\n\n(2) Whoever, except in the case provided for by section 122, voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both.\n\n**Note:** Corresponds to IPC Sections 319 and 323. The fine has been increased from one thousand rupees to ten thousand rupees.",
+          "relatedSections": ["bns_116", "bns_117"],
+          "crossReferences": {"ipc": "319"}
+        },
+        {
+          "id": "bns_116",
+          "sectionNo": "116",
+          "title": "Grievous hurt",
+          "content": "The following kinds of hurt only are designated as 'grievous':—\n\nFirst — Permanent privation of the sight of either eye;\n\nSecondly — Permanent privation of the hearing of either ear;\n\nThirdly — Privation of any member or joint;\n\nFourthly — Destruction or permanent impairing of the powers of any member or joint;\n\nFifthly — Permanent disfiguration of the head or face;\n\nSixthly — Fracture or dislocation of a bone or tooth;\n\nSeventhly — Any hurt which endangers life or which causes the sufferer to be during the space of twenty days in severe bodily pain, or unable to follow his ordinary pursuits.\n\n**Note:** Corresponds to IPC Section 320. The BNS omits 'emasculation' as a category of grievous hurt (previously First in IPC S.320).",
+          "relatedSections": ["bns_115", "bns_117"],
+          "crossReferences": {"ipc": "320"}
+        },
+        {
+          "id": "bns_117",
+          "sectionNo": "117",
+          "title": "Voluntarily causing grievous hurt",
+          "content": "(1) Whoever voluntarily causes grievous hurt shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\n(2) Whoever voluntarily causes grievous hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.\n\n**Note:** Corresponds to IPC Sections 325 and 326.",
+          "relatedSections": ["bns_116", "bns_115"],
+          "crossReferences": {"ipc": "325"}
+        }
+      ]
+    },
+    {
+      "id": "bns_ch7",
+      "title": "Chapter VII — Offences Against Property",
+      "sections": [
+        {
+          "id": "bns_303",
+          "sectionNo": "303",
+          "title": "Theft",
+          "content": "(1) Whoever, intending to take dishonestly any moveable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.\n\n(2) Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.\n\n**Note:** Corresponds to IPC Sections 378 and 379. BNS consolidates the definition and punishment into a single section.",
+          "relatedSections": ["bns_304", "bns_310"],
+          "crossReferences": {"ipc": "378"}
+        },
+        {
+          "id": "bns_304",
+          "sectionNo": "304",
+          "title": "Theft in dwelling house",
+          "content": "Whoever commits theft in any building, tent or vessel, which building, tent or vessel is used as a human dwelling, or used for the custody of property, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\n**Note:** Corresponds to IPC Section 380.",
+          "relatedSections": ["bns_303", "bns_310"],
+          "crossReferences": {"ipc": "380"}
+        },
+        {
+          "id": "bns_308",
+          "sectionNo": "308",
+          "title": "Extortion",
+          "content": "(1) Whoever intentionally puts any person in fear of any injury to that person, or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property or valuable security, or anything signed or sealed which may be converted into a valuable security, commits 'extortion'.\n\n(2) Whoever commits extortion shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.\n\n**Note:** Corresponds to IPC Sections 383 and 384.",
+          "relatedSections": ["bns_310", "bns_311"],
+          "crossReferences": {"ipc": "383"}
+        },
+        {
+          "id": "bns_310",
+          "sectionNo": "310",
+          "title": "Robbery",
+          "content": "(1) In all robbery there is either theft or extortion.\n\nWhen theft is robbery: Theft is 'robbery' if, in order to the committing of the theft, or in committing the theft, or in carrying away property obtained by the theft, the offender, for that end, voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint.\n\n(2) Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.\n\n**Note:** Corresponds to IPC Sections 390 and 392.",
+          "relatedSections": ["bns_308", "bns_311"],
+          "crossReferences": {"ipc": "390"}
+        },
+        {
+          "id": "bns_318",
+          "sectionNo": "318",
+          "title": "Cheating",
+          "content": "(1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to 'cheat'.\n\n(2) Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.\n\n(3) Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.\n\n(4) Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.\n\n**Note:** Corresponds to IPC Sections 415, 417, 418, and 420. The BNS consolidates these into a single section with tiered punishments.",
+          "relatedSections": ["bns_319"],
+          "crossReferences": {"ipc": "420"}
+        }
+      ]
+    },
+    {
+      "id": "bns_ch8",
+      "title": "Chapter VIII — Defamation",
+      "sections": [
+        {
+          "id": "bns_356",
+          "sectionNo": "356",
+          "title": "Defamation",
+          "content": "(1) Whoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said, except in the cases hereinafter excepted, to defame that person.\n\n(2) Whoever defames another shall be punished with simple imprisonment for a term which may extend to two years, or with fine, or with both.\n\n**EXCEPTIONS:**\n\n**First (Truth for public good):** It is not defamation to impute anything which is true concerning any person, if it be for the public good that the imputation should be made or published.\n\n**Second (Opinion of public conduct):** It is not defamation to express in good faith any opinion respecting the conduct of a public servant in the discharge of his public functions.\n\n**Note:** Corresponds to IPC Sections 499 and 500. BNS consolidates the definition and punishment into a single section.",
+          "relatedSections": ["bns_351"],
+          "crossReferences": {"ipc": "499"}
+        }
+      ]
+    },
+    {
+      "id": "bns_ch9",
+      "title": "Chapter IX — Criminal Intimidation, Insult and Annoyance",
+      "sections": [
+        {
+          "id": "bns_351",
+          "sectionNo": "351",
+          "title": "Criminal intimidation",
+          "content": "(1) Whoever threatens another with any injury to his person, reputation or property, or to the person or reputation or property of any one in whom that person is interested, with intent to cause alarm to that person, or to cause that person to do any act which he is not legally bound to do, or to omit to do any act which that person is legally entitled to do, as the means of avoiding the execution of such threat, commits criminal intimidation.\n\n(2) Whoever commits criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both;\n\nAnd if the threat be to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.\n\n**Note:** Corresponds to IPC Sections 503 and 506. BNS consolidates the definition and punishment into a single section.",
+          "relatedSections": ["bns_356"],
+          "crossReferences": {"ipc": "506"}
+        }
+      ]
+    }
+  ]
+}

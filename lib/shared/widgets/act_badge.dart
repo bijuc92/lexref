@@ -19,6 +19,10 @@ class ActBadge extends StatelessWidget {
       case 'EVIDENCE':
       case 'EVIDENCE ACT':
         return (AppColors.evidenceBadge, AppColors.evidenceBadgeBg);
+      case 'BNS':
+        return (AppColors.bnsBadge, AppColors.bnsBadgeBg);
+      case 'BNSS':
+        return (AppColors.bnssBadge, AppColors.bnssBadgeBg);
       default:
         return (AppColors.primary, AppColors.primary.withOpacity(0.1));
     }

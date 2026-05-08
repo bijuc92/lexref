@@ -14,7 +14,12 @@ class DatabaseHelper {
 
   Future<Database> _initDb() async {
     final path = join(await getDatabasesPath(), 'lexref.db');
-    return openDatabase(path, version: 1, onCreate: _onCreate);
+    return openDatabase(
+      path,
+      version: 2,
+      onCreate: _onCreate,
+      onUpgrade: _onUpgrade,
+    );
   }
 
   Future<void> _onCreate(Database db, int version) async {
@@ -28,6 +33,7 @@ class DatabaseHelper {
         content TEXT NOT NULL,
         explanation TEXT,
         related_sections TEXT,
+        cross_references TEXT,
         search_key TEXT NOT NULL
       )
     ''');
@@ -101,5 +107,13 @@ class DatabaseHelper {
     await db.execute(
       'CREATE INDEX idx_notes_synced ON notes(is_synced)',
     );
+  }
+
+  Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 2) {
+      await db.execute(
+        'ALTER TABLE sections ADD COLUMN cross_references TEXT',
+      );
+    }
   }
 }

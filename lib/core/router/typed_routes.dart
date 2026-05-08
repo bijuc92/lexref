@@ -50,5 +50,5 @@ extension TypedRoutes on BuildContext {
 
   // ── Profile ───────────────────────────────────────────────────────────────
 
-  void goProfile() => go('/profile');
+  void goProfile() => push('/profile');
 }

@@ -17,6 +17,8 @@ final _searchRepo = SearchRepository();
 
 const _filters = [
   ('all', 'All'),
+  ('bns', 'BNS'),
+  ('bnss', 'BNSS'),
   ('ipc', 'IPC'),
   ('crpc', 'CrPC'),
   ('cpc', 'CPC'),
@@ -177,7 +179,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       return const EmptyState(
         icon: Icons.search,
         title: 'Search LexRef',
-        subtitle: 'Search across IPC, CrPC, CPC, Evidence Act and case law',
+        subtitle: 'Search across IPC, BNS, CrPC, BNSS, CPC, Evidence Act and case law',
       );
     }
     return ListView(

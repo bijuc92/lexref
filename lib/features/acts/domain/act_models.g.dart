@@ -56,6 +56,10 @@ _$SectionModelImpl _$$SectionModelImplFromJson(Map<String, dynamic> json) =>
               ?.map((e) => e as String)
               .toList() ??
           const [],
+      crossReferences: (json['crossReferences'] as Map<String, dynamic>?)?.map(
+            (k, e) => MapEntry(k, e as String),
+          ) ??
+          const {},
     );
 
 Map<String, dynamic> _$$SectionModelImplToJson(_$SectionModelImpl instance) =>
@@ -65,4 +69,5 @@ Map<String, dynamic> _$$SectionModelImplToJson(_$SectionModelImpl instance) =>
       'title': instance.title,
       'content': instance.content,
       'relatedSections': instance.relatedSections,
+      'crossReferences': instance.crossReferences,
     };

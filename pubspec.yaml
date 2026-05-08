@@ -48,3 +48,5 @@ flutter:
     - assets/data/crpc.json
     - assets/data/cpc.json
     - assets/data/evidence_act.json
+    - assets/data/bns.json
+    - assets/data/bnss.json

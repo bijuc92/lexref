@@ -20,7 +20,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       icon: Icons.menu_book_rounded,
       title: 'Complete Law Library',
       subtitle:
-          'Access IPC, CrPC, CPC and Evidence Act offline. Every section at your fingertips, without internet.',
+          'Access BNS, BNSS, IPC, CrPC, CPC and Evidence Act offline. Every section at your fingertips, without internet.',
     ),
     _OnboardingPage(
       icon: Icons.search_rounded,

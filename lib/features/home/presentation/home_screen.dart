@@ -8,7 +8,7 @@ import '../../../features/bookmarks/data/bookmarks_repository.dart';
 import '../../../features/notes/data/notes_repository.dart';
 import '../../../features/search/data/search_repository.dart';
 
-final _homeStatsProvider = FutureProvider<_HomeStats>((ref) async {
+final homeStatsProvider = FutureProvider<_HomeStats>((ref) async {
   final bookmarks =
       await BookmarksRepository().getBookmarksByFolder();
   final bookmarkCount =
@@ -40,7 +40,7 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final profile = ref.watch(profileProvider).valueOrNull;
-    final stats = ref.watch(_homeStatsProvider);
+    final stats = ref.watch(homeStatsProvider);
     final hour = DateTime.now().hour;
     final greeting = hour < 12
         ? 'Good morning'
@@ -69,7 +69,7 @@ class HomeScreen extends ConsumerWidget {
         ],
       ),
       body: RefreshIndicator(
-        onRefresh: () async => ref.invalidate(_homeStatsProvider),
+        onRefresh: () async => ref.invalidate(homeStatsProvider),
         child: ListView(
           padding: const EdgeInsets.all(20),
           children: [
@@ -138,7 +138,7 @@ class HomeScreen extends ConsumerWidget {
                 _QuickCard(
                   icon: Icons.menu_book,
                   label: 'Law Sections',
-                  subtitle: 'IPC · CrPC · CPC · Evidence',
+                  subtitle: 'BNS · BNSS · IPC · CrPC · CPC',
                   color: AppColors.primary,
                   onTap: () => context.goActsList(),
                 ),

@@ -6,6 +6,26 @@ import '../../../shared/widgets/offline_banner.dart';
 
 const _acts = [
   _ActInfo(
+    id: 'bns',
+    shortName: 'BNS',
+    fullName: 'Bharatiya Nyaya Sanhita',
+    year: '2023',
+    color: AppColors.bnsBadge,
+    bgColor: AppColors.bnsBadgeBg,
+    icon: Icons.gavel,
+    description: 'Replaces Indian Penal Code 1860',
+  ),
+  _ActInfo(
+    id: 'bnss',
+    shortName: 'BNSS',
+    fullName: 'Bharatiya Nagrik Suraksha Sanhita',
+    year: '2023',
+    color: AppColors.bnssBadge,
+    bgColor: AppColors.bnssBadgeBg,
+    icon: Icons.account_balance,
+    description: 'Replaces Code of Criminal Procedure 1973',
+  ),
+  _ActInfo(
     id: 'ipc',
     shortName: 'IPC',
     fullName: 'Indian Penal Code',
