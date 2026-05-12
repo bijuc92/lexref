@@ -54,7 +54,7 @@ class HomeScreen extends ConsumerWidget {
       appBar: AppBar(
         title: Text(
           'LexRef',
-          style: GoogleFonts.dmSerifDisplay(fontSize: 22),
+          style: GoogleFonts.libreBaskerville(fontSize: 22),
         ),
         actions: [
           IconButton(
@@ -75,7 +75,7 @@ class HomeScreen extends ConsumerWidget {
           children: [
             Text(
               firstName.isEmpty ? greeting : '$greeting, $firstName',
-              style: GoogleFonts.dmSerifDisplay(fontSize: 26),
+              style: GoogleFonts.libreBaskerville(fontSize: 26),
             ),
             const SizedBox(height: 4),
             Text(
@@ -240,7 +240,7 @@ class _StatCard extends StatelessWidget {
             const SizedBox(height: 6),
             Text(
               '$value',
-              style: GoogleFonts.dmSerifDisplay(
+              style: GoogleFonts.libreBaskerville(
                 fontSize: 20,
                 color: color,
               ),

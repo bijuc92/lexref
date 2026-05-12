@@ -80,7 +80,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     const SizedBox(width: 12),
                     Text(
                       'LexRef',
-                      style: GoogleFonts.dmSerifDisplay(
+                      style: GoogleFonts.libreBaskerville(
                         fontSize: 24,
                         color: AppColors.textPrimary,
                       ),
@@ -90,7 +90,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                 const SizedBox(height: 40),
                 Text(
                   'Welcome back',
-                  style: GoogleFonts.dmSerifDisplay(
+                  style: GoogleFonts.libreBaskerville(
                     fontSize: 30,
                     color: AppColors.textPrimary,
                   ),

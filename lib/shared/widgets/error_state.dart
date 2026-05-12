@@ -21,7 +21,7 @@ class ErrorState extends StatelessWidget {
             const SizedBox(height: 16),
             Text(
               'Something went wrong',
-              style: GoogleFonts.dmSerifDisplay(
+              style: GoogleFonts.libreBaskerville(
                 fontSize: 18,
                 color: isDark ? AppColors.darkTextPrimary : AppColors.textPrimary,
               ),

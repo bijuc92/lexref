@@ -207,7 +207,7 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
               const SizedBox(height: 16),
               Text(
                 'LexRef AI',
-                style: GoogleFonts.dmSerifDisplay(fontSize: 24),
+                style: GoogleFonts.libreBaskerville(fontSize: 24),
               ),
               const SizedBox(height: 8),
               Text(

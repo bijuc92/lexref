@@ -153,7 +153,7 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
           children: [
             Text(
               'Note for S.${section.sectionNo}',
-              style: GoogleFonts.dmSerifDisplay(fontSize: 18),
+              style: GoogleFonts.libreBaskerville(fontSize: 18),
             ),
             const SizedBox(height: 12),
             TextField(
@@ -292,7 +292,7 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
                 const SizedBox(height: 8),
                 Text(
                   section.title,
-                  style: GoogleFonts.dmSerifDisplay(fontSize: 22),
+                  style: GoogleFonts.libreBaskerville(fontSize: 22),
                 ),
                 const SizedBox(height: 16),
                 const Divider(),

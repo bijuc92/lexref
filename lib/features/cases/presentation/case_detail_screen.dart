@@ -69,7 +69,7 @@ class CaseDetailScreen extends ConsumerWidget {
                 const SizedBox(height: 12),
                 Text(
                   c.title,
-                  style: GoogleFonts.dmSerifDisplay(fontSize: 22),
+                  style: GoogleFonts.libreBaskerville(fontSize: 22),
                 ),
                 if (c.citation != null && c.citation!.isNotEmpty) ...[
                   const SizedBox(height: 6),

@@ -147,7 +147,7 @@ class _OnboardingPage extends StatelessWidget {
           const SizedBox(height: 32),
           Text(
             title,
-            style: GoogleFonts.dmSerifDisplay(
+            style: GoogleFonts.libreBaskerville(
               fontSize: 28,
               color: AppColors.textPrimary,
             ),

@@ -83,7 +83,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
             children: [
               Text(
                 'Join LexRef',
-                style: GoogleFonts.dmSerifDisplay(
+                style: GoogleFonts.libreBaskerville(
                   fontSize: 28,
                   color: AppColors.textPrimary,
                 ),

@@ -123,7 +123,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                   backgroundColor: AppColors.primary.withOpacity(0.12),
                   child: Text(
                     name.isNotEmpty ? name[0].toUpperCase() : 'A',
-                    style: GoogleFonts.dmSerifDisplay(
+                    style: GoogleFonts.libreBaskerville(
                       fontSize: 32,
                       color: AppColors.primary,
                     ),
@@ -134,7 +134,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               Center(
                 child: Text(
                   name,
-                  style: GoogleFonts.dmSerifDisplay(fontSize: 22),
+                  style: GoogleFonts.libreBaskerville(fontSize: 22),
                 ),
               ),
               Center(

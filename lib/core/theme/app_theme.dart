@@ -5,23 +5,23 @@ import 'app_colors.dart';
 class AppTheme {
   static TextTheme _buildTextTheme(TextTheme base) {
     return GoogleFonts.dmSansTextTheme(base).copyWith(
-      displayLarge: GoogleFonts.dmSerifDisplay(
+      displayLarge: GoogleFonts.libreBaskerville(
         fontSize: 32,
         fontWeight: FontWeight.w400,
       ),
-      displayMedium: GoogleFonts.dmSerifDisplay(
+      displayMedium: GoogleFonts.libreBaskerville(
         fontSize: 26,
         fontWeight: FontWeight.w400,
       ),
-      displaySmall: GoogleFonts.dmSerifDisplay(
+      displaySmall: GoogleFonts.libreBaskerville(
         fontSize: 22,
         fontWeight: FontWeight.w400,
       ),
-      headlineLarge: GoogleFonts.dmSerifDisplay(
+      headlineLarge: GoogleFonts.libreBaskerville(
         fontSize: 20,
         fontWeight: FontWeight.w400,
       ),
-      headlineMedium: GoogleFonts.dmSerifDisplay(
+      headlineMedium: GoogleFonts.libreBaskerville(
         fontSize: 18,
         fontWeight: FontWeight.w400,
       ),
@@ -50,7 +50,7 @@ class AppTheme {
         scrolledUnderElevation: 0,
         backgroundColor: AppColors.background,
         foregroundColor: AppColors.textPrimary,
-        titleTextStyle: GoogleFonts.dmSerifDisplay(
+        titleTextStyle: GoogleFonts.libreBaskerville(
           fontSize: 20,
           color: AppColors.textPrimary,
           fontWeight: FontWeight.w400,
@@ -168,7 +168,7 @@ class AppTheme {
         scrolledUnderElevation: 0,
         backgroundColor: AppColors.darkBackground,
         foregroundColor: AppColors.darkTextPrimary,
-        titleTextStyle: GoogleFonts.dmSerifDisplay(
+        titleTextStyle: GoogleFonts.libreBaskerville(
           fontSize: 20,
           color: AppColors.darkTextPrimary,
           fontWeight: FontWeight.w400,

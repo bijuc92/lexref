@@ -65,7 +65,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
             const SizedBox(height: 20),
             Text(
               'LexRef',
-              style: GoogleFonts.dmSerifDisplay(
+              style: GoogleFonts.libreBaskerville(
                 fontSize: 36,
                 color: AppColors.textPrimary,
                 fontWeight: FontWeight.w400,

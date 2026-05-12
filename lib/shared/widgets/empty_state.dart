@@ -33,7 +33,7 @@ class EmptyState extends StatelessWidget {
             const SizedBox(height: 16),
             Text(
               title,
-              style: GoogleFonts.dmSerifDisplay(
+              style: GoogleFonts.libreBaskerville(
                 fontSize: 20,
                 color: isDark ? AppColors.darkTextPrimary : AppColors.textPrimary,
               ),

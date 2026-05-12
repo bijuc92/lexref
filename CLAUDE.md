@@ -255,7 +255,7 @@ Always use `AppColors.*` constants — never hardcode hex values. Key colors:
 
 ### Fonts
 - Body text: `GoogleFonts.dmSans()`
-- Headings / display: `GoogleFonts.dmSerifDisplay()`
+- Headings / display: `GoogleFonts.libreBaskerville()`
 - Monospace (code): `GoogleFonts.dmMono()`
 
 ### Section seeding

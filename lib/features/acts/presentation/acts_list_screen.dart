@@ -137,7 +137,7 @@ class _ActCard extends StatelessWidget {
                       children: [
                         Text(
                           act.shortName,
-                          style: GoogleFonts.dmSerifDisplay(
+                          style: GoogleFonts.libreBaskerville(
                             fontSize: 18,
                             color: act.color,
                           ),
