@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_tts/flutter_tts.dart';
@@ -42,6 +43,7 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
   String? _noteContent;
   final _bookmarksRepo = BookmarksRepository();
   final _notesRepo = NotesRepository();
+  final _shareButtonKey = GlobalKey();
 
   String get _compositeId => '${widget.actId}__${widget.sectionId}';
 
@@ -220,11 +222,19 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
               onPressed: () => _toggleBookmark(s),
             ),
             IconButton(
+              key: _shareButtonKey,
               icon: const Icon(Icons.share_outlined),
               tooltip: 'Share',
-              onPressed: () => Share.share(
-                'Section ${s.sectionNo} — ${s.title}\n\n${s.content}\n\nShared via LexRef',
-              ),
+              onPressed: () {
+                final box = _shareButtonKey.currentContext
+                    ?.findRenderObject() as RenderBox?;
+                Share.share(
+                  'Section ${s.sectionNo} — ${s.title}\n\n${s.content}\n\nShared via LexRef',
+                  sharePositionOrigin: box != null
+                      ? box.localToGlobal(Offset.zero) & box.size
+                      : null,
+                );
+              },
             ),
           ];
         }).value ??

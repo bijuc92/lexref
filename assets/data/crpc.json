@@ -3,19 +3,271 @@
   "shortName": "CrPC",
   "fullName": "Code of Criminal Procedure, 1973",
   "year": 1973,
+  "effectiveUntil": "2024-06-30",
+  "status": "Replaced by Bharatiya Nagrik Suraksha Sanhita (BNSS) 2023, effective 1 July 2024",
   "jurisdiction": "central",
-  "category": "criminal",
+  "category": "criminal_procedure",
+  "totalSections": 484,
+  "totalChapters": 37,
   "chapters": [
     {
       "id": "crpc_ch1",
       "title": "Chapter I — Preliminary",
       "sections": [
         {
+          "id": "crpc_1",
+          "sectionNo": "1",
+          "title": "Short title, extent and commencement",
+          "content": "(1) This Act may be called the Code of Criminal Procedure, 1973.\n(2) It extends to the whole of India except the State of Nagaland and the tribal areas.\n(4) The Code of Criminal Procedure, 1898 is hereby repealed.\n\n**Note:** CrPC 1973 has been replaced by Bharatiya Nagrik Suraksha Sanhita (BNSS) 2023, effective 1 July 2024.",
+          "relatedSections": [
+            "crpc_2"
+          ],
+          "crossReferences": {
+            "bnss": "1"
+          }
+        },
+        {
           "id": "crpc_2",
           "sectionNo": "2",
           "title": "Definitions",
           "content": "In this Code, unless the context otherwise requires,—\n\n**(a) 'bailable offence'** means an offence which is shown as bailable in the First Schedule, or which is made bailable by any other law for the time being in force; and 'non-bailable offence' means any other offence;\n\n**(b) 'charge'** includes any head of charge when the charge contains more heads than one;\n\n**(c) 'cognizable offence'** means an offence for which, and 'cognizable case' means a case in which, a police officer may, in accordance with the First Schedule or under any other law for the time being in force, arrest without warrant;\n\n**(d) 'complaint'** means any allegation made orally or in writing to a Magistrate, with a view to his taking action under this Code, that some person, whether known or unknown, has committed an offence, but does not include a police report;\n\n**(e) 'High Court'** means, in relation to any State, the High Court for that State;\n\n**(f) 'inquiry'** means every inquiry, other than a trial, conducted under this Code by a Magistrate or Judge;\n\n**(g) 'investigation'** includes all the proceedings under this Code for the collection of evidence conducted by a police officer or by any person (other than a Magistrate) who is authorised by a Magistrate in this behalf;\n\n**(h) 'judicial proceeding'** includes any proceeding in the course of which evidence is or may be legally taken on oath;\n\n**(n) 'non-cognizable offence'** means an offence for which, and 'non-cognizable case' means a case in which, a police officer has no authority to arrest without warrant;\n\n**(s) 'police report'** means a report forwarded by a police officer to a Magistrate under sub-section (2) of section 173;\n\n**(w) 'summons-case'** means a case relating to an offence, and not being a warrant-case;\n\n**(x) 'warrant-case'** means a case relating to an offence punishable with death, imprisonment for life or imprisonment for a term exceeding two years.",
-          "relatedSections": ["crpc_41", "crpc_154", "crpc_190"]
+          "relatedSections": [
+            "crpc_41",
+            "crpc_154",
+            "crpc_190"
+          ]
+        },
+        {
+          "id": "crpc_4",
+          "sectionNo": "4",
+          "title": "Trial of offences under the Indian Penal Code and other laws",
+          "content": "(1) All offences under the Indian Penal Code shall be investigated, inquired into, tried, and otherwise dealt with according to the provisions hereinafter contained.\n(2) All offences under any other law shall be investigated, inquired into, tried, and otherwise dealt with according to the same provisions, but subject to any enactment for the time being in force regulating the manner or place of investigating, inquiring into, trying or otherwise dealing with such offences.",
+          "relatedSections": [
+            "crpc_1",
+            "crpc_2"
+          ],
+          "crossReferences": {
+            "bnss": "22"
+          }
+        },
+        {
+          "id": "crpc_5",
+          "sectionNo": "5",
+          "title": "Saving",
+          "content": "Nothing contained in this Code shall, in the absence of a specific provision to the contrary, affect any special or local law for the time being in force, or any special jurisdiction or power conferred, or any special form of procedure prescribed, by any other law for the time being in force.",
+          "relatedSections": [
+            "crpc_1",
+            "crpc_4"
+          ],
+          "crossReferences": {
+            "bnss": "1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch2",
+      "title": "Chapter II — Constitution and Powers of Criminal Courts",
+      "sections": [
+        {
+          "id": "crpc_6",
+          "sectionNo": "6",
+          "title": "Classes of Criminal Courts",
+          "content": "Besides the High Courts and the Courts constituted under any law, other than this Code, there shall be the following classes of Criminal Courts, namely:—\n(i) Courts of Session;\n(ii) Judicial Magistrates of the first class and, in any metropolitan area, Metropolitan Magistrates;\n(iii) Judicial Magistrates of the second class;\n(iv) Executive Magistrates.",
+          "relatedSections": [
+            "crpc_9",
+            "crpc_11"
+          ],
+          "crossReferences": {
+            "bnss": "4"
+          }
+        },
+        {
+          "id": "crpc_9",
+          "sectionNo": "9",
+          "title": "Court of Session",
+          "content": "(1) The State Government shall establish a Court of Session for every sessions division.\n(2) Every Court of Session shall be presided over by a Judge, to be appointed by the High Court.\n(3) The High Court may also appoint Additional Sessions Judges and Assistant Sessions Judges to exercise jurisdiction in a Court of Session.\n(4) The High Court may make rules providing for the distribution of business among Assistant Sessions Judges.",
+          "relatedSections": [
+            "crpc_6",
+            "crpc_11"
+          ],
+          "crossReferences": {
+            "bnss": "5"
+          }
+        },
+        {
+          "id": "crpc_11",
+          "sectionNo": "11",
+          "title": "Courts of Judicial Magistrates",
+          "content": "(1) In every district (not being a metropolitan area) there shall be established as many Courts of Judicial Magistrates of the first class and of the second class, and at such places, as the State Government may, after consultation with the High Court, by notification, specify.\n(2) The presiding officers of such Courts shall be appointed by the High Court.\n(3) The High Court may, whenever it appears to it to be expedient or necessary, confer the powers of a Judicial Magistrate of the first class or of the second class on any member of the Judicial Service of the State, functioning as a Civil Judge.",
+          "relatedSections": [
+            "crpc_6",
+            "crpc_9"
+          ],
+          "crossReferences": {
+            "bnss": "9"
+          }
+        },
+        {
+          "id": "crpc_12",
+          "sectionNo": "12",
+          "title": "Chief Judicial Magistrate and Additional Chief Judicial Magistrate, etc.",
+          "content": "(1) In every district, the High Court shall appoint a Judicial Magistrate of the first class to be the Chief Judicial Magistrate.\n(2) The High Court may appoint any Judicial Magistrate of the first class to be an Additional Chief Judicial Magistrate, and such Magistrate shall have all or any of the powers of a Chief Judicial Magistrate under this Code or under any other law for the time being in force as the High Court may direct.",
+          "relatedSections": [
+            "crpc_11"
+          ],
+          "crossReferences": {
+            "bnss": "9"
+          }
+        },
+        {
+          "id": "crpc_15",
+          "sectionNo": "15",
+          "title": "Subordination of Judicial Magistrates",
+          "content": "(1) Every Chief Judicial Magistrate shall be subordinate to the Sessions Judge; and every other Judicial Magistrate shall, subject to the general control of the Sessions Judge, be subordinate to the Chief Judicial Magistrate.\n(2) The Chief Judicial Magistrate may, from time to time, make rules or give special orders, consistent with this Code, as to the distribution of business among the Judicial Magistrates subordinate to him.",
+          "relatedSections": [
+            "crpc_11",
+            "crpc_12"
+          ],
+          "crossReferences": {
+            "bnss": "9"
+          }
+        },
+        {
+          "id": "crpc_16",
+          "sectionNo": "16",
+          "title": "Courts of Metropolitan Magistrates",
+          "content": "(1) In every metropolitan area, there shall be established as many Courts of Metropolitan Magistrates, and at such places, as the State Government may, after consultation with the High Court, by notification, specify.\n(2) The presiding officers of such Courts shall be appointed by the High Court.\n(3) Every Metropolitan Magistrate shall be subordinate to the Sessions Judge of the sessions division comprising the metropolitan area and, subject to the general control of the Sessions Judge, to the Chief Metropolitan Magistrate.",
+          "relatedSections": [
+            "crpc_11"
+          ],
+          "crossReferences": {
+            "bnss": "9"
+          }
+        },
+        {
+          "id": "crpc_20",
+          "sectionNo": "20",
+          "title": "Executive Magistrates",
+          "content": "(1) In every district and in every metropolitan area, the State Government may appoint as many persons as it thinks fit to be Executive Magistrates and shall appoint one of them to be the District Magistrate.\n(2) The State Government may appoint any Executive Magistrate to be an Additional District Magistrate, and such Magistrate shall have such of the powers of a District Magistrate under this Code or under any other law for the time being in force as may be directed by the State Government.",
+          "relatedSections": [
+            "crpc_6"
+          ],
+          "crossReferences": {
+            "bnss": "4"
+          }
+        },
+        {
+          "id": "crpc_26",
+          "sectionNo": "26",
+          "title": "Courts by which offences are triable",
+          "content": "Subject to the other provisions of this Code—\n(a) any offence under the Indian Penal Code may be tried by—\n(i) the High Court, or\n(ii) the Court of Session, or\n(iii) any other Court by which such offence is shown in the First Schedule to be triable;\n(b) any offence under any other law shall, when any Court is mentioned in this behalf in such law, be tried by such Court.",
+          "relatedSections": [
+            "crpc_6",
+            "crpc_177"
+          ],
+          "crossReferences": {
+            "bnss": "22"
+          }
+        },
+        {
+          "id": "crpc_28",
+          "sectionNo": "28",
+          "title": "Sentences which High Courts and Sessions Judges may pass",
+          "content": "A High Court may pass any sentence authorised by law.\nA Sessions Judge or Additional Sessions Judge may pass any sentence authorised by law; but any sentence of death passed by any such Judge shall be subject to confirmation by the High Court.\nAn Assistant Sessions Judge may pass any sentence authorised by law except a sentence of death or of imprisonment for life or of imprisonment for a term exceeding ten years.",
+          "relatedSections": [
+            "crpc_26"
+          ],
+          "crossReferences": {
+            "bnss": "14"
+          }
+        },
+        {
+          "id": "crpc_29",
+          "sectionNo": "29",
+          "title": "Sentences which Magistrates may pass",
+          "content": "The Court of a Chief Judicial Magistrate may pass any sentence authorised by law except a sentence of death or of imprisonment for life or of imprisonment for a term exceeding seven years.\nThe Court of a Magistrate of the first class may pass a sentence of imprisonment for a term not exceeding three years, or of fine not exceeding ten thousand rupees, or of both.\nThe Court of a Magistrate of the second class may pass a sentence of imprisonment for a term not exceeding one year, or of fine not exceeding five thousand rupees, or of both.",
+          "relatedSections": [
+            "crpc_26",
+            "crpc_28"
+          ],
+          "crossReferences": {
+            "bnss": "15"
+          }
+        },
+        {
+          "id": "crpc_30",
+          "sectionNo": "30",
+          "title": "Sentence of imprisonment in default of fine",
+          "content": "(1) The Court of a Magistrate may award such term of imprisonment in default of payment of fine as is authorised by law;\n(2) The term of imprisonment in default of payment of fine shall not exceed one-fourth of the term of imprisonment which the Magistrate is competent to inflict as a substantive sentence for the offence.",
+          "relatedSections": [
+            "crpc_29"
+          ],
+          "crossReferences": {
+            "bnss": "15"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch3",
+      "title": "Chapter III — Power of Courts to Try Offences",
+      "sections": [
+        {
+          "id": "crpc_35",
+          "sectionNo": "35",
+          "title": "Criminal courts having jurisdiction in the matter of local law",
+          "content": "Every offence shall ordinarily be tried by a court within whose local jurisdiction it was committed.",
+          "relatedSections": [
+            "crpc_26",
+            "crpc_177"
+          ],
+          "crossReferences": {
+            "bnss": "200"
+          }
+        },
+        {
+          "id": "crpc_36",
+          "sectionNo": "36",
+          "title": "Powers of superior officers of police",
+          "content": "Police officers superior in rank to an officer in charge of a police station may exercise the same powers throughout the local area to which they are appointed, as may be exercised by such officer within the limits of his station.",
+          "relatedSections": [
+            "crpc_41"
+          ],
+          "crossReferences": {
+            "bnss": "35"
+          }
+        },
+        {
+          "id": "crpc_37",
+          "sectionNo": "37",
+          "title": "Public when to assist Magistrates and police",
+          "content": "Every person is bound to assist a Magistrate or police officer reasonably demanding his aid—\n(a) in the taking or preventing the escape of any other person whom such Magistrate or officer is authorised to arrest;\n(b) in the prevention or suppression of a breach of the peace;\n(c) in the prevention of any injury attempted to be committed to any railway, canal, telegraph or public property.",
+          "relatedSections": [
+            "crpc_41",
+            "crpc_129"
+          ],
+          "crossReferences": {
+            "bnss": "26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch4",
+      "title": "Chapter IV — Aid to the Magistrates and Police",
+      "sections": [
+        {
+          "id": "crpc_38",
+          "sectionNo": "38",
+          "title": "Aid to person, other than police officer, executing warrant",
+          "content": "When a warrant is directed to a person other than a police officer, any other person may aid in the execution of such warrant, if the person to whom the warrant is directed is near at hand and acting in the execution of the warrant.",
+          "relatedSections": [
+            "crpc_37"
+          ],
+          "crossReferences": {
+            "bnss": "26"
+          }
         }
       ]
     },
@@ -28,30 +280,248 @@
           "sectionNo": "41",
           "title": "When police may arrest without warrant",
           "content": "Any police officer may without an order from a Magistrate and without a warrant, arrest any person—\n\n(a) who commits, in the presence of a police officer, a cognizable offence;\n(b) against whom a reasonable complaint has been made, or credible information has been received, or a reasonable suspicion exists that he has committed a cognizable offence punishable with imprisonment for a term which may be less than seven years or which may extend to seven years whether with or without fine, if the following conditions are satisfied, namely:—\n(i) the police officer has reason to believe on the basis of such complaint, information, or suspicion that such person has committed the said offence;\n(ii) the police officer is satisfied that such arrest is necessary—\n(a) to prevent such person from committing any further offence; or\n(b) for proper investigation of the offence; or\n(c) to prevent such person from causing the evidence of the offence to disappear or tampering with such evidence in any manner; or\n(d) to prevent such person from making any inducement, threat or promise to any person acquainted with the facts of the case so as to dissuade him from disclosing such facts to the Court or to the police officer; or\n(e) as unless such person is arrested, his presence in the Court whenever required cannot be ensured,\nand the police officer shall record while making such arrest, his reasons in writing;\n\n**Note:** The Supreme Court in Arnesh Kumar v. State of Bihar (2014) directed that arrest under S.41 should not be made automatically; police must record reasons and serve notice under S.41A before arrest in cases punishable up to 7 years.",
-          "relatedSections": ["crpc_41A", "crpc_46", "crpc_57"],
-          "crossReferences": {"bnss": "35"}
+          "relatedSections": [
+            "crpc_41A",
+            "crpc_46",
+            "crpc_57"
+          ],
+          "crossReferences": {
+            "bnss": "35"
+          }
         },
         {
           "id": "crpc_41A",
           "sectionNo": "41A",
           "title": "Notice of appearance before police officer",
           "content": "The police officer shall, in all cases where the arrest of a person is not required under the provisions of sub-section (1) of section 41, issue a notice directing the person against whom a reasonable complaint has been made, or credible information has been received, or a reasonable suspicion exists that he has committed a cognizable offence, to appear before him or at such other place as may be specified in the notice.\n\n(2) Where such a notice is issued to any person, it shall be the duty of that person to comply with the terms of the notice.\n\n(3) Where such person complies and continues to comply with the notice, he shall not be arrested in respect of the offence referred to in the notice unless, for reasons to be recorded, the police officer is of the opinion that he ought to be arrested.\n\n(4) Where such person, at any time, fails to comply with the terms of the notice or is unwilling to identify himself, the police officer may, subject to such orders as may have been passed by a competent Court in this behalf, arrest him for the offence mentioned in the notice.\n\n**Inserted by:** Code of Criminal Procedure (Amendment) Act, 2008.",
-          "relatedSections": ["crpc_41", "crpc_46"],
-          "crossReferences": {"bnss": "37"}
+          "relatedSections": [
+            "crpc_41",
+            "crpc_46"
+          ],
+          "crossReferences": {
+            "bnss": "37"
+          }
+        },
+        {
+          "id": "crpc_41B",
+          "sectionNo": "41B",
+          "title": "Procedure of arrest and duties of officer making arrest",
+          "content": "Every police officer while making an arrest shall—\n(a) bear an accurate, visible and clear identification of his name which will facilitate easy identification;\n(b) prepare a memorandum of arrest which shall be—\n(i) attested by at least one witness, who is a member of the family of the person arrested or a respectable member of the locality where the arrest is made;\n(ii) countersigned by the person arrested;\n(c) inform the person arrested, unless the memorandum is attested by a member of his family, that he has a right to have a relative or a friend named in the memorandum.",
+          "relatedSections": [
+            "crpc_41",
+            "crpc_41C"
+          ],
+          "crossReferences": {
+            "bnss": "47"
+          }
+        },
+        {
+          "id": "crpc_41C",
+          "sectionNo": "41C",
+          "title": "Control room at districts",
+          "content": "(1) The State Government shall establish a police control room—\n(a) in every district; and\n(b) at state level.\n(2) The State Government shall cause to be displayed on the notice board kept outside the control rooms at every district, the names and addresses of the persons arrested and the name and designation of the police officers who made the arrests.",
+          "relatedSections": [
+            "crpc_41B"
+          ],
+          "crossReferences": {
+            "bnss": "47"
+          }
+        },
+        {
+          "id": "crpc_41D",
+          "sectionNo": "41D",
+          "title": "Right of arrested person to meet an advocate of his choice during interrogation",
+          "content": "When any person is arrested and interrogated by the police, he shall be entitled to meet an advocate of his choice during interrogation, though not throughout interrogation.",
+          "relatedSections": [
+            "crpc_41",
+            "crpc_50"
+          ],
+          "crossReferences": {
+            "bnss": "52"
+          }
+        },
+        {
+          "id": "crpc_42",
+          "sectionNo": "42",
+          "title": "Arrest on refusal to give name and residence",
+          "content": "When any person who, in the presence of a police officer, has committed or has been accused of committing a non-cognizable offence refuses, on demand of such officer, to give his name and residence, or gives a name or residence which such officer has reason to believe to be false, he may be arrested by such officer in order that his name or residence may be ascertained.\n(2) When the true name and residence of such person have been ascertained, he shall be released on his executing a bond, with or without sureties, to appear before a Magistrate if so required.",
+          "relatedSections": [
+            "crpc_41"
+          ],
+          "crossReferences": {
+            "bnss": "38"
+          }
+        },
+        {
+          "id": "crpc_43",
+          "sectionNo": "43",
+          "title": "Arrest by private person and procedure on such arrest",
+          "content": "(1) Any private person may arrest or cause to be arrested any person who in his presence commits a non-bailable and cognizable offence, or any proclaimed offender, and, without unnecessary delay, shall make over or cause to be made over any person so arrested to a police officer, or, in the absence of a police officer, take such person or cause him to be taken in custody to the nearest police station.\n(2) If there is reason to believe that such person comes under the provisions of section 41, a police officer shall re-arrest him.\n(3) If there is reason to believe that he has committed a non-cognizable offence, and he refuses on the demand of a police officer to give his name and residence, or gives a name or residence which such officer has reason to believe to be false, he shall be dealt with under the provisions of section 42; but if there is no sufficient reason to believe that he has committed any offence, he shall be at once released.",
+          "relatedSections": [
+            "crpc_41"
+          ],
+          "crossReferences": {
+            "bnss": "40"
+          }
+        },
+        {
+          "id": "crpc_44",
+          "sectionNo": "44",
+          "title": "Arrest by Magistrate",
+          "content": "(1) When any offence is committed in the presence of a Magistrate, whether Executive or Judicial, within his local jurisdiction, he may himself arrest or order any person to arrest the offender, and may thereupon, subject to the provisions herein contained as to bail, commit the offender to custody.\n(2) Any Magistrate, whether Executive or Judicial, may at any time arrest or direct the arrest, in his presence, within his local jurisdiction, of any person for whose arrest he is competent at the time and in the circumstances to issue a warrant.",
+          "relatedSections": [
+            "crpc_41",
+            "crpc_70"
+          ],
+          "crossReferences": {
+            "bnss": "39"
+          }
         },
         {
           "id": "crpc_46",
           "sectionNo": "46",
           "title": "Arrest how made",
           "content": "(1) In making an arrest the police officer or other person making the arrest shall actually touch or confine the body of the person to be arrested, unless there be a submission to the custody by word or action.\n\n(2) If such person forcibly resists the endeavour to arrest him, or attempts to evade the arrest, such police officer or other person may use all means necessary to effect the arrest.\n\n(3) Nothing in this section gives a right to cause the death of a person who is not accused of an offence punishable with death or with imprisonment for life.\n\n(4) Save in exceptional circumstances, no woman shall be arrested after sunset and before sunrise, and where such exceptional circumstances exist, the woman police officer shall, by making a written report, obtain the prior permission of the Judicial Magistrate of the first class within whose local jurisdiction the arrest is to be made.",
-          "relatedSections": ["crpc_41", "crpc_47", "crpc_49"]
+          "relatedSections": [
+            "crpc_41",
+            "crpc_47",
+            "crpc_49"
+          ]
+        },
+        {
+          "id": "crpc_47",
+          "sectionNo": "47",
+          "title": "Search of place entered by person sought to be arrested",
+          "content": "(1) If any person acting under a warrant of arrest, or any police officer having authority to arrest, has reason to believe that the person to be arrested has entered into, or is within, any place, any person residing in, or being in charge of, such place shall, on demand of such person acting as aforesaid or such police officer, allow him free ingress thereto, and afford all reasonable facilities for a search therein.\n(2) If ingress to such place cannot be obtained under sub-section (1), it shall be lawful in any case for a person acting under a warrant, and in any case in which a warrant may issue but cannot be obtained without affording the person to be arrested an opportunity of escape, for a police officer to enter such place and search therein.",
+          "relatedSections": [
+            "crpc_46",
+            "crpc_100"
+          ],
+          "crossReferences": {
+            "bnss": "47"
+          }
+        },
+        {
+          "id": "crpc_49",
+          "sectionNo": "49",
+          "title": "Person arrested not to be subject to more restraint than necessary",
+          "content": "The person arrested shall not be subjected to more restraint than is necessary to prevent his escape.",
+          "relatedSections": [
+            "crpc_46"
+          ],
+          "crossReferences": {
+            "bnss": "51"
+          }
+        },
+        {
+          "id": "crpc_50",
+          "sectionNo": "50",
+          "title": "Person arrested to be informed of grounds of arrest and of right to bail",
+          "content": "(1) Every police officer or other person arresting any person without warrant shall forthwith communicate to him full particulars of the offence for which he is arrested or other grounds for such arrest.\n(2) Where a police officer arrests without warrant any person other than a person accused of a non-bailable offence, he shall inform the person arrested that he is entitled to be released on bail and that he may arrange for sureties on his behalf.",
+          "relatedSections": [
+            "crpc_41",
+            "crpc_436"
+          ],
+          "crossReferences": {
+            "bnss": "52"
+          }
+        },
+        {
+          "id": "crpc_50A",
+          "sectionNo": "50A",
+          "title": "Obligation of person making arrest to inform about the arrest to a nominated person",
+          "content": "(1) Every police officer or other person making any arrest under this Code shall forthwith give the information regarding such arrest and place where the arrested person is being held to any of his friends, relatives or such other persons as may be disclosed or nominated by the arrested person for the purpose of giving such information.\n(4) It shall be the duty of the Magistrate before whom such arrested person is produced, to satisfy himself that the requirements of sub-section (1) have been complied with in respect of such arrested person.",
+          "relatedSections": [
+            "crpc_50"
+          ],
+          "crossReferences": {
+            "bnss": "52"
+          }
+        },
+        {
+          "id": "crpc_51",
+          "sectionNo": "51",
+          "title": "Search of arrested person",
+          "content": "(1) Whenever a person is arrested by a police officer under a warrant which does not provide for the taking of bail, or under a warrant which provides for the taking of bail but the person arrested cannot furnish bail, and whenever a person is arrested without warrant, or by a private person under a warrant, and cannot legally be admitted to bail, or is unable to furnish bail, the officer making the arrest or, when the arrest is made by a private person, the police officer to whom he makes over the person arrested, may search such person, and place in safe custody all articles, other than necessary wearing apparel, found upon him and where any article is seized from the arrested person, a receipt showing the articles taken in possession by the police officer shall be given to such person.",
+          "relatedSections": [
+            "crpc_46",
+            "crpc_47"
+          ],
+          "crossReferences": {
+            "bnss": "48"
+          }
+        },
+        {
+          "id": "crpc_54",
+          "sectionNo": "54",
+          "title": "Examination of arrested person by medical officer",
+          "content": "(1) When any person is arrested, he shall be examined by a medical officer in the service of Central or State Government, and in case the medical officer is not available, by a registered medical practitioner soon after the arrest is made:\nProvided that where the arrested person is a female, the examination of the body shall be made only by or under the supervision of a female medical officer, and in case the female medical officer is not available, by a female registered medical practitioner.\n(2) The medical officer examining the arrested person under sub-section (1) shall prepare the record of such examination mentioning therein any injuries or marks of violence upon the person arrested, and the approximate time when such injuries or marks may have been inflicted.",
+          "relatedSections": [
+            "crpc_51",
+            "crpc_46"
+          ],
+          "crossReferences": {
+            "bnss": "52"
+          }
+        },
+        {
+          "id": "crpc_55",
+          "sectionNo": "55",
+          "title": "Procedure when police officer deputes subordinate to arrest without warrant",
+          "content": "When any officer in charge of a police station or any police officer making an investigation under Chapter XII requires any officer subordinate to him to arrest without a warrant (otherwise than in his presence) any person who may lawfully be arrested without a warrant, he shall deliver to the officer required to make the arrest an order in writing, specifying the person to be arrested and the offence or other cause for which the arrest is to be made and the officer so required shall, before making the arrest, notify to the person to be arrested the substance of the order and, if so required by such person, shall show him the order.",
+          "relatedSections": [
+            "crpc_41"
+          ],
+          "crossReferences": {
+            "bnss": "43"
+          }
         },
         {
           "id": "crpc_57",
           "sectionNo": "57",
           "title": "Person arrested not to be detained more than twenty-four hours",
           "content": "No police officer shall detain in custody a person arrested without warrant for a longer period than under all the circumstances of the case is reasonable, and such period shall not, in the absence of a special order of a Magistrate under section 167, exceed twenty-four hours exclusive of the time necessary for the journey from the place of arrest to the Magistrate's Court.",
-          "relatedSections": ["crpc_167", "crpc_41"]
+          "relatedSections": [
+            "crpc_167",
+            "crpc_41"
+          ]
+        },
+        {
+          "id": "crpc_58",
+          "sectionNo": "58",
+          "title": "Police to report apprehensions",
+          "content": "Officers in charge of police stations shall report to the District Magistrate, or, if he so directs, to the Sub-divisional Magistrate, the cases of all persons arrested without warrant, within the limits of their respective stations, whether such persons have been admitted to bail or otherwise.",
+          "relatedSections": [
+            "crpc_57"
+          ],
+          "crossReferences": {
+            "bnss": "58"
+          }
+        },
+        {
+          "id": "crpc_60",
+          "sectionNo": "60",
+          "title": "Pursuit of offenders into other jurisdictions",
+          "content": "A police officer may, for the purpose of arresting without warrant any person whom he is authorised to arrest, pursue such person into any place in India.",
+          "relatedSections": [
+            "crpc_41"
+          ],
+          "crossReferences": {
+            "bnss": "60"
+          }
+        },
+        {
+          "id": "crpc_60A",
+          "sectionNo": "60A",
+          "title": "Arrest to be made strictly according to the Code",
+          "content": "No arrest shall be made except in accordance with the provisions of this Code or any other law for the time being in force providing for arrest.",
+          "relatedSections": [
+            "crpc_41",
+            "crpc_46"
+          ],
+          "crossReferences": {
+            "bnss": "35"
+          }
         }
       ]
     },
@@ -60,18 +530,409 @@
       "title": "Chapter VI — Processes to Compel Appearance",
       "sections": [
         {
+          "id": "crpc_61",
+          "sectionNo": "61",
+          "title": "Form of summons",
+          "content": "(1) Every summons issued by a Court under this Code shall be in writing, in duplicate, signed by the presiding officer of such Court or by such other officer as the High Court may, from time to time, by rule, direct, and shall bear the seal of the Court.\n(2) All summons shall be served in the manner hereinafter provided.",
+          "relatedSections": [
+            "crpc_62",
+            "crpc_64"
+          ],
+          "crossReferences": {
+            "bnss": "64"
+          }
+        },
+        {
+          "id": "crpc_62",
+          "sectionNo": "62",
+          "title": "Summons how served",
+          "content": "(1) Every summons shall be served by a police officer, or subject to such rules as the State Government may make in this behalf, by an officer of the Court issuing it or other public servant.\n(2) The summons shall, if practicable, be served personally on the person summoned, by delivering or tendering to him one of the duplicates of the summons.\n(3) Every person on whom a summons is so served shall, if so required by the serving officer, sign a receipt therefor on the back of the other duplicate.",
+          "relatedSections": [
+            "crpc_61"
+          ],
+          "crossReferences": {
+            "bnss": "65"
+          }
+        },
+        {
+          "id": "crpc_65",
+          "sectionNo": "65",
+          "title": "Procedure when service cannot be effected as before provided",
+          "content": "If service in the manner mentioned in sections 62, 63 and 64 cannot by the exercise of due diligence be effected, the serving officer shall affix one of the duplicates of the summons to some conspicuous part of the house or homestead in which the person summoned ordinarily resides; and thereupon the summons shall be deemed to have been duly served.",
+          "relatedSections": [
+            "crpc_62"
+          ],
+          "crossReferences": {
+            "bnss": "65"
+          }
+        },
+        {
+          "id": "crpc_70",
+          "sectionNo": "70",
+          "title": "Warrant of arrest",
+          "content": "(1) Every warrant of arrest issued by a Court under this Code shall be in writing, signed by the presiding officer of such Court, and shall bear the seal of the Court.\n(2) Every such warrant shall remain in force until it is cancelled by the Court which issued it, or until it is executed.",
+          "relatedSections": [
+            "crpc_71",
+            "crpc_73"
+          ],
+          "crossReferences": {
+            "bnss": "79"
+          }
+        },
+        {
+          "id": "crpc_71",
+          "sectionNo": "71",
+          "title": "Power to direct security to be taken",
+          "content": "(1) Any Court issuing a warrant for the arrest of any person may in its discretion direct by endorsement on the warrant that, if such person executes a bond with sufficient sureties for his attendance before the Court at a specified time and thereafter until otherwise directed by the Court, the officer to whom the warrant is directed shall take such security and shall release such person from custody.",
+          "relatedSections": [
+            "crpc_70"
+          ],
+          "crossReferences": {
+            "bnss": "79"
+          }
+        },
+        {
+          "id": "crpc_73",
+          "sectionNo": "73",
+          "title": "Warrant may be directed to any person",
+          "content": "(1) The Chief Judicial Magistrate or a Magistrate of the first class may direct a warrant to any person within his local jurisdiction for the arrest of any escaped convict, proclaimed offender or person who is accused of a non-bailable offence and is evading arrest.\n(2) Such person shall acknowledge in writing the receipt of the warrant, and shall return it to the Magistrate issuing it with an endorsement certifying the time and manner of execution, or, if it has not been executed, the reason why it has not been executed.",
+          "relatedSections": [
+            "crpc_70",
+            "crpc_82"
+          ],
+          "crossReferences": {
+            "bnss": "79"
+          }
+        },
+        {
+          "id": "crpc_75",
+          "sectionNo": "75",
+          "title": "Notification of substance of warrant",
+          "content": "The police officer or other person executing a warrant of arrest shall notify the substance thereof to the person to be arrested, and, if so required, shall show him the warrant.",
+          "relatedSections": [
+            "crpc_70",
+            "crpc_46"
+          ],
+          "crossReferences": {
+            "bnss": "79"
+          }
+        },
+        {
+          "id": "crpc_76",
+          "sectionNo": "76",
+          "title": "Person arrested to be brought before Court without delay",
+          "content": "The police officer or other person executing a warrant of arrest shall (subject to the provisions of section 71 as to security) without unnecessary delay bring the person arrested before the Court before which he is required by law to produce such person.",
+          "relatedSections": [
+            "crpc_70",
+            "crpc_57"
+          ],
+          "crossReferences": {
+            "bnss": "79"
+          }
+        },
+        {
+          "id": "crpc_80",
+          "sectionNo": "80",
+          "title": "Procedure on arrest of person against whom warrant is issued",
+          "content": "When a warrant of arrest is executed outside the district in which it was issued, the person arrested shall, unless the Court which issued the warrant is within thirty kilometres of the place of arrest or is nearer than the Executive Magistrate or District Superintendent of Police or Commissioner of Police within the local limits of whose jurisdiction the arrest was made, or unless security is taken under section 71, be taken before such Magistrate or District Superintendent or Commissioner.",
+          "relatedSections": [
+            "crpc_70",
+            "crpc_82"
+          ],
+          "crossReferences": {
+            "bnss": "79"
+          }
+        },
+        {
           "id": "crpc_82",
           "sectionNo": "82",
           "title": "Proclamation for person absconding",
           "content": "If any Court has reason to believe (whether after taking evidence or not) that any person against whom a warrant has been issued by it has absconded or is concealing himself so that such warrant cannot be executed, such Court may publish a written proclamation requiring him to appear at a specified place and at a specified time not less than thirty days from the date of publishing such proclamation.\n\n(2) The proclamation shall be published as follows:—\n(i) it shall be publicly read in some conspicuous place of the town or village in which such person ordinarily resides;\n(ii) it shall be affixed to some conspicuous part of the house or homestead in which such person ordinarily resides or to some conspicuous place of such town or village;\n(iii) a copy thereof shall be affixed to some conspicuous part of the Court-house.",
-          "relatedSections": ["crpc_83"]
+          "relatedSections": [
+            "crpc_83"
+          ]
         },
         {
           "id": "crpc_83",
           "sectionNo": "83",
           "title": "Attachment of property of person absconding",
           "content": "(1) The Court issuing a proclamation under section 82 may, for reasons to be recorded in writing, at any time after the issue of the proclamation, order the attachment of any property, movable or immovable, or both, belonging to the proclaimed person.\n\n(2) Such order shall authorise the attachment of any property belonging to such person within the district in which it is made; and it shall authorise the attachment of any property belonging to such person without such district when endorsed by the District Magistrate within whose district such property is situate.",
-          "relatedSections": ["crpc_82"]
+          "relatedSections": [
+            "crpc_82"
+          ]
+        },
+        {
+          "id": "crpc_88",
+          "sectionNo": "88",
+          "title": "Power to take bond for appearance",
+          "content": "When any person for whose appearance or arrest the officer presiding in any Court is empowered to issue a summons or warrant, is present in such Court, such officer may require such person to execute a bond, with or without sureties, for his appearance in such Court, or any other Court to which the case may be transferred.",
+          "relatedSections": [
+            "crpc_82",
+            "crpc_436"
+          ],
+          "crossReferences": {
+            "bnss": "88"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch7",
+      "title": "Chapter VII — Processes to Compel Production of Things",
+      "sections": [
+        {
+          "id": "crpc_91",
+          "sectionNo": "91",
+          "title": "Summons to produce document or other thing",
+          "content": "(1) Whenever any Court or any officer in charge of a police station considers that the production of any document or other thing is necessary or desirable for the purposes of any investigation, inquiry, trial or other proceeding under this Code by or before such Court or officer, such Court may issue a summons, or such officer a written order, to the person in whose possession or power such document or thing is believed to be, requiring him to attend and produce it, or to produce it, at the time and place stated in the summons or order.\n(2) Any person required under this section merely to produce a document or other thing shall be deemed to have complied with the requisition if he causes such document or thing to be produced instead of attending personally to produce the same.",
+          "relatedSections": [
+            "crpc_92",
+            "crpc_94"
+          ],
+          "crossReferences": {
+            "bnss": "94"
+          }
+        },
+        {
+          "id": "crpc_92",
+          "sectionNo": "92",
+          "title": "Procedure as to letters and telegrams",
+          "content": "(1) If any document, parcel or thing in the custody of a postal or telegraph authority is, in the opinion of the District Magistrate, Chief Judicial Magistrate, Court of Session or High Court wanted for the purpose of any investigation, inquiry, trial or other proceeding under this Code, such Magistrate or Court may require the postal or telegraph authority, as the case may be, to deliver the document, parcel or thing to such person as the Magistrate or Court directs.",
+          "relatedSections": [
+            "crpc_91"
+          ],
+          "crossReferences": {
+            "bnss": "95"
+          }
+        },
+        {
+          "id": "crpc_93",
+          "sectionNo": "93",
+          "title": "When search warrant may be issued",
+          "content": "(1) Where any Court has reason to believe that a person to whom a summons or order under section 91 or a requisition under sub-section (1) of section 92 has been or might be addressed, will not or would not produce the document or thing as required by such summons, requisition or order, or where such document or thing is not known to the Court to be in the possession of any person, or where the Court considers that the purposes of any inquiry, trial or other proceeding under this Code will be served by a general search or inspection, it may issue a search warrant.",
+          "relatedSections": [
+            "crpc_91",
+            "crpc_100"
+          ],
+          "crossReferences": {
+            "bnss": "94"
+          }
+        },
+        {
+          "id": "crpc_97",
+          "sectionNo": "97",
+          "title": "Search for persons wrongfully confined",
+          "content": "If any District Magistrate, Sub-divisional Magistrate or Magistrate of the first class has reason to believe that any person is confined under such circumstances that the confinement amounts to an offence, he may issue a search-warrant, and the person to whom such warrant is directed may search for the person so confined; and such search shall be made in accordance with the provisions of this Code, and the person, if found, shall be immediately taken before a Magistrate, who shall make such order as in the circumstances of the case seems proper.",
+          "relatedSections": [
+            "crpc_93",
+            "crpc_100"
+          ],
+          "crossReferences": {
+            "bnss": "94"
+          }
+        },
+        {
+          "id": "crpc_100",
+          "sectionNo": "100",
+          "title": "Search of closed place",
+          "content": "(1) Whenever any place liable to search or inspection under this Chapter is closed, any person residing in, or being in charge of, such place, shall, on demand of the officer or other person executing the warrant, and on production of the warrant, allow him free ingress thereto, and afford all reasonable facilities for a search therein.\n(2) If ingress into such place cannot be so obtained, the officer or other person executing the warrant may proceed in the manner provided by sub-section (2) of section 47.\n(4) Where any person is searched under this section, the search shall be made by a person of the same sex with strict regard to decency.",
+          "relatedSections": [
+            "crpc_91",
+            "crpc_165"
+          ],
+          "crossReferences": {
+            "bnss": "103"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch8",
+      "title": "Chapter VIII — Security for Keeping the Peace and for Good Behaviour",
+      "sections": [
+        {
+          "id": "crpc_107",
+          "sectionNo": "107",
+          "title": "Security for keeping the peace",
+          "content": "(1) Whenever an Executive Magistrate receives information that any person is likely to commit a breach of the peace or disturb the public tranquillity or to do any wrongful act that may probably occasion a breach of the peace or disturb the public tranquillity and is of opinion that there is sufficient ground for proceeding, he may, in the manner hereinafter provided, require such person to show cause why he should not be ordered to execute a bond, with or without sureties, for keeping the peace for such period, not exceeding three years, as the Magistrate thinks fit, to be fixed in the bond.",
+          "relatedSections": [
+            "crpc_108",
+            "crpc_111"
+          ],
+          "crossReferences": {
+            "bnss": "126"
+          }
+        },
+        {
+          "id": "crpc_108",
+          "sectionNo": "108",
+          "title": "Security for good behaviour from persons disseminating seditious matters",
+          "content": "Whenever an Executive Magistrate receives information that there is within his local jurisdiction any person who, within or without such jurisdiction, either orally or in writing or in any other manner, intentionally disseminates or attempts to disseminate or abets the dissemination of—\n(a) any matter the publication of which is punishable under section 124A or section 153A or section 153B or section 295A of the Indian Penal Code, or\n(b) any seditious matter,\nthe Magistrate may require such person to show cause why he should not be ordered to execute a bond, with or without sureties, for his good behaviour for such period, not exceeding three years, as the Magistrate thinks fit.",
+          "relatedSections": [
+            "crpc_107"
+          ],
+          "crossReferences": {
+            "bnss": "127"
+          }
+        },
+        {
+          "id": "crpc_109",
+          "sectionNo": "109",
+          "title": "Security for good behaviour from suspected persons",
+          "content": "Whenever an Executive Magistrate receives information that there is within his local jurisdiction a person taking precautions to conceal his presence and that there is reason to believe that he is doing so with a view to committing a cognizable offence, the Magistrate may, in the manner hereinafter provided, require such person to show cause why he should not be ordered to execute a bond, with or without sureties, for his good behaviour for such period, not exceeding one year, as the Magistrate thinks fit.",
+          "relatedSections": [
+            "crpc_107",
+            "crpc_110"
+          ],
+          "crossReferences": {
+            "bnss": "127"
+          }
+        },
+        {
+          "id": "crpc_144",
+          "sectionNo": "144",
+          "title": "Power to issue order in urgent cases of nuisance or apprehended danger",
+          "content": "(1) In cases where, in the opinion of a District Magistrate, a Sub-divisional Magistrate or any other Executive Magistrate specially empowered by the State Government in this behalf, there is sufficient ground for proceeding under this section and immediate prevention or speedy remedy is desirable, such Magistrate may, by a written order stating the material facts of the case and served in the manner provided by section 134, direct any person to abstain from a certain act or to take certain order with respect to certain property in his possession or under his management, if such Magistrate considers that such direction is likely to prevent, or tends to prevent, obstruction, annoyance or injury to any person lawfully employed, or danger to human life, health or safety, or a disturbance of the public tranquillity, or a riot, or an affray.\n(2) An order under this section may, in cases of emergency or in cases where the circumstances do not admit of the serving of notice, be passed ex parte.",
+          "relatedSections": [
+            "crpc_107",
+            "crpc_145"
+          ],
+          "crossReferences": {
+            "bnss": "163"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch9",
+      "title": "Chapter IX — Order for Maintenance of Wives, Children and Parents",
+      "sections": [
+        {
+          "id": "crpc_125",
+          "sectionNo": "125",
+          "title": "Order for maintenance of wives, children and parents",
+          "content": "(1) If any person having sufficient means neglects or refuses to maintain—\n(a) his wife, unable to maintain herself, or\n(b) his legitimate or illegitimate minor child, whether married or not, unable to maintain itself, or\n(c) his legitimate or illegitimate child (not being a married daughter) who has attained majority, where such child is, by reason of any physical or mental abnormality or injury unable to maintain itself, or\n(d) his father or mother, unable to maintain himself or herself,\na Magistrate of the first class may, upon proof of such neglect or refusal, order such person to make a monthly allowance for the maintenance of his wife or such child, father or mother, at such monthly rate as such Magistrate thinks fit.\n\n(3) If any person so ordered fails without sufficient cause to comply with the order, any such Magistrate may, for every breach of the order, issue a warrant for levying the amount due in the manner provided for levying fines, and may sentence such person, for the whole or any part of each month's allowance remaining unpaid after the execution of the warrant, to imprisonment for a term which may extend to one month or until payment if sooner made.",
+          "relatedSections": [
+            "crpc_126",
+            "crpc_127",
+            "crpc_128"
+          ],
+          "crossReferences": {
+            "bnss": "144"
+          }
+        },
+        {
+          "id": "crpc_126",
+          "sectionNo": "126",
+          "title": "Procedure",
+          "content": "(1) Proceedings under section 125 may be taken against any person in any district—\n(a) where he is, or\n(b) where he or his wife resides, or\n(c) where he last resided with his wife, or as the case may be, with the mother of the illegitimate child.\n(2) All evidence in such proceedings shall be taken in the presence of the person against whom an order for payment of maintenance is proposed to be made.",
+          "relatedSections": [
+            "crpc_125"
+          ],
+          "crossReferences": {
+            "bnss": "145"
+          }
+        },
+        {
+          "id": "crpc_127",
+          "sectionNo": "127",
+          "title": "Alteration in allowance",
+          "content": "(1) On proof of a change in the circumstances of any person, receiving, under section 125 a monthly allowance, or ordered under the same section to pay a monthly allowance to his wife, child, father or mother, as the case may be, the Magistrate may make such alteration in the allowance as he thinks fit:\nProvided that if he increases the allowance, the monthly rate of five hundred rupees in whole shall not be exceeded.",
+          "relatedSections": [
+            "crpc_125",
+            "crpc_128"
+          ],
+          "crossReferences": {
+            "bnss": "145"
+          }
+        },
+        {
+          "id": "crpc_128",
+          "sectionNo": "128",
+          "title": "Enforcement of order of maintenance",
+          "content": "A copy of the order of maintenance shall be given without payment to the person in whose favour it is made, or to his guardian, if any, or to the person to whom the allowance is to be paid; and such order may be enforced by any Magistrate in any place where the person against whom it is made may be, on such Magistrate being satisfied as to the identity of the parties and the non-payment of the allowance due.",
+          "relatedSections": [
+            "crpc_125",
+            "crpc_127"
+          ],
+          "crossReferences": {
+            "bnss": "147"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch10",
+      "title": "Chapter X — Maintenance of Public Order and Tranquillity",
+      "sections": [
+        {
+          "id": "crpc_129",
+          "sectionNo": "129",
+          "title": "Use of civil force to disperse assembly",
+          "content": "(1) Any Executive Magistrate or officer in charge of a police station may command any unlawful assembly, or any assembly of five or more persons likely to cause a disturbance of the public peace, to disperse; and it shall thereupon be the duty of the members of such assembly to disperse accordingly.\n(2) If, upon being so commanded, any such assembly does not disperse, or if, without being so commanded, it conducts itself in such a manner as to show a determination not to disperse, any Executive Magistrate or officer in charge of a police station may proceed to disperse such assembly by force.",
+          "relatedSections": [
+            "crpc_130",
+            "crpc_144"
+          ],
+          "crossReferences": {
+            "bnss": "163"
+          }
+        },
+        {
+          "id": "crpc_130",
+          "sectionNo": "130",
+          "title": "Use of armed forces to disperse assembly",
+          "content": "(1) If any such assembly cannot be otherwise dispersed, and if it is necessary for the public security that it should be dispersed, the Executive Magistrate of the highest rank who is present may cause it to be dispersed by the armed forces.\n(2) Such Executive Magistrate may require any officer in command of any group of persons belonging to the armed forces to disperse the assembly with the help of the armed forces under his command.",
+          "relatedSections": [
+            "crpc_129"
+          ],
+          "crossReferences": {
+            "bnss": "164"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch11",
+      "title": "Chapter XI — Preventive Action of the Police",
+      "sections": [
+        {
+          "id": "crpc_149",
+          "sectionNo": "149",
+          "title": "Police to prevent cognizable offences",
+          "content": "Every police officer may interpose for the purpose of preventing, and shall, to the best of his ability, prevent, the commission of any cognizable offence.",
+          "relatedSections": [
+            "crpc_41",
+            "crpc_150"
+          ],
+          "crossReferences": {
+            "bnss": "170"
+          }
+        },
+        {
+          "id": "crpc_150",
+          "sectionNo": "150",
+          "title": "Information of design to commit cognizable offences",
+          "content": "Every police officer receiving information of a design to commit any cognizable offence shall communicate such information to his superior officer, and to any other officer whose duty it is to prevent or take cognizance of the commission of any such offence.",
+          "relatedSections": [
+            "crpc_149"
+          ],
+          "crossReferences": {
+            "bnss": "170"
+          }
+        },
+        {
+          "id": "crpc_151",
+          "sectionNo": "151",
+          "title": "Arrest to prevent the commission of cognizable offences",
+          "content": "(1) A police officer knowing of a design to commit any cognizable offence may arrest, without orders from a Magistrate and without a warrant, the person so designing, if it appears to such officer that the commission of the offence cannot be otherwise prevented.\n(2) No person arrested under sub-section (1) shall be detained in custody for a period exceeding twenty-four hours from the time of his arrest unless his further detention is required or authorised under any other provisions of this Code or of any other law for the time being in force.",
+          "relatedSections": [
+            "crpc_149",
+            "crpc_57"
+          ],
+          "crossReferences": {
+            "bnss": "35"
+          }
         }
       ]
     },
@@ -84,73 +945,258 @@
           "sectionNo": "154",
           "title": "Information in cognizable cases (FIR)",
           "content": "(1) Every information relating to the commission of a cognizable offence, if given orally to an officer in charge of a police station, shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it, and the substance thereof shall be entered in a book to be kept by such officer in such form as the State Government may prescribe in this behalf.\n\n**Provided** that if the information is given by the woman against whom an offence under section 326A, section 326B, section 354, section 354A, section 354B, section 354C, section 354D, section 376, section 376A, section 376B, section 376C, section 376D, section 376E or section 509 of the Indian Penal Code, 1860 is alleged to have been committed or attempted, then such information shall be recorded, by a woman police officer or any woman officer.\n\n(2) A copy of the information as recorded under sub-section (1) shall be given forthwith, free of cost, to the informant.\n\n(3) Any person aggrieved by a refusal on the part of an officer in charge of a police station to record the information referred to in sub-section (1) may send the substance of such information, in writing and by post, to the Superintendent of Police concerned who, if satisfied that such information discloses the commission of a cognizable offence, shall either investigate the case himself or direct an investigation to be made by any police officer subordinate to him.\n\n**Key principles:** FIR is not a substantive piece of evidence; it can be used to corroborate or contradict the maker. Delay in filing FIR must be explained. Electronic FIR (e-FIR) has been recognized by courts.",
-          "relatedSections": ["crpc_155", "crpc_156", "crpc_157"],
-          "crossReferences": {"bnss": "173"}
+          "relatedSections": [
+            "crpc_155",
+            "crpc_156",
+            "crpc_157"
+          ],
+          "crossReferences": {
+            "bnss": "173"
+          }
         },
         {
           "id": "crpc_155",
           "sectionNo": "155",
           "title": "Information as to non-cognizable cases and investigation of such cases",
           "content": "(1) When information is given to an officer in charge of a police station of the commission within the limits of such station of a non-cognizable offence, he shall enter or cause to be entered the substance of such information in a book to be kept by such officer in such form as the State Government may prescribe in this behalf, and refer the informant to the Magistrate.\n\n(2) No police officer shall investigate a non-cognizable case without the order of a Magistrate having power to try such case or commit the case for trial.",
-          "relatedSections": ["crpc_154", "crpc_156"]
+          "relatedSections": [
+            "crpc_154",
+            "crpc_156"
+          ]
         },
         {
           "id": "crpc_156",
           "sectionNo": "156",
           "title": "Police officer's power to investigate cognizable case",
           "content": "(1) Any officer in charge of a police station may, without the order of a Magistrate, investigate any cognizable case which a Court having jurisdiction over the local area within the limits of such station would have power to inquire into or try under the provisions of Chapter XIII.\n\n(2) No proceeding of a police officer in any such case shall at any stage be called in question on the ground that the case was one which such officer was not empowered under this section to investigate.\n\n(3) Any Magistrate empowered under section 190 may order such an investigation as above-mentioned.\n\n**S. 156(3):** A Magistrate can direct the police to register an FIR and investigate, even if the police have refused. This is a powerful remedy against police inaction.",
-          "relatedSections": ["crpc_154", "crpc_190"]
+          "relatedSections": [
+            "crpc_154",
+            "crpc_190"
+          ]
         },
         {
           "id": "crpc_157",
           "sectionNo": "157",
           "title": "Procedure for investigation",
           "content": "(1) If, from information received or otherwise, an officer in charge of a police station has reason to suspect the commission of an offence which he is empowered under section 156 to investigate, he shall forthwith send a report of the same to a Magistrate empowered to take cognizance of such offence upon a police report and shall proceed in person, or shall depute one of his subordinate officers not being below such rank as the State Government may, by general or special order, prescribe in this behalf, to proceed, to the spot, to investigate the facts and circumstances of the case, and, if necessary, to take measures for the discovery and arrest of the offender.",
-          "relatedSections": ["crpc_154", "crpc_156", "crpc_173"]
+          "relatedSections": [
+            "crpc_154",
+            "crpc_156",
+            "crpc_173"
+          ]
+        },
+        {
+          "id": "crpc_158",
+          "sectionNo": "158",
+          "title": "Report how submitted",
+          "content": "Every report sent to a Magistrate under section 157 shall, if the State Government so directs, be submitted through such superior officer of police as the State Government, by general or special order, appoints in this behalf.",
+          "relatedSections": [
+            "crpc_157",
+            "crpc_173"
+          ],
+          "crossReferences": {
+            "bnss": "176"
+          }
+        },
+        {
+          "id": "crpc_159",
+          "sectionNo": "159",
+          "title": "Power to hold investigation or preliminary inquiry",
+          "content": "Such Magistrate, on receiving such report, may direct an investigation, or, if he thinks fit, at once proceed, or depute any Magistrate subordinate to him to proceed, to hold a preliminary inquiry into, or otherwise to dispose of, the case in the manner provided in this Code.",
+          "relatedSections": [
+            "crpc_157",
+            "crpc_190"
+          ],
+          "crossReferences": {
+            "bnss": "176"
+          }
+        },
+        {
+          "id": "crpc_160",
+          "sectionNo": "160",
+          "title": "Police officer's power to require attendance of witnesses",
+          "content": "(1) Any police officer making an investigation under this Chapter may, by order in writing, require the attendance before himself of any person being within the limits of his own or any adjoining station who, from the information given or otherwise, appears to be acquainted with the facts and circumstances of the case; and such person shall attend as so required:\nProvided that no male person under the age of fifteen years or woman shall be required to attend at any place other than the place in which such male person or woman resides.",
+          "relatedSections": [
+            "crpc_161"
+          ],
+          "crossReferences": {
+            "bnss": "179"
+          }
         },
         {
           "id": "crpc_161",
           "sectionNo": "161",
           "title": "Examination of witnesses by police",
           "content": "(1) Any police officer making an investigation under this Chapter, or any police officer not below such rank as the State Government may, by general or special order, prescribe in this behalf, acting on the requisition of such officer, may examine orally any person supposed to be acquainted with the facts and circumstances of the case.\n\n(2) Such person shall be bound to answer truly all questions relating to such case put to him by such officer, other than questions the answers to which would have a tendency to expose him to a criminal charge or to a penalty or forfeiture.\n\n(3) The police officer may reduce into writing any statement made to him in the course of an examination under this section; and if he does so, he shall make a separate and true record of the statement of each such person whose statement he records.\n\n**Key principles:** Statements under S.161 are not admissible as substantive evidence; they can only be used to contradict a witness under S.145 Evidence Act. Statements to police under S.161 are not on oath.",
-          "relatedSections": ["crpc_162", "crpc_164"],
-          "crossReferences": {"bnss": "180"}
+          "relatedSections": [
+            "crpc_162",
+            "crpc_164"
+          ],
+          "crossReferences": {
+            "bnss": "180"
+          }
         },
         {
           "id": "crpc_162",
           "sectionNo": "162",
           "title": "Statements to police not to be signed; Use of statements in evidence",
           "content": "(1) No statement made by any person to a police officer in the course of an investigation under this Chapter, shall, if reduced to writing, be signed by the person making it; nor shall any such statement or any record thereof, whether in a police diary or otherwise, or any part of such statement or record, be used for any purpose, save as hereinafter provided, at any inquiry or trial in respect of any offence under investigation at the time when such statement was made.\n\n**Provided** that when any witness is called for the prosecution in such inquiry or trial whose statement has been reduced into writing as aforesaid, any part of his statement, if duly proved, may be used by the accused, and with the permission of the Court, by the prosecution, to contradict such witness in the manner provided by section 145 of the Indian Evidence Act, 1872.",
-          "relatedSections": ["crpc_161", "crpc_164"]
+          "relatedSections": [
+            "crpc_161",
+            "crpc_164"
+          ]
         },
         {
           "id": "crpc_163",
           "sectionNo": "163",
           "title": "No inducement to be offered",
           "content": "(1) No police officer or other person in authority shall offer or make, or cause to be offered or made, any such inducement, threat or promise as is mentioned in section 24 of the Indian Evidence Act, 1872.\n\n(2) But no police officer or other person shall prevent, by any caution or otherwise, any person from making in the course of any investigation under this Chapter any statement which he may be disposed to make of his own free will.",
-          "relatedSections": ["crpc_161", "crpc_164"]
+          "relatedSections": [
+            "crpc_161",
+            "crpc_164"
+          ]
         },
         {
           "id": "crpc_164",
           "sectionNo": "164",
           "title": "Recording of confessions and statements",
           "content": "(1) Any Metropolitan Magistrate or Judicial Magistrate may, whether or not he has jurisdiction in the case, record any confession or statement made to him in the course of an investigation under this Chapter or under any other law for the time being in force, or at any time afterwards before the commencement of the inquiry or trial.\n\n(2) The Magistrate shall, before recording any such confession, explain to the person making it that he is not bound to make a confession and that, if he does so, it may be used as evidence against him; and the Magistrate shall not record any such confession unless, upon questioning the person making it, he has reason to believe that it is being made voluntarily.\n\n(3) If at any time before the confession is recorded, the person appearing before the Magistrate states that he is not willing to make the confession, the Magistrate shall not authorize the detention of such person in police custody.\n\n(4) Any such confession shall be recorded in the manner provided in section 281 for recording the examination of an accused person and shall be signed by the person making the confession; and the Magistrate shall make a memorandum at the foot of such record.\n\n(5) Any statement (other than a confession) made under sub-section (1) shall be recorded in such manner hereinafter provided for the recording of evidence as is, in the opinion of the Magistrate, best fitted to the circumstances of the case; and the Magistrate shall have power to administer oath to the person whose statement is so recorded.\n\n**Key principle:** A confessional statement recorded under S.164 is substantive evidence. It must be voluntary. The Magistrate must issue a 'warning' to the accused. The accused must be given time to reflect.",
-          "relatedSections": ["crpc_161", "crpc_162", "crpc_163"]
+          "relatedSections": [
+            "crpc_161",
+            "crpc_162",
+            "crpc_163"
+          ]
+        },
+        {
+          "id": "crpc_165",
+          "sectionNo": "165",
+          "title": "Search by police officer",
+          "content": "(1) Whenever an officer in charge of a police station or a police officer making an investigation has reasonable grounds for believing that anything necessary for the purposes of an investigation into any offence which he is authorised to investigate may be found in any place within the limits of the police station of which he is in charge, or to which he is attached, and that such thing cannot in his opinion be otherwise obtained without undue delay, such officer may, after recording in writing the grounds of his belief and specifying in such writing, so far as possible, the thing for which search is to be made, search, or cause search to be made, for such thing in any place within the limits of such station.",
+          "relatedSections": [
+            "crpc_100",
+            "crpc_161"
+          ],
+          "crossReferences": {
+            "bnss": "184"
+          }
         },
         {
           "id": "crpc_167",
           "sectionNo": "167",
           "title": "Procedure when investigation cannot be completed in twenty-four hours",
           "content": "(1) Whenever any person is arrested and detained in custody and it appears that the investigation cannot be completed within the period of twenty-four hours fixed by section 57, and there are grounds for believing that the accusation or information is well-founded, the officer in charge of the police station or the police officer making the investigation, if he is not below the rank of sub-inspector, shall forthwith transmit to the nearest Judicial Magistrate a copy of the entries in the diary hereinafter prescribed relating to the case, and shall at the same time forward the accused to such Magistrate.\n\n(2) The Magistrate to whom an accused person is forwarded under this section may, whether he has or has not jurisdiction to try the case, from time to time, authorise the detention of the accused in such custody as such Magistrate thinks fit, for a term not exceeding fifteen days in the whole; and if he has no jurisdiction to try the case or commit it for trial, and considers further detention unnecessary, he may order the accused to be forwarded to a Magistrate having such jurisdiction.\n\n**Proviso:** that the Magistrate may authorise the detention of the accused person, otherwise than in the custody of the police, beyond the period of fifteen days if he is satisfied that adequate grounds exist for doing so, but no Magistrate shall authorise the detention of the accused person in custody under this paragraph for a total period exceeding—\n(i) ninety days, where the investigation relates to an offence punishable with death, imprisonment for life or imprisonment for a term of not less than ten years;\n(ii) sixty days, where the investigation relates to any other offence,\nand, on the expiry of the said period of ninety days, or sixty days, as the case may be, the accused person shall be released on bail if he is prepared to and does furnish bail.\n\n**Default bail (S.167(2) proviso):** If investigation is not completed within 60/90 days, the accused gets an indefeasible right to bail. This is commonly called 'default bail' or 'statutory bail'.",
-          "relatedSections": ["crpc_57", "crpc_437", "crpc_439"]
+          "relatedSections": [
+            "crpc_57",
+            "crpc_437",
+            "crpc_439"
+          ]
+        },
+        {
+          "id": "crpc_172",
+          "sectionNo": "172",
+          "title": "Diary of proceedings in investigation",
+          "content": "(1) Every police officer making an investigation under this Chapter shall day by day enter his proceedings in the investigation in a diary, setting forth the time at which the information reached him, the time at which he began and closed his investigation, the place or places visited by him, and a statement of the circumstances ascertained through his investigation.\n(2) Any Criminal Court may send for the police diaries of a case under inquiry or trial in such Court, and may use such diaries, not as evidence in the case, but to aid it in such inquiry or trial.\n(3) Neither the accused nor his agents shall be entitled to call for such diaries, nor shall he or they be entitled to see them merely because they are referred to by the Court; but, if they are used by the police officer who made them to refresh his memory, or if the Court uses them for the purpose of contradicting such police officer, the provisions of section 161 or section 145, as the case may be, of the Indian Evidence Act, 1872, shall apply.",
+          "relatedSections": [
+            "crpc_173"
+          ],
+          "crossReferences": {
+            "bnss": "172"
+          }
         },
         {
           "id": "crpc_173",
           "sectionNo": "173",
           "title": "Report of police officer on completion of investigation (Charge Sheet)",
           "content": "(1) Every investigation under this Chapter shall be completed without unnecessary delay.\n\n(2) (i) As soon as it is completed, the officer in charge of the police station shall forward to a Magistrate empowered to take cognizance of the offence on a police report, a report in the form prescribed by the State Government, stating—\n(a) the names of the parties;\n(b) the nature of the information;\n(c) the names of the persons who appear to be acquainted with the circumstances of the case;\n(d) whether any offence appears to have been committed and, if so, by whom;\n(e) whether the accused has been arrested;\n(f) whether he has been released on his bond and, if so, whether with or without sureties;\n(g) whether he has been forwarded in custody under section 170.\n\n(8) Nothing in this section shall be construed to preclude further investigation in respect of an offence after a report under sub-section (2) has been forwarded to the Magistrate and, where upon such investigation, the officer in charge of the police station obtains further evidence, oral or documentary, he shall forward to the Magistrate a further report or reports regarding such evidence.\n\n**Note:** The police report under S.173(2) is commonly called the 'charge sheet' or 'challan'.",
-          "relatedSections": ["crpc_154", "crpc_157", "crpc_190"],
-          "crossReferences": {"bnss": "193"}
+          "relatedSections": [
+            "crpc_154",
+            "crpc_157",
+            "crpc_190"
+          ],
+          "crossReferences": {
+            "bnss": "193"
+          }
+        },
+        {
+          "id": "crpc_174",
+          "sectionNo": "174",
+          "title": "Police to inquire and report on suicide",
+          "content": "(1) When the officer in charge of a police station or some other police officer specially empowered by the State Government in that behalf receives information that a person has committed suicide, or has been killed by another or by an animal or by machinery or by an accident, or has died under circumstances raising a reasonable suspicion that some other person has committed an offence, he shall immediately give intimation thereof to the nearest Executive Magistrate empowered to hold inquests.\n(3) When—\n(i) the case involves suicide by a woman within seven years of marriage; or\n(ii) the case relates to the death of a woman within seven years of marriage in any circumstances raising a reasonable suspicion that some other person committed an offence in relation to such woman,\nthe police officer shall forward the body with a report to the nearest Judicial Magistrate.",
+          "relatedSections": [
+            "crpc_173",
+            "crpc_176"
+          ],
+          "crossReferences": {
+            "bnss": "196"
+          }
+        },
+        {
+          "id": "crpc_176",
+          "sectionNo": "176",
+          "title": "Inquiry by Magistrate into cause of death",
+          "content": "(1) When any person dies while in the custody of the police, the nearest Magistrate empowered to hold inquests shall, and in any other case mentioned in sub-section (1) of section 174, any Magistrate so empowered may hold an inquiry into the cause of death either instead of, or in addition to, the investigation held by the police officer.\n(1A) Where—\n(a) any person dies or disappears, or\n(b) a woman is alleged to have committed suicide,\nwithin twenty-four hours of—\n(i) being taken into police custody, or\n(ii) having been in the custody of police,\nthe Judicial Magistrate or Metropolitan Magistrate shall hold an inquiry.",
+          "relatedSections": [
+            "crpc_174"
+          ],
+          "crossReferences": {
+            "bnss": "197"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch13",
+      "title": "Chapter XIII — Jurisdiction of Criminal Courts in Inquiries and Trials",
+      "sections": [
+        {
+          "id": "crpc_177",
+          "sectionNo": "177",
+          "title": "Ordinary place of inquiry and trial",
+          "content": "Every offence shall ordinarily be inquired into and tried by a Court within whose local jurisdiction it was committed.",
+          "relatedSections": [
+            "crpc_178",
+            "crpc_190"
+          ],
+          "crossReferences": {
+            "bnss": "200"
+          }
+        },
+        {
+          "id": "crpc_178",
+          "sectionNo": "178",
+          "title": "Place of inquiry or trial",
+          "content": "When it is uncertain in which of several local areas an offence was committed, or where an offence is committed partly in one local area and partly in another, or where an offence is a continuing one, and continues to be committed in more local areas than one, or where it consists of several acts done in different local areas, it may be inquired into or tried by a Court having jurisdiction over any of such local areas.",
+          "relatedSections": [
+            "crpc_177"
+          ],
+          "crossReferences": {
+            "bnss": "201"
+          }
+        },
+        {
+          "id": "crpc_179",
+          "sectionNo": "179",
+          "title": "Offence triable where act is done or consequence ensues",
+          "content": "When an act is an offence by reason of anything which has been done and of a consequence which has ensued, the offence may be inquired into or tried by a Court within whose local jurisdiction such thing has been done or such consequence has ensued.",
+          "relatedSections": [
+            "crpc_177",
+            "crpc_178"
+          ],
+          "crossReferences": {
+            "bnss": "201"
+          }
+        },
+        {
+          "id": "crpc_188",
+          "sectionNo": "188",
+          "title": "Offence committed outside India",
+          "content": "When an offence is committed outside India—\n(a) by a citizen of India, whether on the high seas or elsewhere; or\n(b) by a person, not being such citizen, on any ship or aircraft registered in India,\nhe may be dealt with in respect of such offence as if it had been committed at any place within India at which he may be found.",
+          "relatedSections": [
+            "crpc_177"
+          ],
+          "crossReferences": {
+            "bnss": "209"
+          }
         }
       ]
     },
@@ -163,36 +1209,273 @@
           "sectionNo": "190",
           "title": "Cognizance of offences by Magistrates",
           "content": "(1) Subject to the provisions of this Chapter, any Magistrate of the first class, and any Magistrate of the second class specially empowered in this behalf under sub-section (2), may take cognizance of any offence—\n\n(a) upon receiving a complaint of facts which constitute such offence;\n(b) upon a police report of such facts;\n(c) upon information received from any person other than a police officer, or upon his own knowledge, that such offence has been committed.\n\n(2) The Chief Judicial Magistrate may empower any Magistrate of the second class to take cognizance under sub-section (1) of such offences as are within his competence to inquire into or try.\n\n**Note:** Taking cognizance means the Magistrate applies his mind to the commission of the alleged offence. Mere receipt of complaint is not taking cognizance.",
-          "relatedSections": ["crpc_173", "crpc_200", "crpc_202", "crpc_204"],
-          "crossReferences": {"bnss": "210"}
+          "relatedSections": [
+            "crpc_173",
+            "crpc_200",
+            "crpc_202",
+            "crpc_204"
+          ],
+          "crossReferences": {
+            "bnss": "210"
+          }
+        },
+        {
+          "id": "crpc_193",
+          "sectionNo": "193",
+          "title": "Cognizance of offences by Courts of Session",
+          "content": "Except as otherwise expressly provided by this Code or by any other law for the time being in force, no Court of Session shall take cognizance of any offence as a court of original jurisdiction unless the case has been committed to it by a Magistrate under this Code.",
+          "relatedSections": [
+            "crpc_190",
+            "crpc_204"
+          ],
+          "crossReferences": {
+            "bnss": "210"
+          }
+        },
+        {
+          "id": "crpc_195",
+          "sectionNo": "195",
+          "title": "Prosecution for contempt of lawful authority of public servants",
+          "content": "(1) No Court shall take cognizance of—\n(a) any offence punishable under sections 172 to 188 (both inclusive) of the Indian Penal Code, or\n(b) any abetment of, or attempt to commit, such offence, or\n(c) any criminal conspiracy to commit such offence,\nexcept on the complaint in writing of the public servant concerned or of some other public servant to whom he is subordinate.",
+          "relatedSections": [
+            "crpc_190",
+            "crpc_200"
+          ],
+          "crossReferences": {
+            "bnss": "218"
+          }
         },
         {
           "id": "crpc_197",
           "sectionNo": "197",
           "title": "Prosecution of Judges and public servants",
           "content": "(1) When any person who is or was a Judge or Magistrate or a public servant not removable from his office save by or with the sanction of the Government is accused of any offence alleged to have been committed by him while acting or purporting to act in the discharge of his official duty, no Court shall take cognizance of such offence except with the previous sanction—\n(a) in the case of a person who is employed or, as the case may be, was at the time of commission of the alleged offence employed, in connection with the affairs of the Union, of the Central Government;\n(b) in the case of a person who is employed or, as the case may be, was at the time of commission of the alleged offence employed, in connection with the affairs of a State, of the State Government.",
-          "relatedSections": ["crpc_190"]
+          "relatedSections": [
+            "crpc_190"
+          ]
         },
         {
           "id": "crpc_200",
           "sectionNo": "200",
           "title": "Examination of complainant",
           "content": "A Magistrate taking cognizance of an offence on complaint shall examine upon oath the complainant and the witnesses present, if any, and the substance of such examination shall be reduced to writing and shall be signed by the complainant and the witnesses, and also by the Magistrate.\n\n**Provided** that, when the complaint is made in writing, the Magistrate need not examine the complainant and the witnesses—\n(a) if a public servant acting or purporting to act in the discharge of his official duties or a Court has made the complaint; or\n(b) if the Magistrate makes over the case for inquiry or trial to another Magistrate under section 192.",
-          "relatedSections": ["crpc_190", "crpc_202", "crpc_204"]
+          "relatedSections": [
+            "crpc_190",
+            "crpc_202",
+            "crpc_204"
+          ]
         },
         {
           "id": "crpc_202",
           "sectionNo": "202",
           "title": "Postponement of issue of process",
           "content": "(1) Any Magistrate, on receipt of a complaint of an offence of which he is authorised to take cognizance or which has been made over to him under section 192, may, if he thinks fit, and shall, in a case where the accused is residing at a place beyond the area in which he exercises his jurisdiction, postpone the issue of process against the accused, and either inquire into the case himself or direct an investigation to be made by a police officer or by such other person as he thinks fit, for the purpose of deciding whether or not there is sufficient ground for proceeding.",
-          "relatedSections": ["crpc_200", "crpc_204"]
+          "relatedSections": [
+            "crpc_200",
+            "crpc_204"
+          ]
         },
         {
           "id": "crpc_204",
           "sectionNo": "204",
           "title": "Issue of process",
           "content": "(1) If in the opinion of a Magistrate taking cognizance of an offence there is sufficient ground for proceeding, and the case appears to be—\n(a) a summons-case, he shall issue his summons for the attendance of the accused, or\n(b) a warrant-case, he may issue a warrant, or, if he thinks fit, a summons, for causing the accused to be brought or to appear at a certain time before such Magistrate or (if he has no jurisdiction himself) some other Magistrate having jurisdiction.",
-          "relatedSections": ["crpc_200", "crpc_202"]
+          "relatedSections": [
+            "crpc_200",
+            "crpc_202"
+          ]
+        },
+        {
+          "id": "crpc_207",
+          "sectionNo": "207",
+          "title": "Supply to accused of copy of police report and other documents",
+          "content": "In any case where the proceeding has been instituted on a police report, the Magistrate shall without delay furnish to the accused, free of cost, a copy of each of the following:—\n(i) the police report;\n(ii) the first information report recorded under section 154;\n(iii) the statements recorded under sub-section (3) of section 161 of all persons whom the prosecution proposes to examine as its witnesses;\n(iv) the confessions and statements, if any, recorded under section 164;\n(v) any other document or relevant extract thereof forwarded to the Magistrate with the police report under sub-section (5) of section 173.",
+          "relatedSections": [
+            "crpc_204",
+            "crpc_228"
+          ],
+          "crossReferences": {
+            "bnss": "230"
+          }
+        },
+        {
+          "id": "crpc_209",
+          "sectionNo": "209",
+          "title": "Commitment of case to Court of Session when offence is triable exclusively by it",
+          "content": "When in a case instituted on a police report or otherwise, the accused appears or is brought before the Magistrate and it appears to the Magistrate that the offence is triable exclusively by the Court of Session, he shall—\n(a) commit, after complying with the provisions of section 207 or section 208, as the case may be, the case to the Court of Session, and subject to the provisions of this Code relating to bail, remand the accused to custody until such commitment has been made;\n(b) subject to the provisions of this Code relating to bail, remand the accused to custody during, and until the conclusion of, the trial.",
+          "relatedSections": [
+            "crpc_193",
+            "crpc_227"
+          ],
+          "crossReferences": {
+            "bnss": "210"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch15",
+      "title": "Chapter XV — Complaints to Magistrates",
+      "sections": [
+        {
+          "id": "crpc_203",
+          "sectionNo": "203",
+          "title": "Dismissal of complaint",
+          "content": "If, after considering the statements on oath (if any) of the complainant and of the witnesses and the result of the inquiry or investigation, if any, under section 202, the Magistrate is of opinion that there is no sufficient ground for proceeding, he shall dismiss the complaint, and in every such case he shall briefly record his reasons for so doing.",
+          "relatedSections": [
+            "crpc_200",
+            "crpc_204"
+          ],
+          "crossReferences": {
+            "bnss": "235"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch16",
+      "title": "Chapter XVI — Commencement of Proceedings before Magistrates",
+      "sections": [
+        {
+          "id": "crpc_211",
+          "sectionNo": "211",
+          "title": "Contents of charge",
+          "content": "(1) Every charge under this Code shall state the offence with which the accused is charged.\n(2) If the law which creates the offence gives it any specific name, the offence may be described in the charge by that name only.\n(3) If the law which creates the offence does not give it any specific name, so much of the definition of the offence must be stated as to give the accused notice of the matter with which he is charged.\n(4) The law and the section of the law against which the offence is said to have been committed shall be mentioned in the charge.\n(7) Any error in stating either the offence or the particulars required to be stated in the charge, and any omission to state the offence or those particulars, shall not be regarded at any stage of the case as material, unless the accused was in fact misled by such error or omission, and it has occasioned a failure of justice.",
+          "relatedSections": [
+            "crpc_212",
+            "crpc_228"
+          ],
+          "crossReferences": {
+            "bnss": "242"
+          }
+        },
+        {
+          "id": "crpc_212",
+          "sectionNo": "212",
+          "title": "Particulars as to time, place and person",
+          "content": "The charge shall contain such particulars as to the time and place of the alleged offence, and the person (if any) against whom, or the thing (if any) in respect of which, it was committed, as are reasonably sufficient to give the accused notice of the matter with which he is charged.",
+          "relatedSections": [
+            "crpc_211"
+          ],
+          "crossReferences": {
+            "bnss": "243"
+          }
+        },
+        {
+          "id": "crpc_219",
+          "sectionNo": "219",
+          "title": "Three offences of same kind within year may be charged together",
+          "content": "(1) When a person is accused of more offences than one of the same kind committed within the space of twelve months from the first to the last of such offences, whether in respect of the same person or not, he may be charged with, and tried at one trial for, any number of them not exceeding three.\n(2) Offences are of the same kind when they are punishable with the same amount of punishment under the same section of the Indian Penal Code or of any special or local law.",
+          "relatedSections": [
+            "crpc_211",
+            "crpc_220"
+          ],
+          "crossReferences": {
+            "bnss": "244"
+          }
+        },
+        {
+          "id": "crpc_238",
+          "sectionNo": "238",
+          "title": "Compliance with section 207",
+          "content": "When in any warrant case instituted on a police report, the accused appears or is brought before a Magistrate at the commencement of the trial, the Magistrate shall satisfy himself that he has complied with the provisions of section 207.",
+          "relatedSections": [
+            "crpc_207",
+            "crpc_239"
+          ],
+          "crossReferences": {
+            "bnss": "238"
+          }
+        },
+        {
+          "id": "crpc_240",
+          "sectionNo": "240",
+          "title": "Framing of charge by Magistrate",
+          "content": "(1) If, upon such consideration, examination, if any, and hearing, the Magistrate is of opinion that there is ground for presuming that the accused has committed an offence triable under this Chapter, which such Magistrate is competent to try and which, in his opinion, could be adequately punished by him, he shall frame in writing a charge against the accused.\n(2) The charge shall then be read and explained to the accused, and he shall be asked whether he pleads guilty of the offence charged or claims to be tried.",
+          "relatedSections": [
+            "crpc_238",
+            "crpc_239"
+          ],
+          "crossReferences": {
+            "bnss": "239"
+          }
+        },
+        {
+          "id": "crpc_251",
+          "sectionNo": "251",
+          "title": "Substance of accusation to be stated",
+          "content": "When in a summons case the accused appears or is brought before the Magistrate, the particulars of the offence of which he is accused shall be stated to him, and he shall be asked whether he pleads guilty or has any defence to make, but it shall not be necessary to frame a formal charge.",
+          "relatedSections": [
+            "crpc_252",
+            "crpc_204"
+          ],
+          "crossReferences": {
+            "bnss": "252"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch17",
+      "title": "Chapter XVII — Summary Trials",
+      "sections": [
+        {
+          "id": "crpc_260",
+          "sectionNo": "260",
+          "title": "Power to try summarily",
+          "content": "(1) Notwithstanding anything contained in this Code—\n(a) any Chief Judicial Magistrate;\n(b) any Metropolitan Magistrate;\n(c) any Magistrate of the first class who is specially empowered in this behalf by the High Court,\nmay, if he thinks fit, try in a summary way all or any of the following offences:—\n(i) offences not punishable with death, imprisonment for life or imprisonment for a term exceeding two years;\n(ii) theft under section 379, 380 or 381 of the Indian Penal Code, where the value of the property stolen does not exceed two thousand rupees;\n(iii) receiving or retaining stolen property under section 411 of the Indian Penal Code, where the value of the property does not exceed two thousand rupees;\n(iv) assisting in the concealment or disposal of stolen property under section 414 of the Indian Penal Code, where the value of such property does not exceed two thousand rupees;\n(v) offences under sections 454 and 456 of the Indian Penal Code;\n(vi) insult with intent to provoke a breach of the peace under section 504, and criminal intimidation under section 506 of the Indian Penal Code.",
+          "relatedSections": [
+            "crpc_262",
+            "crpc_264"
+          ],
+          "crossReferences": {
+            "bnss": "283"
+          }
+        },
+        {
+          "id": "crpc_262",
+          "sectionNo": "262",
+          "title": "Procedure for summary trials",
+          "content": "(1) In trials under this Chapter, the procedure specified in this Code for the trial of summons cases shall be followed except as hereinafter mentioned.\n(2) No sentence of imprisonment for a term exceeding three months shall be passed in the case of any conviction under this Chapter.",
+          "relatedSections": [
+            "crpc_260"
+          ],
+          "crossReferences": {
+            "bnss": "284"
+          }
+        },
+        {
+          "id": "crpc_264",
+          "sectionNo": "264",
+          "title": "Judgment in cases tried summarily",
+          "content": "In every case tried summarily in which the accused does not plead guilty, the Magistrate shall record the substance of the evidence and a judgment containing a brief statement of the reasons for the finding.",
+          "relatedSections": [
+            "crpc_260",
+            "crpc_262"
+          ],
+          "crossReferences": {
+            "bnss": "284"
+          }
+        },
+        {
+          "id": "crpc_239",
+          "sectionNo": "239",
+          "title": "When accused shall be discharged",
+          "content": "If, upon considering the police report and the documents sent with it under section 173 and making such examination, if any, of the accused as the Magistrate thinks necessary and after giving the prosecution and the accused an opportunity of being heard, the Magistrate considers the charge against the accused to be groundless, he shall discharge the accused, and record his reasons for so doing.",
+          "relatedSections": [
+            "crpc_227",
+            "crpc_245"
+          ]
+        },
+        {
+          "id": "crpc_245",
+          "sectionNo": "245",
+          "title": "When accused shall be discharged (complaint case)",
+          "content": "(1) If, upon taking all the evidence referred to in section 244, the Magistrate considers, for reasons to be recorded, that no case against the accused has been made out which, if unrebutted, would warrant his conviction, the Magistrate shall discharge him.\n\n(2) Nothing in this section shall be deemed to prevent a Magistrate from discharging the accused at any previous stage of the case if, for reasons to be recorded by such Magistrate, he considers the charge to be groundless.",
+          "relatedSections": [
+            "crpc_239",
+            "crpc_227"
+          ]
         }
       ]
     },
@@ -205,49 +1488,173 @@
           "sectionNo": "227",
           "title": "Discharge",
           "content": "If, upon consideration of the record of the case and the documents submitted therewith, and after hearing the submissions of the accused and the prosecution in this behalf, the Judge considers that there is not sufficient ground for proceeding against the accused, he shall discharge the accused and record his reasons for so doing.\n\n**Standard for discharge:** At the stage of framing of charges, the court is not to weigh the evidence as a trial court. The court must only see whether there is prima facie evidence and a strong suspicion against the accused. The Judge must find that there is no reasonable ground for connecting the accused with the alleged crime (State of Maharashtra v. Som Nath Thapa, 1996).",
-          "relatedSections": ["crpc_228", "crpc_239", "crpc_245"],
-          "crossReferences": {"bnss": "250"}
+          "relatedSections": [
+            "crpc_228",
+            "crpc_239",
+            "crpc_245"
+          ],
+          "crossReferences": {
+            "bnss": "250"
+          }
         },
         {
           "id": "crpc_228",
           "sectionNo": "228",
           "title": "Framing of charge",
           "content": "(1) If, after such consideration and hearing as aforesaid, the Judge is of opinion that there is ground for presuming that the accused has committed an offence which—\n(a) is not exclusively triable by the Court of Session, he may, frame a charge against the accused and, by order, transfer the case for trial to the Chief Judicial Magistrate, and thereupon the Chief Judicial Magistrate shall try the offence in accordance with the procedure for the trial of warrant-cases instituted on a police report;\n(b) is exclusively triable by the Court of Session or, in the opinion of the Judge, ought to be tried as such, he shall frame in writing a charge against the accused.\n\n(2) Where the Judge frames a charge under clause (b) of sub-section (1), the charge shall be read and explained to the accused and the accused shall be asked whether he pleads guilty of the offence charged or claims to be tried.",
-          "relatedSections": ["crpc_227", "crpc_232", "crpc_235"]
+          "relatedSections": [
+            "crpc_227",
+            "crpc_232",
+            "crpc_235"
+          ]
+        },
+        {
+          "id": "crpc_230",
+          "sectionNo": "230",
+          "title": "Date for prosecution evidence",
+          "content": "On and from the date of commitment, the Court of Session shall take up the case for trial.\nFor the purpose of examination of witnesses, the Court shall fix a date.",
+          "relatedSections": [
+            "crpc_228",
+            "crpc_232"
+          ],
+          "crossReferences": {
+            "bnss": "251"
+          }
+        },
+        {
+          "id": "crpc_231",
+          "sectionNo": "231",
+          "title": "Evidence for prosecution",
+          "content": "(1) On the date so fixed, the Judge shall proceed to take all such evidence as may be produced in support of the prosecution.\n(2) The Judge may, in his discretion, permit the cross-examination of any witness to be deferred until any other witness or witnesses have been examined, or recall any witness for further cross-examination.",
+          "relatedSections": [
+            "crpc_230"
+          ],
+          "crossReferences": {
+            "bnss": "251"
+          }
         },
         {
           "id": "crpc_232",
           "sectionNo": "232",
           "title": "Acquittal on prosecution failing to produce evidence",
           "content": "If, after taking the evidence for the prosecution, examining the accused and hearing the prosecution and the defence on the point, the Judge considers that there is no evidence that the accused committed the offence, the Judge shall record an order of acquittal.",
-          "relatedSections": ["crpc_228", "crpc_235"]
+          "relatedSections": [
+            "crpc_228",
+            "crpc_235"
+          ]
         },
         {
           "id": "crpc_235",
           "sectionNo": "235",
           "title": "Judgment of acquittal or conviction",
           "content": "(1) After hearing arguments and points of law (if any), the Judge shall give a judgment in the case.\n\n(2) If the accused is convicted, the Judge shall, unless he proceeds in accordance with the provisions of section 360, hear the accused on the question of sentence, and then pass sentence on him according to law.",
-          "relatedSections": ["crpc_228", "crpc_232", "crpc_354"]
+          "relatedSections": [
+            "crpc_228",
+            "crpc_232",
+            "crpc_354"
+          ]
+        },
+        {
+          "id": "crpc_236",
+          "sectionNo": "236",
+          "title": "Previous conviction",
+          "content": "In a case where a previous conviction is charged under the provisions of sub-section (7) of section 211, and the accused does not admit that he has been previously convicted as alleged in the charge, the Judge may, after he has been convicted under this Code, take evidence in respect of the alleged previous conviction, and shall record a finding thereon.",
+          "relatedSections": [
+            "crpc_228",
+            "crpc_235"
+          ],
+          "crossReferences": {
+            "bnss": "257"
+          }
         }
       ]
     },
     {
-      "id": "crpc_ch21",
-      "title": "Chapter XXI — Summary Trials",
+      "id": "crpc_ch19",
+      "title": "Chapter XIX — The Charge",
       "sections": [
         {
-          "id": "crpc_239",
-          "sectionNo": "239",
-          "title": "When accused shall be discharged",
-          "content": "If, upon considering the police report and the documents sent with it under section 173 and making such examination, if any, of the accused as the Magistrate thinks necessary and after giving the prosecution and the accused an opportunity of being heard, the Magistrate considers the charge against the accused to be groundless, he shall discharge the accused, and record his reasons for so doing.",
-          "relatedSections": ["crpc_227", "crpc_245"]
+          "id": "crpc_218",
+          "sectionNo": "218",
+          "title": "Separate charges for distinct offences",
+          "content": "(1) For every distinct offence of which any person is accused there shall be a separate charge, and every such charge shall be tried separately:\nProvided that where the accused person, by an application in writing, so desires and the Magistrate is of opinion that such person is not likely to be prejudiced thereby, the Magistrate may try together all or any number of the charges framed against such person.\n(2) Nothing in sub-section (1) shall affect the provisions of sections 219, 220, 221 and 223.",
+          "relatedSections": [
+            "crpc_211",
+            "crpc_219"
+          ],
+          "crossReferences": {
+            "bnss": "244"
+          }
         },
         {
-          "id": "crpc_245",
-          "sectionNo": "245",
-          "title": "When accused shall be discharged (complaint case)",
-          "content": "(1) If, upon taking all the evidence referred to in section 244, the Magistrate considers, for reasons to be recorded, that no case against the accused has been made out which, if unrebutted, would warrant his conviction, the Magistrate shall discharge him.\n\n(2) Nothing in this section shall be deemed to prevent a Magistrate from discharging the accused at any previous stage of the case if, for reasons to be recorded by such Magistrate, he considers the charge to be groundless.",
-          "relatedSections": ["crpc_239", "crpc_227"]
+          "id": "crpc_220",
+          "sectionNo": "220",
+          "title": "Trial for more than one offence",
+          "content": "(1) If, in one series of acts so connected together as to form the same transaction, more offences than one are committed by the same person, he may be charged with, and tried at one trial for, every such offence.\n(4) Nothing in sub-section (1) shall affect the provisions of sub-section (1) of section 71 of the Indian Penal Code.",
+          "relatedSections": [
+            "crpc_218",
+            "crpc_219"
+          ],
+          "crossReferences": {
+            "bnss": "244"
+          }
+        },
+        {
+          "id": "crpc_221",
+          "sectionNo": "221",
+          "title": "Where it is doubtful what offence has been committed",
+          "content": "(1) If a single act or series of acts is of such a nature that it is doubtful which of several offences the facts which can be proved will constitute, the accused may be charged with having committed all or any of such offences, and any number of such charges may be tried at once; or he may be charged in the alternative with having committed some one of the said offences.",
+          "relatedSections": [
+            "crpc_218",
+            "crpc_220"
+          ],
+          "crossReferences": {
+            "bnss": "244"
+          }
+        },
+        {
+          "id": "crpc_222",
+          "sectionNo": "222",
+          "title": "When offence proved included in offence charged",
+          "content": "(1) When a person is charged with an offence consisting of several particulars, a combination of some only of which constitutes a complete minor offence, and such combination is proved, but the remaining particulars are not proved, he may be convicted of the minor offence, though he was not charged with it.\n(2) When a person is charged with an offence and facts are proved which reduce it to a minor offence, he may be convicted of the minor offence, although he is not charged with it.",
+          "relatedSections": [
+            "crpc_221"
+          ],
+          "crossReferences": {
+            "bnss": "244"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch20",
+      "title": "Chapter XX — Trial of Warrant Cases by Magistrates",
+      "sections": [
+        {
+          "id": "crpc_243",
+          "sectionNo": "243",
+          "title": "Evidence for defence",
+          "content": "(1) The accused shall then be called upon to enter on his defence and produce his evidence; and if the accused puts in any written statement, the Magistrate shall file it with the record.\n(2) If the accused, after he has entered on his defence, applies to the Magistrate to issue any process for compelling the attendance of any witness for the purpose of examination or cross-examination, or the production of any document or other thing, the Magistrate shall issue such process unless he considers that such application should be refused on the ground that it is made for the purpose of vexation or delay or for defeating the ends of justice and such ground shall be recorded by him in writing.",
+          "relatedSections": [
+            "crpc_239",
+            "crpc_245"
+          ],
+          "crossReferences": {
+            "bnss": "262"
+          }
+        },
+        {
+          "id": "crpc_248",
+          "sectionNo": "248",
+          "title": "Acquittal or conviction",
+          "content": "(1) If, in any case under this Chapter in which a charge has been framed, the Magistrate finds the accused not guilty, he shall record an order of acquittal.\n(2) Where, in any case under this Chapter, the Magistrate finds the accused guilty, he shall, unless he proceeds in accordance with the provisions of section 325 or section 360, pass sentence upon him according to law.",
+          "relatedSections": [
+            "crpc_243",
+            "crpc_245"
+          ],
+          "crossReferences": {
+            "bnss": "255"
+          }
         }
       ]
     },
@@ -260,49 +1667,331 @@
           "sectionNo": "300",
           "title": "Person once convicted or acquitted not to be tried for same offence (Double Jeopardy)",
           "content": "(1) A person who has once been tried by a Court of competent jurisdiction for an offence and convicted or acquitted of such offence shall, while such conviction or acquittal remains in force, not be liable to be tried again for the same offence, nor on the same facts for any other offence for which a different charge from the one made against him might have been made under section 221, or for which he might have been convicted under section 222.",
-          "relatedSections": ["crpc_302", "crpc_309"]
+          "relatedSections": [
+            "crpc_302",
+            "crpc_309"
+          ]
+        },
+        {
+          "id": "crpc_306",
+          "sectionNo": "306",
+          "title": "Tender of pardon to accomplice",
+          "content": "(1) With a view to obtaining the evidence of any person supposed to have been directly or indirectly concerned in or privy to an offence to which this section applies, the Chief Judicial Magistrate or a Metropolitan Magistrate at any stage of the investigation or inquiry into, or the trial of, the offence, and the Magistrate of the first class inquiring into or trying the offence at any stage of the inquiry into or the trial of the offence, may tender a pardon to such person on condition of his making a full and true disclosure of the whole of the circumstances within his knowledge relative to the offence and to every other person concerned, whether as principal or abettor, in the commission thereof.",
+          "relatedSections": [
+            "crpc_307",
+            "crpc_308"
+          ],
+          "crossReferences": {
+            "bnss": "379"
+          }
+        },
+        {
+          "id": "crpc_307",
+          "sectionNo": "307",
+          "title": "Power to direct tender of pardon",
+          "content": "At any time after commitment of a case but before judgment is passed, the Court to which the commitment is made may, with a view to obtaining at the trial the evidence of any person supposed to have been directly or indirectly concerned in, or privy to, any such offence, tender a pardon on the same condition to such person.",
+          "relatedSections": [
+            "crpc_306"
+          ],
+          "crossReferences": {
+            "bnss": "380"
+          }
+        },
+        {
+          "id": "crpc_308",
+          "sectionNo": "308",
+          "title": "Trial of person not complying with conditions of pardon",
+          "content": "(1) Where, in regard to a person who has accepted a tender of pardon made under section 306 or section 307, the Public Prosecutor certifies that in his opinion such person has, either by wilfully concealing anything essential or by giving false evidence, not complied with the condition on which the tender was made, such person may be tried for the offence in respect of which the pardon was so tendered, or for any other offence of which he appears to have been guilty in connection with the same matter.",
+          "relatedSections": [
+            "crpc_306",
+            "crpc_307"
+          ],
+          "crossReferences": {
+            "bnss": "379"
+          }
         },
         {
           "id": "crpc_309",
           "sectionNo": "309",
           "title": "Power to postpone or adjourn proceedings",
           "content": "(1) In every inquiry or trial the proceedings shall be held as expeditiously as possible, and in particular, when the examination of witnesses has once begun, the same shall be continued from day to day until all the witnesses in attendance have been examined, unless the Court finds the adjournment of the same beyond the following day to be necessary for reasons to be recorded.\n\n(2) If the Court, after taking cognizance of an offence, or commencement of trial, finds it necessary or advisable to postpone the commencement of, or adjourn, any inquiry or trial, it may, from time to time, for reasons to be recorded, postpone or adjourn the same on such terms as it thinks fit, for such time as it considers reasonable, and may by a warrant remand the accused if in custody.\n\n**Provided** that no Magistrate shall remand an accused person to custody under this section for a term exceeding fifteen days at a time.",
-          "relatedSections": ["crpc_311", "crpc_317"]
+          "relatedSections": [
+            "crpc_311",
+            "crpc_317"
+          ]
         },
         {
           "id": "crpc_311",
           "sectionNo": "311",
           "title": "Power to summon material witness, or examine person present",
           "content": "Any Court may, at any stage of any inquiry, trial or other proceeding under this Code, summon any person as a witness, or examine any person in attendance though not summoned as a witness, or recall and re-examine any person already examined; and the Court shall summon and examine or recall and re-examine any such person if his evidence appears to it to be essential to the just decision of the case.",
-          "relatedSections": ["crpc_309", "crpc_313"]
+          "relatedSections": [
+            "crpc_309",
+            "crpc_313"
+          ]
+        },
+        {
+          "id": "crpc_312",
+          "sectionNo": "312",
+          "title": "Evidence of public servant in certain cases",
+          "content": "Notwithstanding anything contained in this Code, the evidence of a public servant (including a police officer) acting as such in relation to any offence committed in his presence, or as to any matter, circumstance, or incident arising from or connected with the offence, may be taken on affidavit and may be read in evidence in any inquiry, trial or other proceeding under this Code.",
+          "relatedSections": [
+            "crpc_311"
+          ],
+          "crossReferences": {
+            "bnss": "408"
+          }
         },
         {
           "id": "crpc_313",
           "sectionNo": "313",
           "title": "Power to examine the accused",
           "content": "(1) In every inquiry or trial, for the purpose of enabling the accused personally to explain any circumstances appearing in the evidence against him, the Court—\n(a) may at any stage, without previously warning the accused put such questions to him as the Court considers necessary;\n(b) shall, after the witnesses for the prosecution have been examined and before he is called on for his defence, question him generally on the case:\n\n**Provided** that in a summons-case, where the Court has dispensed with the personal attendance of the accused, it may also dispense with his examination under clause (b).\n\n(2) No oath shall be administered to the accused when he is examined under sub-section (1).\n\n(3) The accused shall not render himself liable to punishment by refusing to answer such questions, or by giving false answers to them.\n\n(4) The answers given by the accused may be taken into consideration in such inquiry or trial, and put in evidence for or against him in any other inquiry into, or trial for, any other offence which such answers may tend to show he has committed.",
-          "relatedSections": ["crpc_311", "crpc_315"]
+          "relatedSections": [
+            "crpc_311",
+            "crpc_315"
+          ]
+        },
+        {
+          "id": "crpc_315",
+          "sectionNo": "315",
+          "title": "Accused person to be competent witness",
+          "content": "(1) Any person accused of an offence before a Criminal Court shall be a competent witness for the defence and may give evidence on oath in disproof of the charges made against him or any person charged together with him at the same trial:\nProvided that—\n(a) he shall not be called as a witness except on his own request in writing;\n(b) his failure to give evidence shall not be made the subject of any comment by any of the parties or the Court or give rise to any presumption against himself or any person charged together with him at the same trial.",
+          "relatedSections": [
+            "crpc_313"
+          ],
+          "crossReferences": {
+            "bnss": "351"
+          }
         },
         {
           "id": "crpc_317",
           "sectionNo": "317",
           "title": "Provision for inquiry and trial being held in the absence of accused in certain cases",
           "content": "(1) At any stage of an inquiry or trial under this Code, if the Judge or Magistrate is satisfied, for reasons to be recorded, that the personal attendance of the accused before the Court is not necessary in the interests of justice, or that the accused persistently disturbs the proceedings in Court, the Judge or Magistrate may, if the accused is represented by a pleader, dispense with his attendance and proceed with such inquiry or trial in his absence, and may, at any subsequent stage of the proceedings, direct the personal attendance of such accused.",
-          "relatedSections": ["crpc_309", "crpc_313"]
+          "relatedSections": [
+            "crpc_309",
+            "crpc_313"
+          ]
         },
         {
           "id": "crpc_320",
           "sectionNo": "320",
           "title": "Compounding of offences",
           "content": "(1) The offences punishable under the sections of the Indian Penal Code specified in the first two columns of the Table next following may be compounded by the persons mentioned in the third column of that Table.\n\n(2) The offences punishable under the sections of the Indian Penal Code specified in the first two columns of the Table next following may, with the permission of the Court before which any prosecution for such offence is pending, be compounded by the persons mentioned in the third column of that Table.\n\n**Key principle:** Compounding extinguishes the liability of the accused. Offences against society (like murder, rape) are generally not compoundable. The list of compoundable offences is exhaustive.",
-          "relatedSections": ["crpc_321"]
+          "relatedSections": [
+            "crpc_321"
+          ]
         },
         {
           "id": "crpc_321",
           "sectionNo": "321",
           "title": "Withdrawal from prosecution",
           "content": "The Public Prosecutor or Assistant Public Prosecutor in charge of a case may, with the consent of the Court, at any time before the judgment is pronounced, withdraw from the prosecution of any person either generally or in respect of any one or more of the offences for which he is tried; and, upon such withdrawal,—\n(a) if it is made before a charge has been framed, the accused shall be discharged in respect of such offence or offences;\n(b) if it is made after a charge has been framed, or when under this Code no charge is required, he shall be acquitted in respect of such offence or offences.",
-          "relatedSections": ["crpc_320"]
+          "relatedSections": [
+            "crpc_320"
+          ]
+        },
+        {
+          "id": "crpc_327",
+          "sectionNo": "327",
+          "title": "Court to be open",
+          "content": "(1) The place in which any Criminal Court is held for the purpose of inquiring into or trying any offence shall be deemed to be an open Court to which the public generally may have access.\n(2) Notwithstanding anything contained in sub-section (1), the presiding Judge or Magistrate may, if he thinks fit, order at any stage of any inquiry into, or trial of, any particular case, that the public generally, or any particular person, shall not have access to, or be present in, the room or building used by the Court.",
+          "relatedSections": [
+            "crpc_309"
+          ],
+          "crossReferences": {
+            "bnss": "346"
+          }
+        },
+        {
+          "id": "crpc_340",
+          "sectionNo": "340",
+          "title": "Procedure in cases mentioned in section 195",
+          "content": "(1) When, upon an application made to it in this behalf or otherwise, any Court is of opinion that it is expedient in the interests of justice that an inquiry should be made into any offence referred to in clause (b) of sub-section (1) of section 195, which appears to have been committed in or in relation to a proceeding in that Court, such Court may, after such preliminary inquiry, if any, as it thinks necessary,—\n(a) record a finding to that effect;\n(b) make a complaint thereof in writing;\n(c) send it to a Magistrate of the first class having jurisdiction.\n(2) The Court making a complaint under sub-section (1) may, if it thinks fit, make such order as it deems just for the custody, conveyance or release on bail of the person accused pending his appearance before the Magistrate.",
+          "relatedSections": [
+            "crpc_195",
+            "crpc_341"
+          ],
+          "crossReferences": {
+            "bnss": "379"
+          }
+        },
+        {
+          "id": "crpc_354",
+          "sectionNo": "354",
+          "title": "Language and contents of judgment",
+          "content": "(1) Every such judgment shall,—\n(a) except as otherwise expressly provided by this Code, be written in the language of the Court;\n(b) contain the point or points for determination, the decision thereon and the reasons for the decision;\n(c) be dated and signed by the presiding officer in open Court at the time of pronouncing it;\n(d) in the case of a conviction, specify the offence of which, and the section of the law under which, the accused is convicted, and the punishment to which he is sentenced;\n(e) in the case of an acquittal, state the offence of which the accused is acquitted and direct that he be set at liberty.",
+          "relatedSections": [
+            "crpc_353",
+            "crpc_355"
+          ],
+          "crossReferences": {
+            "bnss": "392"
+          }
+        },
+        {
+          "id": "crpc_357",
+          "sectionNo": "357",
+          "title": "Order to pay compensation",
+          "content": "(1) When a Court imposes a sentence of fine or a sentence (including a sentence of death) of which fine forms a part, the Court may, when passing judgment, order the whole or any part of the fine recovered to be applied—\n(a) in defraying the expenses properly incurred in the prosecution;\n(b) in the payment to any person of compensation for any loss or injury caused by the offence, when compensation is, in the opinion of the Court, recoverable by such person in a Civil Court;\n(3) When a Court imposes a sentence, of which fine does not form a part, the Court may, when passing judgment, order the accused person to pay, by way of compensation, such amount as may be specified in the order to the person who has suffered any loss or injury by reason of the act for which the accused person has been so sentenced.",
+          "relatedSections": [
+            "crpc_357A",
+            "crpc_354"
+          ],
+          "crossReferences": {
+            "bnss": "395"
+          }
+        },
+        {
+          "id": "crpc_357A",
+          "sectionNo": "357A",
+          "title": "Victim Compensation Scheme",
+          "content": "(1) Every State Government in co-ordination with the Central Government shall prepare a scheme for providing funds for the purpose of compensation to the victims or their dependants who have suffered loss or injury as a result of the crime and who require rehabilitation.\n(2) Whenever a recommendation is made by the Court for compensation, the District Legal Service Authority or the State Legal Service Authority, as the case may be, shall decide the quantum of compensation to be awarded under the scheme referred to in sub-section (1).",
+          "relatedSections": [
+            "crpc_357"
+          ],
+          "crossReferences": {
+            "bnss": "396"
+          }
+        },
+        {
+          "id": "crpc_360",
+          "sectionNo": "360",
+          "title": "Order to release on probation of good conduct or after admonition",
+          "content": "(1) When any person not under twenty-one years of age is convicted of an offence punishable with fine only or with imprisonment for a term of seven years or less, or when any person under twenty-one years of age or any woman is convicted of an offence not punishable with death or imprisonment for life, and no previous conviction is proved against the offender, the Court before which he is convicted may, having regard to the age, character or antecedents of the offender, and to the circumstances in which the offence was committed, instead of sentencing him to any punishment, release him after due admonition.",
+          "relatedSections": [
+            "crpc_354",
+            "crpc_361"
+          ],
+          "crossReferences": {
+            "bnss": "395"
+          }
+        },
+        {
+          "id": "crpc_374",
+          "sectionNo": "374",
+          "title": "Appeals from convictions",
+          "content": "(1) Any person convicted on a trial held by a High Court in its extraordinary original criminal jurisdiction may appeal to the Supreme Court.\n(2) Any person convicted on a trial held by a Sessions Judge or an Additional Sessions Judge or on a trial held by any other Court in which a sentence of imprisonment for more than seven years has been passed against him or against any other person convicted at the same trial, may appeal to the High Court.",
+          "relatedSections": [
+            "crpc_375",
+            "crpc_386"
+          ],
+          "crossReferences": {
+            "bnss": "415"
+          }
+        }
+      ]
+    },
+    {
+      "id": "crpc_ch29",
+      "title": "Chapter XXIX — Appeals",
+      "sections": [
+        {
+          "id": "crpc_375",
+          "sectionNo": "375",
+          "title": "No appeal in certain cases when accused pleads guilty",
+          "content": "Notwithstanding anything in section 374, where an accused person has pleaded guilty and has been convicted on such plea, there shall be no appeal—\n(a) if the conviction is by a High Court; or\n(b) if the conviction is by a Court of Session, Metropolitan Magistrate or Magistrate of the first or second class, except as to the extent or legality of the sentence.",
+          "relatedSections": [
+            "crpc_374"
+          ],
+          "crossReferences": {
+            "bnss": "416"
+          }
+        },
+        {
+          "id": "crpc_378",
+          "sectionNo": "378",
+          "title": "Appeal in case of acquittal",
+          "content": "(1) Save as otherwise provided in sub-section (2) and subject to the provisions of sub-sections (3) and (5),—\n(a) the District Magistrate may, in any case, direct the Public Prosecutor to present an appeal to the Court of Session from an order of acquittal passed by a Magistrate in respect of a cognizable and non-bailable offence;\n(b) the State Government may, in any case, direct the Public Prosecutor to present an appeal to the High Court from an original or appellate order of acquittal passed by any Court other than a High Court not being an order under clause (a) or an order of acquittal passed by the Court of Session in revision.\n\n(3) No appeal under sub-section (1) or sub-section (2) shall be entertained except with the leave of the High Court.",
+          "relatedSections": [
+            "crpc_374",
+            "crpc_401"
+          ]
+        },
+        {
+          "id": "crpc_379",
+          "sectionNo": "379",
+          "title": "Appeal against conviction by High Court in certain cases",
+          "content": "Where the High Court has, on appeal, reversed an order of acquittal of an accused person and convicted him and sentenced him to death or to imprisonment for life or to imprisonment for a term of ten years or more, he may appeal to the Supreme Court.",
+          "relatedSections": [
+            "crpc_378",
+            "crpc_374"
+          ],
+          "crossReferences": {
+            "bnss": "419"
+          }
+        },
+        {
+          "id": "crpc_380",
+          "sectionNo": "380",
+          "title": "Special right of appeal in certain cases",
+          "content": "Notwithstanding anything contained in this Chapter, when more persons than one are convicted in one trial, and an appealable judgment or order has been passed in respect of any of such persons, all or any of the persons convicted at such trial shall have a right of appeal.",
+          "relatedSections": [
+            "crpc_374"
+          ],
+          "crossReferences": {
+            "bnss": "415"
+          }
+        },
+        {
+          "id": "crpc_386",
+          "sectionNo": "386",
+          "title": "Powers of the Appellate Court",
+          "content": "After perusing such record and hearing the appellant or his pleader, if he appears, and the Public Prosecutor if he appears, and in case of an appeal under section 377 or section 378, the accused, if he appears, the Appellate Court may, if it considers that there is no sufficient ground for interfering, dismiss the appeal, or may—\n(a) in an appeal from an order of acquittal, reverse such order and direct that further inquiry be made, or that the accused be re-tried or tried, or find him guilty and pass sentence on him according to law;\n(b) in an appeal from a conviction, reverse the finding and sentence and acquit or discharge the accused, or order him to be re-tried by a Court of competent jurisdiction subordinate to such Appellate Court or committed for trial, or alter the finding, maintaining the sentence, or, with or without altering the finding, alter the nature or the extent, or the nature and the extent, of the sentence, but not so as to enhance the same;\n(c) in an appeal from any other order, alter or reverse such order.",
+          "relatedSections": [
+            "crpc_374",
+            "crpc_397"
+          ],
+          "crossReferences": {
+            "bnss": "438"
+          }
+        },
+        {
+          "id": "crpc_389",
+          "sectionNo": "389",
+          "title": "Suspension of sentence pending the appeal; release of appellant on bail",
+          "content": "(1) Pending any appeal by a convicted person, the Appellate Court may, for reasons to be recorded by it in writing, order that the execution of the sentence or order appealed against be suspended and, also, if he is in confinement, that he be released on bail, or on his own bond.",
+          "relatedSections": [
+            "crpc_374",
+            "crpc_437"
+          ],
+          "crossReferences": {
+            "bnss": "476"
+          }
+        },
+        {
+          "id": "crpc_397",
+          "sectionNo": "397",
+          "title": "Calling for records to exercise powers of revision",
+          "content": "(1) The High Court or any Sessions Judge may call for and examine the record of any proceeding before any inferior Criminal Court situate within its or his local jurisdiction for the purpose of satisfying itself or himself as to the correctness, legality or propriety of any finding, sentence or order, recorded or passed, and as to the regularity of any proceedings of such inferior Court, and may, when calling for such record, direct that the execution of any sentence or order be suspended, and if the accused is in confinement, that he be released on bail or on his own bond pending the examination of the record.\n\n**Note:** Revisional jurisdiction under S. 397 cannot be exercised if an appeal lies. It is an inherent supervisory jurisdiction.",
+          "relatedSections": [
+            "crpc_374",
+            "crpc_401",
+            "crpc_407"
+          ]
+        },
+        {
+          "id": "crpc_401",
+          "sectionNo": "401",
+          "title": "High Court's powers of revision",
+          "content": "(1) In the case of any proceeding the record of which has been called for by itself or which otherwise comes to its knowledge, the High Court may, in its discretion, exercise any of the powers conferred on a Court of Appeal by sections 386, 389, 390 and 391 or on a Court of Session by section 307, and, when the Judges composing the Court of revision are equally divided in opinion, the case shall be disposed of in the manner provided by section 392.\n\n(2) No order under this section shall be made to the prejudice of the accused or other person unless he has had an opportunity of being heard either personally or by pleader in his own defence.",
+          "relatedSections": [
+            "crpc_397",
+            "crpc_374"
+          ]
+        },
+        {
+          "id": "crpc_407",
+          "sectionNo": "407",
+          "title": "Power of High Court to transfer cases and appeals",
+          "content": "(1) Whenever it is made to appear to the High Court—\n(a) that a fair and impartial inquiry or trial cannot be had in any criminal court subordinate thereto; or\n(b) that some question of law of unusual difficulty is likely to arise; or\n(c) that an order under this section is required by any provision of this Code, or will tend to the general convenience of the parties or witnesses; or\n(d) that such an order is expedient for the ends of justice or is required by the exigencies of justice,\nthe High Court may order that any particular case be transferred from one criminal court to another criminal court of equal or superior jurisdiction subordinate to such High Court.",
+          "relatedSections": [
+            "crpc_401"
+          ],
+          "crossReferences": {
+            "bnss": "448"
+          }
         }
       ]
     },
@@ -315,87 +2004,156 @@
           "sectionNo": "436",
           "title": "In what cases bail to be taken",
           "content": "(1) When any person other than a person accused of a non-bailable offence is arrested or detained without warrant by an officer in charge of a police station, or appears or is brought before a Court, and is prepared at any time while in the custody of such officer or at any stage of the proceeding before such Court to give bail, such person shall be released on bail.\n\n**Provided** that such officer or Court, if he or it thinks fit, may, and shall, if such person is indigent and is unable to furnish surety, instead of taking bail from such person, discharge him on his executing a bond without sureties for his appearance.\n\n**Key principle:** For bailable offences, bail is a matter of right. The police officer or court has no discretion to refuse bail for bailable offences.",
-          "relatedSections": ["crpc_436A", "crpc_437", "crpc_438"],
-          "crossReferences": {"bnss": "479"}
+          "relatedSections": [
+            "crpc_436A",
+            "crpc_437",
+            "crpc_438"
+          ],
+          "crossReferences": {
+            "bnss": "479"
+          }
         },
         {
           "id": "crpc_436A",
           "sectionNo": "436A",
           "title": "Maximum period for which an undertrial prisoner can be detained",
           "content": "Where a person has, during the period of investigation, inquiry or trial under this Code of an offence under any law (not being an offence for which the punishment of death has been specified as one of the punishments under that law) undergone detention for a period extending up to one-half of the maximum period of imprisonment specified for that offence under that law, he shall be released by the Court on his personal bond with or without sureties.\n\n**Provided** that the Court may, after hearing the Public Prosecutor and for reasons to be recorded by it in writing, order the continued detention of such person for a period longer than one-half of the said period or release him on bail instead of the personal bond with or without sureties.\n\n**Key principle:** An undertrial who has served half the maximum sentence prescribed for the offence is entitled to bail. This is a statutory right aimed at reducing undertrial detention.",
-          "relatedSections": ["crpc_436", "crpc_437"]
+          "relatedSections": [
+            "crpc_436",
+            "crpc_437"
+          ]
         },
         {
           "id": "crpc_437",
           "sectionNo": "437",
           "title": "When bail may be taken in case of non-bailable offence",
           "content": "(1) When any person accused of, or suspected of, the commission of any non-bailable offence is arrested or detained without warrant by an officer in charge of a police station or appears or is brought before a Court other than the High Court or Court of Session, he may be released on bail, but—\n(i) such person shall not be so released if there appear reasonable grounds for believing that he has been guilty of an offence punishable with death or imprisonment for life;\n(ii) such person shall not be so released if such offence is a cognizable offence and he had been previously convicted of an offence punishable with death, imprisonment for life or imprisonment for seven years or more, or he had been previously convicted on two or more occasions of a cognizable offence punishable with imprisonment for three years or more but not less than seven years.\n\n**Provided** that the Court may direct that a person referred to in clause (i) or clause (ii) be released on bail if such person is under the age of sixteen years or is a woman or is sick or infirm.\n\n**Provided further** that the Court may also direct that a person referred to in clause (ii) be released on bail if it is satisfied that it is just and proper so to do for any other special reason.\n\n(3) When a person accused or suspected of the commission of an offence punishable with imprisonment which may extend to seven years or more or of an offence under Chapter VI, Chapter XVI or Chapter XVII of the Indian Penal Code or abetment of, or conspiracy or attempt to commit, any such offence, is released on bail under sub-section (1), the Court shall impose the conditions—\n(a) that such person shall attend in accordance with the conditions of the bail bond;\n(b) that such person shall not commit an offence similar to the offence of which he is accused, or suspected, of the commission of which he is suspected; and\n(c) that such person shall not directly or indirectly make any inducement, threat or promise to any person acquainted with the facts of the case so as to dissuade him from disclosing such facts to the Court or to any police officer or tamper with the evidence.",
-          "relatedSections": ["crpc_436", "crpc_437A", "crpc_438", "crpc_439"],
-          "crossReferences": {"bnss": "480"}
+          "relatedSections": [
+            "crpc_436",
+            "crpc_437A",
+            "crpc_438",
+            "crpc_439"
+          ],
+          "crossReferences": {
+            "bnss": "480"
+          }
         },
         {
           "id": "crpc_437A",
           "sectionNo": "437A",
           "title": "Bail to require accused to appear before the next appellate Court",
           "content": "(1) Before conclusion of the trial and before disposal of the appeal, the Court trying the offence or the Appellate Court, as the case may be, shall require the accused to execute bail bonds with sureties, to appear before the higher Court as and when such Court issues notice in respect of any appeal or petition filed against the judgment of the respective Court and such bail bonds shall be in force for a period of six months.\n\n(2) If such accused fails to appear, the bond stand forfeited and the procedure under section 446 shall apply.",
-          "relatedSections": ["crpc_437", "crpc_439"]
+          "relatedSections": [
+            "crpc_437",
+            "crpc_439"
+          ]
         },
         {
           "id": "crpc_438",
           "sectionNo": "438",
           "title": "Direction for grant of bail to person apprehending arrest (Anticipatory Bail)",
           "content": "(1) When any person has reason to believe that he may be arrested on accusation of having committed a non-bailable offence, he may apply to the High Court or the Court of Session for a direction under this section that in the event of such arrest he shall be released on bail; and that Court may, after taking into consideration, inter alia, the following factors, namely:—\n(i) the nature and gravity of the accusation;\n(ii) the antecedents of the applicant including the fact as to whether he has previously undergone imprisonment on conviction by a Court in respect of any cognizable offence;\n(iii) the possibility of the applicant to flee from justice; and\n(iv) where the accusation has been made with the object of injuring or humiliating the applicant by having him so arrested,\neither reject the application, or issue an interim order for the grant of anticipatory bail.\n\n(4) The High Court or the Court of Session, as the case may be, shall finally dispose of an application under sub-section (1) within thirty days of filing.\n\n**Key principles (Sushila Aggarwal v. State of NCT Delhi, 2020 SC):**\n- Anticipatory bail can be granted for a fixed period or without limitation of time.\n- The court must balance the rights of the individual against public interest.\n- There is no requirement to surrender to custody before applying.",
-          "relatedSections": ["crpc_437", "crpc_439"],
-          "crossReferences": {"bnss": "482"}
+          "relatedSections": [
+            "crpc_437",
+            "crpc_439"
+          ],
+          "crossReferences": {
+            "bnss": "482"
+          }
         },
         {
           "id": "crpc_439",
           "sectionNo": "439",
           "title": "Special powers of High Court or Court of Session regarding bail",
           "content": "(1) A High Court or Court of Session may direct—\n(a) that any person accused of an offence and in custody be released on bail, and if the offence is of the nature specified in sub-section (3) of section 437, may impose any condition which it considers necessary for the purposes mentioned in that sub-section;\n(b) that any condition imposed by a Magistrate when releasing any person on bail be set aside or modified.\n\n(2) A High Court or Court of Session may direct that any person who has been released on bail under this Chapter be arrested and commit him to custody.\n\n**Key principles:**\n- Powers under S. 439 are wider than S. 437. The High Court and Sessions Court have concurrent jurisdiction.\n- Bail once granted can be cancelled if the accused misuses liberty, tampers with evidence, or there are new facts which show that bail was wrongly granted.\n- Bail is not to be used as punishment; it must be guided by principles of personal liberty.",
-          "relatedSections": ["crpc_437", "crpc_438", "crpc_440"],
-          "crossReferences": {"bnss": "483"}
+          "relatedSections": [
+            "crpc_437",
+            "crpc_438",
+            "crpc_440"
+          ],
+          "crossReferences": {
+            "bnss": "483"
+          }
         },
         {
           "id": "crpc_440",
           "sectionNo": "440",
           "title": "Amount of bond and reduction thereof",
           "content": "(1) The amount of every bond executed under this Chapter shall be fixed with due regard to the circumstances of the case and shall not be excessive.\n\n(2) The High Court or Court of Session may direct that the bail required by a police officer or Magistrate be reduced.",
-          "relatedSections": ["crpc_437", "crpc_439"]
+          "relatedSections": [
+            "crpc_437",
+            "crpc_439"
+          ]
+        },
+        {
+          "id": "crpc_441",
+          "sectionNo": "441",
+          "title": "Bond of accused and sureties",
+          "content": "(1) Before any person is released on bail or released on his own bond, a bond for such sum of money as the police officer or Court, as the case may be, thinks sufficient shall be executed by such person, and, when he is released on bail, by one or more sufficient sureties conditioned that such person shall attend at the time and place mentioned in the bond, and shall continue so to attend until otherwise directed by the police officer or Court, as the case may be.",
+          "relatedSections": [
+            "crpc_436",
+            "crpc_437",
+            "crpc_446"
+          ],
+          "crossReferences": {
+            "bnss": "484"
+          }
+        },
+        {
+          "id": "crpc_446",
+          "sectionNo": "446",
+          "title": "Procedure on forfeiture of bond",
+          "content": "(1) Whenever it is proved to the satisfaction of the Court by which a bond under this Chapter has been taken, or of a Court to which the case has subsequently been transferred, that such bond has been forfeited, the Court shall record the grounds of such proof, and may call upon any person bound by such bond to pay the penalty thereof or to show cause why it should not be paid.\n(2) If sufficient cause is not shown and the penalty is not paid, the Court may proceed to recover the same by issuing a warrant for the attachment and sale of the movable property belonging to such person.",
+          "relatedSections": [
+            "crpc_441"
+          ],
+          "crossReferences": {
+            "bnss": "490"
+          }
         }
       ]
     },
     {
-      "id": "crpc_ch29",
-      "title": "Chapter XXIX — Appeals",
+      "id": "crpc_ch34",
+      "title": "Chapter XXXIV — Disposal of Property",
       "sections": [
         {
-          "id": "crpc_374",
-          "sectionNo": "374",
-          "title": "Appeals from convictions",
-          "content": "(1) Any person convicted on a trial held by a High Court in its extraordinary original criminal jurisdiction may appeal to the Supreme Court.\n\n(2) Any person convicted on a trial held by a Sessions Judge or an Additional Sessions Judge or on a trial held by any other Court in which a sentence of imprisonment for more than seven years has been passed against him or against any other person convicted at the same trial; may appeal to the High Court.\n\n(3) Save as otherwise provided in sub-section (2), any person—\n(a) convicted on a trial held by a Metropolitan Magistrate or Assistant Sessions Judge or Magistrate of the first class, or of the second class, or\n(b) sentenced under section 325, or\n(c) in respect of whom an order has been made or a sentence has been passed under section 360 by any Magistrate,\nmay appeal to the Court of Session.",
-          "relatedSections": ["crpc_378", "crpc_397", "crpc_401"]
+          "id": "crpc_451",
+          "sectionNo": "451",
+          "title": "Order for custody and disposal of property pending trial in certain cases",
+          "content": "When any property is produced before any Criminal Court during any inquiry or trial, the Court may make such order as it thinks fit for the proper custody of such property pending the conclusion of the inquiry or trial, and, if the property is subject to speedy and natural decay, or if it is otherwise expedient so to do, the Court may, after recording such evidence as it thinks necessary, order it to be sold or otherwise disposed of.",
+          "relatedSections": [
+            "crpc_452",
+            "crpc_457"
+          ],
+          "crossReferences": {
+            "bnss": "497"
+          }
         },
         {
-          "id": "crpc_378",
-          "sectionNo": "378",
-          "title": "Appeal in case of acquittal",
-          "content": "(1) Save as otherwise provided in sub-section (2) and subject to the provisions of sub-sections (3) and (5),—\n(a) the District Magistrate may, in any case, direct the Public Prosecutor to present an appeal to the Court of Session from an order of acquittal passed by a Magistrate in respect of a cognizable and non-bailable offence;\n(b) the State Government may, in any case, direct the Public Prosecutor to present an appeal to the High Court from an original or appellate order of acquittal passed by any Court other than a High Court not being an order under clause (a) or an order of acquittal passed by the Court of Session in revision.\n\n(3) No appeal under sub-section (1) or sub-section (2) shall be entertained except with the leave of the High Court.",
-          "relatedSections": ["crpc_374", "crpc_401"]
+          "id": "crpc_452",
+          "sectionNo": "452",
+          "title": "Order for disposal of property at conclusion of trial",
+          "content": "(1) When an inquiry or trial in any Criminal Court is concluded, the Court may make such order as it thinks fit for the disposal, by destruction, confiscation or delivery to any person claiming to be entitled thereto, of any property or document produced before it or in its custody, or regarding which any offence appears to have been committed, or which has been used for the commission of any offence.",
+          "relatedSections": [
+            "crpc_451"
+          ],
+          "crossReferences": {
+            "bnss": "497"
+          }
         },
         {
-          "id": "crpc_397",
-          "sectionNo": "397",
-          "title": "Calling for records to exercise powers of revision",
-          "content": "(1) The High Court or any Sessions Judge may call for and examine the record of any proceeding before any inferior Criminal Court situate within its or his local jurisdiction for the purpose of satisfying itself or himself as to the correctness, legality or propriety of any finding, sentence or order, recorded or passed, and as to the regularity of any proceedings of such inferior Court, and may, when calling for such record, direct that the execution of any sentence or order be suspended, and if the accused is in confinement, that he be released on bail or on his own bond pending the examination of the record.\n\n**Note:** Revisional jurisdiction under S. 397 cannot be exercised if an appeal lies. It is an inherent supervisory jurisdiction.",
-          "relatedSections": ["crpc_374", "crpc_401", "crpc_407"]
-        },
-        {
-          "id": "crpc_401",
-          "sectionNo": "401",
-          "title": "High Court's powers of revision",
-          "content": "(1) In the case of any proceeding the record of which has been called for by itself or which otherwise comes to its knowledge, the High Court may, in its discretion, exercise any of the powers conferred on a Court of Appeal by sections 386, 389, 390 and 391 or on a Court of Session by section 307, and, when the Judges composing the Court of revision are equally divided in opinion, the case shall be disposed of in the manner provided by section 392.\n\n(2) No order under this section shall be made to the prejudice of the accused or other person unless he has had an opportunity of being heard either personally or by pleader in his own defence.",
-          "relatedSections": ["crpc_397", "crpc_374"]
+          "id": "crpc_457",
+          "sectionNo": "457",
+          "title": "Procedure by police upon seizure of property",
+          "content": "(1) Whenever the seizure of property by any police officer is reported to a Magistrate under the provisions of this Code, and such property is not produced before a Criminal Court during an inquiry or trial, the Magistrate may make such order as he thinks fit respecting the disposal of such property or the delivery of such property to the person entitled to the possession thereof.",
+          "relatedSections": [
+            "crpc_451",
+            "crpc_452"
+          ],
+          "crossReferences": {
+            "bnss": "497"
+          }
         }
       ]
     },
@@ -404,12 +2162,80 @@
       "title": "Chapter XXXVI — Miscellaneous",
       "sections": [
         {
+          "id": "crpc_432",
+          "sectionNo": "432",
+          "title": "Power to suspend or remit sentences",
+          "content": "(1) When any person has been sentenced to punishment for an offence, the appropriate Government may, at any time, without conditions or upon any conditions which the person sentenced accepts, suspend the execution of his sentence or remit the whole or any part of the punishment to which he has been sentenced.\n(2) Whenever an application is made to the appropriate Government for the suspension or remission of a sentence, the appropriate Government may require the presiding Judge of the Court before or by which the conviction was had or confirmed, to state his opinion as to whether the application should be granted or refused.",
+          "relatedSections": [
+            "crpc_433",
+            "crpc_439"
+          ],
+          "crossReferences": {
+            "bnss": "473"
+          }
+        },
+        {
+          "id": "crpc_433",
+          "sectionNo": "433",
+          "title": "Power to commute sentence",
+          "content": "The appropriate Government may, without the consent of the person sentenced, commute—\n(a) a sentence of death, for any other punishment provided by the Indian Penal Code;\n(b) a sentence of imprisonment for life, for imprisonment of either description for a term not exceeding fourteen years, or for fine;\n(c) a sentence of rigorous imprisonment, for simple imprisonment for any term to which that person might have been sentenced, or for fine;\n(d) a sentence of simple imprisonment, for fine.",
+          "relatedSections": [
+            "crpc_432"
+          ],
+          "crossReferences": {
+            "bnss": "474"
+          }
+        },
+        {
+          "id": "crpc_433A",
+          "sectionNo": "433A",
+          "title": "Restriction on powers of remission or commutation in certain cases",
+          "content": "Notwithstanding anything contained in section 432, where a sentence of imprisonment for life is imposed on conviction of a person for an offence for which death is one of the punishments provided by law, or where a sentence of death imposed on a person has been commuted under section 433 into one of imprisonment for life, such person shall not be released from prison unless he had served at least fourteen years of imprisonment.",
+          "relatedSections": [
+            "crpc_432",
+            "crpc_433"
+          ],
+          "crossReferences": {
+            "bnss": "473"
+          }
+        },
+        {
+          "id": "crpc_437B",
+          "sectionNo": "437B",
+          "title": "Bail to require accused to appear before next appellate court",
+          "content": "Before discharging an accused on bail under section 437 or section 439, the court shall ask the accused or the surety to execute a bond requiring the accused to appear before the Court of Appeal if, on the case being taken up on appeal, such Court requires his presence.",
+          "relatedSections": [
+            "crpc_437",
+            "crpc_439"
+          ],
+          "crossReferences": {
+            "bnss": "481"
+          }
+        },
+        {
           "id": "crpc_482",
           "sectionNo": "482",
           "title": "Saving of inherent powers of High Court",
           "content": "Nothing in this Code shall be deemed to limit or affect the inherent powers of the High Court to make such orders as may be necessary to give effect to any order under this Code, or to prevent abuse of the process of any Court or otherwise to secure the ends of justice.\n\n**Key principles:**\n1. S. 482 preserves the inherent powers of the High Court to prevent abuse of process and secure ends of justice.\n2. Power under S. 482 can be used to quash FIRs, charge sheets, and criminal proceedings.\n3. The power is extraordinary and should be exercised sparingly.\n4. Grounds for quashing: (a) No prima facie case; (b) FIR lodged with mala fide intent; (c) Offence is compounded; (d) Accused and complainant have settled (especially in matrimonial/property disputes).\n5. Economic offences and serious crimes are generally not quashed on the ground of settlement alone.",
-          "relatedSections": ["crpc_397", "crpc_401"],
-          "crossReferences": {"bnss": "528"}
+          "relatedSections": [
+            "crpc_397",
+            "crpc_401"
+          ],
+          "crossReferences": {
+            "bnss": "528"
+          }
+        },
+        {
+          "id": "crpc_484",
+          "sectionNo": "484",
+          "title": "Repeal and savings",
+          "content": "(1) The Code of Criminal Procedure, 1898 is hereby repealed.\n(2) Notwithstanding such repeal—\n(a) if immediately before the date on which this Code comes into force there is any appeal, application, trial, inquiry or investigation pending, then such appeal, application, trial, inquiry or investigation shall be disposed of, continued, held or made, as the case may be, in accordance with the provisions of the Code of Criminal Procedure, 1898.\n\n**Note:** CrPC 1973 itself has been repealed by BNSS 2023, effective 1 July 2024.",
+          "relatedSections": [
+            "crpc_1"
+          ],
+          "crossReferences": {
+            "bnss": "531"
+          }
         }
       ]
     }

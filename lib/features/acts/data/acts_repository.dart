@@ -17,6 +17,9 @@ class ActsRepository {
     'bnss': 'assets/data/bnss.json',
   };
 
+  // Per-session cache: avoid re-checking the same act on every navigation
+  static final _seededInSession = <String>{};
+
   Future<ActModel> loadActFromAsset(String actId) async {
     final path = _assetPaths[actId]!;
     final json = await rootBundle.loadString(path);
@@ -24,18 +27,27 @@ class ActsRepository {
   }
 
   Future<void> seedIfNeeded(String actId) async {
-    final db = await _db;
-    final count = Sqflite.firstIntValue(
-      await db.rawQuery(
-        'SELECT COUNT(*) FROM sections WHERE act_id = ?',
-        [actId],
-      ),
-    );
-    if ((count ?? 0) > 0) return;
+    if (_seededInSession.contains(actId)) return;
+    _seededInSession.add(actId);
 
+    // Load JSON to get authoritative section count (rootBundle caches in memory)
     final act = await loadActFromAsset(actId);
-    final batch = db.batch();
+    final expectedCount = act.chapters
+        .fold<int>(0, (sum, ch) => sum + ch.sections.length);
 
+    final db = await _db;
+    final actualCount = Sqflite.firstIntValue(
+      await db.rawQuery(
+        'SELECT COUNT(*) FROM sections WHERE act_id = ?', [actId],
+      ),
+    ) ?? 0;
+
+    if (actualCount == expectedCount) return; // DB is up to date
+
+    // JSON has changed — wipe stale rows and re-seed
+    await db.delete('sections', where: 'act_id = ?', whereArgs: [actId]);
+
+    final batch = db.batch();
     batch.insert(
       'acts',
       {
@@ -46,7 +58,7 @@ class ActsRepository {
         'jurisdiction': act.jurisdiction,
         'category': act.category,
       },
-      conflictAlgorithm: ConflictAlgorithm.ignore,
+      conflictAlgorithm: ConflictAlgorithm.replace,
     );
 
     for (final chapter in act.chapters) {
@@ -64,7 +76,7 @@ class ActsRepository {
             crossReferences: section.crossReferences,
             searchKey: '${act.id}_${section.sectionNo}',
           ).toMap(),
-          conflictAlgorithm: ConflictAlgorithm.ignore,
+          conflictAlgorithm: ConflictAlgorithm.replace,
         );
       }
     }
