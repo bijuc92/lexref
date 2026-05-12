@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../../core/error/result.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/models/local/local_bookmark.dart';
@@ -53,13 +54,17 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
   }
 
   Future<void> _checkBookmark() async {
-    final bm = await _bookmarksRepo.getBookmark(widget.sectionId);
-    if (mounted) setState(() => _bookmarked = bm != null);
+    try {
+      final bm = await _bookmarksRepo.getBookmark(widget.sectionId);
+      if (mounted) setState(() => _bookmarked = bm != null);
+    } catch (_) {}
   }
 
   Future<void> _loadNote() async {
-    final note = await _notesRepo.getNoteForRef(widget.sectionId);
-    if (mounted && note != null) setState(() => _noteContent = note.content);
+    try {
+      final note = await _notesRepo.getNoteForRef(widget.sectionId);
+      if (mounted && note != null) setState(() => _noteContent = note.content);
+    } catch (_) {}
   }
 
   @override
@@ -80,10 +85,11 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
   }
 
   Future<void> _toggleBookmark(SectionModel section) async {
+    final Result<void> result;
     if (_bookmarked) {
-      await _bookmarksRepo.removeBookmark(section.id);
+      result = await _bookmarksRepo.removeBookmark(section.id);
     } else {
-      await _bookmarksRepo.addBookmark(
+      result = await _bookmarksRepo.addBookmark(
         LocalBookmark(
           id: section.id,
           refType: 'section',
@@ -93,6 +99,16 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
           savedAt: DateTime.now(),
         ),
       );
+    }
+    if (!mounted) return;
+    if (result case Err(:final failure)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(failure.message),
+          backgroundColor: AppColors.error,
+        ),
+      );
+      return;
     }
     setState(() => _bookmarked = !_bookmarked);
     ref.invalidate(bookmarksProvider);
@@ -152,7 +168,7 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
               child: ElevatedButton(
                 onPressed: () async {
                   if (ctrl.text.isNotEmpty) {
-                    await _notesRepo.saveNote(
+                    final result = await _notesRepo.saveNote(
                       LocalNote(
                         id: '${section.id}_note',
                         refType: 'section',
@@ -161,6 +177,17 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
                         updatedAt: DateTime.now(),
                       ),
                     );
+                    if (result case Err(:final failure)) {
+                      if (ctx.mounted) {
+                        ScaffoldMessenger.of(ctx).showSnackBar(
+                          SnackBar(
+                            content: Text(failure.message),
+                            backgroundColor: AppColors.error,
+                          ),
+                        );
+                      }
+                      return;
+                    }
                     setState(() => _noteContent = ctrl.text);
                     ref.invalidate(homeStatsProvider);
                   }

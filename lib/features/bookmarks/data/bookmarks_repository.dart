@@ -5,18 +5,39 @@ import '../../../shared/models/local/database_helper.dart';
 import '../../../shared/models/local/local_bookmark.dart';
 
 class BookmarksRepository {
-  Future<void> addBookmark(LocalBookmark bookmark) async {
-    final db = await DatabaseHelper.instance.database;
-    await db.insert(
-      'bookmarks',
-      bookmark.copyWith(isSynced: false).toMap(),
-      conflictAlgorithm: ConflictAlgorithm.replace,
-    );
+  Future<Result<void>> addBookmark(LocalBookmark bookmark) async {
+    try {
+      final db = await DatabaseHelper.instance.database;
+      await db.insert(
+        'bookmarks',
+        bookmark.copyWith(isSynced: false).toMap(),
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
+      return const Ok(null);
+    } catch (e) {
+      return Err(DatabaseFailure('Failed to save bookmark: ${e.toString()}'));
+    }
   }
 
-  Future<void> removeBookmark(String refId) async {
-    final db = await DatabaseHelper.instance.database;
-    await db.delete('bookmarks', where: 'ref_id = ?', whereArgs: [refId]);
+  Future<Result<void>> removeBookmark(String refId) async {
+    try {
+      final db = await DatabaseHelper.instance.database;
+      await db.delete('bookmarks', where: 'ref_id = ?', whereArgs: [refId]);
+      // Best-effort remote delete — ignored if offline or unauthenticated
+      final client = Supabase.instance.client;
+      final userId = client.auth.currentUser?.id;
+      if (userId != null) {
+        client
+            .from('bookmarks')
+            .delete()
+            .eq('ref_id', refId)
+            .eq('user_id', userId)
+            .then((_) {}, onError: (_) {});
+      }
+      return const Ok(null);
+    } catch (e) {
+      return Err(DatabaseFailure('Failed to remove bookmark: ${e.toString()}'));
+    }
   }
 
   Future<LocalBookmark?> getBookmark(String refId) async {
@@ -92,7 +113,7 @@ class BookmarksRepository {
           'ref_title': bm.refTitle,
           'ref_act': bm.refAct,
           'folder': bm.folder,
-          'created_at': bm.savedAt.toIso8601String(),
+          'saved_at': bm.savedAt.toIso8601String(),
         });
         await markSynced(bm.id);
       }

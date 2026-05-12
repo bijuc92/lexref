@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../../core/error/result.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/models/local/local_bookmark.dart';
 import '../../../shared/widgets/act_badge.dart';
@@ -231,7 +232,19 @@ class _BookmarkTile extends ConsumerWidget {
               title: const Text('Remove bookmark'),
               onTap: () async {
                 Navigator.pop(context);
-                await BookmarksRepository().removeBookmark(bookmark.refId);
+                final result = await BookmarksRepository()
+                    .removeBookmark(bookmark.refId);
+                if (result case Err(:final failure)) {
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(failure.message),
+                        backgroundColor: AppColors.error,
+                      ),
+                    );
+                  }
+                  return;
+                }
                 ref.invalidate(bookmarksProvider);
               },
             ),

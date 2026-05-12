@@ -16,7 +16,7 @@ class DatabaseHelper {
     final path = join(await getDatabasesPath(), 'lexref.db');
     return openDatabase(
       path,
-      version: 2,
+      version: 3,
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -114,6 +114,27 @@ class DatabaseHelper {
       await db.execute(
         'ALTER TABLE sections ADD COLUMN cross_references TEXT',
       );
+    }
+    if (oldVersion < 3) {
+      // Ensure bookmarks and notes have the full schema.
+      // Try/catch each column — SQLite throws if it already exists.
+      for (final sql in [
+        "ALTER TABLE bookmarks ADD COLUMN ref_title TEXT NOT NULL DEFAULT ''",
+        "ALTER TABLE bookmarks ADD COLUMN ref_act TEXT",
+        "ALTER TABLE bookmarks ADD COLUMN folder TEXT NOT NULL DEFAULT 'General'",
+        "ALTER TABLE bookmarks ADD COLUMN saved_at TEXT NOT NULL DEFAULT ''",
+        "ALTER TABLE bookmarks ADD COLUMN is_synced INTEGER NOT NULL DEFAULT 0",
+        "ALTER TABLE notes ADD COLUMN ref_type TEXT NOT NULL DEFAULT 'section'",
+        "ALTER TABLE notes ADD COLUMN ref_id TEXT NOT NULL DEFAULT ''",
+        "ALTER TABLE notes ADD COLUMN updated_at TEXT NOT NULL DEFAULT ''",
+        "ALTER TABLE notes ADD COLUMN is_synced INTEGER NOT NULL DEFAULT 0",
+      ]) {
+        try {
+          await db.execute(sql);
+        } catch (_) {
+          // Column already exists — safe to ignore
+        }
+      }
     }
   }
 }

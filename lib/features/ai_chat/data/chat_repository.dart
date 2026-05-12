@@ -1,10 +1,16 @@
+import '../../../core/error/result.dart';
 import '../../../shared/models/local/database_helper.dart';
 import '../../../shared/models/local/local_chat_message.dart';
 
 class ChatRepository {
-  Future<void> saveMessage(LocalChatMessage message) async {
-    final db = await DatabaseHelper.instance.database;
-    await db.insert('chat_messages', message.toMap());
+  Future<Result<void>> saveMessage(LocalChatMessage message) async {
+    try {
+      final db = await DatabaseHelper.instance.database;
+      await db.insert('chat_messages', message.toMap());
+      return const Ok(null);
+    } catch (e) {
+      return Err(DatabaseFailure('Failed to save message: ${e.toString()}'));
+    }
   }
 
   Future<List<LocalChatMessage>> getMessages(String sessionId) async {

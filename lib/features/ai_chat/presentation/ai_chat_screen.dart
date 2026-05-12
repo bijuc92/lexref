@@ -79,7 +79,17 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
       content: text.trim(),
       createdAt: DateTime.now(),
     );
-    await _chatRepo.saveMessage(userMsg);
+    final saveResult = await _chatRepo.saveMessage(userMsg);
+    if (!mounted) return;
+    if (saveResult case Err(:final failure)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Could not save message: ${failure.message}'),
+          backgroundColor: AppColors.error,
+        ),
+      );
+      return;
+    }
     setState(() {
       _messages = [..._messages, userMsg];
       _loading = true;
@@ -99,7 +109,11 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
           content: data,
           createdAt: DateTime.now(),
         );
-        await _chatRepo.saveMessage(aiMsg);
+        // Persist AI reply; failure is non-fatal — response is still shown
+        final aiSaveResult = await _chatRepo.saveMessage(aiMsg);
+        if (aiSaveResult case Err(:final failure)) {
+          debugPrint('AI message persist failed: ${failure.message}');
+        }
         if (mounted) {
           setState(() {
             _messages = [..._messages, aiMsg];

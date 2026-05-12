@@ -12,10 +12,13 @@ class SyncService {
       final results = await Connectivity().checkConnectivity();
       if (results.contains(ConnectivityResult.none)) return const Ok(null);
 
-      final outcomes = await Future.wait([
-        _bookmarksRepo.syncToSupabase(),
-        _notesRepo.syncToSupabase(),
-      ]);
+      final outcomes = await Future.wait(
+        [
+          _bookmarksRepo.syncToSupabase(),
+          _notesRepo.syncToSupabase(),
+        ],
+        eagerError: false,
+      );
 
       // Surface the first failure, if any
       for (final outcome in outcomes) {

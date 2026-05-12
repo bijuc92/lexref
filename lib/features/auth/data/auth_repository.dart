@@ -1,5 +1,6 @@
 import 'package:supabase_flutter/supabase_flutter.dart';
 import '../../../core/error/result.dart';
+import '../../../shared/models/local/database_helper.dart';
 
 class AuthRepository {
   final _client = Supabase.instance.client;
@@ -64,6 +65,29 @@ class AuthRepository {
     try {
       await _client.auth.signOut();
       return const Ok(null);
+    } catch (e) {
+      return Err(UnknownFailure(e.toString()));
+    }
+  }
+
+  Future<Result<void>> deleteAccount() async {
+    try {
+      // SECURITY DEFINER RPC deletes the row from auth.users for the caller
+      await _client.rpc('delete_user');
+
+      // Clear local user-specific data; keep sections/acts (offline statutory content)
+      final db = await DatabaseHelper.instance.database;
+      await db.delete('bookmarks');
+      await db.delete('notes');
+      await db.delete('chat_messages');
+      await db.delete('search_history');
+
+      await _client.auth.signOut();
+      return const Ok(null);
+    } on AuthApiException catch (e) {
+      return Err(AuthFailure(e.message));
+    } on AuthException catch (e) {
+      return Err(AuthFailure(e.message));
     } catch (e) {
       return Err(UnknownFailure(e.toString()));
     }

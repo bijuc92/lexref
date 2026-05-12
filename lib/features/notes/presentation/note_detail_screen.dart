@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import '../../../core/error/result.dart';
+import '../../../core/theme/app_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/utils/date_utils.dart' as app_dates;
@@ -43,12 +45,23 @@ class _NoteDetailScreenState extends ConsumerState<NoteDetailScreen> {
   Future<void> _save(String content) async {
     final note = ref.read(_noteProvider(widget.noteId)).valueOrNull;
     if (note == null) return;
-    await _repo.saveNote(note.copyWith(
+    final result = await _repo.saveNote(note.copyWith(
       content: content,
       updatedAt: DateTime.now(),
       isSynced: false,
     ));
-    if (mounted) setState(() => _dirty = false);
+    if (!mounted) return;
+    switch (result) {
+      case Ok():
+        setState(() => _dirty = false);
+      case Err(:final failure):
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to save: ${failure.message}'),
+            backgroundColor: AppColors.error,
+          ),
+        );
+    }
   }
 
   Future<void> _delete() async {
@@ -70,10 +83,19 @@ class _NoteDetailScreenState extends ConsumerState<NoteDetailScreen> {
         ],
       ),
     );
-    if (confirmed == true && mounted) {
-      await _repo.deleteNote(widget.noteId);
-      if (mounted) context.pop();
+    if (confirmed != true || !mounted) return;
+    final result = await _repo.deleteNote(widget.noteId);
+    if (!mounted) return;
+    if (result case Err(:final failure)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(failure.message),
+          backgroundColor: AppColors.error,
+        ),
+      );
+      return;
     }
+    context.pop();
   }
 
   @override

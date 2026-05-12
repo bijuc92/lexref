@@ -5,13 +5,18 @@ import '../../../shared/models/local/database_helper.dart';
 import '../../../shared/models/local/local_note.dart';
 
 class NotesRepository {
-  Future<void> saveNote(LocalNote note) async {
-    final db = await DatabaseHelper.instance.database;
-    await db.insert(
-      'notes',
-      note.copyWith(isSynced: false).toMap(),
-      conflictAlgorithm: ConflictAlgorithm.replace,
-    );
+  Future<Result<void>> saveNote(LocalNote note) async {
+    try {
+      final db = await DatabaseHelper.instance.database;
+      await db.insert(
+        'notes',
+        note.copyWith(isSynced: false).toMap(),
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
+      return const Ok(null);
+    } catch (e) {
+      return Err(DatabaseFailure('Failed to save note: ${e.toString()}'));
+    }
   }
 
   Future<LocalNote?> getNote(String id) async {
@@ -52,9 +57,25 @@ class NotesRepository {
     );
   }
 
-  Future<void> deleteNote(String id) async {
-    final db = await DatabaseHelper.instance.database;
-    await db.delete('notes', where: 'id = ?', whereArgs: [id]);
+  Future<Result<void>> deleteNote(String id) async {
+    try {
+      final db = await DatabaseHelper.instance.database;
+      await db.delete('notes', where: 'id = ?', whereArgs: [id]);
+      // Best-effort remote delete — ignored if offline or unauthenticated
+      final client = Supabase.instance.client;
+      final userId = client.auth.currentUser?.id;
+      if (userId != null) {
+        client
+            .from('notes')
+            .delete()
+            .eq('id', id)
+            .eq('user_id', userId)
+            .then((_) {}, onError: (_) {});
+      }
+      return const Ok(null);
+    } catch (e) {
+      return Err(DatabaseFailure('Failed to delete note: ${e.toString()}'));
+    }
   }
 
   Future<List<LocalNote>> getUnsynced() async {
