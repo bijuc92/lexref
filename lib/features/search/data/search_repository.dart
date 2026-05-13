@@ -29,16 +29,30 @@ class SearchRepository {
 
   Future<List<CaseResult>> searchCases(String query) async {
     try {
-      final response = await ApiClient.indianKanoon.get(
+      final response = await ApiClient.indianKanoon.post(
         '/search/',
-        queryParameters: {'formInput': query, 'pagenum': 0},
+        data: FormData.fromMap({'formInput': query, 'pagenum': 0}),
       );
+      assert(() {
+        // ignore: avoid_print
+        print('[IndianKanoon] status=${response.statusCode} keys=${response.data?.keys}');
+        // ignore: avoid_print
+        print('[IndianKanoon] data=${response.data}');
+        return true;
+      }());
       final docs = response.data['docs'] as List? ?? [];
       return docs
           .map((d) => CaseResult.fromIndianKanoon(d as Map<String, dynamic>))
           .where((c) => c.docId.isNotEmpty)
           .toList();
-    } on DioException {
+    } on DioException catch (e) {
+      assert(() {
+        // ignore: avoid_print
+        print('[IndianKanoon] DioException type=${e.type} status=${e.response?.statusCode} msg=${e.message}');
+        // ignore: avoid_print
+        print('[IndianKanoon] response body=${e.response?.data}');
+        return true;
+      }());
       return [];
     }
   }

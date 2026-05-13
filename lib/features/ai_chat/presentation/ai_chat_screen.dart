@@ -4,10 +4,13 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/error/result.dart';
+import '../../../core/router/typed_routes.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/models/local/local_chat_message.dart';
 import '../../../shared/providers/connectivity_provider.dart';
 import '../../../shared/widgets/offline_banner.dart';
+import '../../subscription/data/usage_repository.dart';
+import '../../subscription/domain/subscription_providers.dart';
 import '../data/chat_repository.dart';
 import '../data/groq_service.dart';
 
@@ -35,17 +38,24 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
   late String _sessionId;
   List<LocalChatMessage> _messages = [];
   bool _loading = false;
+  int _aiQueriesUsed = 0;
 
   @override
   void initState() {
     super.initState();
     _sessionId = DateTime.now().millisecondsSinceEpoch.toString();
+    _loadAiUsage();
     if (widget.initialMessage != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         _ctrl.text = widget.initialMessage!;
         _send(widget.initialMessage!);
       });
     }
+  }
+
+  Future<void> _loadAiUsage() async {
+    final used = await UsageRepository().getAiQueriesUsed();
+    if (mounted) setState(() => _aiQueriesUsed = used);
   }
 
   @override
@@ -64,6 +74,17 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
 
   Future<void> _send(String text) async {
     if (text.trim().isEmpty) return;
+
+    final isSubscribed = ref.read(isSubscribedProvider);
+    if (!isSubscribed) {
+      final used = await UsageRepository().getAiQueriesUsed();
+      if (!mounted) return;
+      if (used >= kFreeAiLimit) {
+        context.pushPaywall(reason: 'ai');
+        return;
+      }
+    }
+
     final isOnline = ref.read(isOnlineProvider).valueOrNull ?? true;
     if (!isOnline) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -89,6 +110,10 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
         ),
       );
       return;
+    }
+    if (!isSubscribed) {
+      await UsageRepository().incrementAiQuery();
+      _loadAiUsage();
     }
     setState(() {
       _messages = [..._messages, userMsg];
@@ -147,10 +172,26 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
   @override
   Widget build(BuildContext context) {
     final isOnline = ref.watch(isOnlineProvider).valueOrNull ?? true;
+    final isSubscribed = ref.watch(isSubscribedProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text('LexRef AI'),
         actions: [
+          if (!isSubscribed)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: Center(
+                child: Text(
+                  '$_aiQueriesUsed/$kFreeAiLimit today',
+                  style: GoogleFonts.dmSans(
+                    fontSize: 12,
+                    color: _aiQueriesUsed >= kFreeAiLimit
+                        ? AppColors.error
+                        : AppColors.textSecondary,
+                  ),
+                ),
+              ),
+            ),
           if (_messages.isNotEmpty)
             IconButton(
               icon: const Icon(Icons.add_comment_outlined),

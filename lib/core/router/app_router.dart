@@ -18,6 +18,7 @@ import '../../features/home/presentation/main_shell.dart';
 import '../../features/notes/presentation/note_detail_screen.dart';
 import '../../features/notes/presentation/notes_screen.dart';
 import '../../features/search/presentation/search_screen.dart';
+import '../../features/subscription/presentation/paywall_screen.dart';
 import 'package:flutter/material.dart';
 
 final _rootKey = GlobalKey<NavigatorState>();
@@ -62,6 +63,12 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/profile',
         builder: (_, __) => const ProfileScreen(),
+      ),
+      GoRoute(
+        path: '/paywall',
+        builder: (_, state) => PaywallScreen(
+          reason: state.extra is String ? state.extra as String : 'upgrade',
+        ),
       ),
       GoRoute(
         path: '/notes',

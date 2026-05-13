@@ -5,6 +5,7 @@ import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core/error/result.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../subscription/domain/subscription_providers.dart';
 import '../domain/auth_providers.dart';
 
 class ProfileScreen extends ConsumerStatefulWidget {
@@ -25,6 +26,19 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       if (mounted) setState(() => _version = '${info.version}+${info.buildNumber}');
     });
   }
+
+  String _proExpiryLabel(customerInfo) {
+    final expiry =
+        customerInfo?.entitlements.active['pro']?.expirationDate as DateTime?;
+    if (expiry == null) return 'Active';
+    final d = expiry;
+    return 'Renews ${d.day} ${_monthName(d.month)} ${d.year}';
+  }
+
+  String _monthName(int m) => const [
+        '', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+      ][m];
 
   Future<void> _handleSignOut(BuildContext context) async {
     final authRepo = ref.read(authRepositoryProvider);
@@ -103,6 +117,8 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
   Widget build(BuildContext context) {
     final profile = ref.watch(profileProvider).valueOrNull;
     final themeMode = ref.watch(themeModeProvider);
+    final isSubscribed = ref.watch(isSubscribedProvider);
+    final customerInfo = ref.watch(customerInfoProvider).valueOrNull;
 
     final name = profile?['full_name'] as String? ?? '—';
     final email = profile?['email'] as String? ?? '—';
@@ -151,6 +167,40 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               _InfoRow('Bar Enrollment No.', barNo),
               _InfoRow('State', state),
               _InfoRow('Court', court),
+              const SizedBox(height: 24),
+              _SectionHeader('Subscription'),
+              ListTile(
+                contentPadding: EdgeInsets.zero,
+                leading: Icon(
+                  isSubscribed
+                      ? Icons.workspace_premium
+                      : Icons.workspace_premium_outlined,
+                  color: isSubscribed ? AppColors.primary : AppColors.textSecondary,
+                ),
+                title: Text(
+                  isSubscribed ? 'LexRef Pro' : 'Free Plan',
+                  style: GoogleFonts.dmSans(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    color: isSubscribed ? AppColors.primary : null,
+                  ),
+                ),
+                subtitle: Text(
+                  isSubscribed
+                      ? _proExpiryLabel(customerInfo)
+                      : '5 AI queries · 3 case searches per day',
+                  style: GoogleFonts.dmSans(
+                    fontSize: 12,
+                    color: AppColors.textSecondary,
+                  ),
+                ),
+                trailing: isSubscribed
+                    ? null
+                    : TextButton(
+                        onPressed: () => context.pushPaywall(reason: 'upgrade'),
+                        child: const Text('Upgrade'),
+                      ),
+              ),
               const SizedBox(height: 24),
               _SectionHeader('Preferences'),
               SwitchListTile(

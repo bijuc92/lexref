@@ -51,4 +51,9 @@ extension TypedRoutes on BuildContext {
   // ── Profile ───────────────────────────────────────────────────────────────
 
   void goProfile() => push('/profile');
+
+  // ── Subscription ──────────────────────────────────────────────────────────
+
+  void pushPaywall({String reason = 'upgrade'}) =>
+      push('/paywall', extra: reason);
 }

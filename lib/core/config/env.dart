@@ -3,6 +3,7 @@ class Env {
   static const supabaseAnonKey = String.fromEnvironment('SUPABASE_ANON_KEY');
   static const groqApiKey = String.fromEnvironment('GROQ_API_KEY');
   static const indianKanoonToken = String.fromEnvironment('INDIAN_KANOON_TOKEN');
+  static const revenueCatApiKey = String.fromEnvironment('REVENUECAT_API_KEY');
   static const meilisearchUrl = String.fromEnvironment(
     'MEILISEARCH_URL',
     defaultValue: 'http://localhost:7700',

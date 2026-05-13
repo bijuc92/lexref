@@ -1,4 +1,6 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:purchases_flutter/purchases_flutter.dart';
+import '../../../core/config/env.dart';
 import '../../../core/error/result.dart';
 import '../../bookmarks/data/bookmarks_repository.dart';
 import '../../notes/data/notes_repository.dart';
@@ -9,6 +11,12 @@ class SyncService {
 
   Future<Result<void>> syncAll() async {
     try {
+      // Cloud sync is a Pro feature — skip silently for free users
+      if (Env.revenueCatApiKey.isNotEmpty) {
+        final info = await Purchases.getCustomerInfo();
+        if (!info.entitlements.active.containsKey('pro')) return const Ok(null);
+      }
+
       final results = await Connectivity().checkConnectivity();
       if (results.contains(ConnectivityResult.none)) return const Ok(null);
 

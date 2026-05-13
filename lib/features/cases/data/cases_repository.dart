@@ -13,12 +13,9 @@ class CasesRepository {
     if (court != null) formInput += ' fromdate:${year ?? ''} todate:${year ?? ''}';
 
     try {
-      final response = await ApiClient.indianKanoon.get(
+      final response = await ApiClient.indianKanoon.post(
         '/search/',
-        queryParameters: {
-          'formInput': formInput,
-          'pagenum': 0,
-        },
+        data: FormData.fromMap({'formInput': formInput, 'pagenum': 0}),
       );
       final docs = response.data['docs'] as List? ?? [];
       final results = docs

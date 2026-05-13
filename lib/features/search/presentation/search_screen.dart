@@ -11,6 +11,8 @@ import '../../../shared/widgets/loading_shimmer.dart';
 import '../../../shared/widgets/offline_banner.dart';
 import '../../../shared/widgets/section_card.dart';
 import '../../cases/domain/case_models.dart';
+import '../../subscription/data/usage_repository.dart';
+import '../../subscription/domain/subscription_providers.dart';
 import '../data/search_repository.dart';
 
 final _searchRepo = SearchRepository();
@@ -44,17 +46,24 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   List<LocalSection> _sections = [];
   List<CaseResult> _cases = [];
   List<String> _history = [];
+  int _caseSearchesUsed = 0;
 
   @override
   void initState() {
     super.initState();
     _loadHistory();
+    _loadCaseUsage();
     if (widget.initialQuery != null && widget.initialQuery!.isNotEmpty) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         _ctrl.text = widget.initialQuery!;
         _onChanged(widget.initialQuery!);
       });
     }
+  }
+
+  Future<void> _loadCaseUsage() async {
+    final used = await UsageRepository().getCaseSearchesUsed();
+    if (mounted) setState(() => _caseSearchesUsed = used);
   }
 
   @override
@@ -87,7 +96,22 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     );
     List<CaseResult> cases = [];
     if (_filter == 'all' || _filter == 'sc' || _filter == 'hc') {
-      cases = await _searchRepo.searchCases(q);
+      final isSubscribed = ref.read(isSubscribedProvider);
+      bool canSearch = isSubscribed;
+      if (!canSearch) {
+        final used = await UsageRepository().getCaseSearchesUsed();
+        canSearch = used < kFreeCaseLimit;
+      }
+      if (!mounted) return;
+      if (canSearch) {
+        cases = await _searchRepo.searchCases(q);
+        if (!isSubscribed) {
+          await UsageRepository().incrementCaseSearch();
+          _loadCaseUsage();
+        }
+      } else {
+        context.pushPaywall(reason: 'cases');
+      }
     }
     if (mounted) {
       setState(() {
@@ -102,6 +126,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final isSubscribed = ref.watch(isSubscribedProvider);
     return Scaffold(
       appBar: AppBar(
         title: TextField(
@@ -162,6 +187,35 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               }).toList(),
             ),
           ),
+          if (!isSubscribed && (_filter == 'all' || _filter == 'sc' || _filter == 'hc'))
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+              child: Row(
+                children: [
+                  Text(
+                    'Case searches: $_caseSearchesUsed/$kFreeCaseLimit today',
+                    style: GoogleFonts.dmSans(
+                      fontSize: 11,
+                      color: _caseSearchesUsed >= kFreeCaseLimit
+                          ? AppColors.error
+                          : AppColors.textSecondary,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  GestureDetector(
+                    onTap: () => context.pushPaywall(reason: 'cases'),
+                    child: Text(
+                      'Upgrade',
+                      style: GoogleFonts.dmSans(
+                        fontSize: 11,
+                        color: AppColors.primary,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           Expanded(
             child: _query.isEmpty
                 ? _buildHistory()
