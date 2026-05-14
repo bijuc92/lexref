@@ -101,14 +101,14 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       if (!canSearch) {
         final used = await UsageRepository().getCaseSearchesUsed();
         canSearch = used < kFreeCaseLimit;
+        if (canSearch) {
+          await UsageRepository().incrementCaseSearch();
+          await _loadCaseUsage();
+        }
       }
       if (!mounted) return;
       if (canSearch) {
         cases = await _searchRepo.searchCases(q);
-        if (!isSubscribed) {
-          await UsageRepository().incrementCaseSearch();
-          _loadCaseUsage();
-        }
       } else {
         context.pushPaywall(reason: 'cases');
       }
