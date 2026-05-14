@@ -88,6 +88,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   }
 
   Future<void> _doSearch(String q) async {
+    if (_loading) return;
     setState(() => _loading = true);
     await _searchRepo.saveSearchHistory(q, _filter);
     final sections = await _searchRepo.searchLocal(
