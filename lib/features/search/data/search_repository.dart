@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:dio/dio.dart';
 import '../../../core/network/api_client.dart';
 import '../../../shared/models/local/database_helper.dart';
@@ -33,26 +32,12 @@ class SearchRepository {
         '/search/',
         data: FormData.fromMap({'formInput': query, 'pagenum': 0}),
       );
-      assert(() {
-        // ignore: avoid_print
-        print('[IndianKanoon] status=${response.statusCode} keys=${response.data?.keys}');
-        // ignore: avoid_print
-        print('[IndianKanoon] data=${response.data}');
-        return true;
-      }());
       final docs = response.data['docs'] as List? ?? [];
       return docs
           .map((d) => CaseResult.fromIndianKanoon(d as Map<String, dynamic>))
           .where((c) => c.docId.isNotEmpty)
           .toList();
-    } on DioException catch (e) {
-      assert(() {
-        // ignore: avoid_print
-        print('[IndianKanoon] DioException type=${e.type} status=${e.response?.statusCode} msg=${e.message}');
-        // ignore: avoid_print
-        print('[IndianKanoon] response body=${e.response?.data}');
-        return true;
-      }());
+    } on DioException {
       return [];
     }
   }

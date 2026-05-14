@@ -26,6 +26,8 @@ class BookmarksScreen extends ConsumerStatefulWidget {
 class _BookmarksScreenState extends ConsumerState<BookmarksScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabs;
+  final List<String> _extraFolders = [];
+
   @override
   void initState() {
     super.initState();
@@ -63,14 +65,10 @@ class _BookmarksScreenState extends ConsumerState<BookmarksScreen>
           ),
           TextButton(
             onPressed: () {
+              final name = ctrl.text.trim();
               Navigator.pop(ctx);
-              // Folder will be created when first bookmark is added to it
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(
-                      '"${ctrl.text}" folder ready — bookmark a section to add to it'),
-                ),
-              );
+              if (name.isEmpty) return;
+              setState(() => _extraFolders.add(name));
             },
             child: const Text('Create'),
           ),
@@ -91,7 +89,9 @@ class _BookmarksScreenState extends ConsumerState<BookmarksScreen>
         body: Center(child: Text(e.toString())),
       ),
       data: (byFolder) {
-        final folders = byFolder.keys.toList()..sort();
+        final folderSet = {...byFolder.keys, ..._extraFolders};
+        final folders = folderSet.toList()..sort();
+        final mergedByFolder = {for (final f in folders) f: byFolder[f] ?? []};
         _rebuildTabs(folders.isEmpty ? ['General'] : folders);
         return Scaffold(
           appBar: AppBar(
@@ -123,7 +123,7 @@ class _BookmarksScreenState extends ConsumerState<BookmarksScreen>
                     : TabBarView(
                         controller: _tabs,
                         children: folders.map((folder) {
-                          final items = byFolder[folder] ?? [];
+                          final items = mergedByFolder[folder] ?? [];
                           if (items.isEmpty) {
                             return const EmptyState(
                               icon: Icons.bookmark_border,

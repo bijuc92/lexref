@@ -147,7 +147,7 @@ class HomeScreen extends ConsumerWidget {
                   label: 'Case Law',
                   subtitle: 'Search judgments',
                   color: const Color(0xFF1565C0),
-                  onTap: () => context.goSearch(),
+                  onTap: () => context.pushCasesList(),
                 ),
                 _QuickCard(
                   icon: Icons.smart_toy_outlined,

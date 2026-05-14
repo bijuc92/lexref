@@ -13,6 +13,7 @@ import '../../features/acts/presentation/sections_list_screen.dart';
 import '../../features/ai_chat/presentation/ai_chat_screen.dart';
 import '../../features/bookmarks/presentation/bookmarks_screen.dart';
 import '../../features/cases/presentation/case_detail_screen.dart';
+import '../../features/cases/presentation/cases_list_screen.dart';
 import '../../features/home/presentation/home_screen.dart';
 import '../../features/home/presentation/main_shell.dart';
 import '../../features/notes/presentation/note_detail_screen.dart';
@@ -78,6 +79,10 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/notes/:id',
         builder: (_, state) =>
             NoteDetailScreen(noteId: state.pathParameters['id']!),
+      ),
+      GoRoute(
+        path: '/cases',
+        builder: (_, __) => const CasesListScreen(),
       ),
       GoRoute(
         path: '/cases/:caseId',

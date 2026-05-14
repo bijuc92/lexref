@@ -39,6 +39,8 @@ extension TypedRoutes on BuildContext {
 
   // ── Cases ─────────────────────────────────────────────────────────────────
 
+  void pushCasesList() => push('/cases');
+
   void goCaseDetail(String caseId) => go('/cases/$caseId');
   void pushCaseDetail(String caseId) => push('/cases/$caseId');
 

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:in_app_review/in_app_review.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../../core/error/result.dart';
 import '../../../core/router/typed_routes.dart';
 import '../../../core/theme/app_colors.dart';
@@ -56,6 +58,18 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
   Future<void> _loadAiUsage() async {
     final used = await UsageRepository().getAiQueriesUsed();
     if (mounted) setState(() => _aiQueriesUsed = used);
+  }
+
+  Future<void> _maybeRequestReview() async {
+    final prefs = await SharedPreferences.getInstance();
+    final total = (prefs.getInt('lifetime_ai_replies') ?? 0) + 1;
+    await prefs.setInt('lifetime_ai_replies', total);
+    if (total == 5) {
+      final inAppReview = InAppReview.instance;
+      if (await inAppReview.isAvailable()) {
+        await inAppReview.requestReview();
+      }
+    }
   }
 
   @override
@@ -145,6 +159,7 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
             _loading = false;
           });
           _scrollToBottom();
+          _maybeRequestReview();
         }
       case Err(:final failure):
         setState(() => _loading = false);
