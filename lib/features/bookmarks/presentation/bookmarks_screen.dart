@@ -24,7 +24,7 @@ class BookmarksScreen extends ConsumerStatefulWidget {
 }
 
 class _BookmarksScreenState extends ConsumerState<BookmarksScreen>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   late TabController _tabs;
   final List<String> _extraFolders = [];
 
