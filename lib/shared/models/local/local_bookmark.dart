@@ -25,7 +25,7 @@ class LocalBookmark with _$LocalBookmark {
         refAct: m['ref_act'] as String?,
         folder: m['folder'] as String? ?? 'General',
         savedAt: DateTime.parse(m['saved_at'] as String),
-        isSynced: (m['is_synced'] as int) == 1,
+        isSynced: (m['is_synced'] as int? ?? 0) == 1,
       );
 
   Map<String, dynamic> toMap() => {

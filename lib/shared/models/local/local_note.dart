@@ -21,7 +21,7 @@ class LocalNote with _$LocalNote {
         refId: m['ref_id'] as String,
         content: m['content'] as String,
         updatedAt: DateTime.parse(m['updated_at'] as String),
-        isSynced: (m['is_synced'] as int) == 1,
+        isSynced: (m['is_synced'] as int? ?? 0) == 1,
       );
 
   Map<String, dynamic> toMap() => {
