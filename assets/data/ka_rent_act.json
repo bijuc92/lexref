@@ -1,0 +1,70 @@
+{
+  "id": "ka_rent_act",
+  "shortName": "KA Rent Act",
+  "fullName": "Karnataka Rent Act, 1999",
+  "year": 1999,
+  "jurisdiction": "karnataka",
+  "category": "civil",
+  "totalSections": 49,
+  "totalChapters": 7,
+  "chapters": [
+    {
+      "id": "ka_rent_act_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "ka_rent_act_1",
+          "sectionNo": "1",
+          "title": "Short title, extent and commencement",
+          "content": "This Act may be called the Karnataka Rent Act, 1999. It extends to the whole of the State of Karnataka. It shall come into force on such date as the State Government may, by notification, appoint.",
+          "relatedSections": [],
+          "crossReferences": {}
+        },
+        {
+          "id": "ka_rent_act_3",
+          "sectionNo": "3",
+          "title": "Definitions",
+          "content": "In this Act, unless the context otherwise requires — 'landlord' means any person who is receiving or is entitled to receive the rent of any premises whether on his own account or on account of or on behalf of any other person; 'premises' means any building or part of a building let or to be let separately; 'tenant' means any person by whom or on whose account rent is payable for any premises and includes a person continuing in possession after the termination of his tenancy.",
+          "relatedSections": [],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "ka_rent_act_ch2",
+      "title": "Chapter II — Rent",
+      "sections": [
+        {
+          "id": "ka_rent_act_5",
+          "sectionNo": "5",
+          "title": "Limitation on rent",
+          "content": "Notwithstanding anything contained in any law, agreement or contract, no landlord shall, in consideration of the grant, renewal or continuance of a tenancy, claim or receive any premium or other like sum in addition to the rent or any consideration whatsoever other than the rent and the refundable advance permitted under this Act.",
+          "relatedSections": ["ka_rent_act_7"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ka_rent_act_7",
+          "sectionNo": "7",
+          "title": "Increase of rent",
+          "content": "Where any improvement, addition or structural alteration has been carried out in any premises at the request of the tenant, and the cost has been borne by the landlord, the landlord may increase the rent per year by an amount not exceeding ten per cent of the cost of such improvement, addition or alteration.",
+          "relatedSections": ["ka_rent_act_5"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "ka_rent_act_ch3",
+      "title": "Chapter III — Eviction of Tenants",
+      "sections": [
+        {
+          "id": "ka_rent_act_27",
+          "sectionNo": "27",
+          "title": "Protection of tenant against eviction",
+          "content": "Notwithstanding anything contained in any other law, no order or decree for the recovery of possession of any premises shall be made by the Court in favour of the landlord against the tenant except on one or more of the grounds specified in this section, including default in payment of rent, unlawful subletting, acts causing nuisance, and bona fide requirement of the landlord.",
+          "relatedSections": [],
+          "crossReferences": {}
+        }
+      ]
+    }
+  ]
+}

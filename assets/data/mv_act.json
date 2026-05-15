@@ -1,0 +1,136 @@
+{
+  "id": "mv_act",
+  "shortName": "MV Act",
+  "fullName": "Motor Vehicles Act, 1988",
+  "year": 1988,
+  "jurisdiction": "central",
+  "category": "special",
+  "totalSections": 217,
+  "totalChapters": 14,
+  "chapters": [
+    {
+      "id": "mv_act_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "mv_act_1",
+          "sectionNo": "1",
+          "title": "Short title, extent and commencement",
+          "content": "This Act may be called the Motor Vehicles Act, 1988. It extends to the whole of India. It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint; and different dates may be appointed for different States and any reference in this Act to the commencement of this Act shall, in relation to a State, be construed as a reference to the commencement of this Act in that State.",
+          "relatedSections": [],
+          "crossReferences": {}
+        },
+        {
+          "id": "mv_act_2",
+          "sectionNo": "2",
+          "title": "Definitions",
+          "content": "[PLACEHOLDER — Update with definitions. Key terms include: 'motor vehicle', 'transport vehicle', 'driving licence', 'permit', 'owner', 'public service vehicle', 'goods carriage', 'fitness certificate', 'registering authority'.]",
+          "relatedSections": [],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "mv_act_ch2",
+      "title": "Chapter II — Licensing of Drivers of Motor Vehicles",
+      "sections": [
+        {
+          "id": "mv_act_3",
+          "sectionNo": "3",
+          "title": "Necessity for driving licence",
+          "content": "[PLACEHOLDER — Update with section 3 text on requirement of valid driving licence to drive a motor vehicle in any public place.]",
+          "relatedSections": ["mv_act_4", "mv_act_5"],
+          "crossReferences": {}
+        },
+        {
+          "id": "mv_act_4",
+          "sectionNo": "4",
+          "title": "Age limit in connection with driving of motor vehicles",
+          "content": "[PLACEHOLDER — Update with section 4 text on minimum age requirements for driving different categories of motor vehicles.]",
+          "relatedSections": ["mv_act_3"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "mv_act_ch10",
+      "title": "Chapter X — Liability Without Fault in Certain Cases",
+      "sections": [
+        {
+          "id": "mv_act_140",
+          "sectionNo": "140",
+          "title": "Liability to pay compensation in certain cases on the principle of no fault",
+          "content": "[PLACEHOLDER — Update with section 140 text on no-fault liability of owner for death or permanent disablement arising out of use of motor vehicle.]",
+          "relatedSections": ["mv_act_141", "mv_act_142", "mv_act_166"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "mv_act_ch11",
+      "title": "Chapter XI — Insurance of Motor Vehicles Against Third Party Risks",
+      "sections": [
+        {
+          "id": "mv_act_146",
+          "sectionNo": "146",
+          "title": "Necessity for insurance against third party risk",
+          "content": "[PLACEHOLDER — Update with section 146 text on mandatory third party insurance for motor vehicles used in a public place.]",
+          "relatedSections": ["mv_act_147"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "mv_act_ch12",
+      "title": "Chapter XII — Claims Tribunals",
+      "sections": [
+        {
+          "id": "mv_act_165",
+          "sectionNo": "165",
+          "title": "Claims Tribunals",
+          "content": "[PLACEHOLDER — Update with section 165 text on constitution of Motor Accident Claims Tribunals by State Governments.]",
+          "relatedSections": ["mv_act_166", "mv_act_168"],
+          "crossReferences": {}
+        },
+        {
+          "id": "mv_act_166",
+          "sectionNo": "166",
+          "title": "Application for compensation",
+          "content": "[PLACEHOLDER — Update with section 166 text on who may file an application for compensation arising out of an accident, time limits, and procedure.]",
+          "relatedSections": ["mv_act_165", "mv_act_168", "mv_act_140"],
+          "crossReferences": {}
+        },
+        {
+          "id": "mv_act_168",
+          "sectionNo": "168",
+          "title": "Award of the Claims Tribunal",
+          "content": "[PLACEHOLDER — Update with section 168 text on the procedure for making an award by the Claims Tribunal and quantum of compensation.]",
+          "relatedSections": ["mv_act_166", "mv_act_173"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "mv_act_ch13",
+      "title": "Chapter XIII — Offences, Penalties and Procedure",
+      "sections": [
+        {
+          "id": "mv_act_184",
+          "sectionNo": "184",
+          "title": "Driving dangerously",
+          "content": "[PLACEHOLDER — Update with section 184 text on penalties for driving at a speed or in a manner dangerous to the public.]",
+          "relatedSections": ["mv_act_185"],
+          "crossReferences": {}
+        },
+        {
+          "id": "mv_act_185",
+          "sectionNo": "185",
+          "title": "Driving by a drunken person or by a person under the influence of drugs",
+          "content": "[PLACEHOLDER — Update with section 185 text on penalties for driving under the influence of alcohol or drugs.]",
+          "relatedSections": ["mv_act_184"],
+          "crossReferences": {}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "ni_act",
+  "shortName": "NI Act",
+  "fullName": "Negotiable Instruments Act, 1881",
+  "year": 1881,
+  "jurisdiction": "central",
+  "category": "commercial",
+  "totalSections": 147,
+  "totalChapters": 17,
+  "chapters": [
+    {
+      "id": "ni_act_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "ni_act_1",
+          "sectionNo": "1",
+          "title": "Short title",
+          "content": "This Act may be called the Negotiable Instruments Act, 1881. It extends to the whole of India except the State of Jammu and Kashmir. It shall come into force on the first day of March, 1882.",
+          "relatedSections": ["ni_act_2"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_2",
+          "sectionNo": "2",
+          "title": "Saving",
+          "content": "Nothing herein contained affects the law of usury or any usage or custom of trade, or among bankers or merchants, with respect to the instrument mentioned herein, such usage or custom not being inconsistent with the express provisions of this Act.",
+          "relatedSections": [],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_3",
+          "sectionNo": "3",
+          "title": "Interpretation-clause",
+          "content": "In this Act—\n\n'Acceptance' means an acceptance completed by delivery or notification.\n\n'Bill of exchange' means a bill of exchange as defined by section 5.\n\n'Cheque' means a cheque as defined by section 6.\n\n'Holder' means any person entitled in his own name to the possession of the instrument and to receive or recover the amount due thereon from the parties thereto.\n\n'Inland instrument' means a promissory note, bill of exchange or cheque drawn or made in India, and made payable in, or drawn upon any person resident in, India.\n\n'Negotiable instrument' means a promissory note, bill of exchange or cheque.\n\n'Note' means a promissory note as defined by section 4.\n\n'Payee' means the person named in the instrument, to whom or to whose order the money is by the instrument directed to be paid.\n\n'Payment in due course' means payment in accordance with the apparent tenor of the instrument in good faith and without negligence to any person in possession thereof under circumstances which do not afford a reasonable ground for believing that he is not entitled to receive payment of the amount therein mentioned.",
+          "relatedSections": ["ni_act_4", "ni_act_5", "ni_act_6"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_4",
+          "sectionNo": "4",
+          "title": "Promissory note",
+          "content": "A 'promissory note' is an instrument in writing (not being a bank-note or a currency-note) containing an unconditional undertaking, signed by the maker, to pay a certain sum of money only to, or to the order of, a certain person, or to the bearer of the instrument.\n\nIllustration: A signs instruments in the following terms:\n(a) 'I promise to pay B or order Rs. 500.'\n(b) 'I acknowledge myself to be indebted to B in Rs. 1,000, to be paid on demand, for value received.'\n(c) 'Mr. B, I.O.U. Rs. 1,000.'\n(d) 'I promise to pay B Rs. 500, and all other sums which shall be due to him.'\n(e) 'I promise to pay B Rs. 500, first deducting thereout any money which he may owe me.'\n(f) 'I promise to pay B Rs. 500 seven days after my marriage with C.'\n(g) 'I promise to pay B Rs. 500 on D's death.'\n(h) 'I promise to pay B Rs. 500 and to deliver to him my black horse on 1st January next.'\n\nThe instruments respectively marked (a) and (b) are promissory notes. The instruments respectively marked (c), (d), (e), (f), (g) and (h) are not promissory notes.",
+          "relatedSections": ["ni_act_3", "ni_act_5", "ni_act_6"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_5",
+          "sectionNo": "5",
+          "title": "Bill of exchange",
+          "content": "A 'bill of exchange' is an instrument in writing containing an unconditional order, signed by the maker, directing a certain person to pay a certain sum of money only to, or to the order of, a certain person or to the bearer of the instrument.\n\nA promise or order to pay is unconditional within the meaning of this section and section 4, although coupled with:\n(a) an indication of a particular fund out of which reimbursement is to be made, or a particular account to be debited with the amount; or\n(b) a statement of the transaction which gives rise to the instrument.\n\nBut an order to pay out of a particular fund is not unconditional.\n\nThe person to whom it is clear that the direction is given or that payment is to be made may be a 'certain person,' although he is misnamed or designated by description only.",
+          "relatedSections": ["ni_act_3", "ni_act_4", "ni_act_6"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_6",
+          "sectionNo": "6",
+          "title": "Cheque",
+          "content": "A 'cheque' is a bill of exchange drawn on a specified banker and not expressed to be payable otherwise than on demand and it includes the electronic image of a truncated cheque and a cheque in the electronic form.\n\nExplanation I — For the purposes of this section, the expressions—\n(a) 'a cheque in the electronic form' means a cheque which contains the exact mirror image of a paper cheque, and is generated, written and signed in a secure system ensuring the minimum safety standards with the use of digital signature (with or without biometrics signature) and asymmetric crypto system;\n(b) 'a truncated cheque' means a cheque which is truncated during the course of a clearing cycle, either by the clearing house or by the bank whether paying or receiving payment, immediately on generation of an electronic image for transmission, substituting the further physical movement of the cheque in writing.\n\nExplanation II — For the purposes of this section, the expression 'clearing house' means the clearing house managed by the Reserve Bank of India or a clearing house recognised as such by the Reserve Bank of India.",
+          "relatedSections": ["ni_act_3", "ni_act_5", "ni_act_138"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "ni_act_ch2",
+      "title": "Chapter II — Of Notes, Bills and Cheques",
+      "sections": [
+        {
+          "id": "ni_act_13",
+          "sectionNo": "13",
+          "title": "Negotiable instrument",
+          "content": "A 'negotiable instrument' means a promissory note, bill of exchange or cheque payable either to order or to bearer.\n\nExplanation (i) — A promissory note, bill of exchange or cheque is payable to order which is expressed to be so payable or which is expressed to be payable to a particular person, and does not contain words prohibiting transfer or indicating an intention that it shall not be transferable.\n\nExplanation (ii) — A promissory note, bill of exchange or cheque is payable to bearer which is expressed to be so payable, or on which the only or last indorsement is an indorsement in blank.\n\nExplanation (iii) — Where a promissory note, bill of exchange or cheque, either originally or by indorsement, is expressed to be payable to the order of a specified person, and not to him or his order, it is nevertheless payable to him or his order at his option.",
+          "relatedSections": ["ni_act_4", "ni_act_5", "ni_act_6"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_14",
+          "sectionNo": "14",
+          "title": "Negotiation",
+          "content": "When a promissory note, bill of exchange or cheque is transferred to any person, so as to constitute that person the holder thereof, the instrument is said to be negotiated.",
+          "relatedSections": ["ni_act_13", "ni_act_15"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_15",
+          "sectionNo": "15",
+          "title": "Indorsement",
+          "content": "When the maker or holder of a negotiable instrument signs the same, otherwise than as such maker, for the purpose of negotiation, on the back or face thereof or on a slip of paper annexed thereto, or so signs for the same purpose a stamped paper intended to be completed as a negotiable instrument, he is said to indorse the same, and is called the 'indorser'.",
+          "relatedSections": ["ni_act_14", "ni_act_16"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "ni_act_ch8",
+      "title": "Chapter VIII — Of Hundis",
+      "sections": [
+        {
+          "id": "ni_act_85",
+          "sectionNo": "85",
+          "title": "Cheque payable to order",
+          "content": "Where a cheque payable to order purports to be indorsed by or on behalf of the payee, the drawee is discharged by payment in due course.\n\nWhere a cheque is originally expressed to be payable to bearer, the drawee is discharged by payment in due course to the bearer thereof, notwithstanding any indorsement whether in full or in blank appearing thereon, and whether such indorsement purports to restrict or exclude further negotiation or not.",
+          "relatedSections": ["ni_act_6", "ni_act_86"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_85A",
+          "sectionNo": "85A",
+          "title": "Drafts drawn by one branch of a bank on another",
+          "content": "Where any draft, that is, an order to pay money, drawn by one office of a bank upon another office of the same bank for a sum of money payable to order on demand, purports to be indorsed by or on behalf of the payee, the bank is discharged by payment in due course.",
+          "relatedSections": ["ni_act_85", "ni_act_86"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_86",
+          "sectionNo": "86",
+          "title": "Cheque crossed generally",
+          "content": "Where a cheque bears across its face an addition of the words 'and company' or any abbreviation thereof, between two parallel transverse lines, or of two parallel transverse lines simply, either with or without the words 'not negotiable', that addition shall be deemed a crossing, and the cheque shall be deemed to be crossed generally.",
+          "relatedSections": ["ni_act_85", "ni_act_87"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_87",
+          "sectionNo": "87",
+          "title": "Cheque crossed specially",
+          "content": "Where a cheque bears across its face an addition of the name of a banker, either with or without the words 'not negotiable', that addition shall be deemed a crossing, and the cheque shall be deemed to be crossed specially, and to be crossed to that banker.",
+          "relatedSections": ["ni_act_86", "ni_act_88"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_88",
+          "sectionNo": "88",
+          "title": "Cheque crossed 'not negotiable'",
+          "content": "A person taking a cheque crossed generally or specially, bearing in either case the words 'not negotiable', shall not have, and shall not be capable of giving, a better title to the cheque than that which the person from whom he took it had.",
+          "relatedSections": ["ni_act_86", "ni_act_87"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "ni_act_ch15",
+      "title": "Chapter XV — Of Offences",
+      "sections": [
+        {
+          "id": "ni_act_118",
+          "sectionNo": "118",
+          "title": "Presumptions as to negotiable instruments",
+          "content": "Until the contrary is proved, the following presumptions shall be made:\n\n(a) of consideration — that every negotiable instrument was made or drawn for consideration, and that every such instrument, when it has been accepted, indorsed, negotiated or transferred, was accepted, indorsed, negotiated or transferred for consideration;\n\n(b) as to date — that every negotiable instrument bearing a date was made or drawn on such date;\n\n(c) as to time of acceptance — that every accepted bill of exchange was accepted within a reasonable time after its date and before its maturity;\n\n(d) as to time of transfer — that every transfer of a negotiable instrument was made before its maturity;\n\n(e) as to order of indorsements — that the indorsements appearing upon a negotiable instrument were made in the order in which they appear thereon;\n\n(f) as to stamps — that a lost promissory note, bill of exchange or cheque was duly stamped;\n\n(g) that holder is a holder in due course — that the holder of a negotiable instrument is a holder in due course: provided that, where the instrument has been obtained from its lawful owner, or from any person in lawful custody thereof, by means of an offence or fraud, or has been obtained from the maker or acceptor thereof by means of an offence or fraud, or for unlawful consideration, the burden of proving that the holder is a holder in due course lies upon the holder.",
+          "relatedSections": ["ni_act_138"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_138",
+          "sectionNo": "138",
+          "title": "Dishonour of cheque for insufficiency, etc., of funds in the account",
+          "content": "Where any cheque drawn by a person on an account maintained by him with a banker for payment of any amount of money to another person from out of that account for the discharge, in whole or in part, of any debt or other liability, is returned by the bank unpaid, either because of the amount of money standing to the credit of that account is insufficient to honour the cheque or that it exceeds the amount arranged to be paid from that account by an agreement made with that bank, such person shall be deemed to have committed an offence and shall, without prejudice to any other provision of this Act, be punished with imprisonment for a term which may be extended to two years, or with fine which may extend to twice the amount of the cheque, or with both:\n\nProvided that nothing contained in this section shall apply unless—\n(a) the cheque has been presented to the bank within a period of three months from the date on which it is drawn or within the period of its validity, whichever is earlier;\n(b) the payee or the holder in due course of the cheque, as the case may be, makes a demand for the payment of the said amount of money by giving a notice in writing, to the drawer of the cheque, within thirty days of the receipt of information by him from the bank regarding the return of the cheque as unpaid; and\n(c) the drawer of such cheque fails to make the payment of the said amount of money to the payee or, as the case may be, to the holder in due course of the cheque, within fifteen days of the receipt of the said notice.\n\nExplanation — For the purposes of this section, 'debt or other liability' means a legally enforceable debt or other liability.",
+          "relatedSections": ["ni_act_139", "ni_act_140", "ni_act_141", "ni_act_142", "ni_act_118"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_139",
+          "sectionNo": "139",
+          "title": "Presumption in favour of holder",
+          "content": "It shall be presumed, unless the contrary is proved, that the holder of a cheque received the cheque of the nature referred to in section 138 for the discharge, in whole or in part, of any debt or other liability.",
+          "relatedSections": ["ni_act_138", "ni_act_140"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_140",
+          "sectionNo": "140",
+          "title": "Defence which may not be allowed in any prosecution under section 138",
+          "content": "It shall not be a defence in a prosecution for an offence under section 138 that the drawer had no reason to believe when he issued the cheque that the cheque may be dishonoured on presentment for the reasons stated in that section.",
+          "relatedSections": ["ni_act_138", "ni_act_139"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_141",
+          "sectionNo": "141",
+          "title": "Offences by companies",
+          "content": "If the person committing an offence under section 138 is a company, every person who, at the time the offence was committed, was in charge of, and was responsible to the company for the conduct of the business of the company, as well as the company, shall be deemed to be guilty of the offence and shall be liable to be proceeded against and punished accordingly:\n\nProvided that nothing contained in this sub-section shall render any person liable to punishment if he proves that the offence was committed without his knowledge, or that he had exercised all due diligence to prevent the commission of such offence.\n\nNotwithstanding anything contained in the first proviso to this sub-section, where any offence under this Act has been committed by a company and it is proved that the offence has been committed with the consent or connivance of, or is attributable to, any neglect on the part of, any director, manager, secretary or other officer of the company, such director, manager, secretary or other officer shall also be deemed to be guilty of that offence and shall be liable to be proceeded against and punished accordingly.\n\nExplanation — For the purposes of this section,—\n(a) 'company' means any body corporate and includes a firm or other association of individuals; and\n(b) 'director', in relation to a firm, means a partner in the firm.",
+          "relatedSections": ["ni_act_138", "ni_act_142"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_142",
+          "sectionNo": "142",
+          "title": "Cognizance of offences",
+          "content": "Notwithstanding anything contained in the Code of Criminal Procedure, 1973,—\n(a) no court shall take cognizance of any offence punishable under section 138 except upon a complaint, in writing, made by the payee or, as the case may be, the holder in due course of the cheque;\n(b) such complaint is made within one month of the date on which the cause of action arises under clause (c) of the proviso to section 138:\n\nProvided that the cognizance of a complaint may be taken by the court after the prescribed period, if the complainant satisfies the court that he had sufficient cause for not making a complaint within such period;\n(c) no court inferior to that of a Metropolitan Magistrate or a Judicial Magistrate of the first class shall try any offence punishable under section 138.",
+          "relatedSections": ["ni_act_138", "ni_act_141", "ni_act_143"],
+          "crossReferences": {"crpc": "190"}
+        },
+        {
+          "id": "ni_act_143",
+          "sectionNo": "143",
+          "title": "Power of court to try cases summarily",
+          "content": "Notwithstanding anything contained in the Code of Criminal Procedure, 1973, all offences under this Chapter shall be tried by a Judicial Magistrate of the first class or by a Metropolitan Magistrate and the provisions of sections 262 to 265 (both inclusive) of the said Code shall, as far as may be, apply to such trials:\n\nProvided that in the case of any conviction in a summary trial under this section, it shall be lawful for the Magistrate to pass a sentence of imprisonment for a term not exceeding one year and an amount of fine exceeding five thousand rupees:\n\nProvided further that when at the commencement of, or in the course of a summary trial under this section, it appears to the Magistrate that the nature of the case is such that a sentence of imprisonment for a term exceeding one year may have to be passed or that it is, for any other reason, undesirable to try the case summarily, the Magistrate shall after hearing the parties, record an order to that effect and thereafter recall any witness who may have been examined and proceed to hear or rehear the case in the manner provided by the said Code.",
+          "relatedSections": ["ni_act_142", "ni_act_144"],
+          "crossReferences": {"crpc": "262"}
+        },
+        {
+          "id": "ni_act_143A",
+          "sectionNo": "143A",
+          "title": "Power to direct interim compensation",
+          "content": "Notwithstanding anything contained in the Code of Criminal Procedure, 1973, the court trying an offence under section 138 may order the drawer of the cheque to pay interim compensation to the complainant—\n(a) in a summary trial or a summons case, where the drawer pleads not guilty to the accusation made in the complaint; and\n(b) in any other case, upon framing of charge.\n\nThe interim compensation under sub-section (1) shall not exceed twenty per cent of the amount of the cheque.\n\nThe interim compensation shall be paid within sixty days from the date of the order under sub-section (1), or within such further period not exceeding thirty days as may be directed by the court on sufficient cause being shown by the drawer of the cheque.\n\nIf the drawer of the cheque is acquitted, the court shall direct the complainant to repay to the drawer the amount of interim compensation, with interest at the bank rate as published by the Reserve Bank of India, prevalent at the beginning of the relevant financial year, within sixty days from the date of the order, or within such further period not exceeding thirty days as may be directed by the court on sufficient cause being shown by the complainant.",
+          "relatedSections": ["ni_act_138", "ni_act_143"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_145",
+          "sectionNo": "145",
+          "title": "Evidence on affidavit",
+          "content": "Notwithstanding anything contained in the Code of Criminal Procedure, 1973, the evidence of the complainant may be given by him on affidavit and may, subject to all just exceptions, be read in evidence in any enquiry, trial or other proceeding under the said Code:\n\nProvided that the court may, if it thinks fit, and shall, on the application of the prosecution or the accused, summon and examine any such person as to the facts contained in his affidavit.",
+          "relatedSections": ["ni_act_143", "ni_act_147"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ni_act_147",
+          "sectionNo": "147",
+          "title": "Offences to be compoundable",
+          "content": "Notwithstanding anything contained in the Code of Criminal Procedure, 1973, every offence punishable under this Act shall be compoundable.",
+          "relatedSections": ["ni_act_138", "ni_act_145"],
+          "crossReferences": {"crpc": "320"}
+        }
+      ]
+    }
+  ]
+}

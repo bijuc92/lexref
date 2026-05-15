@@ -1,0 +1,56 @@
+{
+  "id": "mh_coop_act",
+  "shortName": "MH Co-op Act",
+  "fullName": "Maharashtra Co-operative Societies Act, 1960",
+  "year": 1960,
+  "jurisdiction": "maharashtra",
+  "category": "civil",
+  "totalSections": 168,
+  "totalChapters": 17,
+  "chapters": [
+    {
+      "id": "mh_coop_act_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "mh_coop_act_1",
+          "sectionNo": "1",
+          "title": "Short title, extent and commencement",
+          "content": "This Act may be called the Maharashtra Co-operative Societies Act, 1960. It extends to the whole of the State of Maharashtra. It shall come into force on such date as the State Government may, by notification in the Official Gazette, appoint.",
+          "relatedSections": [],
+          "crossReferences": {}
+        },
+        {
+          "id": "mh_coop_act_2",
+          "sectionNo": "2",
+          "title": "Definitions",
+          "content": "In this Act, unless the context otherwise requires — 'co-operative society' means a society registered or deemed to be registered under this Act; 'committee' means the committee of management or board of directors or other directing body to which the management of the affairs of a society is entrusted; 'member' means a person joining in an application for the registration of a co-operative society which is subsequently registered, or a person duly admitted to membership after registration.",
+          "relatedSections": [],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "mh_coop_act_ch7",
+      "title": "Chapter VII — Disputes",
+      "sections": [
+        {
+          "id": "mh_coop_act_91",
+          "sectionNo": "91",
+          "title": "Disputes",
+          "content": "Notwithstanding anything contained in any other law for the time being in force, any dispute touching the constitution, elections, management or business of a society shall be referred by any of the parties to the dispute to the Co-operative Court if both the parties thereto are one or other of the following, namely, a society, its committee, a member, or a person claiming through a member.",
+          "relatedSections": ["mh_coop_act_96"],
+          "crossReferences": {}
+        },
+        {
+          "id": "mh_coop_act_96",
+          "sectionNo": "96",
+          "title": "Decision of Co-operative Court",
+          "content": "When a dispute is referred to the Co-operative Court, the Court shall, after giving a reasonable opportunity to the parties to the dispute to be heard, make an award on the dispute, on the expenses incurred by the parties to the dispute, and decide by what authority and in what proportion the costs are to be borne.",
+          "relatedSections": ["mh_coop_act_91"],
+          "crossReferences": {}
+        }
+      ]
+    }
+  ]
+}

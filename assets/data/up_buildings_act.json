@@ -1,0 +1,70 @@
+{
+  "id": "up_buildings_act",
+  "shortName": "UP Buildings Act",
+  "fullName": "Uttar Pradesh Urban Buildings (Regulation of Letting, Rent and Eviction) Act, 1972",
+  "year": 1972,
+  "jurisdiction": "uttar_pradesh",
+  "category": "civil",
+  "totalSections": 44,
+  "totalChapters": 6,
+  "chapters": [
+    {
+      "id": "up_buildings_act_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "up_buildings_act_1",
+          "sectionNo": "1",
+          "title": "Short title, extent and commencement",
+          "content": "This Act may be called the Uttar Pradesh Urban Buildings (Regulation of Letting, Rent and Eviction) Act, 1972. It extends to the whole of Uttar Pradesh. It applies to every building situated within the limits of any local body, subject to the exemptions in section 2.",
+          "relatedSections": ["up_buildings_act_2"],
+          "crossReferences": {}
+        },
+        {
+          "id": "up_buildings_act_3",
+          "sectionNo": "3",
+          "title": "Definitions",
+          "content": "In this Act, unless the context otherwise requires — 'building' means a residential or non-residential roofed structure and includes any land, garages and out-houses appurtenant to such building; 'landlord' in relation to a building means a person to whom its rent is or would be payable; 'tenant' means a person by whom rent is payable, and on the tenant's death, such of his heirs as were normally residing with him at the time of his death.",
+          "relatedSections": [],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "up_buildings_act_ch2",
+      "title": "Chapter II — Regulation of Letting and Rent",
+      "sections": [
+        {
+          "id": "up_buildings_act_8",
+          "sectionNo": "8",
+          "title": "Determination of standard rent",
+          "content": "The District Magistrate shall, on the application of the landlord or the tenant, determine the standard rent of a building, which shall be ten per cent per annum of the aggregate of the market value of the land comprised in the building and the cost of construction, subject to such adjustments as may be prescribed.",
+          "relatedSections": [],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "up_buildings_act_ch3",
+      "title": "Chapter III — Regulation of Eviction",
+      "sections": [
+        {
+          "id": "up_buildings_act_20",
+          "sectionNo": "20",
+          "title": "Bar of suit for eviction of tenant except on specified grounds",
+          "content": "Save as provided in sub-section (2), no suit shall be instituted for the eviction of a tenant from a building, notwithstanding the determination of his tenancy. A suit for eviction may be instituted on grounds including arrears of rent for not less than four months, unlawful subletting, material alteration without consent, and use inconsistent with the purpose of the letting.",
+          "relatedSections": ["up_buildings_act_21"],
+          "crossReferences": {}
+        },
+        {
+          "id": "up_buildings_act_21",
+          "sectionNo": "21",
+          "title": "Proceedings for release of building under occupation of tenant",
+          "content": "The prescribed authority may, on an application of the landlord, order the eviction of a tenant from the building if it is satisfied that the building is bona fide required by the landlord for occupation by himself or any member of his family, or for demolition and new construction.",
+          "relatedSections": ["up_buildings_act_20"],
+          "crossReferences": {}
+        }
+      ]
+    }
+  ]
+}

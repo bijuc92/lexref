@@ -5,10 +5,12 @@ import 'package:go_router/go_router.dart';
 import '../../../core/error/result.dart';
 import '../../../core/theme/app_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../core/theme/app_colors.dart';
 import '../../../core/utils/date_utils.dart' as app_dates;
 import '../../../shared/models/local/local_note.dart';
+import '../../../shared/providers/folders_provider.dart';
+import '../../../shared/widgets/folder_picker.dart';
 import '../data/notes_repository.dart';
+import 'notes_screen.dart';
 
 final _noteProvider =
     FutureProvider.family<LocalNote?, String>((ref, id) async {
@@ -43,25 +45,33 @@ class _NoteDetailScreenState extends ConsumerState<NoteDetailScreen> {
   }
 
   Future<void> _save(String content) async {
-    final note = ref.read(_noteProvider(widget.noteId)).valueOrNull;
-    if (note == null) return;
-    final result = await _repo.saveNote(note.copyWith(
-      content: content,
-      updatedAt: DateTime.now(),
-      isSynced: false,
-    ));
-    if (!mounted) return;
-    switch (result) {
-      case Ok():
-        setState(() => _dirty = false);
-      case Err(:final failure):
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to save: ${failure.message}'),
-            backgroundColor: AppColors.error,
-          ),
-        );
+    try {
+      await _repo.updateNote(widget.noteId, content);
+      if (!mounted) return;
+      setState(() => _dirty = false);
+      ref.invalidate(notesProvider);
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to save: $e'),
+          backgroundColor: AppColors.error,
+        ),
+      );
     }
+  }
+
+  Future<void> _moveToFolder(LocalNote note) async {
+    final target = await showFolderPicker(context, current: note.folder);
+    if (target == null || target == note.folder) return;
+    await _repo.updateNoteFolder(note.id, target);
+    if (!mounted) return;
+    ref.invalidate(_noteProvider(widget.noteId));
+    ref.invalidate(notesProvider);
+    ref.invalidate(foldersProvider);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Moved to $target')),
+    );
   }
 
   Future<void> _delete() async {
@@ -154,6 +164,11 @@ class _NoteDetailScreenState extends ConsumerState<NoteDetailScreen> {
                     child: CircularProgressIndicator(strokeWidth: 2),
                   ),
                 ),
+              IconButton(
+                icon: const Icon(Icons.folder_outlined),
+                tooltip: 'Move to folder',
+                onPressed: () => _moveToFolder(note),
+              ),
               IconButton(
                 icon: const Icon(Icons.delete_outline, color: AppColors.error),
                 tooltip: 'Delete note',

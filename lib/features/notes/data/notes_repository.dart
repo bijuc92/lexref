@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import '../../../core/error/result.dart';
@@ -40,7 +41,42 @@ class NotesRepository {
   Future<List<LocalNote>> getAllNotes() async {
     final db = await DatabaseHelper.instance.database;
     final rows = await db.query('notes', orderBy: 'updated_at DESC');
-    return rows.map(LocalNote.fromMap).toList();
+    debugPrint('getAllNotes: ${rows.length} raw rows found');
+    for (final row in rows) {
+      debugPrint('  row → $row');
+    }
+    final notes = rows
+        .map((row) {
+          try {
+            return LocalNote.fromMap(row);
+          } catch (e) {
+            debugPrint('  fromMap FAILED for row $row: $e');
+            return null;
+          }
+        })
+        .whereType<LocalNote>()
+        .toList();
+    debugPrint('getAllNotes: ${notes.length} notes parsed successfully');
+    return notes;
+  }
+
+  Future<Map<String, List<LocalNote>>> getNotesByFolder() async {
+    final all = await getAllNotes();
+    final Map<String, List<LocalNote>> grouped = {};
+    for (final note in all) {
+      grouped.putIfAbsent(note.folder, () => []).add(note);
+    }
+    return grouped;
+  }
+
+  Future<void> updateNoteFolder(String id, String folder) async {
+    final db = await DatabaseHelper.instance.database;
+    await db.update(
+      'notes',
+      {'folder': folder, 'is_synced': 0},
+      where: 'id = ?',
+      whereArgs: [id],
+    );
   }
 
   Future<void> updateNote(String id, String content) async {

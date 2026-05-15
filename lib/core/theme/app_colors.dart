@@ -40,6 +40,25 @@ class AppColors {
   static const bnssBadge = Color(0xFF0D47A1);
   static const bnssBadgeBg = Color(0xFFBBDEFB);
 
+  // NI Act badge colors
+  static const niActBadge = Color(0xFF5D4037);
+  static const niActBadgeBg = Color(0xFFEFEBE9);
+  // TP Act badge colors
+  static const tpActBadge = Color(0xFF283593);
+  static const tpActBadgeBg = Color(0xFFE8EAF6);
+  // IT Act badge colors
+  static const itActBadge = Color(0xFF00838F);
+  static const itActBadgeBg = Color(0xFFE0F7FA);
+  // POCSO badge colors
+  static const pocsoBadge = Color(0xFFE65100);
+  static const pocsoBadgeBg = Color(0xFFFFF8E1);
+  // MV Act badge colors
+  static const mvActBadge = Color(0xFF1B5E20);
+  static const mvActBadgeBg = Color(0xFFF1F8E9);
+  // State Act badge colors (shared across state-level acts)
+  static const stateActBadge = Color(0xFF8E24AA);
+  static const stateActBadgeBg = Color(0xFFF3E5F5);
+
   // Court badge colors
   static const scBadge = Color(0xFF4A148C);
   static const scBadgeBg = Color(0xFFEDE7F6);

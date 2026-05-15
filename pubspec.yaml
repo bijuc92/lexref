@@ -54,3 +54,14 @@ flutter:
     - assets/data/evidence_act.json
     - assets/data/bns.json
     - assets/data/bnss.json
+    - assets/data/ni_act.json
+    - assets/data/tp_act.json
+    - assets/data/it_act.json
+    - assets/data/mv_act.json
+    - assets/data/mh_rent_act.json
+    - assets/data/mh_coop_act.json
+    - assets/data/dl_rent_act.json
+    - assets/data/ka_rent_act.json
+    - assets/data/ka_land_revenue_act.json
+    - assets/data/tn_rent_act.json
+    - assets/data/up_buildings_act.json

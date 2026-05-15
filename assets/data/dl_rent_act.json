@@ -1,0 +1,78 @@
+{
+  "id": "dl_rent_act",
+  "shortName": "DL Rent Act",
+  "fullName": "Delhi Rent Control Act, 1958",
+  "year": 1958,
+  "jurisdiction": "delhi",
+  "category": "civil",
+  "totalSections": 57,
+  "totalChapters": 7,
+  "chapters": [
+    {
+      "id": "dl_rent_act_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "dl_rent_act_1",
+          "sectionNo": "1",
+          "title": "Short title, extent and commencement",
+          "content": "This Act may be called the Delhi Rent Control Act, 1958. It extends to the areas included within the limits of the New Delhi Municipal Committee and the Delhi Cantonment Board and to such urban areas within the limits of the Municipal Corporation of Delhi as are specified.",
+          "relatedSections": [],
+          "crossReferences": {}
+        },
+        {
+          "id": "dl_rent_act_2",
+          "sectionNo": "2",
+          "title": "Definitions",
+          "content": "In this Act, unless the context otherwise requires — 'landlord' means a person who, for the time being is receiving, or is entitled to receive, the rent of any premises, whether on his own account or on account of or on behalf of, or for the benefit of, any other person; 'premises' means any building or part of a building which is, or is intended to be, let separately for use as a residence or for commercial use or for any other purpose; 'tenant' means any person by whom or on whose account or behalf the rent of any premises is, or, but for a special contract, would be, payable.",
+          "relatedSections": [],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "dl_rent_act_ch2",
+      "title": "Chapter II — Provisions Regarding Rent",
+      "sections": [
+        {
+          "id": "dl_rent_act_4",
+          "sectionNo": "4",
+          "title": "Rent in excess of standard rent not recoverable",
+          "content": "Except where rent is liable to periodical increase by virtue of an agreement entered into before the 1st day of January 1939, no tenant shall, notwithstanding any agreement to the contrary, be liable to pay to his landlord for the occupation of any premises any amount in excess of the standard rent of the premises.",
+          "relatedSections": ["dl_rent_act_6"],
+          "crossReferences": {}
+        },
+        {
+          "id": "dl_rent_act_6",
+          "sectionNo": "6",
+          "title": "Standard rent",
+          "content": "Subject to the provisions of this Act, 'standard rent', in relation to any premises means in the case of residential premises let out before the 2nd day of June 1944, the basic rent of such premises together with ten per cent of such basic rent; and in the case of premises let out on or after that date, the rent calculated on the basis of seven and one-half per cent per annum of the aggregate amount of the actual cost of construction and the market price of the land on the date of commencement of the construction.",
+          "relatedSections": ["dl_rent_act_4"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "dl_rent_act_ch3",
+      "title": "Chapter III — Control of Eviction of Tenants",
+      "sections": [
+        {
+          "id": "dl_rent_act_14",
+          "sectionNo": "14",
+          "title": "Protection of tenant against eviction",
+          "content": "Notwithstanding anything to the contrary contained in any other law or contract, no order or decree for the recovery of possession of any premises shall be made by any court or Controller in favour of the landlord against a tenant, except on one or more of the grounds specified in the proviso, including non-payment of rent, unlawful subletting, and bona fide requirement by the landlord for occupation as a residence.",
+          "relatedSections": ["dl_rent_act_25B"],
+          "crossReferences": {}
+        },
+        {
+          "id": "dl_rent_act_25B",
+          "sectionNo": "25B",
+          "title": "Special procedure for the disposal of applications for eviction",
+          "content": "Every application by a landlord for the recovery of possession of any premises on the ground specified in clause (e) of the proviso to sub-section (1) of section 14, or under section 14A, shall be dealt with in accordance with the special summary procedure specified in this section, under which the tenant must obtain leave to contest the application.",
+          "relatedSections": ["dl_rent_act_14"],
+          "crossReferences": {}
+        }
+      ]
+    }
+  ]
+}

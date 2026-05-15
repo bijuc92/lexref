@@ -1,0 +1,56 @@
+{
+  "id": "ka_land_revenue_act",
+  "shortName": "KA Land Revenue",
+  "fullName": "Karnataka Land Revenue Act, 1964",
+  "year": 1964,
+  "jurisdiction": "karnataka",
+  "category": "civil",
+  "totalSections": 202,
+  "totalChapters": 17,
+  "chapters": [
+    {
+      "id": "ka_land_revenue_act_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "ka_land_revenue_act_1",
+          "sectionNo": "1",
+          "title": "Short title, extent and commencement",
+          "content": "This Act may be called the Karnataka Land Revenue Act, 1964. It extends to the whole of the State of Karnataka. It shall come into force on such date as the State Government may, by notification, appoint.",
+          "relatedSections": [],
+          "crossReferences": {}
+        },
+        {
+          "id": "ka_land_revenue_act_2",
+          "sectionNo": "2",
+          "title": "Definitions",
+          "content": "In this Act, unless the context otherwise requires — 'agriculture' includes horticulture, the raising of crops, grass or garden produce, and the use of land for grazing; 'holding' means a portion of land held by a holder; 'land revenue' means all sums and payments in money received or legally claimable by or on behalf of the State Government from any person on account of any land; 'survey number' means a portion of land of which the area and assessment are separately entered under an indicative number in the land records.",
+          "relatedSections": [],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "ka_land_revenue_act_ch11",
+      "title": "Chapter XI — Record of Rights",
+      "sections": [
+        {
+          "id": "ka_land_revenue_act_128",
+          "sectionNo": "128",
+          "title": "Record of rights",
+          "content": "A record of rights shall be maintained in every village and such record shall include the names of all persons who are holders, occupants, owners or mortgagees of the land or assignees of the rent or revenue thereof; the nature and extent of the respective interests of such persons and the conditions or liabilities, if any, attaching thereto.",
+          "relatedSections": ["ka_land_revenue_act_129"],
+          "crossReferences": {}
+        },
+        {
+          "id": "ka_land_revenue_act_129",
+          "sectionNo": "129",
+          "title": "Acquisition of rights to be reported",
+          "content": "Any person acquiring by succession, survivorship, inheritance, partition, purchase, mortgage, gift, lease or otherwise any right as holder, occupant, owner, mortgagee, landlord or tenant of the land, shall report orally or in writing his acquisition of such right to the prescribed officer within three months from the date of such acquisition.",
+          "relatedSections": ["ka_land_revenue_act_128"],
+          "crossReferences": {}
+        }
+      ]
+    }
+  ]
+}

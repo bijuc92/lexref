@@ -18,6 +18,7 @@ import '../../bookmarks/data/bookmarks_repository.dart';
 import '../../bookmarks/presentation/bookmarks_screen.dart';
 import '../../home/presentation/home_screen.dart';
 import '../../notes/data/notes_repository.dart';
+import '../../notes/presentation/notes_screen.dart';
 import '../domain/act_models.dart';
 import '../domain/acts_providers.dart';
 
@@ -66,7 +67,9 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
     try {
       final note = await _notesRepo.getNoteForRef(widget.sectionId);
       if (mounted && note != null) setState(() => _noteContent = note.content);
-    } catch (_) {}
+    } catch (e) {
+      debugPrint('_loadNote error: $e');
+    }
   }
 
   @override
@@ -192,6 +195,7 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
                     }
                     setState(() => _noteContent = ctrl.text);
                     ref.invalidate(homeStatsProvider);
+                    ref.invalidate(notesProvider);
                   }
                   if (ctx.mounted) Navigator.pop(ctx);
                 },

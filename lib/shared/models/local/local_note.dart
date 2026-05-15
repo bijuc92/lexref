@@ -12,6 +12,7 @@ class LocalNote with _$LocalNote {
     required String refId,
     required String content,
     required DateTime updatedAt,
+    @Default('General') String folder,
     @Default(false) bool isSynced,
   }) = _LocalNote;
 
@@ -20,7 +21,10 @@ class LocalNote with _$LocalNote {
         refType: m['ref_type'] as String,
         refId: m['ref_id'] as String,
         content: m['content'] as String,
-        updatedAt: DateTime.parse(m['updated_at'] as String),
+        updatedAt: m['updated_at'] != null && (m['updated_at'] as String).isNotEmpty
+            ? DateTime.parse(m['updated_at'] as String)
+            : DateTime.now(),
+        folder: m['folder'] as String? ?? 'General',
         isSynced: (m['is_synced'] as int? ?? 0) == 1,
       );
 
@@ -30,6 +34,7 @@ class LocalNote with _$LocalNote {
         'ref_id': refId,
         'content': content,
         'updated_at': updatedAt.toIso8601String(),
+        'folder': folder,
         'is_synced': isSynced ? 1 : 0,
       };
 }

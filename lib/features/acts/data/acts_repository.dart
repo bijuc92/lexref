@@ -15,6 +15,17 @@ class ActsRepository {
     'evidence': 'assets/data/evidence_act.json',
     'bns': 'assets/data/bns.json',
     'bnss': 'assets/data/bnss.json',
+    'ni_act': 'assets/data/ni_act.json',
+    'tp_act': 'assets/data/tp_act.json',
+    'it_act': 'assets/data/it_act.json',
+    'mv_act': 'assets/data/mv_act.json',
+    'mh_rent_act': 'assets/data/mh_rent_act.json',
+    'mh_coop_act': 'assets/data/mh_coop_act.json',
+    'dl_rent_act': 'assets/data/dl_rent_act.json',
+    'ka_rent_act': 'assets/data/ka_rent_act.json',
+    'ka_land_revenue_act': 'assets/data/ka_land_revenue_act.json',
+    'tn_rent_act': 'assets/data/tn_rent_act.json',
+    'up_buildings_act': 'assets/data/up_buildings_act.json',
   };
 
   // Per-session cache: avoid re-checking the same act on every navigation

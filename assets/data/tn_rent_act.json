@@ -1,0 +1,70 @@
+{
+  "id": "tn_rent_act",
+  "shortName": "TN Rent Act",
+  "fullName": "Tamil Nadu Buildings (Lease and Rent Control) Act, 1960",
+  "year": 1960,
+  "jurisdiction": "tamil_nadu",
+  "category": "civil",
+  "totalSections": 36,
+  "totalChapters": 6,
+  "chapters": [
+    {
+      "id": "tn_rent_act_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "tn_rent_act_1",
+          "sectionNo": "1",
+          "title": "Short title, extent and commencement",
+          "content": "This Act may be called the Tamil Nadu Buildings (Lease and Rent Control) Act, 1960. It extends to the whole of the State of Tamil Nadu. It shall apply to such areas and to such classes of buildings as the State Government may, by notification, specify.",
+          "relatedSections": [],
+          "crossReferences": {}
+        },
+        {
+          "id": "tn_rent_act_2",
+          "sectionNo": "2",
+          "title": "Definitions",
+          "content": "In this Act, unless the context otherwise requires — 'building' means any building or hut or part of a building or hut, let or to be let separately for residential or non-residential purposes; 'landlord' includes the person who is receiving or is entitled to receive the rent of a building, whether on his own account or on behalf of another; 'tenant' means any person by whom or on whose account rent is payable for a building and includes the surviving spouse, son, daughter or legal representative continuing in possession.",
+          "relatedSections": [],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "tn_rent_act_ch2",
+      "title": "Chapter II — Fair Rent",
+      "sections": [
+        {
+          "id": "tn_rent_act_4",
+          "sectionNo": "4",
+          "title": "Fixation of fair rent",
+          "content": "The Controller shall on application by the tenant or the landlord fix the fair rent for any building, having regard to the prevailing rates of rent in the locality for similar buildings, the rental value entered in the property tax assessment book, and such other factors as may be prescribed.",
+          "relatedSections": ["tn_rent_act_5"],
+          "crossReferences": {}
+        },
+        {
+          "id": "tn_rent_act_5",
+          "sectionNo": "5",
+          "title": "Fair rent on the basis of cost of construction",
+          "content": "The fair rent for any residential building shall be nine per cent gross return per annum on the total cost of such building; and for any non-residential building, twelve per cent gross return per annum on the total cost. The total cost shall consist of the market value of the site and the cost of construction.",
+          "relatedSections": ["tn_rent_act_4"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "tn_rent_act_ch3",
+      "title": "Chapter III — Eviction of Tenants",
+      "sections": [
+        {
+          "id": "tn_rent_act_10",
+          "sectionNo": "10",
+          "title": "Eviction of tenants",
+          "content": "A tenant shall not be evicted whether in execution of a decree or otherwise except in accordance with the provisions of this section. A landlord who seeks to evict his tenant shall apply to the Controller for a direction in that behalf on grounds including wilful default in rent payment, unlawful subletting, use of the building for a purpose other than that for which it was leased, and bona fide requirement of the landlord for own occupation.",
+          "relatedSections": [],
+          "crossReferences": {}
+        }
+      ]
+    }
+  ]
+}

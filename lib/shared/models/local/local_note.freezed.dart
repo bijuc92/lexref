@@ -21,6 +21,7 @@ mixin _$LocalNote {
   String get refId => throw _privateConstructorUsedError;
   String get content => throw _privateConstructorUsedError;
   DateTime get updatedAt => throw _privateConstructorUsedError;
+  String get folder => throw _privateConstructorUsedError;
   bool get isSynced => throw _privateConstructorUsedError;
 
   /// Create a copy of LocalNote
@@ -41,6 +42,7 @@ abstract class $LocalNoteCopyWith<$Res> {
       String refId,
       String content,
       DateTime updatedAt,
+      String folder,
       bool isSynced});
 }
 
@@ -64,6 +66,7 @@ class _$LocalNoteCopyWithImpl<$Res, $Val extends LocalNote>
     Object? refId = null,
     Object? content = null,
     Object? updatedAt = null,
+    Object? folder = null,
     Object? isSynced = null,
   }) {
     return _then(_value.copyWith(
@@ -87,6 +90,10 @@ class _$LocalNoteCopyWithImpl<$Res, $Val extends LocalNote>
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
+      folder: null == folder
+          ? _value.folder
+          : folder // ignore: cast_nullable_to_non_nullable
+              as String,
       isSynced: null == isSynced
           ? _value.isSynced
           : isSynced // ignore: cast_nullable_to_non_nullable
@@ -109,6 +116,7 @@ abstract class _$$LocalNoteImplCopyWith<$Res>
       String refId,
       String content,
       DateTime updatedAt,
+      String folder,
       bool isSynced});
 }
 
@@ -130,6 +138,7 @@ class __$$LocalNoteImplCopyWithImpl<$Res>
     Object? refId = null,
     Object? content = null,
     Object? updatedAt = null,
+    Object? folder = null,
     Object? isSynced = null,
   }) {
     return _then(_$LocalNoteImpl(
@@ -153,6 +162,10 @@ class __$$LocalNoteImplCopyWithImpl<$Res>
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
+      folder: null == folder
+          ? _value.folder
+          : folder // ignore: cast_nullable_to_non_nullable
+              as String,
       isSynced: null == isSynced
           ? _value.isSynced
           : isSynced // ignore: cast_nullable_to_non_nullable
@@ -170,6 +183,7 @@ class _$LocalNoteImpl extends _LocalNote {
       required this.refId,
       required this.content,
       required this.updatedAt,
+      this.folder = 'General',
       this.isSynced = false})
       : super._();
 
@@ -185,11 +199,14 @@ class _$LocalNoteImpl extends _LocalNote {
   final DateTime updatedAt;
   @override
   @JsonKey()
+  final String folder;
+  @override
+  @JsonKey()
   final bool isSynced;
 
   @override
   String toString() {
-    return 'LocalNote(id: $id, refType: $refType, refId: $refId, content: $content, updatedAt: $updatedAt, isSynced: $isSynced)';
+    return 'LocalNote(id: $id, refType: $refType, refId: $refId, content: $content, updatedAt: $updatedAt, folder: $folder, isSynced: $isSynced)';
   }
 
   @override
@@ -203,13 +220,14 @@ class _$LocalNoteImpl extends _LocalNote {
             (identical(other.content, content) || other.content == content) &&
             (identical(other.updatedAt, updatedAt) ||
                 other.updatedAt == updatedAt) &&
+            (identical(other.folder, folder) || other.folder == folder) &&
             (identical(other.isSynced, isSynced) ||
                 other.isSynced == isSynced));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, id, refType, refId, content, updatedAt, isSynced);
+      runtimeType, id, refType, refId, content, updatedAt, folder, isSynced);
 
   /// Create a copy of LocalNote
   /// with the given fields replaced by the non-null parameter values.
@@ -227,6 +245,7 @@ abstract class _LocalNote extends LocalNote {
       required final String refId,
       required final String content,
       required final DateTime updatedAt,
+      final String folder,
       final bool isSynced}) = _$LocalNoteImpl;
   const _LocalNote._() : super._();
 
@@ -240,6 +259,8 @@ abstract class _LocalNote extends LocalNote {
   String get content;
   @override
   DateTime get updatedAt;
+  @override
+  String get folder;
   @override
   bool get isSynced;
 

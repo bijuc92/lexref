@@ -16,7 +16,7 @@ class DatabaseHelper {
     final path = join(await getDatabasesPath(), 'lexref.db');
     return openDatabase(
       path,
-      version: 3,
+      version: 5,
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -69,9 +69,12 @@ class DatabaseHelper {
         ref_id TEXT NOT NULL,
         content TEXT NOT NULL,
         updated_at TEXT NOT NULL,
+        folder TEXT NOT NULL DEFAULT 'General',
         is_synced INTEGER NOT NULL DEFAULT 0
       )
     ''');
+
+    await _createFoldersTable(db);
 
     await db.execute('''
       CREATE TABLE chat_messages (
@@ -92,6 +95,8 @@ class DatabaseHelper {
       )
     ''');
 
+    await _createCaseCacheTables(db);
+
     await db.execute(
       'CREATE INDEX idx_sections_act ON sections(act_id)',
     );
@@ -107,6 +112,42 @@ class DatabaseHelper {
     await db.execute(
       'CREATE INDEX idx_notes_synced ON notes(is_synced)',
     );
+  }
+
+  Future<void> _createCaseCacheTables(Database db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS cached_cases (
+        doc_id TEXT PRIMARY KEY,
+        title TEXT NOT NULL,
+        citation TEXT,
+        court TEXT NOT NULL,
+        year INTEGER,
+        summary TEXT,
+        url TEXT,
+        sections_cited TEXT,
+        has_detail INTEGER NOT NULL DEFAULT 0,
+        cached_at TEXT NOT NULL
+      )
+    ''');
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS cached_case_searches (
+        query TEXT PRIMARY KEY,
+        doc_ids TEXT NOT NULL,
+        cached_at TEXT NOT NULL
+      )
+    ''');
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cached_cases_at ON cached_cases(cached_at)',
+    );
+  }
+
+  Future<void> _createFoldersTable(Database db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS folders (
+        name TEXT PRIMARY KEY,
+        created_at TEXT NOT NULL
+      )
+    ''');
   }
 
   Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
@@ -135,6 +176,19 @@ class DatabaseHelper {
           // Column already exists — safe to ignore
         }
       }
+    }
+    if (oldVersion < 4) {
+      await _createCaseCacheTables(db);
+    }
+    if (oldVersion < 5) {
+      try {
+        await db.execute(
+          "ALTER TABLE notes ADD COLUMN folder TEXT NOT NULL DEFAULT 'General'",
+        );
+      } catch (_) {
+        // Column already exists — safe to ignore
+      }
+      await _createFoldersTable(db);
     }
   }
 }

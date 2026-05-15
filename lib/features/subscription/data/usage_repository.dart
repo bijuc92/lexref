@@ -1,7 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 const int kFreeAiLimit = 5;
-const int kFreeCaseLimit = 3;
+const int kFreeCaseLimit = 5;
 
 class UsageRepository {
   String _todayKey(String prefix) {

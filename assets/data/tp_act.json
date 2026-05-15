@@ -1,0 +1,114 @@
+{
+  "id": "tp_act",
+  "shortName": "TP Act",
+  "fullName": "Transfer of Property Act, 1882",
+  "year": 1882,
+  "jurisdiction": "central",
+  "category": "civil",
+  "totalSections": 137,
+  "totalChapters": 8,
+  "chapters": [
+    {
+      "id": "tp_act_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "tp_act_1",
+          "sectionNo": "1",
+          "title": "Short title. Commencement. Extent",
+          "content": "This Act may be called the Transfer of Property Act, 1882. It shall come into force on the first day of July, 1882. It extends in the first instance to the whole of India except the territories which immediately before the 1st November, 1956, were comprised in Part B States or in the States of Bombay, Punjab and Delhi.",
+          "relatedSections": [],
+          "crossReferences": {}
+        },
+        {
+          "id": "tp_act_5",
+          "sectionNo": "5",
+          "title": "Transfer of property defined",
+          "content": "In the following sections 'transfer of property' means an act by which a living person conveys property, in present or in future, to one or more other living persons, or to himself, or to himself and one or more other living persons; and 'to transfer property' is to perform such act. In this section 'living person' includes a company or association or body of individuals, whether incorporated or not, but nothing herein contained shall affect any law for the time being in force relating to transfer of property to or by companies, associations or bodies of individuals.",
+          "relatedSections": ["tp_act_6", "tp_act_7"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "tp_act_ch3",
+      "title": "Chapter III — Of Sales of Immoveable Property",
+      "sections": [
+        {
+          "id": "tp_act_54",
+          "sectionNo": "54",
+          "title": "Sale defined",
+          "content": "Sale is a transfer of ownership in exchange for a price paid or promised or part-paid and part-promised. Such transfer, in the case of tangible immoveable property of the value of one hundred rupees and upwards, or in the case of a reversion or other intangible thing, can be made only by a registered instrument. In the case of tangible immoveable property of a value less than one hundred rupees, such transfer may be made either by a registered instrument or by delivery of the property.",
+          "relatedSections": ["tp_act_55"],
+          "crossReferences": {}
+        },
+        {
+          "id": "tp_act_55",
+          "sectionNo": "55",
+          "title": "Rights and liabilities of buyer and seller",
+          "content": "In the absence of a contract to the contrary, the buyer and the seller of immoveable property respectively are subject to the liabilities, and have the rights, mentioned in the rules next following, or such of them as are applicable to the property sold. The seller is bound to disclose to the buyer any material defect in the property or in the seller's title thereto of which the seller is, and the buyer is not, aware, and which the buyer could not with ordinary care discover.",
+          "relatedSections": ["tp_act_54"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "tp_act_ch4",
+      "title": "Chapter IV — Of Mortgages of Immoveable Property and Charges",
+      "sections": [
+        {
+          "id": "tp_act_58",
+          "sectionNo": "58",
+          "title": "Mortgage, mortgagor, mortgagee, mortgage-money and mortgage-deed defined",
+          "content": "A mortgage is the transfer of an interest in specific immoveable property for the purpose of securing the payment of money advanced or to be advanced by way of loan, an existing or future debt, or the performance of an engagement which may give rise to a pecuniary liability. The transferor is called a mortgagor, the transferee a mortgagee; the principal money and interest of which payment is secured for the time being are called the mortgage-money, and the instrument (if any) by which the transfer is effected is called a mortgage-deed.",
+          "relatedSections": ["tp_act_59", "tp_act_60"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "tp_act_ch5",
+      "title": "Chapter V — Of Leases of Immoveable Property",
+      "sections": [
+        {
+          "id": "tp_act_105",
+          "sectionNo": "105",
+          "title": "Lease defined",
+          "content": "A lease of immoveable property is a transfer of a right to enjoy such property, made for a certain time, express or implied, or in perpetuity, in consideration of a price paid or promised, or of money, a share of crops, service or any other thing of value, to be rendered periodically or on specified occasions to the transferor by the transferee, who accepts the transfer on such terms.",
+          "relatedSections": ["tp_act_106", "tp_act_107"],
+          "crossReferences": {}
+        },
+        {
+          "id": "tp_act_106",
+          "sectionNo": "106",
+          "title": "Duration of certain leases in absence of written contract or local usage",
+          "content": "In the absence of a contract or local law or usage to the contrary, a lease of immoveable property for agricultural or manufacturing purposes shall be deemed to be a lease from year to year, terminable, on the part of either lessor or lessee, by six months' notice; and a lease of immoveable property for any other purpose shall be deemed to be a lease from month to month, terminable, on the part of either lessor or lessee, by fifteen days' notice.",
+          "relatedSections": ["tp_act_105"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "tp_act_ch7",
+      "title": "Chapter VII — Of Gifts",
+      "sections": [
+        {
+          "id": "tp_act_122",
+          "sectionNo": "122",
+          "title": "Gift defined",
+          "content": "Gift is the transfer of certain existing moveable or immoveable property made voluntarily and without consideration, by one person, called the donor, to another, called the donee, and accepted by or on behalf of the donee. Such acceptance must be made during the lifetime of the donor and while he is still capable of giving. If the donee dies before acceptance, the gift is void.",
+          "relatedSections": ["tp_act_123"],
+          "crossReferences": {}
+        },
+        {
+          "id": "tp_act_123",
+          "sectionNo": "123",
+          "title": "Transfer how effected",
+          "content": "For the purpose of making a gift of immoveable property, the transfer must be effected by a registered instrument signed by or on behalf of the donor, and attested by at least two witnesses. For the purpose of making a gift of moveable property, the transfer may be effected either by a registered instrument signed as aforesaid or by delivery.",
+          "relatedSections": ["tp_act_122"],
+          "crossReferences": {}
+        }
+      ]
+    }
+  ]
+}

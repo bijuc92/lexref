@@ -1,0 +1,78 @@
+{
+  "id": "mh_rent_act",
+  "shortName": "MH Rent Act",
+  "fullName": "Maharashtra Rent Control Act, 1999",
+  "year": 1999,
+  "jurisdiction": "maharashtra",
+  "category": "civil",
+  "totalSections": 58,
+  "totalChapters": 8,
+  "chapters": [
+    {
+      "id": "mh_rent_act_ch1",
+      "title": "Chapter I — Preliminary",
+      "sections": [
+        {
+          "id": "mh_rent_act_1",
+          "sectionNo": "1",
+          "title": "Short title, extent and commencement",
+          "content": "This Act may be called the Maharashtra Rent Control Act, 1999. It extends to the whole of the State of Maharashtra. It shall come into force on such date as the State Government may, by notification in the Official Gazette, appoint.",
+          "relatedSections": [],
+          "crossReferences": {}
+        },
+        {
+          "id": "mh_rent_act_7",
+          "sectionNo": "7",
+          "title": "Definitions",
+          "content": "In this Act, unless the context otherwise requires — 'landlord' means any person who is for the time being receiving, or entitled to receive, rent in respect of any premises whether on his own account or on account of or on behalf of, or for the benefit of, any other person; 'premises' means any building or part of a building let separately; 'standard rent' in relation to any premises means the rent fixed under this Act; 'tenant' means any person by whom or on whose account rent is payable for any premises and includes a lawful sub-tenant.",
+          "relatedSections": ["mh_rent_act_8"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "mh_rent_act_ch2",
+      "title": "Chapter II — Standard Rent and Permitted Increases",
+      "sections": [
+        {
+          "id": "mh_rent_act_8",
+          "sectionNo": "8",
+          "title": "Standard rent",
+          "content": "Standard rent in relation to any premises means the rent at which the premises were let on the first day of October 1987; or where they were not let on that date, the rent at which they were last let before that date; or the rent fixed by the Court on an application made under this Act.",
+          "relatedSections": ["mh_rent_act_7"],
+          "crossReferences": {}
+        },
+        {
+          "id": "mh_rent_act_11",
+          "sectionNo": "11",
+          "title": "Court to fix standard rent and permitted increases",
+          "content": "In any of the following cases the Court may, upon an application made to it for that purpose, or in any suit or proceeding, fix the standard rent at such amount as having regard to the provisions of this Act and the circumstances of the case, the Court deems just.",
+          "relatedSections": ["mh_rent_act_8"],
+          "crossReferences": {}
+        }
+      ]
+    },
+    {
+      "id": "mh_rent_act_ch3",
+      "title": "Chapter III — Recovery of Possession",
+      "sections": [
+        {
+          "id": "mh_rent_act_15",
+          "sectionNo": "15",
+          "title": "Restrictions on recovery of possession",
+          "content": "Notwithstanding anything contained in this Act, no decree or order for the recovery of possession of any premises shall be passed by the Court in favour of the landlord against a tenant so long as the tenant pays, or is ready and willing to pay, the standard rent and permitted increases and observes and performs the other conditions of the tenancy.",
+          "relatedSections": ["mh_rent_act_16"],
+          "crossReferences": {}
+        },
+        {
+          "id": "mh_rent_act_16",
+          "sectionNo": "16",
+          "title": "When landlord may recover possession",
+          "content": "A landlord may recover possession of any premises if the Court is satisfied that the tenant has not paid the standard rent and permitted increases due; or has unlawfully sublet the premises; or has been guilty of conduct which is a nuisance; or that the premises are reasonably and bona fide required by the landlord for occupation by himself.",
+          "relatedSections": ["mh_rent_act_15"],
+          "crossReferences": {}
+        }
+      ]
+    }
+  ]
+}
