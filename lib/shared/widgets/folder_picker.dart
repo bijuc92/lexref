@@ -48,7 +48,9 @@ Future<String?> showFolderPicker(
                           : Icons.folder_outlined,
                       color: f == current
                           ? AppColors.primary
-                          : AppColors.textSecondary,
+                          : (Theme.of(sheetCtx).brightness == Brightness.dark
+                              ? AppColors.darkTextSecondary
+                              : AppColors.textSecondary),
                     ),
                     title: Text(f),
                     onTap: () => Navigator.pop(sheetCtx, f),

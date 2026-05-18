@@ -72,6 +72,11 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final textPrimary =
+        isDark ? AppColors.darkTextPrimary : AppColors.textPrimary;
+    final textSecondary =
+        isDark ? AppColors.darkTextSecondary : AppColors.textSecondary;
     return Scaffold(
       appBar: AppBar(title: const Text('Create Account')),
       body: SingleChildScrollView(
@@ -85,7 +90,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                 'Join LexRef',
                 style: GoogleFonts.libreBaskerville(
                   fontSize: 28,
-                  color: AppColors.textPrimary,
+                  color: textPrimary,
                 ),
               ),
               const SizedBox(height: 6),
@@ -93,7 +98,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                 'Create your advocate account',
                 style: GoogleFonts.dmSans(
                   fontSize: 14,
-                  color: AppColors.textSecondary,
+                  color: textSecondary,
                 ),
               ),
               const SizedBox(height: 28),
@@ -187,7 +192,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                 children: [
                   Text(
                     'Already have an account? ',
-                    style: GoogleFonts.dmSans(color: AppColors.textSecondary),
+                    style: GoogleFonts.dmSans(color: textSecondary),
                   ),
                   TextButton(
                     onPressed: () => context.goLogin(),

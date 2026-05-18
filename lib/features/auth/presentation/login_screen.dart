@@ -52,6 +52,11 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final textPrimary =
+        isDark ? AppColors.darkTextPrimary : AppColors.textPrimary;
+    final textSecondary =
+        isDark ? AppColors.darkTextSecondary : AppColors.textSecondary;
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -82,7 +87,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       'LexRef',
                       style: GoogleFonts.libreBaskerville(
                         fontSize: 24,
-                        color: AppColors.textPrimary,
+                        color: textPrimary,
                       ),
                     ),
                   ],
@@ -92,7 +97,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   'Welcome back',
                   style: GoogleFonts.libreBaskerville(
                     fontSize: 30,
-                    color: AppColors.textPrimary,
+                    color: textPrimary,
                   ),
                 ),
                 const SizedBox(height: 6),
@@ -100,7 +105,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   'Sign in to continue',
                   style: GoogleFonts.dmSans(
                     fontSize: 15,
-                    color: AppColors.textSecondary,
+                    color: textSecondary,
                   ),
                 ),
                 const SizedBox(height: 32),
@@ -151,7 +156,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   children: [
                     Text(
                       "Don't have an account? ",
-                      style: GoogleFonts.dmSans(color: AppColors.textSecondary),
+                      style: GoogleFonts.dmSans(color: textSecondary),
                     ),
                     TextButton(
                       onPressed: () => context.goRegister(),

@@ -317,13 +317,15 @@ class _QuickCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Icon(icon, color: color, size: 22),
-              const Spacer(),
+              const SizedBox(height: 8),
               Text(
                 label,
                 style: GoogleFonts.dmSans(
                   fontSize: 13,
                   fontWeight: FontWeight.w600,
                 ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
               Text(
                 subtitle,
@@ -331,6 +333,8 @@ class _QuickCard extends StatelessWidget {
                   fontSize: 11,
                   color: AppColors.textSecondary,
                 ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
             ],
           ),
