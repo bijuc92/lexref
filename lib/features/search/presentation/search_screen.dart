@@ -83,11 +83,18 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     _debounce?.cancel();
     _debounce = Timer(const Duration(milliseconds: 400), () {
       setState(() => _query = v);
-      if (v.isNotEmpty) _doSearch(v);
+      if (v.isNotEmpty) {
+        _doLocalSearch(v);
+      } else {
+        setState(() {
+          _sections = [];
+          _cases = [];
+        });
+      }
     });
   }
 
-  Future<void> _doSearch(String q) async {
+  Future<void> _doLocalSearch(String q) async {
     if (_loading) return;
     setState(() => _loading = true);
     await _searchRepo.saveSearchHistory(q, _filter);
@@ -95,33 +102,33 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
       q,
       _filter == 'all' ? null : _filter,
     );
-    List<CaseResult> cases = [];
-    if (_filter == 'all' || _filter == 'sc' || _filter == 'hc') {
-      final isSubscribed = ref.read(isSubscribedProvider);
-      bool canSearch = isSubscribed;
-      if (!canSearch) {
-        final used = await UsageRepository().getCaseSearchesUsed();
-        canSearch = used < kFreeCaseLimit;
-        if (canSearch) {
-          await UsageRepository().incrementCaseSearch();
-          await _loadCaseUsage();
-        }
-      }
-      if (!mounted) return;
-      if (canSearch) {
-        cases = await _searchRepo.searchCases(q);
-      } else {
-        context.pushPaywall(reason: 'cases');
-      }
-    }
     if (mounted) {
       setState(() {
         _sections = sections;
-        _cases = cases;
         _loading = false;
       });
     }
     _loadHistory();
+  }
+
+  Future<void> _doCaseLawSearch(String q) async {
+    final isSubscribed = ref.read(isSubscribedProvider);
+    bool canSearch = isSubscribed;
+    if (!canSearch) {
+      final used = await UsageRepository().getCaseSearchesUsed();
+      canSearch = used < kFreeCaseLimit;
+      if (canSearch) {
+        await UsageRepository().incrementCaseSearch();
+        await _loadCaseUsage();
+      }
+    }
+    if (!mounted) return;
+    if (canSearch) {
+      final cases = await _searchRepo.searchCases(q);
+      if (mounted) setState(() => _cases = cases);
+    } else {
+      context.pushPaywall(reason: 'cases');
+    }
   }
 
   @override
@@ -159,7 +166,10 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
           ),
           onChanged: _onChanged,
           onSubmitted: (v) {
-            if (v.isNotEmpty) _doSearch(v);
+            if (v.isNotEmpty) {
+              _doLocalSearch(v);
+              if (_filter == 'all') _doCaseLawSearch(v);
+            }
           },
         ),
       ),
@@ -181,7 +191,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                     selected: selected,
                     onSelected: (v) {
                       setState(() => _filter = v ? f.$1 : 'all');
-                      if (_query.isNotEmpty) _doSearch(_query);
+                      if (_query.isNotEmpty) _doLocalSearch(_query);
                     },
                   ),
                 );
@@ -215,6 +225,17 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                     ),
                   ),
                 ],
+              ),
+            ),
+          if (_filter == 'all' && _query.isNotEmpty && _cases.isEmpty)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+              child: Text(
+                'Press ↵ to also search case law',
+                style: GoogleFonts.dmSans(
+                  fontSize: 11,
+                  color: isDark ? AppColors.darkTextSecondary : AppColors.textSecondary,
+                ),
               ),
             ),
           Expanded(
@@ -270,7 +291,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
               onTap: () {
                 _ctrl.text = h;
                 setState(() => _query = h);
-                _doSearch(h);
+                _doLocalSearch(h);
               },
             )),
       ],

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/router/typed_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/widgets/court_badge.dart';
 import '../../../shared/widgets/error_state.dart';
+import '../../../shared/widgets/in_app_browser.dart';
 import '../../../shared/widgets/loading_shimmer.dart';
 import '../../../core/error/result.dart';
 import '../data/cases_repository.dart';
@@ -33,12 +33,11 @@ class CaseDetailScreen extends ConsumerWidget {
           IconButton(
             icon: const Icon(Icons.open_in_browser_outlined),
             tooltip: 'Open full judgment',
-            onPressed: () async {
+            onPressed: () {
               final url = 'https://indiankanoon.org/doc/$caseId/';
-              if (await canLaunchUrl(Uri.parse(url))) {
-                await launchUrl(Uri.parse(url),
-                    mode: LaunchMode.externalApplication);
-              }
+              Navigator.push(context, MaterialPageRoute(
+                builder: (_) => InAppBrowser(url: url, title: 'Full Judgment'),
+              ));
             },
           ),
         ],
@@ -106,12 +105,11 @@ class CaseDetailScreen extends ConsumerWidget {
                   child: ElevatedButton.icon(
                     icon: const Icon(Icons.open_in_browser),
                     label: const Text('Open Full Judgment on IndianKanoon'),
-                    onPressed: () async {
+                    onPressed: () {
                       final url = c.url ?? 'https://indiankanoon.org/doc/$caseId/';
-                      if (await canLaunchUrl(Uri.parse(url))) {
-                        await launchUrl(Uri.parse(url),
-                            mode: LaunchMode.externalApplication);
-                      }
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (_) => InAppBrowser(url: url, title: c.title),
+                      ));
                     },
                     style: ElevatedButton.styleFrom(
                       minimumSize: const Size(double.infinity, 52),

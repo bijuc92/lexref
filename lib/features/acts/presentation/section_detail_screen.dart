@@ -13,6 +13,7 @@ import '../../../shared/models/local/local_bookmark.dart';
 import '../../../shared/models/local/local_note.dart';
 import '../../../shared/widgets/act_badge.dart';
 import '../../../shared/widgets/error_state.dart';
+import '../../../shared/widgets/folder_picker.dart';
 import '../../../shared/widgets/loading_shimmer.dart';
 import '../../bookmarks/data/bookmarks_repository.dart';
 import '../../bookmarks/presentation/bookmarks_screen.dart';
@@ -94,6 +95,8 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
     if (_bookmarked) {
       result = await _bookmarksRepo.removeBookmark(section.id);
     } else {
+      final folder = await showFolderPicker(context, current: 'General');
+      if (!mounted || folder == null) return;
       result = await _bookmarksRepo.addBookmark(
         LocalBookmark(
           id: section.id,
@@ -101,6 +104,7 @@ class _SectionDetailScreenState extends ConsumerState<SectionDetailScreen> {
           refId: section.id,
           refTitle: 'S.${section.sectionNo} — ${section.title}',
           refAct: widget.actId.toUpperCase(),
+          folder: folder,
           savedAt: DateTime.now(),
         ),
       );
